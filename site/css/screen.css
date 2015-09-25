@@ -21,11 +21,21 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+@font-face { font-family: "ProximaNova Regular"; src: url("fonts/proxima_nova_regular.eot"); src: url("fonts/proxima_nova_regular.eot?#iefix") format("embedded-opentype"), url("fonts/proxima_nova_regular.woff2") format("woff2"), url("fonts/proxima_nova_regular.woff") format("woff"), url("fonts/proxima_nova_regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "ProximaNova Bold"; src: url("fonts/proxima_nova_bold.eot"); src: url("fonts/proxima_nova_bold.eot?#iefix") format("embedded-opentype"), url("fonts/proxima_nova_bold.woff2") format("woff2"), url("fonts/proxima_nova_bold.woff") format("woff"), url("fonts/proxima_nova_bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "GaramondPremr Bold"; src: url("fonts/GaramondPremrPro-Bd.eot"); src: url("fonts/GaramondPremrPro-Bd.eot?#iefix") format("embedded-opentype"), url("fonts/GaramondPremrPro-Bd.woff2") format("woff2"), url("fonts/GaramondPremrPro-Bd.woff") format("woff"), url("fonts/GaramondPremrPro-Bd.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "GaramondPremr Regular"; src: url("fonts/GaramondPremrPro.eot"); src: url("fonts/GaramondPremrPro.eot?#iefix") format("embedded-opentype"), url("fonts/GaramondPremrPro.woff2") format("woff2"), url("fonts/GaramondPremrPro.woff") format("woff"), url("fonts/GaramondPremrPro.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+body { font-family: "ProximaNova Regular", Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
-.icon-codedby { width: 47px; height: 5px; background-image: url("../img/icons.png"); background-position: 0px -9px; }
+h1, h2, h3, h4, h5, h6, b, strong, em, i { font-weight: normal; font-style: normal; }
 
-.icon-coderiver { width: 49px; height: 5px; background-image: url("../img/icons.png"); background-position: 0px 0px; }
+a { text-decoration: none; }
+
+.icon-codedby { width: 47px; height: 5px; background-image: url("../img/icons.png"); background-position: -22px -9px; }
+
+.icon-coderiver { width: 49px; height: 5px; background-image: url("../img/icons.png"); background-position: -22px 0px; }
+
+.icon-icon-search { width: 18px; height: 18px; background-image: url("../img/icons.png"); background-position: 0px 0px; }
 
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 .icon, [class^="icon-"], [class*=" icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -40,6 +50,39 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
+
+.header { *zoom: 1; padding: 15px 40px 14px; font-size: 0; background: #fff; }
+.header:after { content: " "; display: table; clear: both; }
+.header__menu { float: right; padding: 7px 0 6px; }
+.header__menu .btn-search, .header__menu .nav { display: inline-block; vertical-align: middle; }
+
+.logo { width: 166px; float: left; }
+
+.btn-search { background: none; background-image: url("../img/icons.png"); width: 18px; height: 18px; background-position: 0px 0px; margin: 0 0 0 25px; }
+
+.nav__list li { display: inline-block; padding: 0 25px; }
+.nav__list li a { font-family: "ProximaNova Bold", Arial, sans-serif; font-size: 13px; color: #333; text-transform: uppercase; letter-spacing: 0.04em; display: block; position: relative; }
+.nav__list li a:hover:before { width: 100%; }
+.nav__list li a.is-active { color: #2d7fc9; }
+.nav__list li a:before { content: ""; position: absolute; bottom: 0; left: 0; border-bottom: 2px solid #333; width: 0; transition: all 0.25s ease; }
+
+.promo { text-align: center; font-size: 0; background: url(../img/team.jpg) no-repeat center center; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; height: 500px; position: relative; }
+.promo:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.promo:after { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); }
+.promo__inner { display: inline-block; vertical-align: middle; width: 100%; position: relative; max-width: 770px; z-index: 1; }
+.promo__title { margin-bottom: 30px; font-family: "ProximaNova Bold", Arial, sans-serif; color: #fff; font-size: 60px; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1; }
+.promo p { font-family: "GaramondPremr Regular", Arial, sans-serif; color: #fff; font-size: 20px; letter-spacing: 0.02em; }
+
+.team { *zoom: 1; }
+.team:after { content: " "; display: table; clear: both; }
+
+.person { width: 25%; float: left; position: relative; font-size: 0; overflow: hidden; cursor: pointer; }
+.person:hover img.is-hide { opacity: 1; }
+.person img { width: 100%; }
+.person img.is-hide { position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.4s ease; will-change: opacity; }
+.person__info { position: absolute; bottom: 0; left: 0; right: 0; color: #fff; text-align: center; line-height: 1; padding: 0 0 37px; z-index: 1; }
+.person__title { font-family: "ProximaNova Bold", Arial, sans-serif; font-size: 24px; margin-bottom: 10px; }
+.person__label { font-family: "ProximaNova Regular", Arial, sans-serif; font-size: 14px; text-transform: uppercase; }
 
 
 

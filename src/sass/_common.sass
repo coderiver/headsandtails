@@ -47,11 +47,33 @@
 // p
 // 	+jpg(bla)
 
+//fonts
++font("ProximaNova Regular", proxima_nova_regular)
++font("ProximaNova Bold", proxima_nova_bold)
+
++font("GaramondPremr Bold", GaramondPremrPro-Bd)
++font("GaramondPremr Regular", GaramondPremrPro)
+
+=reg
+	font-family: "ProximaNova Regular", Arial, sans-serif
+=bold
+	font-family: "ProximaNova Bold", Arial, sans-serif
+	
+=gpbold
+	font-family: "GaramondPremr Bold", Arial, sans-serif
+=gp
+	font-family: "GaramondPremr Regular", Arial, sans-serif
+
+//settings
 
 body
-	font-family: Arial, sans-serif
+	+reg
 	font-size: 12px
 	line-height: 1.4
 
-
-// common blocks
+h1, h2, h3, h4, h5, h6, b, strong, em, i
+	font-weight: normal
+	font-style: normal
+	
+a
+	text-decoration: none
