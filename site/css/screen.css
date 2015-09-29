@@ -21,15 +21,24 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
+html { box-sizing: border-box; }
+
+* { box-sizing: border-box; }
+*:before, *:after { box-sizing: border-box; }
+
 @font-face { font-family: "ProximaNova Regular"; src: url("fonts/proxima_nova_regular.eot"); src: url("fonts/proxima_nova_regular.eot?#iefix") format("embedded-opentype"), url("fonts/proxima_nova_regular.woff2") format("woff2"), url("fonts/proxima_nova_regular.woff") format("woff"), url("fonts/proxima_nova_regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "ProximaNova Semibold"; src: url("fonts/proxima_nova_semibold.eot"); src: url("fonts/proxima_nova_semibold.eot?#iefix") format("embedded-opentype"), url("fonts/proxima_nova_semibold.woff2") format("woff2"), url("fonts/proxima_nova_semibold.woff") format("woff"), url("fonts/proxima_nova_semibold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "ProximaNova Bold"; src: url("fonts/proxima_nova_bold.eot"); src: url("fonts/proxima_nova_bold.eot?#iefix") format("embedded-opentype"), url("fonts/proxima_nova_bold.woff2") format("woff2"), url("fonts/proxima_nova_bold.woff") format("woff"), url("fonts/proxima_nova_bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "GaramondPremr Bold"; src: url("fonts/GaramondPremrPro-Bd.eot"); src: url("fonts/GaramondPremrPro-Bd.eot?#iefix") format("embedded-opentype"), url("fonts/GaramondPremrPro-Bd.woff2") format("woff2"), url("fonts/GaramondPremrPro-Bd.woff") format("woff"), url("fonts/GaramondPremrPro-Bd.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "GaramondPremr Medium"; src: url("fonts/GaramondPremrPro-Med.eot"); src: url("fonts/GaramondPremrPro-Med.eot?#iefix") format("embedded-opentype"), url("fonts/GaramondPremrPro-Med.woff2") format("woff2"), url("fonts/GaramondPremrPro-Med.woff") format("woff"), url("fonts/GaramondPremrPro-Med.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "GaramondPremr Regular"; src: url("fonts/GaramondPremrPro.eot"); src: url("fonts/GaramondPremrPro.eot?#iefix") format("embedded-opentype"), url("fonts/GaramondPremrPro.woff2") format("woff2"), url("fonts/GaramondPremrPro.woff") format("woff"), url("fonts/GaramondPremrPro.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 body { font-family: "ProximaNova Regular", Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 h1, h2, h3, h4, h5, h6, b, strong, em, i { font-weight: normal; font-style: normal; }
 
 a { text-decoration: none; }
+
+.title-h3 { color: #333; font-size: 32px; line-height: 40px; font-family: "ProximaNova Bold", Arial, sans-serif; display: block; }
 
 .icon-codedby { width: 47px; height: 5px; background-image: url("../img/icons.png"); background-position: -22px -9px; }
 
@@ -42,9 +51,23 @@ a { text-decoration: none; }
 
 .icon, [class^="icon-"], [class*=" icon-"] { display: inline-block; }
 
-.icon-sepa:before { content: ""; }
+.icon-comments:before { content: ""; }
 
-.icon-skrill:before { content: ""; }
+.icon-dislike:before { content: ""; }
+
+.icon-earth:before { content: ""; }
+
+.icon-fb:before { content: ""; }
+
+.icon-instagram:before { content: ""; }
+
+.icon-like:before { content: ""; }
+
+.icon-plane:before { content: ""; }
+
+.icon-share:before { content: ""; }
+
+.icon-vk:before { content: ""; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
@@ -83,6 +106,90 @@ a { text-decoration: none; }
 .person__info { position: absolute; bottom: 0; left: 0; right: 0; color: #fff; text-align: center; line-height: 1; padding: 0 0 37px; z-index: 1; }
 .person__title { font-family: "ProximaNova Bold", Arial, sans-serif; font-size: 24px; margin-bottom: 10px; }
 .person__label { font-family: "ProximaNova Regular", Arial, sans-serif; font-size: 14px; text-transform: uppercase; }
+
+.banner { color: #fff; background-color: #7acde6; }
+.banner__inner { max-width: 1200px; margin: 0 auto; padding: 48px 15px 0 385px; position: relative; *zoom: 1; }
+.banner__inner:after { content: " "; display: table; clear: both; }
+.banner .social { margin: 0 -7px 0 0; float: right; }
+.banner__img { position: absolute; bottom: 0; left: 15px; }
+.banner__text { overflow: hidden; padding: 145px 0 99px 30px; }
+.banner__title { font-family: "ProximaNova Semibold", Arial, sans-serif; font-size: 38px; line-height: 1; margin-bottom: 6px; }
+.banner__label { display: block; letter-spacing: 0.02em; opacity: 0.8; font-family: "ProximaNova Semibold", Arial, sans-serif; font-size: 16px; text-transform: uppercase; margin-bottom: 20px; }
+.banner__info { font-size: 0; margin-bottom: 20px; }
+.banner__info li { display: inline-block; vertical-align: top; font-family: "ProximaNova Semibold", Arial, sans-serif; text-transform: uppercase; margin-right: 33px; }
+.banner__info li span, .banner__info li i { display: inline-block; vertical-align: middle; }
+.banner__info li span { font-size: 13px; }
+.banner__info li i { opacity: 0.7; margin-right: 8px; }
+.banner__info li i.icon-plane { font-size: 9px; }
+.banner__info li i.icon-earth { font-size: 14px; }
+.banner__info li i.icon-comments { font-size: 14px; }
+.banner p { font-family: "GaramondPremr Regular", Arial, sans-serif; color: #fff; font-size: 20px; letter-spacing: 0.02em; }
+
+.social { font-size: 0; }
+.social li { display: inline-block; padding: 0 7px; vertical-align: top; }
+.social li a { display: block; width: 36px; height: 36px; text-align: center; color: #fff; transition: all 0.25s; border-radius: 50%; text-align: center; font-size: 0; }
+.social li a:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.social li a.is-fb { background-color: #4c66a4; }
+.social li a.is-fb:hover { background-color: #5770ab; }
+.social li a.is-fb i { font-size: 14px; }
+.social li a.is-vk { background-color: #3b6798; }
+.social li a.is-vk:hover { background-color: #4672a3; }
+.social li a.is-vk i { font-size: 9px; }
+.social li a.is-instagram { background-color: #517fa6; }
+.social li a.is-instagram:hover { background-color: #5e8ab0; }
+.social li a.is-instagram i { font-size: 12px; }
+.social li a i { display: inline-block; vertical-align: middle; }
+
+.main { max-width: 1200px; margin: 0 auto; *zoom: 1; padding: 70px 15px 10px; }
+.main:after { content: " "; display: table; clear: both; }
+
+.sidebar { width: 33%; padding: 0 0 0 15px; float: right; }
+.sidebar__box { padding: 0 0 14px; }
+.sidebar__title { font-family: "ProximaNova Semibold", Arial, sans-serif; color: #333; font-size: 14px; text-transform: uppercase; line-height: 1; position: relative; overflow: hidden; margin-bottom: 12px; }
+.sidebar__title span { position: relative; padding: 0 20px 0 0; background: #fff; }
+.sidebar__title span:after { content: ""; position: absolute; left: 100%; border-top: 1px solid #eee; width: 1000px; margin-top: 6px; }
+
+.news { padding: 10px 0 15px; max-width: 340px; }
+.news__inner { display: block; font-family: "ProximaNova Semibold", Arial, sans-serif; *zoom: 1; }
+.news__inner:after { content: " "; display: table; clear: both; }
+.news img { float: left; width: 70px; height: 70px; margin: 0 15px 0 0; }
+.news__block { overflow: hidden; }
+.news__info { font-size: 0; padding-bottom: 3px; }
+.news__info li { display: inline-block; vertical-align: top; color: #8c8c8c; font-size: 13px; line-height: 20px; letter-spacing: 0.02em; padding: 0 18px 0 0; position: relative; }
+.news__info li:last-child:before { display: none; }
+.news__info li:before { content: ""; position: absolute; top: 50%; right: 8px; width: 2px; height: 2px; background: #8c8c8c; margin-top: -1px; }
+.news p { font-size: 17px; color: #333; letter-spacing: 0.02em; line-height: 1.2; }
+
+.container { width: 67%; float: left; padding: 0 15px 0 0; }
+
+.post { padding: 0 0 60px; }
+.post .user { margin-bottom: 14px; }
+.post .title-h3 { margin-bottom: 14px; }
+.post__container img { max-width: 100%; display: block; margin: 0 0 20px; }
+.post__container p { color: #8c8c8c; font-family: "GaramondPremr Medium", Arial, sans-serif; font-size: 18px; line-height: 24px; letter-spacing: 0.02em; margin-bottom: 15px; }
+.post .lil-info { margin-bottom: 10px; }
+
+.lil-info { font-size: 0; }
+.lil-info li { display: inline-block; vertical-align: top; padding: 0 20px 0 0; }
+.lil-info a { font-family: "ProximaNova Semibold", Arial, sans-serif; color: #8c8c8c; font-size: 14px; line-height: 22px; letter-spacing: 0.02em; padding: 0 0 0 25px; position: relative; display: inline-block; }
+.lil-info a.is-like i, .lil-info a.is-dislike i, .lil-info a.is-comments i, .lil-info a.is-share i { position: absolute; top: 50%; left: 0; }
+.lil-info a.is-like i, .lil-info a.is-dislike i { font-size: 18px; margin-top: -9px; }
+.lil-info a.is-comments i { font-size: 16px; margin-top: -8px; }
+.lil-info a.is-share i { font-size: 15px; margin-top: -8px; }
+
+.tags { font-size: 0; }
+.tags li { display: inline-block; vertical-align: top; padding: 0 5px 0 0; }
+.tags a { color: #8c8c8c; font-family: "GaramondPremr Regular", Arial, sans-serif; font-size: 16px; line-height: 28px; letter-spacing: 0.02em; }
+
+.user__inner { display: inline-block; color: #8c8c8c; font-size: 13px; line-height: 18px; letter-spacing: 0.02em; *zoom: 1; }
+.user__inner:after { content: " "; display: table; clear: both; }
+.user__img { float: left; margin: 0 10px 0 0; }
+.user__block { overflow: hidden; padding: 1px 0 0; }
+.user__name { font-family: "ProximaNova Semibold", Arial, sans-serif; }
+.user__info { font-size: 0; padding-bottom: 3px; }
+.user__info li { display: inline-block; vertical-align: top; padding: 0 18px 0 0; position: relative; font-family: "ProximaNova Regular", Arial, sans-serif; font-size: 13px; }
+.user__info li:last-child:before { display: none; }
+.user__info li:before { content: ""; position: absolute; top: 50%; right: 8px; width: 2px; height: 2px; background: #8c8c8c; margin-top: -1px; }
 
 
 

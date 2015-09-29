@@ -49,18 +49,24 @@
 
 //fonts
 +font("ProximaNova Regular", proxima_nova_regular)
++font("ProximaNova Semibold", proxima_nova_semibold)
 +font("ProximaNova Bold", proxima_nova_bold)
 
 +font("GaramondPremr Bold", GaramondPremrPro-Bd)
++font("GaramondPremr Medium", GaramondPremrPro-Med)
 +font("GaramondPremr Regular", GaramondPremrPro)
 
 =reg
 	font-family: "ProximaNova Regular", Arial, sans-serif
+=semi
+	font-family: "ProximaNova Semibold", Arial, sans-serif
 =bold
 	font-family: "ProximaNova Bold", Arial, sans-serif
 	
 =gpbold
 	font-family: "GaramondPremr Bold", Arial, sans-serif
+=gpmed
+	font-family: "GaramondPremr Medium", Arial, sans-serif
 =gp
 	font-family: "GaramondPremr Regular", Arial, sans-serif
 
@@ -77,3 +83,10 @@ h1, h2, h3, h4, h5, h6, b, strong, em, i
 	
 a
 	text-decoration: none
+
+.title-h3
+	color: #333
+	font-size: 32px
+	line-height: 40px
+	+bold
+	display: block
