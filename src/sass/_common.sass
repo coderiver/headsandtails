@@ -56,6 +56,8 @@
 +font("GaramondPremr Medium", GaramondPremrPro-Med)
 +font("GaramondPremr Regular", GaramondPremrPro)
 
++font("BodoniSvtyTwoITCTT Bold", BodoniSvtyTwoITCTTBold)
+
 =reg
 	font-family: "ProximaNova Regular", Arial, sans-serif
 =semi
@@ -70,6 +72,8 @@
 =gp
 	font-family: "GaramondPremr Regular", Arial, sans-serif
 
+=bbold
+	font-family: "BodoniSvtyTwoITCTT Bold", Arial, sans-serif
 //settings
 
 body
@@ -90,3 +94,8 @@ a
 	line-height: 40px
 	+bold
 	display: block
+	a
+		color: #333
+		transition: all 0.25s ease
+		&:hover
+			color: #2d7fc9
