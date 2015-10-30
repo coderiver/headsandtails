@@ -44,6 +44,9 @@
 		.btn-search
 			+r2
 				display: none
+		.nav
+			+r2
+				display: block
 	&_mod
 		background-color: #73c5df
 		padding: 0 40px 
@@ -198,7 +201,7 @@
 						color: #fff 
 					&:before
 						opacity: 1
-				&.is-active
+				&.is-active, &.is-open
 					color: #2d7fc9
 					+r2
 						color: #fff 
@@ -213,6 +216,15 @@
 					transition: all 0.25s ease
 					+r2
 						display: none
+				.icon-arr-bot
+					position: absolute
+					top: 50%
+					right: 20px
+					font-size: 4px
+					display: none
+					margin-top: -2px	
+					+r2
+						display: block	
 			&.nav__mobile
 				display: none
 				+r2

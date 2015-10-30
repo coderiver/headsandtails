@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" baseProfile="full"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:ev="http://www.w3.org/2001/xml-events" 
+  height="4px" 
+  width="9px" 
+>
+<defs>
+<filter id="Filter_0">
+  <feFlood flood-color="rgb( 255, 255, 255 )" flood-opacity="1" result="floodOut" />
+  <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+  <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+</filter>
+
+</defs><g filter="url(#Filter_0)">
+<path fill="rgb( 216, 216, 216 )"
+ d="M8.01600000000002,0.458 C8.01600000000002,0.458 4.51499999999999,3.983 4.51499999999999,3.983 C4.51499999999999,3.983 4.5,3.967 4.5,3.967 C4.5,3.967 4.48399999999998,3.983 4.48399999999998,3.983 C4.48399999999998,3.983 0.983,0.458 0.983,0.458 C0.983,0.458 1.42099999999999,0.017 1.42099999999999,0.017 C1.42099999999999,0.017 4.5,3.117 4.5,3.117 C4.5,3.117 7.57900000000001,0.017 7.57900000000001,0.017 C7.57900000000001,0.017 8.01600000000002,0.458 8.01600000000002,0.458 Z "/>
+</g>
+</svg>
