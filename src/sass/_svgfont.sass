@@ -5,16 +5,17 @@
 	font-weight: normal
 	font-style: normal
 
-$icon-comments: "\EA01"
-$icon-dislike: "\EA02"
-$icon-earth: "\EA03"
-$icon-fb: "\EA04"
-$icon-instagram: "\EA05"
-$icon-like: "\EA06"
-$icon-plane-small: "\EA07"
-$icon-plane: "\EA08"
-$icon-share: "\EA09"
-$icon-vk: "\EA0A"
+$icon-close: "\EA01"
+$icon-comments: "\EA02"
+$icon-dislike: "\EA03"
+$icon-earth: "\EA04"
+$icon-fb: "\EA05"
+$icon-instagram: "\EA06"
+$icon-like: "\EA07"
+$icon-plane-small: "\EA08"
+$icon-plane: "\EA09"
+$icon-share: "\EA0A"
+$icon-vk: "\EA0B"
 
 
 %icon
@@ -31,6 +32,8 @@ $icon-vk: "\EA0A"
 	@extend %icon
 	display: inline-block
 
+.icon-close:before
+	content: $icon-close
 .icon-comments:before
 	content: $icon-comments
 .icon-dislike:before

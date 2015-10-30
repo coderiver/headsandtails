@@ -18,23 +18,41 @@
 <div class="out">
 
 	<!-- begin header  -->
-	<header class="header">
-		<a href="#" class="logo">
-			<img src="img/logo.svg" alt="">
-		</a>
-		<div class="header__menu">
-			<nav class="nav">
-				<ul class="nav__list">
-					<li><a href="#">маршрут</a></li>
-					<li><a href="#">дневник</a></li>
-					<li><a href="#">про проект</a></li>
-					<li><a href="#" class="is-active">команда</a></li>
-					<li><a href="#">библиотека</a></li>
-					<li><a href="#">Топ</a></li>
-				</ul>
-			</nav>
-			<button class="btn-search"></button>
-		</div>
+	<header class="header header_mod js-fixed">
+		<div class="header__inner">
+			<div class="header__logo">
+				<a href="#" class="logo">
+					<img src="img/logo.svg" alt="">
+					<i class="logo__text"></i>
+				</a>
+			</div>		
+			<div class="header__menu js-menu">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li><a href="#">маршрут</a></li>
+						<li><a href="#">дневник</a></li>
+						<li><a href="#">про проект</a></li>
+						<li><a href="#">команда</a></li>
+						<li><a href="#">библиотека</a></li>
+						<li><a href="#">Топ</a></li>
+						<li class="nav__search"><a href="#">Поиск</a></li>
+					</ul>
+				</nav>
+				<button class="btn-search"></button>
+			</div>
+			<div class="header__date">
+				<div class="header__day">
+					<span>28</span>
+					<small>Дней</small>
+				</div>
+				<div class="header__time">
+					<span>07:29</span>
+					<small class="is-left">часов</small>
+					<small class="is-right">минут</small>
+				</div>
+			</div>
+			<button class="btn-menu js-menu-btn"><span></span></button>
+		</div>	
 	</header>
 	<!-- end header -->
 
@@ -153,7 +171,7 @@
 			<!-- begin sidebar -->
 			<aside class="sidebar">
 				<div class="sidebar__box">				
-					<div class="sidebar__title"><span>самые популярные</span></div>
+					<div class="sidebar__title"><span>Топ поездки</span></div>
 					<div class="news">
 						<div class="news__inner">
 							<a href="#" class="news__img">
@@ -182,9 +200,23 @@
 							</div>
 						</div>
 					</div>
+					<div class="news">
+						<div class="news__inner">
+							<a href="#" class="news__img">
+								<img src="img/small4.png" alt="">
+							</a>
+							<div class="news__block">
+								<ul class="news__info">
+									<li><a href="#">Андрей Бедняков</a></li>
+									<li><a href="#">11 Ноября 14:32</a></li>
+								</ul>
+								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="sidebar__box">				
-					<div class="sidebar__title"><span>самые комментируемые</span></div>
+					<div class="sidebar__title"><span>Топ Города</span></div>
 					<div class="news">
 						<div class="news__inner">
 							<a href="#" class="news__img">
@@ -196,6 +228,20 @@
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
 								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="news">
+						<div class="news__inner">
+							<a href="#" class="news__img">
+								<img src="img/small4.png" alt="">
+							</a>
+							<div class="news__block">
+								<ul class="news__info">
+									<li><a href="#">Андрей Бедняков</a></li>
+									<li><a href="#">11 Ноября 14:32</a></li>
+								</ul>
+								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
 							</div>
 						</div>
 					</div>
@@ -379,7 +425,7 @@
 			<!-- begin sidebar -->
 			<aside class="sidebar">
 				<div class="sidebar__box">				
-					<div class="sidebar__title"><span>самые популярные</span></div>
+					<div class="sidebar__title"><span>Топ поездки</span></div>
 					<div class="news">
 						<div class="news__inner">
 							<a href="#" class="news__img">
@@ -408,9 +454,23 @@
 							</div>
 						</div>
 					</div>
+					<div class="news">
+						<div class="news__inner">
+							<a href="#" class="news__img">
+								<img src="img/small4.png" alt="">
+							</a>
+							<div class="news__block">
+								<ul class="news__info">
+									<li><a href="#">Андрей Бедняков</a></li>
+									<li><a href="#">11 Ноября 14:32</a></li>
+								</ul>
+								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="sidebar__box">				
-					<div class="sidebar__title"><span>самые комментируемые</span></div>
+					<div class="sidebar__title"><span>Топ Города</span></div>
 					<div class="news">
 						<div class="news__inner">
 							<a href="#" class="news__img">
@@ -422,6 +482,20 @@
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
 								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="news">
+						<div class="news__inner">
+							<a href="#" class="news__img">
+								<img src="img/small4.png" alt="">
+							</a>
+							<div class="news__block">
+								<ul class="news__info">
+									<li><a href="#">Андрей Бедняков</a></li>
+									<li><a href="#">11 Ноября 14:32</a></li>
+								</ul>
+								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
 							</div>
 						</div>
 					</div>
@@ -808,7 +882,7 @@
 			<!-- begin sidebar -->
 			<aside class="sidebar">
 				<div class="sidebar__box">				
-					<div class="sidebar__title"><span>самые популярные</span></div>
+					<div class="sidebar__title"><span>Топ поездки</span></div>
 					<div class="news">
 						<div class="news__inner">
 							<a href="#" class="news__img">
@@ -837,9 +911,23 @@
 							</div>
 						</div>
 					</div>
+					<div class="news">
+						<div class="news__inner">
+							<a href="#" class="news__img">
+								<img src="img/small4.png" alt="">
+							</a>
+							<div class="news__block">
+								<ul class="news__info">
+									<li><a href="#">Андрей Бедняков</a></li>
+									<li><a href="#">11 Ноября 14:32</a></li>
+								</ul>
+								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="sidebar__box">				
-					<div class="sidebar__title"><span>самые комментируемые</span></div>
+					<div class="sidebar__title"><span>Топ Города</span></div>
 					<div class="news">
 						<div class="news__inner">
 							<a href="#" class="news__img">
@@ -851,6 +939,20 @@
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
 								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="news">
+						<div class="news__inner">
+							<a href="#" class="news__img">
+								<img src="img/small4.png" alt="">
+							</a>
+							<div class="news__block">
+								<ul class="news__info">
+									<li><a href="#">Андрей Бедняков</a></li>
+									<li><a href="#">11 Ноября 14:32</a></li>
+								</ul>
+								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
 							</div>
 						</div>
 					</div>
@@ -1065,7 +1167,7 @@
 			<!-- begin sidebar -->
 			<aside class="sidebar">
 				<div class="sidebar__box">				
-					<div class="sidebar__title"><span>самые популярные</span></div>
+					<div class="sidebar__title"><span>Топ поездки</span></div>
 					<div class="news">
 						<div class="news__inner">
 							<a href="#" class="news__img">
@@ -1094,9 +1196,23 @@
 							</div>
 						</div>
 					</div>
+					<div class="news">
+						<div class="news__inner">
+							<a href="#" class="news__img">
+								<img src="img/small4.png" alt="">
+							</a>
+							<div class="news__block">
+								<ul class="news__info">
+									<li><a href="#">Андрей Бедняков</a></li>
+									<li><a href="#">11 Ноября 14:32</a></li>
+								</ul>
+								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="sidebar__box">				
-					<div class="sidebar__title"><span>самые комментируемые</span></div>
+					<div class="sidebar__title"><span>Топ Города</span></div>
 					<div class="news">
 						<div class="news__inner">
 							<a href="#" class="news__img">
@@ -1108,6 +1224,20 @@
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
 								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="news">
+						<div class="news__inner">
+							<a href="#" class="news__img">
+								<img src="img/small4.png" alt="">
+							</a>
+							<div class="news__block">
+								<ul class="news__info">
+									<li><a href="#">Андрей Бедняков</a></li>
+									<li><a href="#">11 Ноября 14:32</a></li>
+								</ul>
+								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
 							</div>
 						</div>
 					</div>

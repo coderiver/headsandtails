@@ -1,29 +1,184 @@
+.out
+	min-width: 320px 
+	padding: 61px 0 0 
+
 .header
 	+clr
-	padding: 15px 40px 14px
+	padding: 0 40px
 	font-size: 0
 	background: #fff 
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 1000
+	height: 61px 
+	min-width: 320px 
+	border-bottom: 1px solid #f1f1f1
+	+r1
+		padding: 0 20px
+	&__logo
+		float: left
+		padding: 15px 0 14px
+		+r1
+			padding: 15px 0 
 	&__menu
 		float: right
-		padding: 7px 0 6px
+		+r2
+			position: fixed
+			top: 0
+			bottom: 0
+			right: 0
+			z-index: 2000 
+			background-color: #2f373e
+			width: 258px
+			padding: 13px 0
+			overflow: auto 
+			transform: translateX(100%)
+			transition: transform 0.3s ease-in-out
+		&.is-active
+			transform: translateX(0)
 		.btn-search, .nav
 			display: inline-block
 			vertical-align: middle
-
+		.btn-search
+			+r2
+				display: none
+	&_mod
+		background-color: #73c5df
+		padding: 0 40px 
+		border-bottom: 1px solid rgba(white, 0.3)
+		+r1
+			padding: 0 20px
+		.header
+			&__inner
+				display: table
+				width: 100%
+			&__menu, &__date, &__logo
+				display: table-cell
+				vertical-align: top
+				float: none
+				padding: 15px 0 14px 
+			&__menu
+				text-align: center
+				padding: 31px 0 31px 
+				border-left: 1px solid rgba(white, 0.3)
+				border-right: 1px solid rgba(white, 0.3)
+			&__logo
+				padding-right: 39px
+				width: 205px
+		.nav
+			li
+				a
+					color: #fff 
+					&:before
+						border-color: #fff 
+		.btn-search
+			+s(icon-search-white)
+	&__date
+		font-size: 0
+		text-align: right
+		width: 225px
+		span, small
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+			line-height: 1
+			text-transform: uppercase
+			+semi
+			color: white
+			display: block
+			letter-spacing: 0.02em 
+			text-align: left
+		span
+			font-size: 38px
+			margin-bottom: 1px
+		small
+			font-size: 10px
+			min-width: 45px
+			&.is-left
+				float: left
+			&.is-right
+				float: right
+	&__day, &__time
+		display: inline-block
+		vertical-align: top
+		position: relative
+		+clr
+	&__day
+		padding: 0 20px 0 0 
+		&:before
+			content: "" 
+			position: absolute
+			top: 4px
+			bottom: 3px
+			right: 0
+			border-right: 1px solid rgba(white, 0.3)
+	&__time
+		padding: 0 0 0 20px 
 .logo
 	width: 166px
 	float: left
+	&__text
+		float: right
+		+s(logo-text)
+		margin-top: 5px
 
 .btn-search
 	background: none
 	+s(icon-search)
 	margin: 0 0 0 25px 
+	+r2
+		display: none
+
+.btn-menu
+	position: absolute
+	top: 0
+	right: 0
+	height: 16px
+	width: 22px
+	border: none
+	background: #fff
+	display: none
+	transition: right 0.3s ease-in-out
+	width: 62px
+	height: 60px
+	+r2
+		display: block
+	&.is-active
+		right: 258px
+		&:before
+			top: 29px
+			+rotate(45)
+		&:after
+			+rotate(-45)
+			bottom: 29px
+		span
+			opacity: 0
+			width: 0
+	&:before, &:after
+		content: "" 
+		position: absolute
+	&:before
+		top: 22px
+	&:after
+		bottom: 22px
+	&:before, &:after, span
+		height: 2px
+		width: 22px
+		background: #333 
+		transition: 0.2s ease-in-out
+		left: 20px
+	span
+		position: absolute
+		top: 50%
+		margin-top: -1px
 
 .nav
 	&__list
 		li
 			display: inline-block
-			padding: 0 25px 
+			position: relative
+			+r2
+				display: block
 			a
 				+bold
 				font-size: 13px
@@ -32,19 +187,65 @@
 				letter-spacing: 0.04em 
 				display: block
 				position: relative
+				transition: color 0.25s
+				padding: 22px 25px 20px 
+				+r2
+					padding: 8px 35px 8px 20px 
+					color: #8e98a1
+					+semi
 				&:hover
+					+r2
+						color: #fff 
 					&:before
-						width: 100%
+						opacity: 1
 				&.is-active
 					color: #2d7fc9
+					+r2
+						color: #fff 
 				&:before
 					content: "" 
 					position: absolute
-					bottom: 0
-					left: 0
+					bottom: 20px
+					left: 25px
+					right: 25px
 					border-bottom: 2px solid #333 
-					width: 0
+					opacity: 0
 					transition: all 0.25s ease
+					+r2
+						display: none
+			&.nav__mobile
+				display: none
+				+r2
+					display: block
+			.submenu
+				position: absolute
+				top: 100%
+				left: 0
+				background-color: white
+				box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06)
+				padding: 10px 0 
+				display: none
+				+r2
+					position: relative
+					background: none
+					padding: 0
+				li
+					padding: 0 
+					display: block
+					a
+						padding: 6px 20px 5px
+						color: #8c8c8c
+						+r2
+							text-transform: none
+							padding: 8px 20px 8px 40px 
+							color: #fff 
+							+reg
+						&:hover
+							color: #2d7fc9
+							+r2
+								color: #fff 
+						&:before
+							display: none
 
 //PROMO (team_all-v2)					
 .promo
@@ -66,8 +267,9 @@
 		vertical-align: middle
 		width: 100%
 		position: relative
-		max-width: 770px 
+		max-width: 800px 
 		z-index: 1
+		padding: 0 15px 
 	&__title
 		margin-bottom: 30px
 		+bold
@@ -76,11 +278,17 @@
 		text-transform: uppercase
 		letter-spacing: 0.02em 
 		line-height: 1
+		+r3
+			font-size: 45px
+		+r4
+			font-size: 30px
 	p
 		+gp
 		color: #fff
 		font-size: 20px
 		letter-spacing: 0.02em 
+		+r4
+			font-size: 16px
 
 .team
 	+clr
@@ -88,11 +296,19 @@
 //person (team_all-v2)				
 .person
 	width: 25%
+	height: 0
+	padding-bottom: 32%
 	float: left
 	position: relative
 	font-size: 0
 	overflow: hidden
 	cursor: pointer
+	+r1
+		width: 33.33%
+		padding-bottom: 42%
+	+r3
+		width: 50%
+		padding-bottom: 64% 
 	&:hover
 		img
 			&.is-hide
@@ -116,14 +332,20 @@
 		line-height: 1
 		padding: 0 0 37px 
 		z-index: 1
+		+r4
+			padding: 0 0 20px 
 	&__title
 		+bold
 		font-size: 24px
 		margin-bottom: 10px
+		+r4
+			font-size: 16px
 	&__label
 		+reg
 		font-size: 14px
 		text-transform: uppercase
+		+r4
+			font-size: 12px
 
 //Banner (team_profile)				
 .banner

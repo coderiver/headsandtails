@@ -1,20 +1,31 @@
 <!-- begin header  -->
-<header class="header">
-	<a href="#" class="logo">
-		<img src="img/logo.svg" alt="">
-	</a>
-	<div class="header__menu">
+<header class="header js-fixed">
+	<div class="header__logo">
+		<a href="#" class="logo">
+			<img src="img/logo.svg" alt="">
+		</a>
+	</div>
+	<div class="header__menu js-menu">
 		<nav class="nav">
 			<ul class="nav__list">
-				<li><a href="#">маршрут</a></li>
-				<li><a href="#">дневник</a></li>
+				<li class="nav__mobile"><a href="#">Главная</a></li>
+				<li>
+					<a href="#" class="js-menu-link">маршрут</a>
+					<ul class="submenu js-menu-drop">
+						<li><a href="#">Планета</a></li>
+						<li><a href="#">календарь</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="js-menu-link">дневник</a></li>
 				<li><a href="#">про проект</a></li>
-				<li><a href="#" class="is-active">команда</a></li>
+				<li><a href="#">команда</a></li>
 				<li><a href="#">библиотека</a></li>
 				<li><a href="#">Топ</a></li>
+				<li class="nav__mobile"><a href="#">Поиск</a></li>
 			</ul>
 		</nav>
 		<button class="btn-search"></button>
 	</div>
+	<button class="btn-menu js-menu-btn"><span></span></button>
 </header>
 <!-- end header -->
