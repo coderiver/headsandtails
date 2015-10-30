@@ -194,11 +194,11 @@ a { text-decoration: none; }
 .banner__inner:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 1024px) { .banner__inner { padding: 0; max-width: 800px; } }
 .banner .social { margin: 0 -7px 0 0; float: right; }
-@media only screen and (max-width: 800px) { .banner .social { position: absolute; bottom: 25px; right: 15px; left: 15px; text-align: center; margin: 0; } }
+@media only screen and (max-width: 1024px) { .banner .social { position: absolute; bottom: 25px; right: 15px; left: 15px; text-align: right; margin: 0; } }
 .banner__img { position: absolute; bottom: 0; left: 15px; }
-@media only screen and (max-width: 1024px) { .banner__img { display: none; } }
+@media only screen and (max-width: 1024px) { .banner__img { position: static; display: block; max-width: 50%; width: 200px; } }
 .banner__text { overflow: hidden; padding: 145px 0 99px 30px; }
-@media only screen and (max-width: 1024px) { .banner__text { padding: 100px 15px; } }
+@media only screen and (max-width: 1024px) { .banner__text { padding: 100px 15px 20px; } }
 @media only screen and (max-width: 500px) { .banner__text { padding: 40px 15px 70px; } }
 .banner__title { font-family: "ProximaNova Semibold", Arial, sans-serif; font-size: 38px; line-height: 1; margin-bottom: 6px; overflow: hidden; }
 @media only screen and (max-width: 800px) { .banner__title { font-size: 28px; } }

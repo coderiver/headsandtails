@@ -374,24 +374,27 @@
 	.social
 		margin: 0 -7px 0 0
 		float: right 
-		+r3
+		+r2
 			position: absolute
 			bottom: 25px
 			right: 15px
 			left: 15px
-			text-align: center
+			text-align: right
 			margin: 0
 	&__img
 		position: absolute
 		bottom: 0
 		left: 15px
 		+r2
-			display: none
+			position: static
+			display: block
+			max-width: 50%
+			width: 200px
 	&__text
 		overflow: hidden	
 		padding: 145px 0 99px 30px 
 		+r2
-			padding: 100px 15px 
+			padding: 100px 15px 20px
 		+r4
 			padding: 40px 15px 70px
 	&__title
