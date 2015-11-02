@@ -33,9 +33,12 @@ html { box-sizing: border-box; }
 @font-face { font-family: "GaramondPremr Medium"; src: url("fonts/GaramondPremrPro-Med.eot"); src: url("fonts/GaramondPremrPro-Med.eot?#iefix") format("embedded-opentype"), url("fonts/GaramondPremrPro-Med.woff2") format("woff2"), url("fonts/GaramondPremrPro-Med.woff") format("woff"), url("fonts/GaramondPremrPro-Med.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "GaramondPremr Regular"; src: url("fonts/GaramondPremrPro.eot"); src: url("fonts/GaramondPremrPro.eot?#iefix") format("embedded-opentype"), url("fonts/GaramondPremrPro.woff2") format("woff2"), url("fonts/GaramondPremrPro.woff") format("woff"), url("fonts/GaramondPremrPro.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "BodoniSvtyTwoITCTT Bold"; src: url("fonts/BodoniSvtyTwoITCTTBold.eot"); src: url("fonts/BodoniSvtyTwoITCTTBold.eot?#iefix") format("embedded-opentype"), url("fonts/BodoniSvtyTwoITCTTBold.woff2") format("woff2"), url("fonts/BodoniSvtyTwoITCTTBold.woff") format("woff"), url("fonts/BodoniSvtyTwoITCTTBold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-body { font-family: "ProximaNova Regular", Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+body { font-family: "ProximaNova Regular", Arial, sans-serif; font-size: 12px; line-height: 1.4; min-width: 320px; }
 
 .page-globe { background-color: #6dc3de; }
+
+.page-calendar { background: url(../img/calendar-bg.jpg) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; background-attachment: fixed; height: 100%; }
+.page-calendar .out { height: 100%; }
 
 h1, h2, h3, h4, h5, h6, b, strong, em, i { font-weight: normal; font-style: normal; }
 
@@ -123,21 +126,21 @@ a { text-decoration: none; }
 .header__date span { margin-bottom: 1px; display: inline-block; vertical-align: top; }
 .header__date span, .header__date small { display: block; }
 .header__date small { font-size: 9px; }
-.header.is-active { background: #fff; border-color: #eee; }
-.header.is-active .btn-search { color: #333; text-shadow: none; }
-.header.is-active .nav li a { color: #333; text-shadow: none; }
-@media only screen and (max-width: 1024px) { .header.is-active .nav li a { color: #8e98a1; }
-  .header.is-active .nav li a:hover, .header.is-active .nav li a.is-open, .header.is-active .nav li a.is-active { color: #fff; } }
-.header.is-active .nav li a:before { border-color: #333; }
-@media only screen and (max-width: 1500px) { .header.is-active .nav li a:before { left: 10px; right: 10px; } }
-@media only screen and (max-width: 1200px) { .header.is-active .nav li a:before { left: 25px; right: 25px; } }
-.header.is-active .nav li .submenu li a { color: #8c8c8c; }
-@media only screen and (max-width: 1024px) { .header.is-active .nav li .submenu li a { color: #fff; } }
-.header.is-active .nav li .submenu li a:hover { color: #2d7fc9; }
-@media only screen and (max-width: 1024px) { .header.is-active .nav li .submenu li a:hover { color: #fff; } }
-.header.is-active .nav li .submenu li a:before { display: none; }
-.header.is-active .header__date-label, .header.is-active .header__date-list li { color: #333; text-shadow: none; }
-.header.is-active .btn-menu:before, .header.is-active .btn-menu:after, .header.is-active .btn-menu span { background: #333; }
+.header.is-active, .header.is-white { background: #fff; border-color: #eee; }
+.header.is-active .btn-search, .header.is-white .btn-search { color: #333; text-shadow: none; }
+.header.is-active .nav li a, .header.is-white .nav li a { color: #333; text-shadow: none; }
+@media only screen and (max-width: 1024px) { .header.is-active .nav li a, .header.is-white .nav li a { color: #8e98a1; }
+  .header.is-active .nav li a:hover, .header.is-active .nav li a.is-open, .header.is-active .nav li a.is-active, .header.is-white .nav li a:hover, .header.is-white .nav li a.is-open, .header.is-white .nav li a.is-active { color: #fff; } }
+.header.is-active .nav li a:before, .header.is-white .nav li a:before { border-color: #333; }
+@media only screen and (max-width: 1500px) { .header.is-active .nav li a:before, .header.is-white .nav li a:before { left: 10px; right: 10px; } }
+@media only screen and (max-width: 1200px) { .header.is-active .nav li a:before, .header.is-white .nav li a:before { left: 25px; right: 25px; } }
+.header.is-active .nav li .submenu li a, .header.is-white .nav li .submenu li a { color: #8c8c8c; }
+@media only screen and (max-width: 1024px) { .header.is-active .nav li .submenu li a, .header.is-white .nav li .submenu li a { color: #fff; } }
+.header.is-active .nav li .submenu li a:hover, .header.is-white .nav li .submenu li a:hover { color: #2d7fc9; }
+@media only screen and (max-width: 1024px) { .header.is-active .nav li .submenu li a:hover, .header.is-white .nav li .submenu li a:hover { color: #fff; } }
+.header.is-active .nav li .submenu li a:before, .header.is-white .nav li .submenu li a:before { display: none; }
+.header.is-active .header__date-label, .header.is-active .header__date-list li, .header.is-white .header__date-label, .header.is-white .header__date-list li { color: #333; text-shadow: none; }
+.header.is-active .btn-menu:before, .header.is-active .btn-menu:after, .header.is-active .btn-menu span, .header.is-white .btn-menu:before, .header.is-white .btn-menu:after, .header.is-white .btn-menu span { background: #333; }
 
 .logo { width: 187px; float: left; }
 .logo img { width: 100%; }
@@ -455,8 +458,9 @@ a { text-decoration: none; }
 .btn-bottom:hover i { top: 10px; }
 .btn-bottom i { position: absolute; top: 7px; left: 0; transition: top 0.2s; }
 
-.sticky-road { background-color: #2f373e; position: fixed; bottom: 0; left: 0; right: 0; font-size: 0; z-index: 900; padding: 8px 40px; min-width: 320px; }
+.sticky-road { background-color: #2f373e; position: fixed; bottom: 0; left: 0; right: 0; font-size: 0; z-index: 900; padding: 8px 40px; min-width: 320px; opacity: 0; visibility: hidden; transition: opacity 0.25s, visibility 0.25s; }
 @media only screen and (max-width: 1200px) { .sticky-road { padding: 8px 15px; } }
+.sticky-road.is-active { opacity: 1; visibility: visible; }
 .sticky-road i { font-size: 12px; line-height: 26px; width: 30px; height: 30px; border: 2px solid #8e98a1; border-radius: 50%; text-align: center; color: #8e98a1; }
 .sticky-road i, .sticky-road span { transition: color 0.25s, border-color 0.25s; }
 .sticky-road__prev { float: left; }
@@ -516,6 +520,39 @@ a { text-decoration: none; }
 .text-col p { max-width: 540px; color: white; font-family: "GaramondPremr Medium", Arial, sans-serif; font-size: 18px; line-height: 24px; letter-spacing: 0.02em; }
 @media only screen and (max-width: 800px) { .text-col p { max-width: 100%; } }
 @media only screen and (max-width: 500px) { .text-col p { font-size: 16px; line-height: 1.3; } }
+
+.calendar { min-height: 100%; position: relative; padding: 79px 0 0; }
+@media only screen and (max-width: 1200px) { .calendar { padding: 60px 0 0; } }
+.calendar:before { content: ""; position: absolute; top: 0; right: 0; left: 0; bottom: 0; background-color: rgba(17, 17, 18, 0.72); }
+.calendar__items { position: relative; z-index: 5; }
+.calendar-item { *zoom: 1; transition: background 0.25s; color: #fff; display: block; line-height: 1; padding: 62px 0 56px; border-bottom: 1px solid #535658; position: relative; }
+.calendar-item:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 800px) { .calendar-item { padding: 20px 0; } }
+.calendar-item:hover { background: rgba(17, 17, 18, 0.5); }
+.calendar-item:hover .icon-next { opacity: 0.7; }
+.calendar-item .icon-next { position: absolute; top: 50%; right: 37px; margin-top: -18px; font-size: 14px; width: 36px; height: 36px; border: 2px solid white; border-radius: 50%; opacity: 0; line-height: 32px; text-align: center; transition: opacity 0.25s; }
+@media only screen and (max-width: 1200px) { .calendar-item .icon-next { right: 15px; } }
+@media only screen and (max-width: 800px) { .calendar-item .icon-next { font-size: 12px; width: 30px; height: 30px; margin-top: -15px; line-height: 26px; } }
+.calendar-item__left { float: left; width: 22%; padding: 7px 15px 7px 40px; }
+@media only screen and (max-width: 1200px) { .calendar-item__left { padding: 7px 15px; width: 30%; } }
+@media only screen and (max-width: 800px) { .calendar-item__left { width: 100%; float: none; padding: 10px 50px 10px 15px; } }
+.calendar-item__right { float: left; width: 78%; *zoom: 1; padding: 0 100px 0 15px; }
+.calendar-item__right:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 1200px) { .calendar-item__right { width: 70%; padding: 7px 70px 5px 15px; } }
+@media only screen and (max-width: 800px) { .calendar-item__right { width: 100%; float: none; padding: 10px 50px 10px 15px; } }
+.calendar-item__list, .calendar-item__country { opacity: 0.7; font-family: "ProximaNova Regular", Arial, sans-serif; }
+.calendar-item__day, .calendar-item__city { opacity: 0.9; }
+.calendar-item__list { font-size: 0; margin-bottom: 4px; }
+.calendar-item__list li { font-size: 16px; display: inline-block; vertical-align: top; padding: 0 18px 0 0; position: relative; }
+.calendar-item__list li:first-child:before { display: none; }
+.calendar-item__list li:before { content: ""; position: absolute; left: -10px; top: 50%; margin-top: -1px; width: 2px; height: 2px; background: #fff; border-radius: 1px; }
+.calendar-item__day { font-size: 18px; font-family: "GaramondPremr Medium", Arial, sans-serif; }
+.calendar-item__city { font-size: 60px; text-transform: uppercase; font-family: "ProximaNova Bold", Arial, sans-serif; float: left; padding: 0 35px 0 0; }
+@media only screen and (max-width: 1200px) { .calendar-item__city { font-size: 40px; padding: 0 20px 0 0; } }
+@media only screen and (max-width: 800px) { .calendar-item__city { padding: 0 0 10px; float: none; font-size: 28px; } }
+.calendar-item__country { font-size: 22px; padding: 5px 0; overflow: hidden; }
+@media only screen and (max-width: 1200px) { .calendar-item__country { font-size: 18px; padding: 3px 0; } }
+@media only screen and (max-width: 800px) { .calendar-item__country { overflow: visible; display: block; } }
 
 
 

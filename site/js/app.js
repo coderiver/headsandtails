@@ -39,9 +39,11 @@ $(document).ready(function() {
 
 	    if ($(window).scrollTop() > 0) {
 	    	$('.js-header').addClass('is-active');
+	    	$('.js-road').addClass('is-active');
 	    }
 	    else {
 	    	$('.js-header').removeClass('is-active');
+	    	$('.js-road').removeClass('is-active');
 	    };
 	});
 
