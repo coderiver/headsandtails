@@ -15,41 +15,53 @@
 </head>
 <body>
 <!-- BEGIN  out-->
-<div class="out">
+<div class="out out_mod">
 
 	<!-- begin header  -->
-	<header class="header header_mod js-fixed">
+	<header class="header js-fixed js-header">
 		<div class="header__inner">
 			<div class="header__logo">
 				<a href="#" class="logo">
 					<img src="img/logo.png" alt="">
-					<i class="logo__text"></i>
 				</a>
 			</div>		
 			<div class="header__menu js-menu">
 				<nav class="nav">
 					<ul class="nav__list">
-						<li><a href="#">маршрут</a></li>
-						<li><a href="#">дневник</a></li>
+						<li class="nav__mobile"><a href="#">Главная</a></li>
+						<li>
+							<a href="#" class="js-menu-link">маршрут <i class="icon-arr-bot"></i></a>
+							<ul class="submenu js-menu-drop">
+								<li><a href="#">Планета</a></li>
+								<li><a href="#">Календарь</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="js-menu-link">дневник</a></li>
 						<li><a href="#">про проект</a></li>
 						<li><a href="#">команда</a></li>
 						<li><a href="#">библиотека</a></li>
 						<li><a href="#">Топ</a></li>
-						<li class="nav__search"><a href="#">Поиск</a></li>
+						<li class="nav__mobile"><a href="#">Поиск</a></li>
 					</ul>
 				</nav>
-				<button class="btn-search"></button>
+				<button class="btn-search"><i class="icon-search"></i></button>
 			</div>
 			<div class="header__date">
-				<div class="header__day">
-					<span>28</span>
-					<small>Дней</small>
-				</div>
-				<div class="header__time">
-					<span>07:29</span>
-					<small class="is-left">часов</small>
-					<small class="is-right">минут</small>
-				</div>
+				<div class="header__date-label">до старта</div>
+				<ul class="header__date-list">
+					<li>
+						<span>28</span>
+						<small>Дней</small>
+					</li>
+					<li>
+						<span>07</span>
+						<small>часов</small>
+					</li>
+					<li>
+						<span>29</span>
+						<small>минут</small>
+					</li>
+				</ul>
 			</div>
 			<button class="btn-menu js-menu-btn"><span></span></button>
 		</div>	
@@ -58,6 +70,33 @@
 
 	<!-- begin main -->
 	<main class="main">
+		<!-- begin road  -->
+		<div class="road">
+			<div class="road__inner">
+				<div class="road__info">
+					<img src="img/world-text.png" alt="">
+					<div class="road__text">
+						<p>В 12-м сезоне трэвел-шоу «Орел и решка» решило объять необъятное и переплюнуть непереплюемое. Впервые за историю проекта мы отправляемся в настоящее путешествие вокруг света! 8 человек и 8 чемоданов. 40 стран на всех континентах. 270 дней в пути от Гринвича до Гринвича.</p>
+					</div>
+					<div class="road__text">
+						<p>Здесь вы сможете следить за передвижением команды по всему маршруту с момента старта путешествия и до того самого дня, когда спустя девять месяцев бородатые и изможденные орлы и решки вернутся домой.</p>
+						<p>Здесь вы будете в курсе всех событий, историй, приключений, невзгод и проблем, да и вообще всего-всего, что будет происходить в жизни команды на протяжении всей кругосветки. Да, нам самим страшно. Страшно интересно.</p>
+					</div>
+					<div class="road__text">
+						<p>Старт съемок кругосветки – 20 ноября 2014 года.</p>
+						<p>Старт сезона в эфире – 8 февраля 2015 года.</p>
+					</div>
+					<a href="#" class="btn-bottom">
+						<i class="icon-arr-bot"></i>
+					</a>
+				</div>
+			</div>
+			<div class="road__creater">
+				<small>created by</small>
+				<span>TeenSpirit</span>
+			</div>
+		</div>
+		<!-- end road -->
 		<!-- begin inner  -->
 		<div class="inner">			
 			<!-- begin container -->
@@ -174,35 +213,35 @@
 					<div class="sidebar__title"><span>Топ поездки</span></div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
-								<img src="img/small1.png" alt="">
+							<a href="#" class="news__left is-white">
+								<img src="img/small3.png" alt="">
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
 									<li><a href="#">Андрей Бедняков</a></li>
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
-								<p><a href="#">5 причин почему вы должны посетить Антверпен</a></p>
+								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
-								<img src="img/small2.png" alt="">
+							<a href="#" class="news__left is-white">
+								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
 									<li><a href="#">Андрей Бедняков</a></li>
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
-								<p><a href="#">Остановились отдохнуть и увидели дельфинов</a></p>
+								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
@@ -219,7 +258,7 @@
 					<div class="sidebar__title"><span>Топ Города</span></div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small3.png" alt="">
 							</a>
 							<div class="news__block">
@@ -233,7 +272,7 @@
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
@@ -247,7 +286,7 @@
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
@@ -428,35 +467,35 @@
 					<div class="sidebar__title"><span>Топ поездки</span></div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
-								<img src="img/small1.png" alt="">
+							<a href="#" class="news__left is-white">
+								<img src="img/small3.png" alt="">
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
 									<li><a href="#">Андрей Бедняков</a></li>
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
-								<p><a href="#">5 причин почему вы должны посетить Антверпен</a></p>
+								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
-								<img src="img/small2.png" alt="">
+							<a href="#" class="news__left is-white">
+								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
 									<li><a href="#">Андрей Бедняков</a></li>
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
-								<p><a href="#">Остановились отдохнуть и увидели дельфинов</a></p>
+								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
@@ -473,7 +512,7 @@
 					<div class="sidebar__title"><span>Топ Города</span></div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small3.png" alt="">
 							</a>
 							<div class="news__block">
@@ -487,7 +526,7 @@
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
@@ -501,7 +540,7 @@
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
@@ -548,7 +587,6 @@
 									<span>10</span>
 								</a>
 							</li>
-							<li>
 						</ul>
 					</div>
 					<div class="col">
@@ -576,7 +614,6 @@
 									<span>10</span>
 								</a>
 							</li>
-							<li>
 						</ul>
 					</div>
 					<div class="col">
@@ -604,7 +641,6 @@
 									<span>10</span>
 								</a>
 							</li>
-							<li>
 						</ul>
 					</div>
 					<div class="col">
@@ -632,7 +668,6 @@
 									<span>10</span>
 								</a>
 							</li>
-							<li>
 						</ul>
 					</div>
 				</div>				
@@ -885,35 +920,35 @@
 					<div class="sidebar__title"><span>Топ поездки</span></div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
-								<img src="img/small1.png" alt="">
+							<a href="#" class="news__left is-white">
+								<img src="img/small3.png" alt="">
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
 									<li><a href="#">Андрей Бедняков</a></li>
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
-								<p><a href="#">5 причин почему вы должны посетить Антверпен</a></p>
+								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
-								<img src="img/small2.png" alt="">
+							<a href="#" class="news__left is-white">
+								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
 									<li><a href="#">Андрей Бедняков</a></li>
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
-								<p><a href="#">Остановились отдохнуть и увидели дельфинов</a></p>
+								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
@@ -930,7 +965,7 @@
 					<div class="sidebar__title"><span>Топ Города</span></div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small3.png" alt="">
 							</a>
 							<div class="news__block">
@@ -944,7 +979,7 @@
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
@@ -958,7 +993,7 @@
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
@@ -1005,7 +1040,6 @@
 									<span>10</span>
 								</a>
 							</li>
-							<li>
 						</ul>
 					</div>
 					<div class="col">
@@ -1033,7 +1067,6 @@
 									<span>10</span>
 								</a>
 							</li>
-							<li>
 						</ul>
 					</div>
 					<div class="col">
@@ -1061,7 +1094,6 @@
 									<span>10</span>
 								</a>
 							</li>
-							<li>
 						</ul>
 					</div>
 					<div class="col">
@@ -1089,7 +1121,6 @@
 									<span>10</span>
 								</a>
 							</li>
-							<li>
 						</ul>
 					</div>
 				</div>				
@@ -1170,35 +1201,35 @@
 					<div class="sidebar__title"><span>Топ поездки</span></div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
-								<img src="img/small1.png" alt="">
+							<a href="#" class="news__left is-white">
+								<img src="img/small3.png" alt="">
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
 									<li><a href="#">Андрей Бедняков</a></li>
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
-								<p><a href="#">5 причин почему вы должны посетить Антверпен</a></p>
+								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
-								<img src="img/small2.png" alt="">
+							<a href="#" class="news__left is-white">
+								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
 									<li><a href="#">Андрей Бедняков</a></li>
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
-								<p><a href="#">Остановились отдохнуть и увидели дельфинов</a></p>
+								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
@@ -1215,7 +1246,7 @@
 					<div class="sidebar__title"><span>Топ Города</span></div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small3.png" alt="">
 							</a>
 							<div class="news__block">
@@ -1229,7 +1260,7 @@
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
@@ -1243,7 +1274,7 @@
 					</div>
 					<div class="news">
 						<div class="news__inner">
-							<a href="#" class="news__img">
+							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
 							</a>
 							<div class="news__block">
@@ -1265,5 +1296,29 @@
 
 </div>
 <!-- END out-->
+
+<div class="sticky-road js-fixed">
+	<div class="sticky-road__inner">
+		<div class="sticky-road__prev">
+			<a href="#">
+				<i class="icon-prev"></i>
+				<span>Антверпен</span>
+			</a>
+		</div>
+		<div class="sticky-road__next">
+			<a href="#">
+				<i class="icon-next"></i>
+				<span>Флоренция</span>
+			</a>
+		</div>
+		<div class="sticky-road__current">
+			<a href="#">
+				<i class="icon-marker"></i>
+				<span>Дюсельдорф</span>
+			</a>
+		</div>
+	</div>
+</div>
+
 </body>
 </html>

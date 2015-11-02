@@ -18,34 +18,53 @@
 <div class="out">
 
 	<!-- begin header  -->
-	<header class="header js-fixed">
-		<div class="header__logo">
-			<a href="#" class="logo">
-				<img src="img/logo.png" alt="">
-			</a>
-		</div>
-		<div class="header__menu js-menu">
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__mobile"><a href="#">Главная</a></li>
+	<header class="header js-fixed js-header">
+		<div class="header__inner">
+			<div class="header__logo">
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="">
+				</a>
+			</div>		
+			<div class="header__menu js-menu">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__mobile"><a href="#">Главная</a></li>
+						<li>
+							<a href="#" class="js-menu-link">маршрут <i class="icon-arr-bot"></i></a>
+							<ul class="submenu js-menu-drop">
+								<li><a href="#">Планета</a></li>
+								<li><a href="#">Календарь</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="js-menu-link">дневник</a></li>
+						<li><a href="#">про проект</a></li>
+						<li><a href="#">команда</a></li>
+						<li><a href="#">библиотека</a></li>
+						<li><a href="#">Топ</a></li>
+						<li class="nav__mobile"><a href="#">Поиск</a></li>
+					</ul>
+				</nav>
+				<button class="btn-search"><i class="icon-search"></i></button>
+			</div>
+			<div class="header__date">
+				<div class="header__date-label">до старта</div>
+				<ul class="header__date-list">
 					<li>
-						<a href="#" class="js-menu-link">маршрут <i class="icon-arr-bot"></i></a>
-						<ul class="submenu js-menu-drop">
-							<li><a href="#">Планета</a></li>
-							<li><a href="#">календарь</a></li>
-						</ul>
+						<span>28</span>
+						<small>Дней</small>
 					</li>
-					<li><a href="#" class="js-menu-link">дневник</a></li>
-					<li><a href="#">про проект</a></li>
-					<li><a href="#">команда</a></li>
-					<li><a href="#">библиотека</a></li>
-					<li><a href="#">Топ</a></li>
-					<li class="nav__mobile"><a href="#">Поиск</a></li>
+					<li>
+						<span>07</span>
+						<small>часов</small>
+					</li>
+					<li>
+						<span>29</span>
+						<small>минут</small>
+					</li>
 				</ul>
-			</nav>
-			<button class="btn-search"></button>
-		</div>
-		<button class="btn-menu js-menu-btn"><span></span></button>
+			</div>
+			<button class="btn-menu js-menu-btn"><span></span></button>
+		</div>	
 	</header>
 	<!-- end header -->
 
