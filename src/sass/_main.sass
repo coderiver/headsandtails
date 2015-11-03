@@ -403,7 +403,7 @@
 		margin-bottom: 14px
 	&__container
 		p
-			color: #8c8c8c
+			color: #333
 			+gpmed
 			font-size: 18px
 			line-height: 24px
@@ -430,6 +430,123 @@
 		left: 20px
 		img
 			width: auto
+	&-quote
+		position: relative
+		background-color: #7acde6
+		+clr
+		margin-bottom: 20px
+		min-height: 370px 
+		&__img
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 39%
+			padding: 0 0 0 19px
+			font-size: 0
+			text-align: center
+			+r3
+				width: 100%
+				padding: 0 20px 
+				position: static
+			img
+				max-width: 100%
+				max-height: 393px 
+		&__info
+			float: right
+			width: 72%
+			position: relative
+			z-index: 2 
+			padding: 63px 63px 65px
+			text-align: center
+			+r3
+				width: 100%
+			+r4
+				padding: 30px 20px 
+		&__title
+			color: #7acde6
+			+bold
+			font-size: 13px
+			line-height: 1
+			text-transform: uppercase
+			background: rgba(white, 0.9)
+			padding: 8px 14px 5px
+			display: inline-block 
+		&__name
+			color: #d0eef7
+			font-size: 18px
+			line-height: 1
+			+semi
+		&__blockquote
+			color: white
+			+gpmed
+			font-size: 24px
+			line-height: 34px
+			position: relative
+			padding: 43px 0 53px
+			+r4
+				font-size: 18px
+				line-height: 1.3
+				padding: 20px 0 
+			&:before, &:after
+				color: #bfe8f4
+				font-size: 108px
+				line-height: 25px
+				+reg
+				position: absolute
+				+r4
+					font-size: 60px
+			&:before
+				content: "\201c"
+				top: 43px
+				right: 100%
+				margin-right: -7px
+				+r4
+					top: 20px
+			&:after
+				content: "\201d"
+				bottom: 0
+				left: 100%
+				+r4
+					margin-left: -10px
+					bottom: -10px
+				
+.video
+	position: relative
+	width: 100%
+	height: 0
+	padding: 0 0 66%
+	margin: 0 0 20px 
+	iframe
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+		
+.map
+	width: 100%
+	height: 0
+	padding: 0 0 50%
+	position: relative 
+	margin: 0 0 20px 
+	+r4
+		padding: 0 0 70% 
+	&__inner
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		
+.fb-post
+	width: 100%
+	iframe, span
+		width: 100% !important
+
 .lil-info
 	font-size: 0
 	li
@@ -583,7 +700,7 @@
 			width: 38px
 			height: 38px
 			line-height: 36px
-			border: 2px solid white
+			border: 2px dashed white
 			text-align: center
 			border-radius: 50%
 			+r3
@@ -1216,3 +1333,144 @@
 			+r3
 				overflow: visible
 				display: block
+				
+//login
+.login
+	padding: 140px 0 100px
+	position: relative
+	&__close
+		position: absolute
+		top: 57px
+		right: 60px
+		font-size: 31px
+		color: white
+	&__logo
+		display: block
+		width: 187px
+		margin: 0 auto 63px
+		font-size: 0 
+	&__inner
+		margin: 0 auto
+		width: 290px 
+		text-align: center
+	&__title, &__label span
+		color: white
+		+semi 
+		line-height: 1
+		position: relative
+		letter-spacing: 0.02em 
+	&__title
+		font-size: 22px
+		margin-bottom: 35px
+	&__label
+		padding: 15px 0 
+		span
+			display: inline-block
+			width: 55px
+			font-size: 16px
+			&:before, &:after
+				content: "" 
+				position: absolute
+				top: 50%
+				width: 100px
+				height: 1px
+				opacity: 0.14
+				background-color: white
+			&:before
+				left: 100%
+			&:after
+				right: 100%
+
+.btn-login
+	width: 100%
+	border-radius: 25px
+	position: relative
+	padding: 17px 20px 15px 64px 
+	letter-spacing: 0.02em
+	color: white
+	=semi
+	font-size: 18px
+	line-height: 1
+	transition: background 0.25s
+	display: inline-block
+	vertical-align: top
+	&:before
+		content: "" 
+		position: absolute
+		top: 12px
+		bottom: 12px
+		left: 49px
+		width: 1px
+		opacity: 0.14
+		background-color: white
+	&_fb
+		background-color: #4372b9
+		&:hover
+			background-color: #4376c4
+	&_vk
+		background-color: #4c75a3
+		&:hover
+			background-color: #4d7baf
+	i
+		position: absolute
+		top: 50%
+		&.icon-fb
+			left: 24px
+			font-size: 20px
+			margin-top: -10px
+		&.icon-vk
+			left: 15px
+			font-size: 13px
+			margin-top: -6px
+
+//404
+.error
+	text-align: center
+	padding: 120px 0 100px 
+	+r3
+		padding: 80px 0 
+	&__title, &__text
+		color: white
+		+bold
+		line-height: 1
+	&__title
+		font-size: 264px
+		margin: 0 0 -15px 
+		+r3
+			font-size: 160px
+			margin: 0
+	&__text
+		font-size: 42px
+		margin: 0 0 50px 
+		+r3
+			font-size: 20px
+			margin: 0 0 30px 
+			
+//about
+.about
+	padding: 79px 0 0
+	+r1
+		padding: 60px 0 0 
+	&__top
+		font-size: 0
+		img
+			width: 100%
+
+.block-text
+	max-width: 1200px
+	margin: 0 auto 
+	+clr
+	padding: 83px 0 78px 
+	&__col
+		padding: 10px 14px 
+		float: left
+		width: 50%
+	p
+		color: #333
+		font-size: 18px
+		line-height: 28px
+		+gpmed
+		letter-spacing: 0.02em 
+		+r4
+			font-size: 16px
+			line-height: 1.3

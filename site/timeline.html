@@ -12,6 +12,23 @@
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/app.js"></script>
+	 <script>
+		function initMap() {
+
+			var mapMarker = 'img/marker.png';
+
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 17,
+				center: {lat: 51.2218618, lng: 4.4002441}
+			});
+
+			var marker = new google.maps.Marker({
+				map: map,
+				icon: mapMarker,
+				position: {lat: 51.2218618, lng: 4.4002441},
+			});
+		}
+    </script>
 </head>
 <body>
 <!-- BEGIN  out-->
@@ -97,583 +114,6 @@
 			</div>
 		</div>
 		<!-- end road -->
-		<!-- begin inner  -->
-		<div class="inner">			
-			<!-- begin container -->
-			<section class="container">
-				<div class="post">
-					<div class="user">
-						<a href="#" class="user__inner">
-							<img src="img/ava1.png" alt="" class="user__img">
-							<div class="user__block">
-								<span class="user__name">Регина Тодоренко</span>
-								<ul class="user__info">
-									<li>09 Ноября 14:32</li>
-									<li>Киев</li>
-								</ul>
-							</div>
-						</a>
-					</div>
-					<div class="post__container">
-						<h3 class="title-h3"><a href="#">Собираемся в новое путешествие</a></h3>
-						<div class="post__img">					
-							<img src="img/post1.png" alt="">
-						</div>
-						<p>Флоренция итальянский город на реке Арно, в прошлом центр Флорентийской республики, столица герцогов Медичи и Итальянского королевства.</p>
-						<ul class="lil-info">
-							<li>
-								<a href="#" class="is-like">
-									<i class="icon-like"></i>
-									<span>Нравится</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-dislike">
-									<i class="icon-dislike"></i>
-									<span>Не нравится</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-comments">
-									<i class="icon-comments"></i>
-									<span>10 Комментариев</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-share">
-									<i class="icon-share"></i>
-									<span>Поделиться</span>
-								</a>
-							</li>
-						</ul>
-						<ul class="tags">
-							<li><a href="#">#обед</a></li>
-							<li><a href="#">#команда</a></li>
-							<li><a href="#">#приключения</a></li>
-						</ul>
-					</div>				
-				</div>
-				<div class="post">
-					<div class="user">
-						<a href="#" class="user__inner">
-							<img src="img/ava1.png" alt="" class="user__img">
-							<div class="user__block">
-								<span class="user__name">Регина Тодоренко</span>
-								<ul class="user__info">
-									<li>09 Ноября 14:32</li>
-									<li>Киев</li>
-								</ul>
-							</div>
-						</a>
-					</div>
-					<div class="post__container">
-						<h3 class="title-h3"><a href="#">Долго собирались но на самолет таки успели</a></h3>
-						<div class="post__img">					
-							<img src="img/post2.png" alt="">
-						</div>
-						<p>Флоренция итальянский город на реке Арно, в прошлом центр Флорентийской республики, столица герцогов Медичи и Итальянского королевства.</p>
-						<ul class="lil-info">
-							<li>
-								<a href="#" class="is-like">
-									<i class="icon-like"></i>
-									<span>Нравится</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-dislike">
-									<i class="icon-dislike"></i>
-									<span>Не нравится</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-comments">
-									<i class="icon-comments"></i>
-									<span>10 Комментариев</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-share">
-									<i class="icon-share"></i>
-									<span>Поделиться</span>
-								</a>
-							</li>
-						</ul>
-						<ul class="tags">
-							<li><a href="#">#обед</a></li>
-							<li><a href="#">#команда</a></li>
-							<li><a href="#">#приключения</a></li>
-						</ul>
-					</div>				
-				</div>
-			</section>
-			<!-- end container -->
-			<!-- begin sidebar -->
-			<aside class="sidebar">
-				<div class="sidebar__box">				
-					<div class="sidebar__title"><span>Топ поездки</span></div>
-					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small3.png" alt="">
-							</a>
-							<div class="news__block">
-								<ul class="news__info">
-									<li><a href="#">Андрей Бедняков</a></li>
-									<li><a href="#">11 Ноября 14:32</a></li>
-								</ul>
-								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small4.png" alt="">
-							</a>
-							<div class="news__block">
-								<ul class="news__info">
-									<li><a href="#">Андрей Бедняков</a></li>
-									<li><a href="#">11 Ноября 14:32</a></li>
-								</ul>
-								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small4.png" alt="">
-							</a>
-							<div class="news__block">
-								<ul class="news__info">
-									<li><a href="#">Андрей Бедняков</a></li>
-									<li><a href="#">11 Ноября 14:32</a></li>
-								</ul>
-								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="sidebar__box">				
-					<div class="sidebar__title"><span>Топ Города</span></div>
-					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small3.png" alt="">
-							</a>
-							<div class="news__block">
-								<ul class="news__info">
-									<li><a href="#">Андрей Бедняков</a></li>
-									<li><a href="#">11 Ноября 14:32</a></li>
-								</ul>
-								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small4.png" alt="">
-							</a>
-							<div class="news__block">
-								<ul class="news__info">
-									<li><a href="#">Андрей Бедняков</a></li>
-									<li><a href="#">11 Ноября 14:32</a></li>
-								</ul>
-								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small4.png" alt="">
-							</a>
-							<div class="news__block">
-								<ul class="news__info">
-									<li><a href="#">Андрей Бедняков</a></li>
-									<li><a href="#">11 Ноября 14:32</a></li>
-								</ul>
-								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</aside>
-			<!-- end sidebar -->
-		</div>
-		<!-- end inner  -->
-		<!-- begin long  -->
-		<div class="long" style="background-image: url(img/long.jpg);">
-			<div class="long__inner">
-				<a href="#" class="long__date">
-					<i class="icon-plane-small"></i>
-					<time>Прилетим 10 Ноября</time>
-				</a>
-				<div class="long__text">
-					<h2 class="long__title">Гринвич</h2>
-					<p>Морские ворота Лондона, историческое предместье, а теперь — один из 32 лондонских боро, находится во внутреннем Лондоне, на <br>юго-востоке британской столицы, на правом берегу Темзы.</p>
-				</div>				
-				<ul class="lil-info lil-info_white">
-					<li>
-						<a href="#" class="is-comments">
-							<i class="icon-comments"></i>
-							<span>17 Комментариев</span>
-						</a>
-					</li>
-				</ul>
-				<ul class="lil-post">
-					<li>
-						<a href="#" class="lil-post__inner">
-							<div class="lil-post__img">
-								<img src="img/small3.png" alt="">
-							</div>
-							<p>Велосипед — самый популярный вид транспорта</p>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="lil-post__inner">
-							<div class="lil-post__img">
-								<img src="img/small3.png" alt="">
-							</div>
-							<p>Велосипед — самый популярный вид транспорта</p>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="lil-post__inner">
-							<div class="lil-post__img">
-								<img src="img/small3.png" alt="">
-							</div>
-							<p>Велосипед — самый популярный вид транспорта</p>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- end long -->
-		<!-- begin inner  -->
-		<div class="inner">			
-			<!-- begin container -->
-			<section class="container">
-				<div class="post">
-					<div class="user">
-						<a href="#" class="user__inner">
-							<img src="img/ava1.png" alt="" class="user__img">
-							<div class="user__block">
-								<span class="user__name">Регина Тодоренко</span>
-								<ul class="user__info">
-									<li>09 Ноября 14:32</li>
-									<li>Киев</li>
-								</ul>
-							</div>
-						</a>
-					</div>
-					<div class="post__container">
-						<h3 class="title-h3"><a href="#">Собираемся в новое путешествие</a></h3>
-						<div class="post__img">					
-							<img src="img/post1.png" alt="">
-						</div>
-						<p>Флоренция итальянский город на реке Арно, в прошлом центр Флорентийской республики, столица герцогов Медичи и Итальянского королевства.</p>
-						<ul class="lil-info">
-							<li>
-								<a href="#" class="is-like">
-									<i class="icon-like"></i>
-									<span>Нравится</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-dislike">
-									<i class="icon-dislike"></i>
-									<span>Не нравится</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-comments">
-									<i class="icon-comments"></i>
-									<span>10 Комментариев</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-share">
-									<i class="icon-share"></i>
-									<span>Поделиться</span>
-								</a>
-							</li>
-						</ul>
-						<ul class="tags">
-							<li><a href="#">#обед</a></li>
-							<li><a href="#">#команда</a></li>
-							<li><a href="#">#приключения</a></li>
-						</ul>
-					</div>				
-				</div>
-				<div class="post">
-					<div class="user">
-						<a href="#" class="user__inner">
-							<img src="img/ava1.png" alt="" class="user__img">
-							<div class="user__block">
-								<span class="user__name">Регина Тодоренко</span>
-								<ul class="user__info">
-									<li>09 Ноября 14:32</li>
-									<li>Киев</li>
-								</ul>
-							</div>
-						</a>
-					</div>
-					<div class="post__container">
-						<h3 class="title-h3"><a href="#">Долго собирались но на самолет таки успели</a></h3>
-						<div class="post__img">					
-							<img src="img/post2.png" alt="">
-						</div>
-						<p>Флоренция итальянский город на реке Арно, в прошлом центр Флорентийской республики, столица герцогов Медичи и Итальянского королевства.</p>
-						<ul class="lil-info">
-							<li>
-								<a href="#" class="is-like">
-									<i class="icon-like"></i>
-									<span>Нравится</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-dislike">
-									<i class="icon-dislike"></i>
-									<span>Не нравится</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-comments">
-									<i class="icon-comments"></i>
-									<span>10 Комментариев</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-share">
-									<i class="icon-share"></i>
-									<span>Поделиться</span>
-								</a>
-							</li>
-						</ul>
-						<ul class="tags">
-							<li><a href="#">#обед</a></li>
-							<li><a href="#">#команда</a></li>
-							<li><a href="#">#приключения</a></li>
-						</ul>
-					</div>				
-				</div>
-			</section>
-			<!-- end container -->
-			<!-- begin sidebar -->
-			<aside class="sidebar">
-				<div class="sidebar__box">				
-					<div class="sidebar__title"><span>Топ поездки</span></div>
-					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small3.png" alt="">
-							</a>
-							<div class="news__block">
-								<ul class="news__info">
-									<li><a href="#">Андрей Бедняков</a></li>
-									<li><a href="#">11 Ноября 14:32</a></li>
-								</ul>
-								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small4.png" alt="">
-							</a>
-							<div class="news__block">
-								<ul class="news__info">
-									<li><a href="#">Андрей Бедняков</a></li>
-									<li><a href="#">11 Ноября 14:32</a></li>
-								</ul>
-								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small4.png" alt="">
-							</a>
-							<div class="news__block">
-								<ul class="news__info">
-									<li><a href="#">Андрей Бедняков</a></li>
-									<li><a href="#">11 Ноября 14:32</a></li>
-								</ul>
-								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="sidebar__box">				
-					<div class="sidebar__title"><span>Топ Города</span></div>
-					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small3.png" alt="">
-							</a>
-							<div class="news__block">
-								<ul class="news__info">
-									<li><a href="#">Андрей Бедняков</a></li>
-									<li><a href="#">11 Ноября 14:32</a></li>
-								</ul>
-								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small4.png" alt="">
-							</a>
-							<div class="news__block">
-								<ul class="news__info">
-									<li><a href="#">Андрей Бедняков</a></li>
-									<li><a href="#">11 Ноября 14:32</a></li>
-								</ul>
-								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small4.png" alt="">
-							</a>
-							<div class="news__block">
-								<ul class="news__info">
-									<li><a href="#">Андрей Бедняков</a></li>
-									<li><a href="#">11 Ноября 14:32</a></li>
-								</ul>
-								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</aside>
-			<!-- end sidebar -->
-		</div>
-		<!-- end inner  -->
-		<!-- begin row  -->
-		<div class="row">
-			<div class="row__inner">
-				<h3 class="title-h3"><a href="#">Итог дня</a></h3>
-				<div class="cols">
-					<div class="col">
-						<div class="col__img">
-							<span class="sticker is-green">Еда</span>
-							<img src="img/col.png" alt="">
-						</div>
-						<p>Паста с креветками в соусе чили и лимонадом</p>				
-						<ul class="lil-info">
-							<li>
-								<a href="#" class="is-like">
-									<i class="icon-like"></i>
-									<span>173</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-dislike">
-									<i class="icon-dislike"></i>
-									<span>12</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-comments">
-									<i class="icon-comments"></i>
-									<span>10</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col">
-						<div class="col__img">
-							<span class="sticker is-purple">Совет</span>
-							<img src="img/col.png" alt="">
-						</div>
-						<p>Паста с креветками в соусе чили и лимонадом</p>				
-						<ul class="lil-info">
-							<li>
-								<a href="#" class="is-like">
-									<i class="icon-like"></i>
-									<span>173</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-dislike">
-									<i class="icon-dislike"></i>
-									<span>12</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-comments">
-									<i class="icon-comments"></i>
-									<span>10</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col">
-						<div class="col__img">
-							<span class="sticker is-red">Гид</span>
-							<img src="img/col.png" alt="">
-						</div>
-						<p>Паста с креветками в соусе чили и лимонадом</p>				
-						<ul class="lil-info">
-							<li>
-								<a href="#" class="is-like">
-									<i class="icon-like"></i>
-									<span>173</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-dislike">
-									<i class="icon-dislike"></i>
-									<span>12</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-comments">
-									<i class="icon-comments"></i>
-									<span>10</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col">
-						<div class="col__img">
-							<span class="sticker is-yellow">Фото</span>
-							<img src="img/col.png" alt="">
-						</div>
-						<p>Паста с креветками в соусе чили и лимонадом</p>				
-						<ul class="lil-info">
-							<li>
-								<a href="#" class="is-like">
-									<i class="icon-like"></i>
-									<span>173</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-dislike">
-									<i class="icon-dislike"></i>
-									<span>12</span>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="is-comments">
-									<i class="icon-comments"></i>
-									<span>10</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>				
-			</div>
-		</div>
-		<!-- end row -->
 		<!-- begin long  -->
 		<div class="long" style="background-image: url(img/long.jpg);">
 			<div class="long__inner">
@@ -750,9 +190,8 @@
 						</a>
 					</div>
 					<div class="post__container">
-						<h3 class="title-h3"><a href="#">Собираемся в новое путешествие</a></h3>
-						<div class="post__img">		
-							<span class="sticker is-yellow">командное фото дня</span>	
+						<h3 class="title-h3"><a href="#">Обедаем нашей большой командой</a></h3>
+						<div class="post__img">					
 							<img src="img/post1.png" alt="">
 						</div>
 						<p>Флоренция итальянский город на реке Арно, в прошлом центр Флорентийской республики, столица герцогов Медичи и Итальянского королевства.</p>
@@ -803,13 +242,13 @@
 						</a>
 					</div>
 					<div class="post__container">
-						<h3 class="title-h3"><a href="#">Долго собирались но на самолет таки успели</a></h3>
+						<h3 class="title-h3"><a href="#">Самые интересные места Антверпена</a></h3>
 						<div class="post__img">			
 							<span class="sticker is-blue">спецпроект от kyivstar</span>
 							<a href="#" class="post__partner"><img src="img/ks-logo.png" alt=""></a>
 							<img src="img/postks.png" alt="">
 						</div>
-						<p>Флоренция итальянский город на реке Арно, в прошлом центр Флорентийской республики, столица герцогов Медичи и Итальянского королевства.</p>
+						<p>Морские ворота Лондона, историческое предместье, а теперь — один из 32 лондонских боро, находится во внутреннем Лондоне, на юго-востоке британской столицы, на правом берегу Темзы.</p>
 						<ul class="lil-info">
 							<li>
 								<a href="#" class="is-like">
@@ -857,7 +296,7 @@
 						</a>
 					</div>
 					<div class="post__container">
-						<h3 class="title-h3"><a href="#">Собираемся в новое путешествие</a></h3>
+						<h3 class="title-h3"><a href="#">Отличный день на пляже с серфингом и вейкбордингом</a></h3>
 						<div class="photos">
 							<div class="photos__medium">
 								<img src="img/post-medium1.png" alt="">
@@ -912,6 +351,332 @@
 						</ul>
 					</div>				
 				</div>
+				<div class="post">
+					<div class="user">
+						<a href="#" class="user__inner">
+							<img src="img/ava1.png" alt="" class="user__img">
+							<div class="user__block">
+								<span class="user__name">Регина Тодоренко</span>
+								<ul class="user__info">
+									<li>09 Ноября 14:32</li>
+									<li>Киев</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div class="post__container">
+						<h3 class="title-h3"><a href="#">Обедаем нашей большой командой</a></h3>
+						<div class="post__img">					
+							<img src="img/post1.png" alt="">
+						</div>
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>Нравится</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>Не нравится</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10 Комментариев</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-share">
+									<i class="icon-share"></i>
+									<span>Поделиться</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="tags">
+							<li><a href="#">#обед</a></li>
+							<li><a href="#">#команда</a></li>
+							<li><a href="#">#приключения</a></li>
+						</ul>
+					</div>				
+				</div>
+				<div class="post">
+					<div class="user">
+						<a href="#" class="user__inner">
+							<img src="img/ava1.png" alt="" class="user__img">
+							<div class="user__block">
+								<span class="user__name">Регина Тодоренко</span>
+								<ul class="user__info">
+									<li>09 Ноября 14:32</li>
+									<li>Киев</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div class="post__container">
+						<h3 class="title-h3"><a href="#">Обедаем нашей большой командой</a></h3>
+						<p>Флоренция итальянский город на реке Арно, в прошлом центр Флорентийской республики, столица герцогов Медичи и Итальянского королевства. Данте Алигьери, уроженец Флоренции, в своей «Божественной комедии», написанной в начале XIV века, придал разговорному языку такое достоинство и колорит, что это впоследствии позволило ему стать (наряду с образцами Петрарки и Боккаччо) основой итальянского языка, сначала литературного, а потом разговорного: таким образом, именно тосканский диалект лежит в основе современного итальянского языка.</p>
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>Нравится</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>Не нравится</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10 Комментариев</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-share">
+									<i class="icon-share"></i>
+									<span>Поделиться</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="tags">
+							<li><a href="#">#обед</a></li>
+							<li><a href="#">#команда</a></li>
+							<li><a href="#">#приключения</a></li>
+						</ul>
+					</div>				
+				</div>
+				<div class="post">
+					<div class="user">
+						<a href="#" class="user__inner">
+							<img src="img/ava1.png" alt="" class="user__img">
+							<div class="user__block">
+								<span class="user__name">Регина Тодоренко</span>
+								<ul class="user__info">
+									<li>09 Ноября 14:32</li>
+									<li>Киев</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div class="post__container">
+						<h3 class="title-h3"><a href="#">Обедаем нашей большой командой</a></h3>
+						<div class="video">
+							<iframe src="https://www.youtube.com/embed/glV3pmNJV8c" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>Нравится</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>Не нравится</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10 Комментариев</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-share">
+									<i class="icon-share"></i>
+									<span>Поделиться</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="tags">
+							<li><a href="#">#обед</a></li>
+							<li><a href="#">#команда</a></li>
+							<li><a href="#">#приключения</a></li>
+						</ul>
+					</div>				
+				</div>
+				<div class="post">
+					<div class="user">
+						<a href="#" class="user__inner">
+							<img src="img/ava1.png" alt="" class="user__img">
+							<div class="user__block">
+								<span class="user__name">Регина Тодоренко</span>
+								<ul class="user__info">
+									<li>09 Ноября 14:32</li>
+									<li>Киев</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div class="post__container">
+						<h3 class="title-h3"><a href="#">Отличный день на пляже с серфингом и вейкбордингом</a></h3>
+						<div class="photos">
+							<div class="photos__medium">
+								<img src="img/post-medium1.png" alt="">
+							</div>
+							<div class="photos__medium">	
+								<img src="img/post-medium2.png" alt="">
+							</div>
+							<div class="photos__small">
+								<img src="img/post-small1.png" alt="">
+							</div>
+							<div class="photos__small">
+								<img src="img/post-small2.png" alt="">
+							</div>
+							<div class="photos__small">
+								<img src="img/post-small3.png" alt="">
+								<a href="#" class="photos__link">
+									<span>+4</span>
+								</a>
+							</div>
+						</div>
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>Нравится</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>Не нравится</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10 Комментариев</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-share">
+									<i class="icon-share"></i>
+									<span>Поделиться</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="tags">
+							<li><a href="#">#обед</a></li>
+							<li><a href="#">#команда</a></li>
+							<li><a href="#">#приключения</a></li>
+						</ul>
+					</div>				
+				</div>
+				<div class="post">
+					<div class="post__container">
+						<div class="post-quote">
+							<div class="post-quote__info">
+								<div class="post-quote__title">цитата дня</div>
+								<blockquote class="post-quote__blockquote">Человека делают счастливым три вещи: любовь, интересная работа и возможность путешествовать</blockquote>
+								<div class="post-quote__name">Регина Тодоренко</div>
+							</div>
+							<div class="post-quote__img">
+								<img src="img/quote-img.png" alt="">
+							</div>
+						</div>
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>Нравится</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>Не нравится</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10 Комментариев</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-share">
+									<i class="icon-share"></i>
+									<span>Поделиться</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="tags">
+							<li><a href="#">#обед</a></li>
+							<li><a href="#">#команда</a></li>
+							<li><a href="#">#приключения</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="post">
+					<div class="user">
+						<a href="#" class="user__inner">
+							<img src="img/ava1.png" alt="" class="user__img">
+							<div class="user__block">
+								<span class="user__name">Регина Тодоренко</span>
+								<ul class="user__info">
+									<li>09 Ноября 14:32</li>
+									<li>Киев</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div class="post__container">
+						<h3 class="title-h3"><a href="#">Обедаем нашей большой командой</a></h3>
+						<div class="map">
+							<div id="map" class="map__inner"></div>
+						</div>
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>Нравится</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>Не нравится</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10 Комментариев</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-share">
+									<i class="icon-share"></i>
+									<span>Поделиться</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="tags">
+							<li><a href="#">#обед</a></li>
+							<li><a href="#">#команда</a></li>
+							<li><a href="#">#приключения</a></li>
+						</ul>
+					</div>				
+				</div>
+				<div class="post">
+					<div class="post__container">
+						<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="5" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:100%; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:39.3518518519% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://instagram.com/p/9lFtCkHhx3/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Ща в 13:00 по киевскому времени эта чикуля с фото будет вещать на http://KP.UA  ПОДКЛЮЧАЙТЕСЬ! Отвечу на вопросы про Кругосветку и Голос!!! И не подумайте, что я начинаю день с алкоголя, просто в ресторане угостили😜 #регинаПутешественница #регинатодоренко #голос4 #орелирешка ССЫЛКА НА КОНФЕРЕНЦИЮ В ПРОФИЛЕ!!!</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Фото опубликовано regina todorenko (@reginatodorenko) <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-11-02T10:43:48+00:00">Ноя 2 2015 в 2:43 PST</time></p></div></blockquote>
+						<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+					</div>				
+				</div>
+				<div class="post">
+					<div class="post__container">
+						<div class="fb-post" data-href="https://www.facebook.com/OrelReshka/photos/a.273699839335675.65270.236164959755830/997055650333420/?type=3&amp;theater" data-width="900"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/OrelReshka/photos/a.273699839335675.65270.236164959755830/997055650333420/?type=3"><p>&#x421;&#x435;&#x433;&#x43e;&#x434;&#x43d;&#x44f; &#x414;&#x435;&#x43d;&#x44c; &#x440;&#x43e;&#x436;&#x434;&#x435;&#x43d;&#x438;&#x44f;, &#x443; &#x447;&#x435;&#x43b;&#x43e;&#x432;&#x435;&#x43a;&#x430;, &#x43a;&#x43e;&#x442;&#x43e;&#x440;&#x44b;&#x439; &#x441;&#x43e;&#x447;&#x435;&#x442;&#x430;&#x435;&#x442; &#x432; &#x441;&#x435;&#x431;&#x435; &#x441;&#x440;&#x430;&#x437;&#x443; &#x434;&#x432;&#x435; &#x432;&#x430;&#x436;&#x43d;&#x44b;&#x435; &#x43f;&#x440;&#x43e;&#x444;&#x435;&#x441;&#x441;&#x438;&#x438; &#x432; &#x43f;&#x440;&#x43e;&#x433;&#x440;&#x430;&#x43c;&#x43c;&#x435; - &#x440;&#x435;&#x436;&#x438;&#x441;&#x441;&#x435;&#x440; &#x438; &#x432;&#x435;&#x434;&#x443;&#x449;&#x438;&#x439;! &#x416;&#x435;&#x43d;&#x44f; &#x421;&#x438;&#x43d;&#x435;&#x43b;&#x44c;&#x43d;&#x438;&#x43a;&#x43e;&#x432;, &#x436;&#x435;&#x43b;&#x430;&#x435;&#x43c; &#x442;&#x435;&#x431;&#x435; &#x435;&#x449;&#x435; &#x431;&#x43e;&#x43b;&#x44c;&#x448;&#x435; &#x438;&#x43d;&#x442;&#x435;&#x440;&#x435;&#x441;&#x43d;&#x44b;&#x445; &#x43f;&#x440;&#x438;&#x43a;&#x43b;&#x44e;&#x447;&#x435;&#x43d;&#x438;&#x439;, &#x43a;&#x43e;&#x442;&#x43e;&#x440;&#x44b;&#x435; &#x431;&#x443;&#x434;&#x443;&#x442; &#x443;&#x434;&#x438;&#x432;&#x43b;&#x44f;&#x442;&#x44c;!</p>Posted by <a href="https://www.facebook.com/OrelReshka/">Орел и решка</a> on&nbsp;<a href="https://www.facebook.com/OrelReshka/photos/a.273699839335675.65270.236164959755830/997055650333420/?type=3">3 ноября 2015 г.</a></blockquote></div></div>
+					</div>				
+				</div>
 			</section>
 			<!-- end container -->
 			<!-- begin sidebar -->
@@ -919,37 +684,52 @@
 				<div class="sidebar__box">				
 					<div class="sidebar__title"><span>Топ поездки</span></div>
 					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small3.png" alt="">
+						<div class="news__inner">		
+							<a href="#" class="news__left">
+								<div class="news__left-in">
+									<div class="news__icon">
+										<i class="icon-like"></i>
+										<span>372</span>
+									</div>
+								</div>
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
 									<li><a href="#">Андрей Бедняков</a></li>
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
-								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
+								<p><a href="#">5 причин почему вы должны посетить Антверпен</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small4.png" alt="">
+						<div class="news__inner">	
+							<a href="#" class="news__left">
+								<div class="news__left-in">
+									<div class="news__icon">
+										<i class="icon-comments"></i>
+										<span>42</span>
+									</div>
+								</div>
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
 									<li><a href="#">Андрей Бедняков</a></li>
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
-								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
+								<p><a href="#">Остановились отдохнуть и увидели дельфинов</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small4.png" alt="">
+						<div class="news__inner">	
+							<a href="#" class="news__left">
+								<div class="news__left-in">
+									<div class="news__icon">
+										<i class="icon-share"></i>
+										<span>18</span>
+									</div>
+								</div>
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
@@ -967,6 +747,12 @@
 						<div class="news__inner">
 							<a href="#" class="news__left is-white">
 								<img src="img/small3.png" alt="">
+								<div class="news__left-in">
+									<div class="news__icon">
+										<i class="icon-like"></i>
+										<span>372</span>
+									</div>
+								</div>
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
@@ -981,6 +767,12 @@
 						<div class="news__inner">
 							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
+								<div class="news__left-in">
+									<div class="news__icon">
+										<i class="icon-comments"></i>
+										<span>372</span>
+									</div>
+								</div>
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
@@ -995,6 +787,12 @@
 						<div class="news__inner">
 							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
+								<div class="news__left-in">
+									<div class="news__icon">
+										<i class="icon-share"></i>
+										<span>372</span>
+									</div>
+								</div>
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
@@ -1200,37 +998,52 @@
 				<div class="sidebar__box">				
 					<div class="sidebar__title"><span>Топ поездки</span></div>
 					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small3.png" alt="">
+						<div class="news__inner">		
+							<a href="#" class="news__left">
+								<div class="news__left-in">
+									<div class="news__icon">
+										<i class="icon-like"></i>
+										<span>372</span>
+									</div>
+								</div>
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
 									<li><a href="#">Андрей Бедняков</a></li>
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
-								<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
+								<p><a href="#">5 причин почему вы должны посетить Антверпен</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small4.png" alt="">
+						<div class="news__inner">	
+							<a href="#" class="news__left">
+								<div class="news__left-in">
+									<div class="news__icon">
+										<i class="icon-comments"></i>
+										<span>42</span>
+									</div>
+								</div>
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
 									<li><a href="#">Андрей Бедняков</a></li>
 									<li><a href="#">11 Ноября 14:32</a></li>
 								</ul>
-								<p><a href="#">Хороший день, перед обедом поплавал на серфе</a></p>
+								<p><a href="#">Остановились отдохнуть и увидели дельфинов</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="news">
-						<div class="news__inner">
-							<a href="#" class="news__left is-white">
-								<img src="img/small4.png" alt="">
+						<div class="news__inner">	
+							<a href="#" class="news__left">
+								<div class="news__left-in">
+									<div class="news__icon">
+										<i class="icon-share"></i>
+										<span>18</span>
+									</div>
+								</div>
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
@@ -1248,6 +1061,12 @@
 						<div class="news__inner">
 							<a href="#" class="news__left is-white">
 								<img src="img/small3.png" alt="">
+								<div class="news__left-in">
+									<div class="news__icon">
+										<i class="icon-like"></i>
+										<span>372</span>
+									</div>
+								</div>
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
@@ -1262,6 +1081,12 @@
 						<div class="news__inner">
 							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
+								<div class="news__left-in">
+									<div class="news__icon">
+										<i class="icon-comments"></i>
+										<span>372</span>
+									</div>
+								</div>
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
@@ -1276,6 +1101,12 @@
 						<div class="news__inner">
 							<a href="#" class="news__left is-white">
 								<img src="img/small4.png" alt="">
+								<div class="news__left-in">
+									<div class="news__icon">
+										<i class="icon-share"></i>
+										<span>372</span>
+									</div>
+								</div>
 							</a>
 							<div class="news__block">
 								<ul class="news__info">
@@ -1320,5 +1151,71 @@
 	</div>
 </div>
 
+<div class="popup-wrapper js-popup">
+	<div class="popup">
+		<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
+		<div class="popup__body">
+			<div class="popup-post">
+				<div class="user">
+					<a href="#" class="user__inner">
+						<img src="img/ava1.png" alt="" class="user__img">
+						<div class="user__block">
+							<span class="user__name">Регина Тодоренко</span>
+							<ul class="user__info">
+								<li>09 Ноября 14:32</li>
+								<li>Киев</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<h2 class="title-h2"><a href="#">Cделали для вас подборку лучших фотографий с Гоа</a></h2>
+				<div class="gallery js-slick-gallery">
+					<div class="gallery-main js-slick-for">
+						<div class="gallery-main__slide">
+							<img src="img/gallery-main.jpg" alt="">
+						</div>
+						<div class="gallery-main__slide">
+							<img src="img/gallery-main.jpg" alt="">
+						</div>
+						<div class="gallery-main__slide">
+							<img src="img/gallery-main.jpg" alt="">
+						</div>
+						<div class="gallery-main__slide">
+							<img src="img/gallery-main.jpg" alt="">
+						</div>
+						<div class="gallery-main__slide">
+							<img src="img/gallery-main.jpg" alt="">
+						</div>
+						<div class="gallery-main__slide">
+							<img src="img/gallery-main.jpg" alt="">
+						</div>
+					</div>
+					<div class="gallery-thumbs js-slick-nav">
+						<div class="gallery-thumbs__slide">
+							<img src="img/gallery-thumbs.jpg" alt="">
+						</div>
+						<div class="gallery-thumbs__slide">
+							<img src="img/gallery-thumbs.jpg" alt="">
+						</div>
+						<div class="gallery-thumbs__slide">
+							<img src="img/gallery-thumbs.jpg" alt="">
+						</div>
+						<div class="gallery-thumbs__slide">
+							<img src="img/gallery-thumbs.jpg" alt="">
+						</div>
+						<div class="gallery-thumbs__slide">
+							<img src="img/gallery-thumbs.jpg" alt="">
+						</div>
+						<div class="gallery-thumbs__slide">
+							<img src="img/gallery-thumbs.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.2" async></script>  
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY5vYS57t57qgxd192Apd-K85DAywauSY&signed_in=true&libraries=places&callback=initMap" async defer></script>
 </body>
 </html>

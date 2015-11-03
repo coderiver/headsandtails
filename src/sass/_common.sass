@@ -106,6 +106,15 @@ body
 	height: 100% 
 	.out
 		height: 100%
+.page-login
+	background: url(../img/login-bg.jpg) no-repeat 
+	+cover
+	background-attachment: fixed
+.page-error
+	background: url(../img/404-bg.jpg) no-repeat 
+	+cover
+	background-position: top center 
+	background-attachment: fixed
 
 h1, h2, h3, h4, h5, h6, b, strong, em, i
 	font-weight: normal
@@ -114,17 +123,39 @@ h1, h2, h3, h4, h5, h6, b, strong, em, i
 a
 	text-decoration: none
 
-.title-h3
-	color: #333
-	font-size: 32px
-	line-height: 40px
+.title-h3, .title-h2
 	+bold
 	display: block
-	+r4
-		font-size: 24px
-		line-height: 1.2
+	color: #333
 	a
 		color: #333
 		transition: color 0.25s ease
 		&:hover
 			color: #2d7fc9
+
+.title-h3
+	font-size: 32px
+	line-height: 40px
+	+r4
+		font-size: 24px
+		line-height: 1.2
+.title-h2
+	font-size: 42px
+	line-height: 1.2
+	+r4
+		font-size: 24px
+
+.btn-white
+	color: white
+	font-size: 18px
+	line-height: 1
+	+bold
+	padding: 15px 35px 13px
+	border: 2px solid white
+	border-radius: 25px
+	transition: color 0.25s, background 0.25s
+	display: inline-block
+	vertical-align: top
+	&:hover
+		color: #333
+		background: white 

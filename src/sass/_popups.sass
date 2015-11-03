@@ -1,0 +1,45 @@
+.popup-wrapper
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: rgba(black, 0.8)
+	padding: 30px 0
+	overflow: auto
+	z-index: 3000
+	visibility: hidden
+	opacity: 0
+
+.popup
+	max-width: 970px
+	margin: 0 auto
+	position: relative
+	background: #fff 
+	&__close
+		width: 40px
+		height: 40px
+		position: absolute
+		top: 0
+		right: 0
+		font-size: 12px
+		color: #333
+		background: #fff
+		i
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -6px 0 0 -6px 
+	&__body
+		padding: 70px 100px 0
+
+.gallery
+	overflow: hidden
+	&-main
+		padding: 0 0 20px 
+	&-thumbs
+		margin: 0 -10px 
+		&__slide
+			padding: 0 10px
+			img
+				width: 100%

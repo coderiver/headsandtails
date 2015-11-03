@@ -83,4 +83,25 @@ $(document).ready(function() {
 		});
 	});
 
+	$('.js-slick-gallery').each(function() {
+		$('.js-slick-for').slick({
+			arrows: false,
+			dots: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			fade: true,
+			asNavFor: '.js-slick-nav'
+		});
+		$('.js-slick-nav').slick({
+			arrows: false,
+			dots: false,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			asNavFor: '.js-slick-for',
+			centerMode: true,
+			focusOnSelect: true,
+			centerPadding: '0'
+		});
+	});	
+
 });
