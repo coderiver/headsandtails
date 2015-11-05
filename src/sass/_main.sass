@@ -398,7 +398,7 @@
 	+r4
 		padding: 0 0 40px 
 	.user
-		margin-bottom: 14px
+		margin-bottom: 17px
 	.title-h3
 		margin-bottom: 14px
 	&__container
@@ -553,6 +553,7 @@
 		display: inline-block
 		vertical-align: top
 		padding: 0 20px 0 0 
+		position: relative
 	a
 		+semi
 		color: #8c8c8c
@@ -609,6 +610,7 @@
 			color: #333
 
 .user
+	font-size: 0
 	&__inner
 		display: inline-block
 		color: #8c8c8c
@@ -619,6 +621,8 @@
 	&__img
 		float: left
 		margin: 0 10px 0 0
+		width: 40px
+		height: 40px
 	&__block
 		overflow: hidden
 		padding: 1px 0 0
@@ -748,6 +752,9 @@
 		height: 70px
 		margin: 0 15px 0 0
 		float: left
+		img
+			width: 100%
+			height: 100%
 	p
 		overflow: hidden
 		color: white
@@ -796,6 +803,12 @@
 		margin: 0 0 11px 
 		+r4
 			font-size: 16px
+	&_mod
+		width: 33.33%
+		+r2
+			width: 50%
+		+r4
+			width: 100%
 .sticker
 	+bold
 	color: #fff
@@ -1474,3 +1487,76 @@
 		+r4
 			font-size: 16px
 			line-height: 1.3
+
+.tooltip
+	border-radius: 4px
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
+	position: relative
+	visibility: hidden
+	opacity: 0
+	position: absolute
+	bottom: 70%
+	left: 8px
+	transform: translateX(-50%)
+	margin-bottom: 15px
+	transition: visibility 0.2s, opacity 0.2s, bottom 0.2s
+	border-radius: 4px
+	+r3
+		transform: translateX(0)
+		left: -10px
+	&.is-active
+		opacity: 1
+		visibility: visible
+		bottom: 100%
+	&:before
+		width: 14px
+		height: 14px
+		position: absolute
+		top: 100%
+		left: 50%
+		margin: -7px 0 0 -7px
+		content: "" 
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
+		transform: rotate(45deg)
+		background: #fff 
+		+r3
+			left: 18px
+	&__inner
+		padding: 8px 5px 
+		background-color: white
+		position: relative
+		border-radius: 4px
+	&__list
+		white-space: nowrap
+		font-size: 0
+		li
+			padding: 0 5px 
+			display: inline-block
+			vertical-align: top
+			margin: 0 !important
+		a
+			padding: 0
+			font-size: 0
+			i
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				line-height: 30px
+				color: #fff
+				text-align: center 
+				margin-right: 8px
+				&.icon-fb
+					background-color: #4372b9
+					font-size: 20px
+				&.icon-vk
+					background-color: #4c75a3
+					font-size: 11px
+					&:before
+						margin: 1px 1px 0 0px
+						display: inline-block 
+			span, i
+				display: inline-block
+				vertical-align: middle
+			span
+				padding-top: 2px
+				font-size: 14px

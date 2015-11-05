@@ -60,25 +60,94 @@ $(document).ready(function() {
 		});
 	});
 
-	$('.js-slick-gallery').each(function() {
-		$('.js-slick-for').slick({
+	$('.js-slick-gallery').each(function(index, el) {
+		var _el = $(el);
+		var slickFor = _el.find('.js-slick-for'); 
+		var slickNav = _el.find('.js-slick-nav'); 
+
+		slickFor.slick({
 			arrows: false,
 			dots: false,
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			fade: true,
-			asNavFor: '.js-slick-nav'
+			asNavFor: slickNav
 		});
-		$('.js-slick-nav').slick({
+		slickNav.slick({
 			arrows: false,
 			dots: false,
 			slidesToShow: 5,
 			slidesToScroll: 1,
-			asNavFor: '.js-slick-for',
-			centerMode: true,
+			asNavFor: slickFor,
+			// centerMode: true,
 			focusOnSelect: true,
 			centerPadding: '0'
 		});
 	});	
+
+	$('.js-tooltip-parent').each(function() {
+		var icon = $(this).find('.js-tooltip-icon'),
+			tooltip = $(this).find('.js-tooltip');
+		icon.hover(function() {
+			tooltip.addClass('is-active');
+		}, function() {
+			tooltip.removeClass('is-active');
+		});
+	});
+
+	$('.js-popup').each(function() {
+
+		$('.js-popup-btn').each(function(index, el) {
+			var btn = $(this).data('btn'),
+				popup = $('.js-popup[data-block="' + btn + '"]'),
+				popups = $('.js-popup'),
+				close = $('.js-popup-close'),
+				popupInner = $('.js-popup-inner');
+			$(this).click(function() {
+				popup.addClass('is-active');
+				$('body').addClass('is-hidden');
+				return false;
+			});
+			close.click(function() {
+				popups.removeClass('is-active');
+				$('body').removeClass('is-hidden');
+				return false;
+			});
+			$('body').click(function() {
+				popups.removeClass('is-active');
+				$('body').removeClass('is-hidden');
+			});
+			popupInner.click(function(event) {
+				event.stopPropagation();
+			});
+		});
+
+		$('.js-gallery-prev').click(function() {
+			$('.js-slick-for').slick('slickPrev');
+			return false;
+		});
+
+		$('.js-gallery-next').click(function() {
+			$('.js-slick-for').slick('slickNext');
+			return false;
+		});
+
+	});
+
+	$('.js-calendar-item').hoverIntent(calendarItem);
+	
+	function calendarItem () {
+		var index = $(this).data('index');
+		$('.js-calendar-slider').slick('slickGoTo', index);
+	}
+
+	$('.js-calendar-slider').slick({
+		arrows: false,
+		dots: false,
+		fade: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		swipe: false
+	})
 
 });
