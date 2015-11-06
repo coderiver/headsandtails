@@ -231,11 +231,13 @@ $(document).ready(function() {
 			if ($('.js-search-input').val() == 0) {
 				$('.js-search-input').removeClass('is-active');
 				$('.js-search-title').removeClass('is-hidden');
+				$('.search-results__label').removeClass('is-hidden');
 			};
 		});
 		$('.js-search-title').click(function() {
 			$('.js-search-input').addClass('is-active');
 			$(this).addClass('is-hidden');
+			$('.search-results__label').addClass('is-hidden');
 			return false;
 		});
 		$('.js-search-input').click(function(event) {
