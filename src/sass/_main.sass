@@ -1955,12 +1955,29 @@
 		+r3
 			font-size: 30px
 			padding: 0 20px 0 0 
+		&.is-hidden
+			display: none
 	&__label
 		color: #8c8c8c
 		font-size: 16px
 		padding: 14px 0 0 
 		+r3
-			padding: 8px 0 0 
+			padding: 8px 0 0
+	&__input 
+		color: #333
+		font-size: 40px
+		display: none
+		width: 171px
+		margin-top: -9px
+		+semi
+		padding: 0 10px 0 0 
+		+r3
+			font-size: 30px
+			width: 118px
+			margin-top: -7px
+		&.is-active
+			display: inline-block
+			vertical-align: top
 
 .lil-post
 	max-width: 370px
@@ -1984,11 +2001,45 @@
 			&:hover
 				color: #2d7fc9
 
+@keyframes load
+	from
+		transform: rotate(0)
+	to
+		transform: rotate(360deg)
+
 .load
 	padding: 0 0 50px
 	text-align: center 
-	i
-		display: inline-block
-		vertical-align: top
-		font-size: 29px
-		color: #b1b1b1
+.icon-preloader
+	display: inline-block
+	vertical-align: top
+	font-size: 29px
+	color: #b1b1b1
+	animation: load 1.5s infinite linear
+	width: 30px
+	height: 30px
+	line-height: 30px
+	text-align: center
+	transform-origin: center center
+
+.preloader
+	display: inline-block
+	vertical-align: middle
+	padding: 30px 
+
+.search-no
+	text-align: center
+	padding-bottom: 50px
+	&__title
+		color: #333
+		font-size: 36px
+		+bold
+		margin-bottom: 65px
+		line-height: 1
+		+r3
+			font-size: 28px
+			margin-bottom: 30px
+	&__icon
+		display: block
+		margin: 0 auto
+		+s(no-result)

@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff"> 
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/app.js"></script>
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+
+	<!-- begin header  -->
+	<header class="header is-white js-fixed js-header">
+		<div class="header__inner">
+			<div class="header__logo">
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="">
+				</a>
+			</div>		
+			<div class="header__menu js-menu">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__mobile"><a href="#">Главная</a></li>
+						<li>
+							<a href="#" class="js-menu-link">маршрут <i class="icon-arr-bot"></i></a>
+							<ul class="submenu js-menu-drop">
+								<li><a href="#">Планета</a></li>
+								<li><a href="#">Календарь</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="js-menu-link">дневник</a></li>
+						<li><a href="#">про проект</a></li>
+						<li><a href="#">команда</a></li>
+						<li><a href="#">библиотека</a></li>
+						<li><a href="#">Топ</a></li>
+						<li class="nav__mobile"><a href="#" class=" js-popup-btn" data-btn="search">Поиск</a></li>
+					</ul>
+				</nav>
+				<button class="btn-search js-popup-btn" data-btn="search"><i class="icon-search"></i></button>
+			</div>
+			<div class="header__date">
+				<div class="header__date-label">до старта</div>
+				<ul class="header__date-list">
+					<li>
+						<span>28</span>
+						<small>Дней</small>
+					</li>
+					<li>
+						<span>07</span>
+						<small>часов</small>
+					</li>
+					<li>
+						<span>29</span>
+						<small>минут</small>
+					</li>
+				</ul>
+			</div>
+			<button class="btn-menu js-menu-btn"><span></span></button>
+		</div>	
+	</header>
+	<!-- end header -->
+
+	<!-- begin main -->
+	<main class="main">
+		<!-- begin inner  -->
+		<div class="inner">			
+			<!-- begin container -->
+			<section class="container">
+				<div class="search-results">
+					<button class="search-results__btn"><i class="icon-search-big"></i></button>
+					<input type="text" class="search-results__input js-search-input" id="search-input">
+					<label class="search-results__title js-search-title" for="search-input">Тест</label>
+				</div>
+			</section>
+			<!-- end container -->
+		</div>
+		<!-- end inner  -->
+		<div class="inner">
+			<div class="search-no">
+				<div class="search-no__title">Извините, мы ничего не нашли</div>
+				<i class="search-no__icon"></i>
+			</div>
+		</div>
+		
+	</main>
+	<!-- end main -->
+
+</div>
+<!-- END out-->
+
+<div class="search js-popup" data-block="search">
+	<div class="search__inner js-popup-inner">
+		<button class="search__close js-popup-close"><i class="icon-close"></i></button>
+		<div class="search__form">
+			<form action="">
+				<label class="search__label">
+					<span>Поиск по городам, странам, постам</span>
+					<input type="text" class="search__input" placeholder="Поиск">
+				</label>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.2" async></script>  
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY5vYS57t57qgxd192Apd-K85DAywauSY&signed_in=true&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>

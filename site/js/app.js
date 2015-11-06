@@ -212,4 +212,9 @@ $(document).ready(function() {
 		});
 	});	
 
+	$('.js-search-title').click(function() {
+		$('.js-search-input').addClass('is-active');
+		$(this).addClass('is-hidden');
+	});
+
 });
