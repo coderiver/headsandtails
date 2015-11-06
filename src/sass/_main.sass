@@ -1842,27 +1842,7 @@
 			font-size: 16px
 			line-height: 1.3
 			max-width: 90%
-			
-.more
-	display: inline-block
-	vertical-align: top
-	position: relative
-	color: #8c8c8c
-	font-size: 12px
-	line-height: 1
-	text-transform: uppercase
-	+semi
-	padding: 0 10px 0 0 
-	&:hover
-		i
-			right: -5px
-	i
-		position: absolute
-		top: 50%
-		right: 0
-		margin-top: -5px
-		font-size: 8px
-		transition: right 0.2s
+
 //search
 .search
 	position: fixed
@@ -2043,3 +2023,56 @@
 		display: block
 		margin: 0 auto
 		+s(no-result)
+
+.full-video
+	font-size: 0
+	iframe
+		height: 500px
+		width: 100%
+
+.dairy
+	padding: 79px 0 0
+	+r1
+		padding: 60px 0 0 
+	&-section
+		position: relative
+		padding: 0 0 0 36.5% 
+		+r3
+			padding: 0
+		&__img
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			width: 36.5%
+			+cover
+			+r3
+				width: 100%
+				position: static
+				padding-bottom: 60%
+		&__block
+			padding: 40px 50px
+			border-bottom: 1px solid #eee 
+			+r2
+				padding: 20px
+			+r3
+				width: 100%
+		&__text
+			padding: 0 0 52px 
+	time
+		color: #8c8c8c
+		font-size: 18px
+		+gpmed
+		letter-spacing: 0.02em 
+		line-height: 1
+		display: block
+		margin-bottom: 14px
+	.title-h3
+		margin-bottom: 13px
+	p
+		color: #333
+		font-size: 18px
+		line-height: 24px
+		+gpmed
+	.load
+		padding: 15px 
