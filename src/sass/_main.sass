@@ -1473,11 +1473,21 @@
 	max-width: 1200px
 	margin: 0 auto 
 	+clr
-	padding: 83px 0 78px 
+	padding: 69px 0 65px 
+	+r3
+		padding: 10px 0 
 	&__col
-		padding: 10px 14px 
+		padding: 10px 15px 
 		float: left
 		width: 50%
+		+r3
+			width: 100%
+			float: none
+			padding: 0 15px 
+	&__section
+		padding: 14px 0 13px 
+		+r3
+			padding: 10px 0 
 	p
 		color: #333
 		font-size: 18px
@@ -1560,3 +1570,425 @@
 			span
 				padding-top: 2px
 				font-size: 14px
+
+.big-quote
+	position: relative
+	+clr
+	&__slide
+		padding: 21px 0 0 
+		+r3
+			padding: 0
+		&-in
+			background-color: #e2c253
+	&__inner
+		+clr
+		position: relative
+		max-width: 1000px
+		margin: 0 auto 
+	&__img
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 40%
+		font-size: 0
+		margin-top: -21px
+		+r3
+			width: 100%
+			position: static
+			text-align: left
+			margin: 0
+		+r4
+			width: 50%
+		img
+			max-width: 100%
+	&__info
+		float: right
+		width: 60%
+		position: relative
+		z-index: 2 
+		padding: 89px 70px 108px 40px
+		text-align: center
+		+r3
+			width: 100%
+			float: none
+			padding: 20px 50px 20px 40px 
+		+r4
+			padding: 30px 20px 
+	&__name
+		color: #fff
+		font-size: 18px
+		line-height: 1
+		+semi
+		opacity: 0.7
+	&__blockquote
+		color: white
+		+gpmed
+		font-size: 24px
+		line-height: 28px
+		letter-spacing: 0.02em 
+		position: relative
+		padding: 30px 0 55px
+		+r4
+			font-size: 18px
+			line-height: 1.3
+			padding: 20px 0 
+		&:before, &:after
+			color: #fff
+			font-size: 108px
+			line-height: 25px
+			+reg
+			position: absolute
+			opacity: 0.5
+			+r4
+				font-size: 60px
+		&:before
+			content: "\201c"
+			top: 43px
+			right: 100%
+			margin: -7px -7px 0 0 
+			+r4
+				top: 20px
+		&:after
+			content: "\201d"
+			bottom: 0
+			left: 100%
+			margin: 0 0 -15px 0 
+			+r4
+				margin: 0 0 0 -10px
+				bottom: -10px
+	&__nav
+		position: absolute
+		bottom: 0
+		right: 0
+		+clr
+		z-index: 10
+	&__arrows
+		float: right
+		+clr
+	&__prev, &__next
+		width: 40px
+		height: 40px
+		background-color: white
+		float: left
+		color: #333
+		transition: color 0.25s, background 0.25s
+		+vertical
+		&:hover
+			background: #333
+			color: #fff  
+		i
+			font-size: 12px
+			display: inline-block
+			vertical-align: middle
+	&__caption
+		color: whitesmoke
+		font-size: 15px
+		line-height: 28px
+		+semi
+		padding: 6px 15px 
+		overflow: hidden
+
+.about-images
+	+clr
+	&_left
+		.about-img
+			float: left
+	&_right
+		.about-img
+			float: right
+		
+.about-img
+	position: relative
+	height: 0
+	+cover
+	&_big, &_med
+		width: 40%
+		+r4
+			width: 100%
+	&_big
+		padding-bottom: 40%
+		+r4
+			padding-bottom: 100%
+	&_med
+		padding-bottom: 20%
+		+r4
+			padding-bottom: 50%
+	&_small
+		width: 20%
+		padding-bottom: 20%
+		+r4
+			width: 50%
+			padding-bottom: 50%
+.about-info
+	position: relative
+	+clr
+	min-height: 800px
+	&__images
+		position: absolute
+		width: 40%
+		left: 0
+		top: 0
+		bottom: 0
+		+clr
+		+r2
+			width: 100%
+			position: static
+	&__img
+		position: absolute
+		left: 0
+		right: 0
+		width: 100%
+		height: 50%
+		+cover
+		background-position: top center 
+		+r2
+			height: 0
+			padding-bottom: 40%
+			position: static
+			width: 50%
+			float: left
+		&:first-child
+			top: 0
+		&:last-child
+			bottom: 0
+	&__section
+		width: 60%
+		float: right
+		padding: 7.3% 9% 5.9%
+		+r1
+			padding: 40px 40px 
+		+r2
+			width: 100%
+			float: none
+		+r3
+			padding: 20px 15px 
+		.title-h3
+			text-transform: uppercase
+			margin-bottom: 10px
+	&__text
+		padding: 13px 0
+		+r4
+			padding: 10px 0 
+	p, li
+		color: #333
+		font-size: 18px
+		line-height: 28px
+		+gpmed
+		letter-spacing: 0.02em 
+		+r4
+			font-size: 16px
+			line-height: 1.3
+			
+.about-more
+	background: #7acde6
+	color: white
+	+semi
+	font-size: 18px
+	line-height: 1
+	text-transform: uppercase
+	text-align: center
+	display: block
+	padding: 34px 15px
+	margin-top: -1px
+	&:hover
+		i
+			right: -5px
+	span	
+		padding: 0 15px 0 0 
+		display: inline-block
+		position: relative
+	i
+		position: absolute
+		top: 50%
+		right: 0
+		font-size: 12px
+		margin-top: -6px
+		transition: right 0.2s
+		
+.partners
+	padding: 90px 0 
+	text-align: center
+	+clr
+	font-size: 0
+	.title-h3
+		text-transform: uppercase
+		margin-bottom: 70px
+.partner
+	width: 33.33%
+	display: inline-block
+	vertical-align: top
+	padding: 15px
+	+r2
+		width: 50%
+	+r3
+		width: 100%
+	&__logo
+		height: 50px
+		+vertical
+		margin-bottom: 40px
+		img
+			max-width: 100%
+			max-height: 100% 
+			display: inline-block
+			vertical-align: middle
+	p
+		max-width: 320px
+		margin: 0 auto 20px
+		color: #333
+		font-size: 20px
+		line-height: 28px 
+		+gpmed
+		+r4
+			font-size: 16px
+			line-height: 1.3
+			max-width: 90%
+			
+.more
+	display: inline-block
+	vertical-align: top
+	position: relative
+	color: #8c8c8c
+	font-size: 12px
+	line-height: 1
+	text-transform: uppercase
+	+semi
+	padding: 0 10px 0 0 
+	&:hover
+		i
+			right: -5px
+	i
+		position: absolute
+		top: 50%
+		right: 0
+		margin-top: -5px
+		font-size: 8px
+		transition: right 0.2s
+//search
+.search
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	overflow: auto
+	background: rgba(#7acde6, 0.98)
+	padding: 100px 15px 
+	z-index: 3000 
+	visibility: hidden
+	opacity: 0
+	+r3
+		padding: 50px 10px 
+	&.is-active
+		opacity: 1
+		visibility: visible
+	&__close
+		position: absolute
+		top: 60px
+		right: 60px
+		color: #fff
+		font-size: 0
+		transition: color 0.25s
+		background: none
+		+r3
+			top: 20px
+			right: 20px
+		&:hover
+			color: #b9e6f4
+		i
+			font-size: 31px
+			+r3
+				font-size: 20px
+	&__inner
+		max-width: 1030px
+		margin: 0 auto 
+		min-width: 300px
+	&__label
+		display: block
+		span
+			color: #e0f2f7
+			font-size: 16px
+			line-height: 1
+			+semi
+			display: block
+			padding: 0 8px 
+			+r3
+				padding: 0 5px 
+				font-size: 14px
+	&__input
+		color: white
+		font-size: 120px
+		+semi
+		background: none
+		+placeholder-color(#fff)
+		width: 100%
+		+r3
+			font-size: 60px
+
+.search-results
+	padding: 40px 0 40px 55px
+	position: relative
+	font-size: 0
+	+r3
+		padding: 30px 0 40px 40px
+	&__btn
+		position: absolute
+		top: 40px
+		left: 0
+		font-size: 0
+		background: none
+		+r3
+			top: 30px
+		i
+			font-size: 34px
+			color: #8c8c8c 
+			+r3
+				font-size: 26px
+	&__title, &__label
+		+semi
+		line-height: 1
+		display: inline-block
+		vertical-align: top
+	&__title
+		color: #333
+		font-size: 40px
+		padding: 0 40px 0 0
+		+r3
+			font-size: 30px
+			padding: 0 20px 0 0 
+	&__label
+		color: #8c8c8c
+		font-size: 16px
+		padding: 14px 0 0 
+		+r3
+			padding: 8px 0 0 
+
+.lil-post
+	max-width: 370px
+	margin-bottom: 50px
+	+r3
+		margin-bottom: 40px
+	img
+		width: 100%
+		display: block
+		margin-bottom: 15px
+	&__title
+		+semi
+		color: #333
+		font-size: 22px
+		line-height: 28px
+		+r4
+			font-size: 18px
+			line-height: 1.3
+		a
+			color: #333
+			&:hover
+				color: #2d7fc9
+
+.load
+	padding: 0 0 50px
+	text-align: center 
+	i
+		display: inline-block
+		vertical-align: top
+		font-size: 29px
+		color: #b1b1b1

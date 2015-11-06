@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff"> 
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/app.js"></script>
+</head>
+<body class="page-globe-mod">
+<!-- BEGIN  out-->
+<div class="out">
+
+	<!-- begin header  -->
+	<header class="header is-white js-fixed js-header">
+		<div class="header__inner">
+			<div class="header__logo">
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="">
+				</a>
+			</div>		
+			<div class="header__menu js-menu">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__mobile"><a href="#">Главная</a></li>
+						<li>
+							<a href="#" class="js-menu-link">маршрут <i class="icon-arr-bot"></i></a>
+							<ul class="submenu js-menu-drop">
+								<li><a href="#">Планета</a></li>
+								<li><a href="#">Календарь</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="js-menu-link">дневник</a></li>
+						<li><a href="#">про проект</a></li>
+						<li><a href="#">команда</a></li>
+						<li><a href="#">библиотека</a></li>
+						<li><a href="#">Топ</a></li>
+						<li class="nav__mobile"><a href="#" class=" js-popup-btn" data-btn="search">Поиск</a></li>
+					</ul>
+				</nav>
+				<button class="btn-search js-popup-btn" data-btn="search"><i class="icon-search"></i></button>
+			</div>
+			<div class="header__date">
+				<div class="header__date-label">до старта</div>
+				<ul class="header__date-list">
+					<li>
+						<span>28</span>
+						<small>Дней</small>
+					</li>
+					<li>
+						<span>07</span>
+						<small>часов</small>
+					</li>
+					<li>
+						<span>29</span>
+						<small>минут</small>
+					</li>
+				</ul>
+			</div>
+			<button class="btn-menu js-menu-btn"><span></span></button>
+		</div>	
+	</header>
+	<!-- end header -->
+	<div class="globe-mod">
+		<div class="globe-mod__title">Дюссельдорф</div>
+		<div class="globe-mod__time">Посетили 11 Ноября</div>
+		<p>Дюссельдорф — город на западе Германии, в Рейнско-Рурском регионе, столица федеральной земли Северный Рейн и резиденция земельного правительства</p>
+		<a href="#" class="btn-white btn-white_small"><span>Записи города</span></a>
+	</div>
+
+</div>
+<!-- END out-->
+
+<div class="search js-popup" data-block="search">
+	<div class="search__inner js-popup-inner">
+		<button class="search__close js-popup-close"><i class="icon-close"></i></button>
+		<div class="search__form">
+			<form action="">
+				<label class="search__label">
+					<span>Поиск по городам, странам, постам</span>
+					<input type="text" class="search__input" placeholder="Поиск">
+				</label>
+			</form>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

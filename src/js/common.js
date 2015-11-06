@@ -135,7 +135,7 @@ $(document).ready(function() {
 	});
 
 	$('.js-calendar-item').hoverIntent(calendarItem);
-	
+
 	function calendarItem () {
 		var index = $(this).data('index');
 		$('.js-calendar-slider').slick('slickGoTo', index);
@@ -148,6 +148,36 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		swipe: false
-	})
+	});
+
+	$('.js-quote').each(function() {
+
+		var current = $(this).find('.js-quote-current');
+
+		$('.js-quote-slider').slick({
+			arrows: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			// infinite: false
+		});
+
+		$('.js-quote-total').text($('.slick-slide').length - $('.slick-cloned').length);
+
+		$('.js-quote-current').text($('.slick-current').index());
+
+		$('.js-quote-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+			current.text($('.slick-current').data('slick-index') + 1)
+		});
+
+		$('.js-quote-prev').click(function() {
+			$('.js-quote-slider').slick('slickPrev');
+			return false;
+		});
+
+		$('.js-quote-next').click(function() {
+			$('.js-quote-slider').slick('slickNext');
+			return false;
+		});
+	});	
 
 });

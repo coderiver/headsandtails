@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff"> 
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/app.js"></script>
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+
+	//= partials/header-white.html
+
+	<!-- begin main -->
+	<main class="main">
+		<!-- begin inner  -->
+		<div class="inner">			
+			<!-- begin container -->
+			<section class="container">
+				<div class="search-results">
+					<button class="search-results__btn"><i class="icon-search-big"></i></button>
+					<div class="search-results__title">Регина</div>
+					<div class="search-results__label">78 записей</div>
+				</div>
+				<div class="lil-post">
+					<img src="img/regina.jpg" alt="">
+					<div class="lil-post__title"><a href="#">Регина Тодоренко</a></div>
+				</div>
+				<div class="lil-post">
+					<img src="img/jakarta.jpg" alt="">
+					<div class="lil-post__title"><a href="#">Джакарта</a></div>
+				</div>
+				<div class="post">
+					<div class="user">
+						<a href="#" class="user__inner">
+							<img src="img/ava1.png" alt="" class="user__img">
+							<div class="user__block">
+								<span class="user__name">Регина Тодоренко</span>
+								<ul class="user__info">
+									<li>09 Ноября 14:32</li>
+									<li>Киев</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div class="post__container">
+						<div class="js-popup-btn" data-btn="popup-image-text">
+							<h3 class="title-h3"><a href="#">Обедаем нашей большой командой</a></h3>
+							<div class="post__img">					
+								<img src="img/post1.png" alt="">
+							</div>
+							<p>Флоренция итальянский город на реке Арно, в прошлом центр Флорентийской республики, столица герцогов Медичи и Итальянского королевства.</p>
+						</div>
+						//= partials/lil-info.html
+						<ul class="tags">
+							<li><a href="#">#обед</a></li>
+							<li><a href="#">#команда</a></li>
+							<li><a href="#">#приключения</a></li>
+						</ul>
+					</div>				
+				</div>
+				<div class="post">
+					<div class="user">
+						<a href="#" class="user__inner">
+							<img src="img/ava1.png" alt="" class="user__img">
+							<div class="user__block">
+								<span class="user__name">Регина Тодоренко</span>
+								<ul class="user__info">
+									<li>09 Ноября 14:32</li>
+									<li>Киев</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div class="post__container">
+						<div class="js-popup-btn" data-btn="popup-gallery-text">
+							<h3 class="title-h3"><a href="#">Отличный день на пляже с серфингом и вейкбордингом</a></h3>
+							<div class="photos">
+								<div class="photos__medium">
+									<img src="img/post-medium1.png" alt="">
+								</div>
+								<div class="photos__medium">	
+									<img src="img/post-medium2.png" alt="">
+								</div>
+								<div class="photos__small">
+									<img src="img/post-small1.png" alt="">
+								</div>
+								<div class="photos__small">
+									<img src="img/post-small2.png" alt="">
+								</div>
+								<div class="photos__small">
+									<img src="img/post-small3.png" alt="">
+									<a href="#" class="photos__link">
+										<span>+4</span>
+									</a>
+								</div>
+							</div>
+							<p>Флоренция итальянский город на реке Арно, в прошлом центр Флорентийской республики, столица герцогов Медичи и Итальянского королевства.</p>
+						</div>
+						//= partials/lil-info.html
+						<ul class="tags">
+							<li><a href="#">#обед</a></li>
+							<li><a href="#">#команда</a></li>
+							<li><a href="#">#приключения</a></li>
+						</ul>
+					</div>				
+				</div>
+			</section>
+			<!-- end container -->
+		</div>
+		<!-- end inner  -->
+		<div class="load">
+			<i class="icon-preloader"></i>
+		</div>
+		
+	</main>
+	<!-- end main -->
+
+</div>
+<!-- END out-->
+
+//= partials/search.html
+
+<script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.2" async></script>  
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY5vYS57t57qgxd192Apd-K85DAywauSY&signed_in=true&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>

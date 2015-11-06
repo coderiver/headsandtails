@@ -69,10 +69,10 @@
 						<li><a href="#">команда</a></li>
 						<li><a href="#">библиотека</a></li>
 						<li><a href="#">Топ</a></li>
-						<li class="nav__mobile"><a href="#">Поиск</a></li>
+						<li class="nav__mobile"><a href="#" class=" js-popup-btn" data-btn="search">Поиск</a></li>
 					</ul>
 				</nav>
-				<button class="btn-search"><i class="icon-search"></i></button>
+				<button class="btn-search js-popup-btn" data-btn="search"><i class="icon-search"></i></button>
 			</div>
 			<div class="header__date">
 				<div class="header__date-label">до старта</div>
@@ -3587,6 +3587,21 @@
 		</div>
 	</div>
 </div>
+
+<div class="search js-popup" data-block="search">
+	<div class="search__inner js-popup-inner">
+		<button class="search__close js-popup-close"><i class="icon-close"></i></button>
+		<div class="search__form">
+			<form action="">
+				<label class="search__label">
+					<span>Поиск по городам, странам, постам</span>
+					<input type="text" class="search__input" placeholder="Поиск">
+				</label>
+			</form>
+		</div>
+	</div>
+</div>
+
 <script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.2" async></script>  
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY5vYS57t57qgxd192Apd-K85DAywauSY&signed_in=true&libraries=places&callback=initMap" async defer></script>
 </body>
