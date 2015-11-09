@@ -206,4 +206,29 @@ $(document).ready(function() {
 		watch: 'window'
 	});
 
+	// $('.js-video-play').click(function(ev) {
+	// 	$('.js-video-play').addClass('is-hidden');
+	// 	$("#video")[0].src += "?rel=0&autoplay=1";
+	// 	ev.preventDefault();
+	// });
+
+
+	$(".js-video-play").click(function(){
+
+		var videoSrc = $('#player').data('id');
+
+		$('.js-video-play').addClass('is-hidden');
+
+		player = new YT.Player('player', {
+	    	videoId : videoSrc,
+	    	playerVars: { 'autoplay': 1 },
+		});
+	});
+
+	var tag = document.createElement('script');
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
 });
