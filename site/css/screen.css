@@ -890,13 +890,16 @@ a { text-decoration: none; }
 
 .full-video { font-size: 0; }
 .full-video iframe { height: 500px; width: 100%; }
+@media only screen and (max-width: 500px) { .full-video iframe { height: 300px; } }
 
 .dairy { padding: 79px 0 0; }
 @media only screen and (max-width: 1200px) { .dairy { padding: 60px 0 0; } }
-.dairy-section { position: relative; padding: 0 0 0 36.5%; }
+.dairy-section { position: relative; padding: 0 0 0 36.5%; min-height: 344px; }
 @media only screen and (max-width: 800px) { .dairy-section { padding: 0; } }
 .dairy-section__img { position: absolute; top: 0; bottom: 0; left: 0; width: 36.5%; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
-@media only screen and (max-width: 800px) { .dairy-section__img { width: 100%; position: static; padding-bottom: 60%; } }
+@media only screen and (max-width: 800px) { .dairy-section__img { width: 100%; position: relative; padding-bottom: 60%; } }
+.dairy-section__img .sticker { position: absolute; top: 40px; left: 40px; }
+@media only screen and (max-width: 500px) { .dairy-section__img .sticker { top: 20px; left: 20px; } }
 .dairy-section__block { padding: 40px 50px; border-bottom: 1px solid #eee; }
 @media only screen and (max-width: 1024px) { .dairy-section__block { padding: 20px; } }
 @media only screen and (max-width: 800px) { .dairy-section__block { width: 100%; } }

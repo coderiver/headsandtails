@@ -2031,6 +2031,8 @@
 	iframe
 		height: 500px
 		width: 100%
+		+r4
+			height: 300px
 
 .dairy
 	padding: 79px 0 0
@@ -2039,6 +2041,7 @@
 	&-section
 		position: relative
 		padding: 0 0 0 36.5% 
+		min-height: 344px 
 		+r3
 			padding: 0
 		&__img
@@ -2050,8 +2053,15 @@
 			+cover
 			+r3
 				width: 100%
-				position: static
+				position: relative
 				padding-bottom: 60%
+			.sticker
+				position: absolute
+				top: 40px 
+				left: 40px
+				+r4
+					top: 20px
+					left: 20px
 		&__block
 			padding: 40px 50px
 			border-bottom: 1px solid #eee 
