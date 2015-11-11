@@ -9,11 +9,18 @@
 	background: rgba(white, 0.2) 
 	font-size: 0
 	z-index: 1000
-	transition: background 0.25s ease
+	transition: background 0.25s ease, height 0.25s ease, padding 0.25s ease
 	+clr
 	+r1
 		padding: 0 20px
 		height: 60px
+	&__wrap
+		height: 100%
+		+vertical
+	&__center
+		display: inline-block
+		vertical-align: middle
+		width: 100%
 	&__inner
 		display: table
 		width: 100%
@@ -22,10 +29,12 @@
 		vertical-align: top
 	&__logo
 		width: 205px
-		padding: 23px 0 22px
+		height: 48px
+		transition: padding 0.25s
+		+vertical
+		text-align: left
 		+r1
 			float: left
-			padding: 13px 0 
 	&__menu
 		text-align: center
 		+r1
@@ -51,10 +60,10 @@
 		font-size: 0
 		text-align: right
 		width: 225px
-		padding: 15px 0 14px 0
+		transition: padding 0.25s
 		+r(1500)
-			padding: 19px 0 20px
 			width: 200px
+			padding: 5px 0 
 		+r1
 			display: none
 		&-label, &-list li
@@ -145,10 +154,20 @@
 		.btn-menu
 			&:before, &:after, span
 				background: #333 
+	&.is-fixed
+		height: 60px
+		padding-top: 6px 
+		padding-bottom: 6px
+		.header__logo
+			padding: 9px 0 
+		.logo
+			width: 166px
 				
 .logo
 	width: 187px
-	float: left
+	display: inline-block
+	vertical-align: middle
+	transition: width 0.2s ease
 	img
 		width: 100%
 
@@ -218,9 +237,6 @@
 		li
 			display: inline-block
 			position: relative
-			padding: 9px 0 10px
-			+r1
-				padding: 0 
 			+r2
 				display: block
 			a
@@ -233,11 +249,11 @@
 				display: block
 				position: relative
 				transition: color 0.25s
-				padding: 22px 25px 20px 
+				padding: 15px 25px 15px 
 				+r(1500)
-					padding: 22px 15px 20px
+					padding: 15px
 				+r1
-					padding: 22px 25px 20px
+					padding: 15px 25px 15px
 				+r2
 					padding: 8px 35px 8px 20px 
 					color: #8e98a1
@@ -257,7 +273,7 @@
 				&:before
 					content: "" 
 					position: absolute
-					bottom: 20px
+					bottom: 15px
 					left: 25px
 					right: 25px
 					border-bottom: 2px solid #fff 

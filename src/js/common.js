@@ -23,6 +23,18 @@ $(document).ready(function() {
 	    	$('.js-road').removeClass('is-active');
 	    };
 	});
+	$(window).scroll(function(){
+	    scrollFixedElements();
+
+	    if ($(window).scrollTop() > $('.js-header').outerHeight()) {
+	    	$('.js-header').addClass('is-fixed');
+	    	$('.js-road').addClass('is-fixed');
+	    }
+	    else {
+	    	$('.js-header').removeClass('is-fixed');
+	    	$('.js-road').removeClass('is-fixed');
+	    };
+	});
 
 	
 	$('.js-menu-btn').click(function() {

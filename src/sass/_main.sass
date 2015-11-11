@@ -1,7 +1,11 @@
 .out
 	min-width: 320px 
 	&_mod
-		padding: 0 0 46px		
+		padding: 0 0 46px	
+	&_header
+		padding: 79px 0 0
+		+r1
+			padding: 60px 0 0 	
 
 //PROMO (team_all-v2)					
 .promo
@@ -392,6 +396,9 @@
 		width: 100%
 		float: none
 		padding: 0
+
+.js-popup-btn
+	cursor: pointer
 	
 .post
 	padding: 0 0 60px 
@@ -414,6 +421,9 @@
 	&__img
 		position: relative
 		margin: 0 0 20px 
+		transition: opacity 0.2s
+		&:hover
+			opacity: 0.85 
 		img
 			max-width: 100%
 			display: block
@@ -895,6 +905,9 @@
 		vertical-align: top
 		padding: 0 5px 10px 
 		position: relative
+		transition: opacity 0.2s
+		&:hover
+			opacity: 0.85 
 		img
 			width: 100%
 	&__medium
@@ -2081,12 +2094,13 @@
 		position: relative
 		padding: 0 0 0 36.5% 
 		min-height: 344px 
+		border-bottom: 1px solid #eee 
 		+r3
 			padding: 0
 		&__img
 			position: absolute
 			top: 0
-			bottom: 0
+			bottom: -1px
 			left: 0
 			width: 36.5%
 			+cover
@@ -2094,6 +2108,7 @@
 				width: 100%
 				position: relative
 				padding-bottom: 60%
+				bottom: auto
 			.sticker
 				position: absolute
 				top: 40px 
@@ -2103,7 +2118,6 @@
 					left: 20px
 		&__block
 			padding: 40px 50px
-			border-bottom: 1px solid #eee 
 			+r2
 				padding: 20px
 			+r3

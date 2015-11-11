@@ -19,52 +19,56 @@
 
 	<!-- begin header  -->
 	<header class="header is-white js-fixed js-header">
-		<div class="header__inner">
-			<div class="header__logo">
-				<a href="#" class="logo">
-					<img src="img/logo.svg" alt="">
-				</a>
-			</div>		
-			<div class="header__menu js-menu">
-				<nav class="nav">
-					<ul class="nav__list">
-						<li class="nav__mobile"><a href="#">Главная</a></li>
-						<li>
-							<a href="#" class="js-menu-link">маршрут <i class="icon-arr-bot"></i></a>
-							<ul class="submenu js-menu-drop">
-								<li><a href="#">Планета</a></li>
-								<li><a href="#">Календарь</a></li>
+		<div class="header__wrap">
+			<div class="header__center">
+				<div class="header__inner">
+					<div class="header__logo">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="">
+						</a>
+					</div>		
+					<div class="header__menu js-menu">
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__mobile"><a href="#">Главная</a></li>
+								<li>
+									<a href="#" class="js-menu-link">маршрут <i class="icon-arr-bot"></i></a>
+									<ul class="submenu js-menu-drop">
+										<li><a href="#">Планета</a></li>
+										<li><a href="#">Календарь</a></li>
+									</ul>
+								</li>
+								<li><a href="#" class="js-menu-link">дневник</a></li>
+								<li><a href="#">про проект</a></li>
+								<li><a href="#">команда</a></li>
+								<li><a href="#">библиотека</a></li>
+								<li><a href="#">Топ</a></li>
+								<li class="nav__mobile"><a href="#" class=" js-popup-btn" data-btn="search">Поиск</a></li>
 							</ul>
-						</li>
-						<li><a href="#" class="js-menu-link">дневник</a></li>
-						<li><a href="#">про проект</a></li>
-						<li><a href="#">команда</a></li>
-						<li><a href="#">библиотека</a></li>
-						<li><a href="#">Топ</a></li>
-						<li class="nav__mobile"><a href="#" class=" js-popup-btn" data-btn="search">Поиск</a></li>
-					</ul>
-				</nav>
-				<button class="btn-search js-popup-btn" data-btn="search"><i class="icon-search"></i></button>
+						</nav>
+						<button class="btn-search js-popup-btn" data-btn="search"><i class="icon-search"></i></button>
+					</div>
+					<div class="header__date">
+						<div class="header__date-label">до старта</div>
+						<ul class="header__date-list">
+							<li>
+								<span>28</span>
+								<small>Дней</small>
+							</li>
+							<li>
+								<span>07</span>
+								<small>часов</small>
+							</li>
+							<li>
+								<span>29</span>
+								<small>минут</small>
+							</li>
+						</ul>
+					</div>
+					<button class="btn-menu js-menu-btn"><span></span></button>
+				</div>	
 			</div>
-			<div class="header__date">
-				<div class="header__date-label">до старта</div>
-				<ul class="header__date-list">
-					<li>
-						<span>28</span>
-						<small>Дней</small>
-					</li>
-					<li>
-						<span>07</span>
-						<small>часов</small>
-					</li>
-					<li>
-						<span>29</span>
-						<small>минут</small>
-					</li>
-				</ul>
-			</div>
-			<button class="btn-menu js-menu-btn"><span></span></button>
-		</div>	
+		</div>
 	</header>
 	<!-- end header -->
 	<div class="globe-mod">
