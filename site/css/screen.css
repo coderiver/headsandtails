@@ -1061,8 +1061,11 @@ a { text-decoration: none; }
 .comment-form__img img, .comment-form__img i { display: inline-block; vertical-align: middle; }
 .comment-form__img i { font-size: 16px; color: #8c8c8c; }
 .comment-form__info { text-align: right; }
-.comment-form__text { padding: 9px 0; margin-bottom: 70px; text-align: left; }
-.comment-form__text p { color: #8c8c8c; font-size: 16px; line-height: 22px; font-family: "GaramondPremr Medium", Arial, sans-serif; letter-spacing: 0.02em; }
+.comment-form__text { padding: 9px 0; text-align: left; }
+.comment-form__text p, .comment-form__text textarea { color: #8c8c8c; font-size: 16px; line-height: 22px; font-family: "GaramondPremr Medium", Arial, sans-serif; letter-spacing: 0.02em; }
+.comment-form__text textarea { border: none; resize: none; display: block; width: 100%; height: 92px; padding: 0; }
+.comment-form__text textarea:-moz-placeholder, .comment-form__text textarea::-moz-placeholder { color: #8c8c8c; opacity: 1; }
+.comment-form__text textarea::-webkit-input-placeholder { color: #8c8c8c; }
 
 
 
