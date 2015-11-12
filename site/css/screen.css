@@ -500,11 +500,11 @@ a { text-decoration: none; }
 .long__inner { position: relative; z-index: 2; max-width: 1200px; width: 100%; *zoom: 1; padding: 0 15px; display: inline-block; vertical-align: middle; text-align: left; }
 .long__inner:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 1024px) { .long__inner { max-width: 800px; } }
-.long__date { display: inline-block; opacity: 0.8; font-family: "ProximaNova Bold", Arial, sans-serif; color: #fff; line-height: 28px; font-size: 0; margin: 0 0 2px; }
-.long__date i, .long__date time { display: inline-block; vertical-align: middle; }
-.long__date time { font-size: 20px; padding: 4px 0 0 10px; }
+.long__date { display: inline-block; opacity: 0.8; font-family: "ProximaNova Bold", Arial, sans-serif; color: #fff; line-height: 28px; font-size: 0; margin: 0 0 2px; *zoom: 1; }
+.long__date:after { content: " "; display: table; clear: both; }
+.long__date time { font-size: 20px; padding: 4px 0 0 10px; display: block; overflow: hidden; }
 @media only screen and (max-width: 800px) { .long__date time { font-size: 16px; } }
-.long__date i { font-size: 9px; width: 38px; height: 38px; line-height: 36px; border: 2px dashed white; text-align: center; border-radius: 50%; }
+.long__date i { font-size: 9px; width: 38px; height: 38px; line-height: 36px; border: 2px dashed white; text-align: center; border-radius: 50%; float: left; }
 @media only screen and (max-width: 800px) { .long__date i { width: 30px; height: 30px; line-height: 30px; } }
 .long__title { color: #fff; font-family: "ProximaNova Bold", Arial, sans-serif; font-size: 74px; text-transform: uppercase; margin: 0 0 6px; }
 @media only screen and (max-width: 1024px) { .long__title { font-size: 60px; } }
@@ -668,21 +668,19 @@ a { text-decoration: none; }
 @media only screen and (max-width: 1200px) { .calendar { padding: 60px 0 0; } }
 .calendar:before { content: ""; position: absolute; top: 0; right: 0; left: 0; bottom: 0; background-color: rgba(17, 17, 18, 0.72); }
 .calendar__items { position: relative; z-index: 5; }
-.calendar-item { *zoom: 1; transition: background 0.25s; color: #fff; display: block; line-height: 1; padding: 62px 0 56px; border-bottom: 1px solid #535658; position: relative; }
+.calendar-item { *zoom: 1; transition: background 0.25s; color: #fff; display: block; line-height: 1; padding: 43px 0 40px; border-bottom: 1px solid #535658; position: relative; }
 .calendar-item:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 800px) { .calendar-item { padding: 20px 0; } }
-.calendar-item:hover { background: rgba(17, 17, 18, 0.5); }
-.calendar-item:hover .icon-next { opacity: 0.7; }
+.calendar-item:hover, .calendar-item.is-active { background: rgba(17, 17, 18, 0.5); }
+.calendar-item:hover .icon-next, .calendar-item.is-active .icon-next { opacity: 0.7; }
 .calendar-item .icon-next { position: absolute; top: 50%; right: 37px; margin-top: -18px; font-size: 14px; width: 36px; height: 36px; border: 2px solid white; border-radius: 50%; opacity: 0; line-height: 32px; text-align: center; transition: opacity 0.25s; }
 @media only screen and (max-width: 1200px) { .calendar-item .icon-next { right: 15px; } }
 @media only screen and (max-width: 800px) { .calendar-item .icon-next { font-size: 12px; width: 30px; height: 30px; margin-top: -15px; line-height: 26px; } }
-.calendar-item__left { float: left; width: 22%; padding: 7px 15px 7px 40px; }
-@media only screen and (max-width: 1200px) { .calendar-item__left { padding: 7px 15px; width: 30%; } }
-@media only screen and (max-width: 800px) { .calendar-item__left { width: 100%; float: none; padding: 10px 50px 10px 15px; } }
-.calendar-item__right { float: left; width: 78%; *zoom: 1; padding: 0 100px 0 15px; }
-.calendar-item__right:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 1200px) { .calendar-item__right { width: 70%; padding: 7px 70px 5px 15px; } }
-@media only screen and (max-width: 800px) { .calendar-item__right { width: 100%; float: none; padding: 10px 50px 10px 15px; } }
+.calendar-item__inner { max-width: 1200px; padding: 0 15px; margin: 0 auto; }
+.calendar-item__text { *zoom: 1; padding: 15px 100px 0 0; }
+.calendar-item__text:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 1200px) { .calendar-item__text { padding: 7px 70px 5px 0; } }
+@media only screen and (max-width: 800px) { .calendar-item__text { padding: 10px 50px 10px 0; } }
 .calendar-item__list, .calendar-item__country { opacity: 0.7; font-family: "ProximaNova Regular", Arial, sans-serif; }
 .calendar-item__day, .calendar-item__city { opacity: 0.9; }
 .calendar-item__list { font-size: 0; margin-bottom: 4px; }
@@ -690,12 +688,15 @@ a { text-decoration: none; }
 .calendar-item__list li:first-child:before { display: none; }
 .calendar-item__list li:before { content: ""; position: absolute; left: -10px; top: 50%; margin-top: -1px; width: 2px; height: 2px; background: #fff; border-radius: 1px; }
 .calendar-item__day { font-size: 18px; font-family: "GaramondPremr Medium", Arial, sans-serif; }
-.calendar-item__city { font-size: 60px; text-transform: uppercase; font-family: "ProximaNova Bold", Arial, sans-serif; float: left; padding: 0 35px 0 0; }
+.calendar-item__city { font-size: 74px; text-transform: uppercase; font-family: "ProximaNova Bold", Arial, sans-serif; float: left; padding: 0 35px 0 0; line-height: 1; }
 @media only screen and (max-width: 1200px) { .calendar-item__city { font-size: 40px; padding: 0 20px 0 0; } }
 @media only screen and (max-width: 800px) { .calendar-item__city { padding: 0 0 10px; float: none; font-size: 28px; } }
-.calendar-item__country { font-size: 22px; padding: 5px 0; overflow: hidden; }
+.calendar-item__country { font-size: 22px; padding: 6px 0; overflow: hidden; }
 @media only screen and (max-width: 1200px) { .calendar-item__country { font-size: 18px; padding: 3px 0; } }
 @media only screen and (max-width: 800px) { .calendar-item__country { overflow: visible; display: block; } }
+.calendar .long { height: auto; padding: 30px 0; border-bottom: 1px solid #535658; display: none; }
+.calendar .long:before, .calendar .long:after { display: none; }
+.calendar .long__inner { display: block; margin: 0 auto; }
 
 .login { padding: 140px 0 100px; position: relative; }
 .login__close { position: absolute; top: 57px; right: 60px; font-size: 31px; color: white; }

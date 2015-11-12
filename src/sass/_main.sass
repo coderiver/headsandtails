@@ -703,12 +703,12 @@
 		line-height: 28px
 		font-size: 0
 		margin: 0 0 2px 
-		i, time
-			display: inline-block
-			vertical-align: middle
+		+clr
 		time			
 			font-size: 20px
 			padding: 4px 0 0 10px
+			display: block
+			overflow: hidden
 			+r3
 				font-size: 16px
 		i
@@ -719,6 +719,7 @@
 			border: 2px dashed white
 			text-align: center
 			border-radius: 50%
+			float: left
 			+r3
 				width: 30px
 				height: 30px
@@ -1254,12 +1255,12 @@
 		color: #fff 
 		display: block
 		line-height: 1
-		padding: 62px 0 56px
+		padding: 43px 0 40px
 		border-bottom: 1px solid #535658  
 		position: relative
 		+r3
 			padding: 20px 0
-		&:hover
+		&:hover, &.is-active
 			background: rgba(#111112, 0.5)
 			.icon-next
 				opacity: 0.7
@@ -1285,29 +1286,17 @@
 				height: 30px
 				margin-top: -15px
 				line-height: 26px
-		&__left
-			float: left
-			width: 22%
-			padding: 7px 15px 7px 40px
-			+r1
-				padding: 7px 15px
-				width: 30% 
-			+r3
-				width: 100%
-				float: none
-				padding: 10px 50px 10px 15px 
-		&__right
-			float: left
-			width: 78%
+		&__inner
+			max-width: 1200px
+			padding: 0 15px 
+			margin: 0 auto 
+		&__text
 			+clr
-			padding: 0 100px 0 15px 
+			padding: 15px 100px 0 0 
 			+r1
-				width: 70%
-				padding: 7px 70px 5px 15px			
+				padding: 7px 70px 5px 0			
 			+r3
-				width: 100%
-				float: none
-				padding: 10px 50px 10px 15px 
+				padding: 10px 50px 10px 0 
 		&__list, &__country
 			opacity: 0.7
 			+reg
@@ -1339,11 +1328,12 @@
 			font-size: 18px
 			+gpmed
 		&__city
-			font-size: 60px
+			font-size: 74px
 			text-transform: uppercase
 			+bold
 			float: left
 			padding: 0 35px 0 0 
+			line-height: 1
 			+r1
 				font-size: 40px
 				padding: 0 20px 0 0 
@@ -1353,7 +1343,7 @@
 				font-size: 28px
 		&__country
 			font-size: 22px
-			padding: 5px 0
+			padding: 6px 0
 			overflow: hidden 
 			+r1
 				font-size: 18px
@@ -1361,7 +1351,16 @@
 			+r3
 				overflow: visible
 				display: block
-				
+	.long
+		height: auto
+		padding: 30px 0
+		border-bottom: 1px solid #535658  
+		display: none
+		&:before, &:after
+			display: none
+		&__inner
+			display: block
+			margin: 0 auto 
 //login
 .login
 	padding: 140px 0 100px

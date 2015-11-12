@@ -193,6 +193,23 @@ $(document).ready(function() {
 
 	$('.js-calendar-item').hoverIntent(calendarItem);
 
+	$('.js-calendar-item').click(function() {
+		var btns = $('.js-calendar-item'),
+			items = $('.js-calendar-drop');
+
+		if ($(this).hasClass('is-active')) {
+			btns.removeClass('is-active');
+			items.slideUp('fast');
+		}
+		else {
+			btns.removeClass('is-active');
+			items.slideUp('fast');
+			$(this).addClass('is-active');
+			$(this).siblings('.js-calendar-drop').slideDown('fast');
+		};
+		return false;
+	});
+
 	function calendarItem () {
 		var index = $(this).data('index');
 		$('.js-calendar-slider').slick('slickGoTo', index);
