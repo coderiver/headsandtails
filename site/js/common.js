@@ -10,7 +10,9 @@ $(document).ready(function() {
 	        left: -scroll_left
 	    });
 	}
+
 	scrollFixedElements();
+	
 	$(window).scroll(function(){
 	    scrollFixedElements();
 

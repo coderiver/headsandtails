@@ -1249,6 +1249,8 @@
 	&__items
 		position: relative
 		z-index: 5
+	&-item-wrap
+		border-bottom: 1px solid #535658  
 	&-item
 		+clr
 		transition: background 0.25s
@@ -1256,15 +1258,20 @@
 		display: block
 		line-height: 1
 		padding: 43px 0 40px
-		border-bottom: 1px solid #535658  
 		position: relative
 		+r3
 			padding: 20px 0
-		&:hover, &.is-active
+		&:hover
 			background: rgba(#111112, 0.5)
 			.icon-next
 				opacity: 0.7
-		.icon-next
+		&.is-active
+			background: rgba(#111112, 0.5)
+			.icon-close
+				opacity: 0.7
+			.icon-next
+				opacity: 0
+		.icon-next, .icon-close
 			position: absolute
 			top: 50%
 			right: 37px
@@ -1353,9 +1360,9 @@
 				display: block
 	.long
 		height: auto
-		padding: 30px 0
-		border-bottom: 1px solid #535658  
+		padding: 0 0 30px
 		display: none
+		background: rgba(17, 17, 18, 0.5) 
 		&:before, &:after
 			display: none
 		&__inner
