@@ -901,12 +901,22 @@
 	margin: 0 -6px
 	font-size: 0
 	padding: 0 0 10px 
+	&__inner
+		position: absolute
+		top: 0
+		left: 5px
+		right: 5px
+		bottom: 0
+		+cover
 	&__medium, &__small
 		display: inline-block
 		vertical-align: top
-		padding: 0 5px 10px 
+		margin: 0 0 10px 
 		position: relative
 		transition: opacity 0.2s
+		height: 0
+		padding: 0 0 33.33% 
+		position: relative
 		&:hover
 			opacity: 0.85 
 		img
@@ -924,7 +934,7 @@
 		top: 0
 		left: 5px
 		right: 5px
-		bottom: 10px
+		bottom: 0
 		transition: all 0.25s
 		+vertical
 		background-color: rgba(0, 0, 0, 0.5)
@@ -1519,6 +1529,12 @@
 			font-size: 16px
 			line-height: 1.3
 
+.js-tooltip-parent
+	&:hover
+		.tooltip
+			opacity: 1
+			visibility: visible
+			bottom: 100%
 .tooltip
 	border-radius: 4px
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
@@ -1535,23 +1551,25 @@
 	+r3
 		transform: translateX(0)
 		left: -10px
-	&.is-active
-		opacity: 1
-		visibility: visible
-		bottom: 100%
+	&:before, &:after
+		content: "" 
+		position: absolute
 	&:before
 		width: 14px
 		height: 14px
-		position: absolute
 		top: 100%
 		left: 50%
 		margin: -7px 0 0 -7px
-		content: "" 
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
 		transform: rotate(45deg)
 		background: #fff 
 		+r3
 			left: 18px
+	&:after
+		top: 100%
+		left: 0
+		right: 0
+		height: 15px
 	&__inner
 		padding: 8px 5px 
 		background-color: white
@@ -2147,3 +2165,15 @@
 		+gpmed
 	.load
 		padding: 15px 
+
+.load-block
+	display: none
+	&.is-active
+		display: block
+
+.load-top
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	height: 0
