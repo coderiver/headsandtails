@@ -66,13 +66,13 @@
 			padding: 5px 0 
 		+r1
 			display: none
-		&-label, &-list li
+		&-label
 			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
-			text-align: left 
 			color: white
 			transition: color 0.25s ease
 			letter-spacing: 0.02em 
 			text-transform: uppercase
+			text-align: left 
 			display: inline-block
 			vertical-align: top
 		&-label
@@ -148,7 +148,11 @@
 								display: none
 		.header
 			&__date
-				&-label, &-list li
+				&-label
+					color: #333 
+					text-shadow: none
+			&-countdown
+				.countdown-amount, .countdown-period
 					color: #333 
 					text-shadow: none
 		.btn-menu
@@ -332,3 +336,58 @@
 								color: #fff 
 						&:before
 							display: none
+
+
+@keyframes timer
+	from 
+		opacity: 0.3
+	to 
+		opacity: 1
+
+.header-countdown
+	display: inline-block
+	vertical-align: top
+	+clr
+	font-size: 0
+	border: none
+	background: none
+	.countdown-section
+		padding: 0 0 0 11px 
+		float: left
+		position: relative
+		margin: 0
+		width: auto
+		&:first-child
+			padding: 0
+			.countdown-amount
+				&:before
+					display: none
+	.countdown-row
+		+clr
+		padding: 0
+		margin: 0
+	.countdown-amount, .countdown-period
+		line-height: 1
+		+semi
+		display: block
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+		color: white
+		transition: color 0.25s ease
+		letter-spacing: 0.02em 
+		text-transform: uppercase
+		width: auto
+		text-align: left
+	.countdown-amount
+		font-size: 38px
+		margin-bottom: 1px
+		+r(1500)
+			font-size: 28px
+		&:before
+			content: ":"
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			animation: timer 1s infinite linear
+	.countdown-period
+		font-size: 9px

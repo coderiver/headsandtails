@@ -303,5 +303,10 @@ $(document).ready(function() {
 	var firstScriptTag = document.getElementsByTagName('script')[0];
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+	$('.js-countdown').countdown({until: new Date(2015, 12-1, 1), 
+		format: 'dHM',
+		labels: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+	});
+
 
 });

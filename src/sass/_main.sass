@@ -1036,14 +1036,17 @@
 		opacity: 1
 		visibility: visible
 	i
-		font-size: 12px
-		line-height: 26px
-		width: 30px
-		height: 30px
-		border: 2px solid #8e98a1
-		border-radius: 50%
-		text-align: center
 		color: #8e98a1
+		&.icon-prev, &.icon-next
+			font-size: 30px
+		&.icon-marker
+			font-size: 12px
+			line-height: 26px
+			width: 30px
+			height: 30px
+			border: 2px solid #8e98a1
+			border-radius: 50%
+			text-align: center
 	i, span
 		transition: color 0.25s, border-color 0.25s
 	&__prev
@@ -1114,7 +1117,8 @@
 		+r4
 			padding: 100px 15px 20px 
 	img
-		max-width: 100%
+		width: 100%
+		max-width: 532px
 		display: block
 		margin-bottom: 60px
 		+r4
