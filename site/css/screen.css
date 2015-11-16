@@ -974,7 +974,7 @@ a { text-decoration: none; }
 
 .popup-wrapper { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.8); padding: 30px 0; overflow: auto; z-index: 3000; visibility: hidden; opacity: 0; }
 .popup-wrapper.is-active { visibility: visible; opacity: 1; }
-.popup-wrapper.popup-login { background: url(../img/login-bg.jpg) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.popup-wrapper.popup-login { background: url(../img/login-bg.jpg) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; z-index: 4000; }
 
 .popup { max-width: 970px; margin: 0 auto; position: relative; background: #fff; min-width: 320px; }
 .popup__close { width: 40px; height: 40px; position: absolute; top: 0; right: 0; font-size: 12px; color: #333; background: #fff; z-index: 10; }

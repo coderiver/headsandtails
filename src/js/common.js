@@ -161,13 +161,12 @@ $(document).ready(function() {
 				close = $('.js-popup-close'),
 				popupInner = $('.js-popup-inner');
 			$(this).click(function() {
-				popups.removeClass('is-active');
 				popup.addClass('is-active');
 				$('body').addClass('is-hidden');
 				return false;
 			});
 			close.click(function() {
-				popups.removeClass('is-active');
+				$(this).parents('.js-popup').removeClass('is-active');
 				$('body').removeClass('is-hidden');
 				return false;
 			});
