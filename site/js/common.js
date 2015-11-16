@@ -207,7 +207,6 @@ $(document).ready(function() {
 			$(this).addClass('is-active');
 			$(this).siblings('.js-calendar-drop').slideDown('fast');
 		};
-		return false;
 	});
 
 	function calendarItem () {

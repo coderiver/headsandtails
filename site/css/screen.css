@@ -318,7 +318,7 @@ a { text-decoration: none; }
 .header-countdown .countdown-amount, .header-countdown .countdown-period { line-height: 1; font-family: "ProximaNova Semibold", Arial, sans-serif; display: block; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); color: white; transition: color 0.25s ease; letter-spacing: 0.02em; text-transform: uppercase; width: auto; text-align: left; }
 .header-countdown .countdown-amount { font-size: 38px; margin-bottom: 1px; }
 @media only screen and (max-width: 1500px) { .header-countdown .countdown-amount { font-size: 28px; } }
-.header-countdown .countdown-amount:before { content: ":"; position: absolute; top: 0; left: 0; display: block; -webkit-animation: timer 1s infinite linear; animation: timer 1s infinite linear; }
+.header-countdown .countdown-amount:before { content: ":"; position: absolute; top: 0; left: 0; display: block; -webkit-animation: timer 1s infinite linear; animation: timer 1s infinite linear; width: 11px; text-align: center; }
 .header-countdown .countdown-period { font-size: 9px; }
 
 .out { min-width: 320px; }
@@ -697,7 +697,7 @@ a { text-decoration: none; }
 .calendar:before { content: ""; position: absolute; top: 0; right: 0; left: 0; bottom: 0; background-color: rgba(17, 17, 18, 0.72); }
 .calendar__items { position: relative; z-index: 5; }
 .calendar-item-wrap { border-bottom: 1px solid #535658; }
-.calendar-item { *zoom: 1; transition: background 0.25s; color: #fff; display: block; line-height: 1; padding: 43px 0 40px; position: relative; }
+.calendar-item { *zoom: 1; transition: background 0.25s; color: #fff; display: block; line-height: 1; padding: 43px 0 40px; position: relative; cursor: pointer; }
 .calendar-item:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 800px) { .calendar-item { padding: 20px 0; } }
 .calendar-item:hover { background: rgba(17, 17, 18, 0.5); }
