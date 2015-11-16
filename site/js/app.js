@@ -363,6 +363,7 @@ $(document).ready(function() {
 	$('.js-countdown').countdown({until: new Date(2015, 12-1, 1), 
 		format: 'dHM',
 		labels: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+		padZeroes: true,
 	});
 
 
