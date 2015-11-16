@@ -54,15 +54,16 @@ $(document).ready(function() {
 		if ($(window).scrollTop() + $(window).height() - $('.js-loader').outerHeight() >= $('.js-loader').offset().top) {
 			$('.js-load-block').addClass('is-active');
 		};
-		console.log($(window).scrollTop() + $(window).height() + $('.js-loader').outerHeight(), $('.js-loader').offset().top)
 	});
 
-	$('.js-popup').on('scroll', function() {
+	$('.js-popup').scroll(function() {
 
 		var popup = $(this);
 
 		if ($(this).scrollTop() + $(this).innerHeight() >= $('.js-load-comment').position().top) {
 			popup.find('.js-load-comments').addClass('is-active');
+
+			console.log($(this).scrollTop() + $(this).innerHeight() - $('.js-load-comment'), $('.js-load-comment').position().top);
 		};
 
 	});
@@ -160,6 +161,7 @@ $(document).ready(function() {
 				close = $('.js-popup-close'),
 				popupInner = $('.js-popup-inner');
 			$(this).click(function() {
+				popups.removeClass('is-active');
 				popup.addClass('is-active');
 				$('body').addClass('is-hidden');
 				return false;
