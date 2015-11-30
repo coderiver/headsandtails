@@ -657,8 +657,8 @@ a { text-decoration: none; }
 .globe__inner { padding: 165px 15px 90px; max-width: 1200px; margin: 0 auto; position: relative; }
 @media only screen and (max-width: 1024px) { .globe__inner { padding: 100px 15px 50px; } }
 @media only screen and (max-width: 500px) { .globe__inner { padding: 100px 15px 20px; } }
-.globe img { width: 100%; max-width: 532px; display: block; margin-bottom: 60px; }
-@media only screen and (max-width: 500px) { .globe img { margin-bottom: 25px; } }
+.globe__inner img { width: 100%; max-width: 532px; display: block; margin-bottom: 60px; }
+@media only screen and (max-width: 500px) { .globe__inner img { margin-bottom: 25px; } }
 .globe p { max-width: 500px; color: white; font-family: "GaramondPremr Medium", Arial, sans-serif; font-size: 18px; line-height: 24px; letter-spacing: 0.02em; margin-bottom: 50px; }
 @media only screen and (max-width: 500px) { .globe p { font-size: 16px; line-height: 1.3; margin-bottom: 25px; } }
 .globe__info { font-size: 0; margin-bottom: 47px; }
@@ -1112,6 +1112,15 @@ a { text-decoration: none; }
 .comment-form__text textarea { border: none; resize: none; display: block; width: 100%; height: 92px; padding: 0; }
 .comment-form__text textarea:-moz-placeholder, .comment-form__text textarea::-moz-placeholder { color: #8c8c8c; opacity: 1; }
 .comment-form__text textarea::-webkit-input-placeholder { color: #8c8c8c; }
+
+#webgl_canvas { top: 0px; }
+
+.marker { position: absolute; display: inline-block; background-color: rgba(0, 0, 0, 0.87); color: #ffffff; font-size: 24px; font-family: "ProximaNova Semibold", Arial, sans-serif; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; margin: 0px; border: 0px; padding: 10px; overflow: hidden; cursor: pointer; }
+
+#info { visibility: hidden; position: fixed; display: inline-block; top: 500px; left: 200px; color: white; pointer-events: none; white-space: nowrap; }
+#info img { width: 43px; display: inline-block; vertical-align: middle; }
+
+#info_name { display: inline-block; vertical-align: middle; color: white; font-size: 24px; font-family: "ProximaNova Semibold", Arial, sans-serif; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
 
 
 

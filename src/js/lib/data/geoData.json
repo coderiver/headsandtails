@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Greenwich",
+        "lat": "51.479550",
+        "lon": "-0.000564",
+        "visited": "true"
+    },
+    {
+        "name": "Antverpen",
+        "lat": "51.210430",
+        "lon": "4.403031",
+        "visited": "true"
+    },
+    {
+        "name": "Dusseldorf",
+        "lat": "51.227741",
+        "lon": "-6.773456",
+        "visited": "true"
+    },
+    {
+        "name": "Florence",
+        "lat": "43.769560",
+        "lon": "11.255814",
+        "visited": "true"
+    },
+    {
+        "name": "Namibia",
+        "lat": "-22.437041",
+        "lon": "16.874883",
+        "visited": "true"
+    },
+    {
+        "name": "Johannesburg",
+        "lat": "-26.200632",
+        "lon": "27.981446",
+        "visited": "true"
+    },
+    {
+        "name": "Zimbabwe",
+        "lat": "-19.168346",
+        "lon": "30.006378",
+        "visited": "false"
+    },
+    {
+        "name": "Mozambique ",
+        "lat": "-25.893358",
+        "lon": "32.494365",
+        "visited": "false"
+    },
+    {
+        "name": "Uganda",
+        "lat": "0.334781",
+        "lon": "32.590196",
+        "visited": "false"
+    }
+]
