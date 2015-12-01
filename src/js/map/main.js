@@ -1,5 +1,4 @@
 
-
 var pathToData="js/lib/data/geoData.json";
 
 window.rotating;
@@ -19,7 +18,7 @@ window.addEventListener("load", function () {
   stats.domElement.style.position = 'absolute';
   stats.domElement.style.left = '0px';
   stats.domElement.style.top = '0px';
-  document.body.appendChild( stats.domElement );
+  // document.body.appendChild( stats.domElement );
 
 
   setupScene();
@@ -42,10 +41,12 @@ function setupScene(){
   renderer = new THREE.WebGLRenderer({ antialias: true } ); 
   renderer.setClearColor(new THREE.Color(0x76c6e0, 1.0));
   renderer.setSize( _w, _h ); 
-  document.body.appendChild( renderer.domElement );  
+  document.getElementById("globeHolder").appendChild( renderer.domElement );  
 
   group = new THREE.Object3D(); 
   scene.add(group);
+  group.position.x=0.6;
+  group.position.y=0.12;
   window.rotating=group;
   raycaster = new THREE.Raycaster();
 
@@ -72,6 +73,8 @@ function onWindowResize() {
 
   windowHalfX = window.innerWidth / 2;
   windowHalfY = window.innerHeight / 2;
+
+   group.position.x=0.6/(1920/1080/(windowHalfX/windowHalfY));
 
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
