@@ -1519,7 +1519,7 @@
 	max-width: 1200px
 	margin: 0 auto 
 	+clr
-	padding: 69px 0 65px 
+	padding: 69px 0 53px 
 	+r3
 		padding: 10px 0 
 	&__col
@@ -1629,11 +1629,20 @@
 	position: relative
 	+clr
 	&__slide
-		padding: 21px 0 0 
+		padding: 33px 0 0 
 		+r3
 			padding: 0
 		&-in
-			background-color: #e2c253
+			background-color: #76cde7
+			position: relative
+			&:before
+				position: absolute
+				top: 100%
+				left: 0
+				right: 0
+				height: 300px
+				background-color: #76cde7
+				content: "" 
 	&__inner
 		+clr
 		position: relative
@@ -1644,28 +1653,35 @@
 		bottom: 0
 		left: 0
 		width: 40%
+		// max-height: 445px 
 		font-size: 0
-		margin-top: -21px
+		top: -21px
 		+r3
 			width: 100%
-			position: static
+			position: relative
 			text-align: left
 			margin: 0
-		+r4
-			width: 50%
+			height: 350px
+			top: auto
 		img
 			max-width: 100%
+			max-height: 100% 
+			position: absolute
+			bottom: 0
+			left: 0
 	&__info
 		float: right
 		width: 60%
 		position: relative
 		z-index: 2 
-		padding: 89px 70px 108px 40px
+		padding: 89px 70px 60px 40px
 		text-align: center
+		min-height: 412px
 		+r3
 			width: 100%
 			float: none
 			padding: 20px 50px 20px 40px 
+			min-height: 200px 
 		+r4
 			padding: 30px 20px 
 	&__name

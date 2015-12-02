@@ -3401,8 +3401,10 @@ $(document).ready(function() {
 	});
 
 	$(window).scroll(function() {
-		if ($(window).scrollTop() + $(window).height() - $('.js-loader').outerHeight() >= $('.js-loader').offset().top) {
-			$('.js-load-block').addClass('is-active');
+		if ($('.js-loader').length) {
+			if ($(window).scrollTop() + $(window).height() - $('.js-loader').outerHeight() >= $('.js-loader').offset().top) {
+				$('.js-load-block').addClass('is-active');
+			};
 		};
 	});
 
@@ -3581,6 +3583,7 @@ $(document).ready(function() {
 			arrows: false,
 			slidesToShow: 1,
 			slidesToScroll: 1,
+			adaptiveHeight: true
 			// infinite: false
 		});
 

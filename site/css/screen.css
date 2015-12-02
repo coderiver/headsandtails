@@ -772,7 +772,7 @@ a { text-decoration: none; }
 .about__top { font-size: 0; }
 .about__top img { width: 100%; }
 
-.block-text { max-width: 1200px; margin: 0 auto; *zoom: 1; padding: 69px 0 65px; }
+.block-text { max-width: 1200px; margin: 0 auto; *zoom: 1; padding: 69px 0 53px; }
 .block-text:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 800px) { .block-text { padding: 10px 0; } }
 .block-text__col { padding: 10px 15px; float: left; width: 50%; }
@@ -803,17 +803,17 @@ a { text-decoration: none; }
 
 .big-quote { position: relative; *zoom: 1; }
 .big-quote:after { content: " "; display: table; clear: both; }
-.big-quote__slide { padding: 21px 0 0; }
+.big-quote__slide { padding: 33px 0 0; }
 @media only screen and (max-width: 800px) { .big-quote__slide { padding: 0; } }
-.big-quote__slide-in { background-color: #e2c253; }
+.big-quote__slide-in { background-color: #76cde7; position: relative; }
+.big-quote__slide-in:before { position: absolute; top: 100%; left: 0; right: 0; height: 300px; background-color: #76cde7; content: ""; }
 .big-quote__inner { *zoom: 1; position: relative; max-width: 1000px; margin: 0 auto; }
 .big-quote__inner:after { content: " "; display: table; clear: both; }
-.big-quote__img { position: absolute; bottom: 0; left: 0; width: 40%; font-size: 0; margin-top: -21px; }
-@media only screen and (max-width: 800px) { .big-quote__img { width: 100%; position: static; text-align: left; margin: 0; } }
-@media only screen and (max-width: 500px) { .big-quote__img { width: 50%; } }
-.big-quote__img img { max-width: 100%; }
-.big-quote__info { float: right; width: 60%; position: relative; z-index: 2; padding: 89px 70px 108px 40px; text-align: center; }
-@media only screen and (max-width: 800px) { .big-quote__info { width: 100%; float: none; padding: 20px 50px 20px 40px; } }
+.big-quote__img { position: absolute; bottom: 0; left: 0; width: 40%; font-size: 0; top: -21px; }
+@media only screen and (max-width: 800px) { .big-quote__img { width: 100%; position: relative; text-align: left; margin: 0; height: 350px; top: auto; } }
+.big-quote__img img { max-width: 100%; max-height: 100%; position: absolute; bottom: 0; left: 0; }
+.big-quote__info { float: right; width: 60%; position: relative; z-index: 2; padding: 89px 70px 60px 40px; text-align: center; min-height: 412px; }
+@media only screen and (max-width: 800px) { .big-quote__info { width: 100%; float: none; padding: 20px 50px 20px 40px; min-height: 200px; } }
 @media only screen and (max-width: 500px) { .big-quote__info { padding: 30px 20px; } }
 .big-quote__name { color: #fff; font-size: 18px; line-height: 1; font-family: "ProximaNova Semibold", Arial, sans-serif; opacity: 0.7; }
 .big-quote__blockquote { color: white; font-family: "GaramondPremr Medium", Arial, sans-serif; font-size: 24px; line-height: 28px; letter-spacing: 0.02em; position: relative; padding: 30px 0 55px; }
