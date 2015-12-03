@@ -363,7 +363,7 @@ a { text-decoration: none; }
 .banner .social { margin: 0 -7px 0 0; float: right; }
 @media only screen and (max-width: 1024px) { .banner .social { position: absolute; bottom: 25px; right: 15px; left: 15px; text-align: right; margin: 0; } }
 @media only screen and (max-width: 1024px) { .banner .social li { padding: 0 0 0 10px; } }
-.banner__img { position: absolute; bottom: 0; left: 15px; max-width: 400px; }
+.banner__img { position: absolute; bottom: 0; left: 15px; max-width: 400px; max-height: 100%; }
 @media only screen and (max-width: 1024px) { .banner__img { position: static; display: block; max-width: 50%; width: 200px; } }
 .banner__text { overflow: hidden; padding: 145px 0 99px 30px; position: relative; }
 @media only screen and (max-width: 1024px) { .banner__text { padding: 30px 15px 20px; } }
