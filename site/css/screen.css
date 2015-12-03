@@ -363,9 +363,9 @@ a { text-decoration: none; }
 .banner .social { margin: 0 -7px 0 0; float: right; }
 @media only screen and (max-width: 1024px) { .banner .social { position: absolute; bottom: 25px; right: 15px; left: 15px; text-align: right; margin: 0; } }
 @media only screen and (max-width: 1024px) { .banner .social li { padding: 0 0 0 10px; } }
-.banner__img { position: absolute; bottom: 0; left: 15px; }
+.banner__img { position: absolute; bottom: 0; left: 15px; max-width: 400px; }
 @media only screen and (max-width: 1024px) { .banner__img { position: static; display: block; max-width: 50%; width: 200px; } }
-.banner__text { overflow: hidden; padding: 145px 0 99px 30px; }
+.banner__text { overflow: hidden; padding: 145px 0 99px 30px; position: relative; }
 @media only screen and (max-width: 1024px) { .banner__text { padding: 30px 15px 20px; } }
 .banner__title { font-family: "ProximaNova Semibold", Arial, sans-serif; font-size: 38px; line-height: 1; margin-bottom: 6px; overflow: hidden; }
 @media only screen and (max-width: 800px) { .banner__title { font-size: 28px; } }
@@ -373,10 +373,10 @@ a { text-decoration: none; }
 @media only screen and (max-width: 800px) { .banner__label { font-size: 14px; } }
 .banner__info { font-size: 0; margin-bottom: 20px; }
 @media only screen and (max-width: 500px) { .banner__info { margin-bottom: 10px; } }
-.banner__info li { display: inline-block; vertical-align: top; font-family: "ProximaNova Semibold", Arial, sans-serif; text-transform: uppercase; margin-right: 33px; }
+.banner__info li { display: inline-block; vertical-align: top; font-family: "ProximaNova Semibold", Arial, sans-serif; text-transform: uppercase; margin-right: 33px; white-space: nowrap; }
 @media only screen and (max-width: 500px) { .banner__info li { margin: 0 0 10px; display: block; } }
 .banner__info li span, .banner__info li i, .banner__info li img { display: inline-block; vertical-align: middle; }
-.banner__info li span { font-size: 13px; }
+.banner__info li span { font-size: 13px; white-space: normal; }
 .banner__info li i { opacity: 0.7; margin-right: 8px; }
 .banner__info li i.icon-plane { font-size: 9px; }
 .banner__info li i.icon-earth { font-size: 14px; }
