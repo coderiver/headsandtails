@@ -6,6 +6,8 @@
 		padding: 79px 0 0
 		+r1
 			padding: 60px 0 0 	
+	&-globe
+		overflow: hidden
 
 //PROMO (team_all-v2)					
 .promo
@@ -52,6 +54,8 @@
 
 .team
 	+clr
+	border-right: 1px solid #878787
+	border-bottom: 1px solid #878787
 
 //person (team_all-v2)				
 .person
@@ -63,6 +67,8 @@
 	font-size: 0
 	overflow: hidden
 	cursor: pointer
+	border-top: 1px solid #878787
+	border-left: 1px solid #878787
 	+r1
 		width: 33.33%
 		padding-bottom: 42%
@@ -73,6 +79,9 @@
 		img
 			&.is-hide
 				opacity: 1
+		.person__info
+			opacity: 1
+			visibility: visible
 	img
 		width: 100%
 		&.is-hide
@@ -92,6 +101,10 @@
 		line-height: 1
 		padding: 0 0 37px 
 		z-index: 1
+		visibility: hidden
+		opacity: 0
+		transition: opacity 0.4s ease, visibility 0.4s ease
+		will-change: opacity
 		+r4
 			padding: 0 0 20px 
 	&__title

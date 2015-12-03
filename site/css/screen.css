@@ -43,7 +43,7 @@ body.is-hidden { overflow: hidden; }
 .page-globe-mod .out { height: 100%; text-align: center; font-size: 0; position: relative; text-align: right; min-height: 400px; }
 .page-globe-mod .out:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 
-.globe-mod { display: inline-block; vertical-align: middle; max-width: 400px; width: 100%; text-align: center; color: #fff; padding: 20px 15px; }
+.globe-mod { display: inline-block; vertical-align: middle; max-width: 400px; width: 100%; text-align: center; color: #fff; padding: 20px 15px; position: relative; }
 .globe-mod__title { font-size: 40px; line-height: 1; text-transform: uppercase; font-family: "ProximaNova Bold", Arial, sans-serif; margin-bottom: 10px; }
 @media only screen and (max-width: 500px) { .globe-mod__title { font-size: 28px; } }
 .globe-mod__time { opacity: 0.7; font-size: 16px; font-family: "ProximaNova Semibold", Arial, sans-serif; margin-bottom: 20px; }
@@ -327,6 +327,7 @@ a { text-decoration: none; }
 .out_mod { padding: 0 0 46px; }
 .out_header { padding: 79px 0 0; }
 @media only screen and (max-width: 1200px) { .out_header { padding: 60px 0 0; } }
+.out-globe { overflow: hidden; }
 
 .promo { text-align: center; font-size: 0; background: url(../img/team.jpg) no-repeat center center; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; height: 500px; position: relative; }
 .promo:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
@@ -338,16 +339,17 @@ a { text-decoration: none; }
 .promo p { font-family: "GaramondPremr Regular", Arial, sans-serif; color: #fff; font-size: 20px; letter-spacing: 0.02em; }
 @media only screen and (max-width: 500px) { .promo p { font-size: 16px; } }
 
-.team { *zoom: 1; }
+.team { *zoom: 1; border-right: 1px solid #878787; border-bottom: 1px solid #878787; }
 .team:after { content: " "; display: table; clear: both; }
 
-.person { width: 25%; height: 0; padding-bottom: 32%; float: left; position: relative; font-size: 0; overflow: hidden; cursor: pointer; }
+.person { width: 25%; height: 0; padding-bottom: 32%; float: left; position: relative; font-size: 0; overflow: hidden; cursor: pointer; border-top: 1px solid #878787; border-left: 1px solid #878787; }
 @media only screen and (max-width: 1200px) { .person { width: 33.33%; padding-bottom: 42%; } }
 @media only screen and (max-width: 800px) { .person { width: 50%; padding-bottom: 64%; } }
 .person:hover img.is-hide { opacity: 1; }
+.person:hover .person__info { opacity: 1; visibility: visible; }
 .person img { width: 100%; }
 .person img.is-hide { position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.4s ease; will-change: opacity; }
-.person__info { position: absolute; bottom: 0; left: 0; right: 0; color: #fff; text-align: center; line-height: 1; padding: 0 0 37px; z-index: 1; }
+.person__info { position: absolute; bottom: 0; left: 0; right: 0; color: #fff; text-align: center; line-height: 1; padding: 0 0 37px; z-index: 1; visibility: hidden; opacity: 0; transition: opacity 0.4s ease, visibility 0.4s ease; will-change: opacity; }
 @media only screen and (max-width: 500px) { .person__info { padding: 0 0 20px; } }
 .person__title { font-family: "ProximaNova Bold", Arial, sans-serif; font-size: 24px; margin-bottom: 10px; }
 @media only screen and (max-width: 500px) { .person__title { font-size: 16px; } }
@@ -1125,7 +1127,7 @@ a { text-decoration: none; }
 
 #info_name { display: inline-block; vertical-align: middle; color: white; font-size: 24px; font-family: "ProximaNova Semibold", Arial, sans-serif; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
 
-#globeHolder { position: absolute; }
+#globeHolder { position: absolute; top: 0; right: 0; left: 0; bottom: 0; }
 
 
 
