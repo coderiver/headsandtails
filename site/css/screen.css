@@ -375,12 +375,13 @@ a { text-decoration: none; }
 @media only screen and (max-width: 500px) { .banner__info { margin-bottom: 10px; } }
 .banner__info li { display: inline-block; vertical-align: top; font-family: "ProximaNova Semibold", Arial, sans-serif; text-transform: uppercase; margin-right: 33px; }
 @media only screen and (max-width: 500px) { .banner__info li { margin: 0 0 10px; display: block; } }
-.banner__info li span, .banner__info li i { display: inline-block; vertical-align: middle; }
+.banner__info li span, .banner__info li i, .banner__info li img { display: inline-block; vertical-align: middle; }
 .banner__info li span { font-size: 13px; }
 .banner__info li i { opacity: 0.7; margin-right: 8px; }
 .banner__info li i.icon-plane { font-size: 9px; }
 .banner__info li i.icon-earth { font-size: 14px; }
 .banner__info li i.icon-comments { font-size: 14px; }
+.banner__info li img { max-width: 30px; max-height: 20px; margin-right: 8px; opacity: 0.7; }
 .banner p { font-family: "GaramondPremr Regular", Arial, sans-serif; color: #fff; font-size: 20px; letter-spacing: 0.02em; }
 @media only screen and (max-width: 500px) { .banner p { font-size: 16px; } }
 
