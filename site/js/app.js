@@ -2902,7 +2902,7 @@ function addLight(){
  var light_m  = new THREE.DirectionalLight( 0xdfdfdf, 0.4)
 
 
- light_m.position.set(  -8.8708482827604527,  0.4, 5.972050161833489);
+ light_m.position.set(  -0.8708482827604527,  0.4, 5.972050161833489);
  light_m.target.position.set( 0, 0, 0 );
  scene.add( light_m );
 
@@ -3019,8 +3019,6 @@ function toScreenPosition(obj, camera)
 };
 
 
-var  windowHalfX = window.innerWidth / 2;
-var  windowHalfY = window.innerHeight / 2;
 
 var targetRotationX = 0;
 var targetRotationOnMouseDownX = 0;
@@ -3038,6 +3036,11 @@ var dragging_earth;
 
 var finalRotationYdragg;
 
+
+  var  offset_y  ;
+  var  offset_x  ;
+
+
 function addInteraction(){
   mouse=new Object();
 
@@ -3049,38 +3052,37 @@ function addInteraction(){
 
 
 
-  document.addEventListener( 'mousedown', onDocumentMouseDown, false );
-  document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-  document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+  document.getElementById("globeHolder").addEventListener( 'mousedown', onDocumentMouseDown, false );
+  document.getElementById("globeHolder").addEventListener( 'touchstart', onDocumentTouchStart, false );
+  document.getElementById("globeHolder").addEventListener( 'touchmove', onDocumentTouchMove, false );
 
-  window.addEventListener( 'mousemove', onMouseMove, false );
-
-
+  document.getElementById("globeHolder").addEventListener( 'mousemove', onMouseMove, false );
 
 
   function onMouseMove( event ) {
 
-    mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-    mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;  
+    // console.log(event.clientX,event.clientY);
+
+    var realPos=new Object();
+
+    var bodyRect = document.body.getBoundingClientRect();
+    var  elemRect = document.getElementById("globeHolder").getBoundingClientRect();
+
+    offset_y   = elemRect.top - bodyRect.top;
+    offset_x   = elemRect.left - bodyRect.left;
+
+    realPos.x=event.clientX-offset_x;
+    realPos.y=event.clientY-offset_y;
+    mouse.x = ( realPos.x / window.globe_w ) * 2 - 1;
+    mouse.y = - (realPos.y/ window.globe_h ) * 2 + 1;  
+    // console.log(offset_x,offset_y);
+    // console.log(mouse);
     check_the_ray();
 
   }
 
 
 
-
-
-  function onWindowResize() {
-
-    windowHalfX = window.innerWidth / 2;
-    windowHalfY = window.innerHeight / 2;
-
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-
-    renderer.setSize( window.innerWidth, window.innerHeight );
-
-  }
 
   function onDocumentMouseDown( event ) {
 
@@ -3174,8 +3176,9 @@ function addInteraction(){
 
     var last_touch_objects=[];
     for ( var i = 0; i < intersects.length; i++ ) {
+      // console.log('intersect',i,intersects[i].object.isGeoPoint);
 
-      if(intersects[i].object.isGeoPoint){
+      if(intersects[i].object.isGeoPoint&&i==0){
 
         intersects[ i ].object.material.color.set( 0xff0000 ,0.2);
         intersects[ i ].object.material .opacity = 0;
@@ -3216,7 +3219,14 @@ function addInteraction(){
 
 
 }
+window.globe_w=500;
+window.globe_h=500;
 
+
+var  windowHalfX = window.globe_w / 2;
+var  windowHalfY = window.globe_h / 2;
+
+// alert('x2');
 var pathToData="js/lib/data/geoData.json";
 
 window.rotating;
@@ -3228,7 +3238,7 @@ var scene,camera,renderer,group,raycaster,_w,_h,mouse,stats;
 window.addEventListener("load", function () {
 
   hide_info();
-  window.addEventListener( 'resize', onWindowResize, false );
+  // window.addEventListener( 'resize', onWindowResize, false );
 
 
   stats = new Stats();
@@ -3250,8 +3260,9 @@ window.addEventListener("load", function () {
 
 function setupScene(){
 
-  _w=window.innerWidth;
-  _h= window.innerHeight;
+
+  _w=window.globe_w;
+  _h= window.globe_h;
   var aspect = _w/ _h;
   scene = new THREE.Scene(); 
   camera  = new THREE.PerspectiveCamera(45,_w /_h, 0.01, 1000 );
@@ -3263,8 +3274,8 @@ function setupScene(){
 
   group = new THREE.Object3D(); 
   scene.add(group);
-  group.position.x=0.6;
-  group.position.y=0.12;
+  // group.position.x=0.6;
+  // group.position.y=0.12;
   window.rotating=group;
   raycaster = new THREE.Raycaster();
 
@@ -3286,25 +3297,40 @@ var loop = function loop() {
 
 };
 
+window.setGlobeSize=function(w,h){
+  window.globe_w=w;
+  window.globe_h=h;
 
-function onWindowResize() {
+  windowHalfX = window.globe_w / 2;
+  windowHalfY =window.globe_h / 2;
 
-  windowHalfX = window.innerWidth / 2;
-  windowHalfY = window.innerHeight / 2;
+   // group.position.x=0.6/(1920/1080/(windowHalfX/windowHalfY));
 
-   group.position.x=0.6/(1920/1080/(windowHalfX/windowHalfY));
+   camera.aspect = window.globe_w / window.globe_h;
+   camera.updateProjectionMatrix();
 
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
+   renderer.setSize( window.globe_w, window.globe_h );
 
-  renderer.setSize( window.innerWidth, window.innerHeight );
+ }
 
-}
+ function onWindowResize() {
+
+  windowHalfX = window.globe_w / 2;
+  windowHalfY =window.globe_h / 2;
+
+   // group.position.x=0.6/(1920/1080/(windowHalfX/windowHalfY));
+
+   camera.aspect = window.globe_w / window.globe_h;
+   camera.updateProjectionMatrix();
+
+   renderer.setSize( window.globe_w, window.globe_h );
+
+ }
 
 
 
 
-function update_drag_rotation(){
+ function update_drag_rotation(){
 
   group.rotation.y += ( targetRotationX*0.5 - group.rotation.y ) * 0.1;
 
@@ -3345,8 +3371,8 @@ function update_info(mesh){
  //console.log();
  var pos=toScreenPosition(mesh,camera);
  document.getElementById("info_name").innerHTML =mesh.my_obj.name;
- document.getElementById("info").style.top=pos.y-40+"px";
- document.getElementById("info").style.left=pos.x-21+"px";
+ document.getElementById("info").style.top=pos.y+offset_y-40+"px";
+ document.getElementById("info").style.left=pos.x+offset_x-21+"px";
 }
 $(document).ready(function() {
 	
@@ -3558,6 +3584,9 @@ $(document).ready(function() {
 			items.slideUp('fast');
 			$(this).addClass('is-active');
 			$(this).siblings('.js-calendar-drop').slideDown('fast');
+			$('html, body').animate({
+				scrollTop: $(this).parent().offset().top - $('.js-header').outerHeight()
+			}, 1000);
 		};
 	});
 
@@ -3604,7 +3633,7 @@ $(document).ready(function() {
 			$('.js-quote-slider').slick('slickNext');
 			return false;
 		});
-	});	
+	});
 
 
 	$('.js-search-title').each(function() {
@@ -3638,7 +3667,6 @@ $(document).ready(function() {
 	// 	ev.preventDefault();
 	// });
 
-
 	$(".js-video-play").click(function(){
 
 		var videoSrc = $('#player').data('id');
@@ -3662,5 +3690,19 @@ $(document).ready(function() {
 		padZeroes: true,
 	});
 
+	function globeMap() {
+		var globeWidth = $('#globeHolder').outerWidth(),
+			globeHeight = $('#globeHolder').outerHeight();
+		window.setGlobeSize(globeWidth, globeHeight);
+	};
+
+	$(window).load(function() {
+		globeMap();
+	});
+
+	$(window).resize(function() {
+		globeMap();
+		console.log(globeWidth, globeHeight);
+	});
 
 });

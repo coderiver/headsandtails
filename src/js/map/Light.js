@@ -6,7 +6,7 @@ function addLight(){
  var light_m  = new THREE.DirectionalLight( 0xdfdfdf, 0.4)
 
 
- light_m.position.set(  -8.8708482827604527,  0.4, 5.972050161833489);
+ light_m.position.set(  -0.8708482827604527,  0.4, 5.972050161833489);
  light_m.target.position.set( 0, 0, 0 );
  scene.add( light_m );
 
@@ -55,5 +55,3 @@ renderer.gammaOutput = true;
 
 
 }
-
-

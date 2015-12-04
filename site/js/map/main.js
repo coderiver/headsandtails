@@ -1,4 +1,11 @@
+window.globe_w=500;
+window.globe_h=500;
 
+
+var  windowHalfX = window.globe_w / 2;
+var  windowHalfY = window.globe_h / 2;
+
+// alert('x2');
 var pathToData="js/lib/data/geoData.json";
 
 window.rotating;
@@ -10,7 +17,7 @@ var scene,camera,renderer,group,raycaster,_w,_h,mouse,stats;
 window.addEventListener("load", function () {
 
   hide_info();
-  window.addEventListener( 'resize', onWindowResize, false );
+  // window.addEventListener( 'resize', onWindowResize, false );
 
 
   stats = new Stats();
@@ -32,8 +39,9 @@ window.addEventListener("load", function () {
 
 function setupScene(){
 
-  _w=window.innerWidth;
-  _h= window.innerHeight;
+
+  _w=window.globe_w;
+  _h= window.globe_h;
   var aspect = _w/ _h;
   scene = new THREE.Scene(); 
   camera  = new THREE.PerspectiveCamera(45,_w /_h, 0.01, 1000 );
@@ -45,8 +53,8 @@ function setupScene(){
 
   group = new THREE.Object3D(); 
   scene.add(group);
-  group.position.x=0.6;
-  group.position.y=0.12;
+  // group.position.x=0.6;
+  // group.position.y=0.12;
   window.rotating=group;
   raycaster = new THREE.Raycaster();
 
@@ -68,25 +76,40 @@ var loop = function loop() {
 
 };
 
+window.setGlobeSize=function(w,h){
+  window.globe_w=w;
+  window.globe_h=h;
 
-function onWindowResize() {
+  windowHalfX = window.globe_w / 2;
+  windowHalfY =window.globe_h / 2;
 
-  windowHalfX = window.innerWidth / 2;
-  windowHalfY = window.innerHeight / 2;
+   // group.position.x=0.6/(1920/1080/(windowHalfX/windowHalfY));
 
-   group.position.x=0.6/(1920/1080/(windowHalfX/windowHalfY));
+   camera.aspect = window.globe_w / window.globe_h;
+   camera.updateProjectionMatrix();
 
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
+   renderer.setSize( window.globe_w, window.globe_h );
 
-  renderer.setSize( window.innerWidth, window.innerHeight );
+ }
 
-}
+ function onWindowResize() {
+
+  windowHalfX = window.globe_w / 2;
+  windowHalfY =window.globe_h / 2;
+
+   // group.position.x=0.6/(1920/1080/(windowHalfX/windowHalfY));
+
+   camera.aspect = window.globe_w / window.globe_h;
+   camera.updateProjectionMatrix();
+
+   renderer.setSize( window.globe_w, window.globe_h );
+
+ }
 
 
 
 
-function update_drag_rotation(){
+ function update_drag_rotation(){
 
   group.rotation.y += ( targetRotationX*0.5 - group.rotation.y ) * 0.1;
 
@@ -127,6 +150,6 @@ function update_info(mesh){
  //console.log();
  var pos=toScreenPosition(mesh,camera);
  document.getElementById("info_name").innerHTML =mesh.my_obj.name;
- document.getElementById("info").style.top=pos.y-40+"px";
- document.getElementById("info").style.left=pos.x-21+"px";
+ document.getElementById("info").style.top=pos.y+offset_y-40+"px";
+ document.getElementById("info").style.left=pos.x+offset_x-21+"px";
 }

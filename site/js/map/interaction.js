@@ -1,7 +1,5 @@
 
 
-var  windowHalfX = window.innerWidth / 2;
-var  windowHalfY = window.innerHeight / 2;
 
 var targetRotationX = 0;
 var targetRotationOnMouseDownX = 0;
@@ -19,6 +17,11 @@ var dragging_earth;
 
 var finalRotationYdragg;
 
+
+  var  offset_y  ;
+  var  offset_x  ;
+
+
 function addInteraction(){
   mouse=new Object();
 
@@ -30,38 +33,37 @@ function addInteraction(){
 
 
 
-  document.addEventListener( 'mousedown', onDocumentMouseDown, false );
-  document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-  document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+  document.getElementById("globeHolder").addEventListener( 'mousedown', onDocumentMouseDown, false );
+  document.getElementById("globeHolder").addEventListener( 'touchstart', onDocumentTouchStart, false );
+  document.getElementById("globeHolder").addEventListener( 'touchmove', onDocumentTouchMove, false );
 
-  window.addEventListener( 'mousemove', onMouseMove, false );
-
-
+  document.getElementById("globeHolder").addEventListener( 'mousemove', onMouseMove, false );
 
 
   function onMouseMove( event ) {
 
-    mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-    mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;  
+    // console.log(event.clientX,event.clientY);
+
+    var realPos=new Object();
+
+    var bodyRect = document.body.getBoundingClientRect();
+    var  elemRect = document.getElementById("globeHolder").getBoundingClientRect();
+
+    offset_y   = elemRect.top - bodyRect.top;
+    offset_x   = elemRect.left - bodyRect.left;
+
+    realPos.x=event.clientX-offset_x;
+    realPos.y=event.clientY-offset_y;
+    mouse.x = ( realPos.x / window.globe_w ) * 2 - 1;
+    mouse.y = - (realPos.y/ window.globe_h ) * 2 + 1;  
+    // console.log(offset_x,offset_y);
+    // console.log(mouse);
     check_the_ray();
 
   }
 
 
 
-
-
-  function onWindowResize() {
-
-    windowHalfX = window.innerWidth / 2;
-    windowHalfY = window.innerHeight / 2;
-
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-
-    renderer.setSize( window.innerWidth, window.innerHeight );
-
-  }
 
   function onDocumentMouseDown( event ) {
 
@@ -155,8 +157,9 @@ function addInteraction(){
 
     var last_touch_objects=[];
     for ( var i = 0; i < intersects.length; i++ ) {
+      // console.log('intersect',i,intersects[i].object.isGeoPoint);
 
-      if(intersects[i].object.isGeoPoint){
+      if(intersects[i].object.isGeoPoint&&i==0){
 
         intersects[ i ].object.material.color.set( 0xff0000 ,0.2);
         intersects[ i ].object.material .opacity = 0;
