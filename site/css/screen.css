@@ -331,9 +331,9 @@ a { text-decoration: none; }
 .out_header { padding: 79px 0 0; }
 @media only screen and (max-width: 1200px) { .out_header { padding: 60px 0 0; } }
 .out-globe { overflow: hidden; }
-.out-globe #globeHolder { top: -200px; left: -4%; width: 1200px; height: 1200px; }
-@media only screen and (max-width: 1200px) { .out-globe #globeHolder { width: 1000px; height: 1000px; top: -100px; } }
-@media only screen and (max-width: 1024px) { .out-globe #globeHolder { width: 700px; height: 700px; top: auto; left: auto; } }
+.out-globe #globeHolder { top: -40px; left: -4%; width: 1200px; height: auto; bottom: -40px; }
+@media only screen and (max-width: 1200px) { .out-globe #globeHolder { width: 1000px; } }
+@media only screen and (max-width: 1024px) { .out-globe #globeHolder { width: 700px; height: 700px; top: auto; left: auto; bottom: auto; } }
 @media only screen and (max-width: 800px) { .out-globe #globeHolder { width: 500px; height: 500px; } }
 @media only screen and (max-width: 500px) { .out-globe #globeHolder { width: 320px; height: 320px; } }
 
