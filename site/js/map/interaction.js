@@ -1,4 +1,5 @@
 
+var onCity;
 
 
 var targetRotationX = 0;
@@ -18,8 +19,8 @@ var dragging_earth;
 var finalRotationYdragg;
 
 
-  var  offset_y  ;
-  var  offset_x  ;
+var  offset_y  ;
+var  offset_x  ;
 
 
 function addInteraction(){
@@ -28,8 +29,8 @@ function addInteraction(){
 
 
 
-  mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-  mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;  
+  mouse.x = 0;
+  mouse.y = 0;  
 
 
 
@@ -39,6 +40,16 @@ function addInteraction(){
 
   document.getElementById("globeHolder").addEventListener( 'mousemove', onMouseMove, false );
 
+  document.addEventListener("click", function(){
+
+    if( onCity){
+      console.log(last_object.my_obj);
+      alert(last_object.my_obj.name);
+
+
+      check_the_ray();
+    }
+  });
 
   function onMouseMove( event ) {
 
@@ -160,40 +171,41 @@ function addInteraction(){
       // console.log('intersect',i,intersects[i].object.isGeoPoint);
 
       if(intersects[i].object.isGeoPoint&&i==0){
+       onCity=true;
+       intersects[ i ].object.material.color.set( 0xff0000 ,0.2);
+       intersects[ i ].object.material .opacity = 0;
+       active_objects.push(intersects[ i ].object);
+       last_touch_objects.push(intersects[ i ].object);
 
-        intersects[ i ].object.material.color.set( 0xff0000 ,0.2);
-        intersects[ i ].object.material .opacity = 0;
-        active_objects.push(intersects[ i ].object);
-        last_touch_objects.push(intersects[ i ].object);
+     }
 
-      }
+   }
+
+   for ( var i = 0; i < active_objects.length; i++ ) {
+
+
+    var  iamhere=false;
+    for ( var j = 0; j < last_touch_objects.length; j++ ) {
+      if(last_touch_objects[j]==active_objects[i])iamhere=true;
 
     }
+    if(!iamhere){
+      active_objects[i].material.color.set( 0xffffff );
+      active_objects[i].material.opacity = 1;
 
-    for ( var i = 0; i < active_objects.length; i++ ) {
-
-
-      var  iamhere=false;
-      for ( var j = 0; j < last_touch_objects.length; j++ ) {
-        if(last_touch_objects[j]==active_objects[i])iamhere=true;
-
-      }
-      if(!iamhere){
-        active_objects[i].material.color.set( 0xffffff );
-        active_objects[i].material.opacity = 1;
-
-      }else{
-        update_info(active_objects[i]);
-      }
+    }else{
+      update_info(active_objects[i]);
     }
-    active_objects=last_touch_objects;
-
-    if(active_objects.length==0){
-      hide_info();
-    }
-
-
   }
+  active_objects=last_touch_objects;
+
+  if(active_objects.length==0){
+    hide_info();
+    onCity=false;
+  }
+
+
+}
 
 
 

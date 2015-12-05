@@ -46,7 +46,7 @@ $(document).ready(function() {
 	    }
 	    else {
 	    	$('.js-header').removeClass('is-fixed');
-	    	$('.js-road').removeClass('is-fixed');
+	    	$('.js-road').removeClass('is-fixed'); 
 	    };
 	});
 
