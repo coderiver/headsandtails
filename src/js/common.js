@@ -214,19 +214,15 @@ $(document).ready(function() {
 		};
 	});
 
+	$(window).load(function() {
+		$('.js-calendar-slider').find('.calendar-slide').first().addClass('is-active');
+	});
+
 	function calendarItem () {
 		var index = $(this).data('index');
-		$('.js-calendar-slider').slick('slickGoTo', index);
+		$('.js-calendar-slider').find('.calendar-slide').removeClass('is-active');
+		$('.js-calendar-slider').find('.calendar-slide').eq(index).addClass('is-active');
 	}
-
-	$('.js-calendar-slider').slick({
-		arrows: false,
-		dots: false,
-		fade: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		swipe: false
-	});
 
 	$('.js-quote').each(function() {
 

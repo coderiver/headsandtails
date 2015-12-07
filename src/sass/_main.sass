@@ -99,13 +99,19 @@
 	+r3
 		width: 50%
 		padding-bottom: 64% 
-	&:hover
-		img
-			&.is-hide
+	&__inner
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		&:hover
+			img
+				&.is-hide
+					opacity: 1
+			.person__info
 				opacity: 1
-		.person__info
-			opacity: 1
-			visibility: visible
+				visibility: visible
 	img
 		width: 100%
 		&.is-hide

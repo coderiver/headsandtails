@@ -59,7 +59,8 @@ body.is-hidden { overflow: hidden; }
 .calendar-slider { position: fixed; top: 0; bottom: 0; left: 0; right: 0; }
 .calendar-slider__inner, .calendar-slider .slick-track, .calendar-slider .slick-list { height: 100%; width: 100%; }
 
-.calendar-slide { background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; background-attachment: fixed; width: 100%; height: 100%; }
+.calendar-slide { background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; background-attachment: fixed; width: 100%; height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; }
+.calendar-slide.is-active { z-index: 2; opacity: 1; visibility: visible; }
 
 .page-login { background: url(../img/login-bg.jpg) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; background-attachment: fixed; }
 
@@ -354,8 +355,9 @@ a { text-decoration: none; }
 .person { width: 25%; height: 0; padding-bottom: 32%; float: left; position: relative; font-size: 0; overflow: hidden; cursor: pointer; border-top: 1px solid #878787; border-left: 1px solid #878787; }
 @media only screen and (max-width: 1200px) { .person { width: 33.33%; padding-bottom: 42%; } }
 @media only screen and (max-width: 800px) { .person { width: 50%; padding-bottom: 64%; } }
-.person:hover img.is-hide { opacity: 1; }
-.person:hover .person__info { opacity: 1; visibility: visible; }
+.person__inner { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+.person__inner:hover img.is-hide { opacity: 1; }
+.person__inner:hover .person__info { opacity: 1; visibility: visible; }
 .person img { width: 100%; }
 .person img.is-hide { position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.4s ease; will-change: opacity; }
 .person__info { position: absolute; bottom: 0; left: 0; right: 0; color: #fff; text-align: center; line-height: 1; padding: 0 0 37px; z-index: 1; visibility: hidden; opacity: 0; transition: opacity 0.4s ease, visibility 0.4s ease; will-change: opacity; }
