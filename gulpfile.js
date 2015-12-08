@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     iconfont = require("gulp-iconfont"),
     consolidate = require("gulp-consolidate"),
     rimraf = require('rimraf'),
+    uglify = require('gulp-uglify'),
     reload = browserSync.reload;
 
 // @TODO: move all paths to these variables
@@ -163,7 +164,13 @@ gulp.task('font', function(){
     .pipe(reload({stream: true}));
 });
 
+// uglify/compress
 
+gulp.task('compress', function() {
+  return gulp.src('site/js/app.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('site/js/'));
+});
 
 
 //webserver
@@ -194,4 +201,4 @@ gulp.task('watch', function() {
 
 
 gulp.task('default', ['browser-sync', 'watch'], function() {});
-gulp.task('build', ['html','font','sprite','copy','js','sass'], function() {});
+gulp.task('build', ['html','font','sprite','copy','js','sass', 'compress'], function() {});

@@ -165,19 +165,24 @@ $(document).ready(function() {
 			$(this).click(function() {
 				popup.addClass('is-active');
 				$('body').addClass('is-hidden');
+				$('.js-overlay').addClass('is-active');
 				return false;
 			});
 			close.click(function() {
 				$(this).parents('.js-popup').removeClass('is-active');
-				$('body').removeClass('is-hidden');
+				$(this).find('.js-overlay').removeClass('is-active');
+				if (!$('.js-popup').hasClass('is-active')) {
+					$('body').removeClass('is-hidden');
+				}
 				return false;
 			});
-			$('body').click(function() {
+			$('.js-overlay').click(function() {
 				popups.removeClass('is-active');
-				$('body').removeClass('is-hidden');
-			});
-			popupInner.click(function(event) {
-				event.stopPropagation();
+				$(this).find('.js-overlay').removeClass('is-active');
+				if (!$('.js-popup').hasClass('is-active')) {
+					$('body').removeClass('is-hidden');
+				}
+				return false;
 			});
 		});
 

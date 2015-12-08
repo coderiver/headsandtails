@@ -13,4 +13,3 @@
 //= map/Utils.js
 //= map/interaction.js
 //= map/main.js
-//= common.js
