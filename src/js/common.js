@@ -310,13 +310,26 @@ $(document).ready(function() {
 	var firstScriptTag = document.getElementsByTagName('script')[0];
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-	$('.js-countdown').countdown({until: new Date(2015, 11, 31),
-        format: 'dHM',
+	$('.js-countdown').countdown({until: new Date(2015, 11, 10, 18, 0),
+        format: 'dHMS',
         labels: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
         labels1: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
         labels2: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
-        padZeroes: true
+        padZeroes: true,
+        // onExpiry: timer
     });
+
+    function timer() {
+    	// $('.js-countdown').countdown({    		
+    	// 	format: 'dHMS',
+    	// 	labels: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+    	// 	labels1: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+    	// 	labels2: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+    	// 	padZeroes: true,
+    	// 	since: new Date(2015, 11, 10, 18, 0)
+    	// });
+		console.log('booom!');
+    };
 
 	function globeMap() {
 		var globeWidth = $('#globeHolder').outerWidth(),
@@ -330,7 +343,6 @@ $(document).ready(function() {
 
 	$(window).resize(function() {
 		globeMap();
-		console.log(globeWidth, globeHeight);
 	});
 
 });

@@ -1154,7 +1154,7 @@ a { text-decoration: none; }
 
 #globeHolder { position: absolute; top: -130px; right: -100px; width: 1000px; height: 1000px; z-index: 10; }
 #globeHolder.globe-map_timeline { height: 100vh; top: -1vh; }
-@media only screen and (max-width: 1400px) { #globeHolder.globe-map_timeline { width: 100vw; right: -15vw; } }
+@media only screen and (max-width: 1400px) { #globeHolder.globe-map_timeline { width: 90vw; right: -15vw; } }
 @media only screen and (max-width: 1024px) { #globeHolder.globe-map_timeline { width: 80vh; height: 80vh; right: auto; } }
 @media only screen and (max-width: 800px) { #globeHolder.globe-map_timeline { width: 70vh; height: 70vh; } }
 @media only screen and (max-width: 500px) { #globeHolder.globe-map_timeline { width: 320px; height: 320px; } }
