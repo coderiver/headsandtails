@@ -193,6 +193,7 @@
 		position: relative
 		+r2
 			padding: 30px 15px 20px
+			position: static
 	&__title
 		+semi
 		font-size: 38px
@@ -1186,6 +1187,7 @@
 	+clr
 	position: relative	
 	background-color: #73c5df
+	min-height: 100vh 
 	&__inner
 		padding: 165px 15px 150px 
 		max-width: 1200px
@@ -1351,16 +1353,9 @@
 	min-height: 100%
 	position: relative
 	padding: 79px 0 0 
+	background-color: rgba(17, 17, 18, 0.72)
 	+r1
 		padding: 60px 0 0 
-	&:before
-		content: ""
-		position: absolute
-		top: 0
-		right: 0
-		left: 0
-		bottom: 0
-		background-color: rgba(17, 17, 18, 0.72)
 	&__items
 		position: relative
 		z-index: 5
@@ -1550,6 +1545,7 @@
 	transition: background 0.25s
 	display: inline-block
 	vertical-align: top
+	cursor: pointer
 	&:before
 		content: "" 
 		position: absolute

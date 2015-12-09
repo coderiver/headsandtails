@@ -212,10 +212,11 @@ $(document).ready(function() {
 			btns.removeClass('is-active');
 			items.slideUp('fast');
 			$(this).addClass('is-active');
-			$(this).siblings('.js-calendar-drop').slideDown('fast');
-			$('html, body').animate({
-				scrollTop: $(this).parent().offset().top - $('.js-header').outerHeight()
-			}, 1000);
+			$(this).siblings('.js-calendar-drop').slideDown('fast', function(){
+				$('html, body').animate({
+					scrollTop: $(this).parent().offset().top - $('.js-header').outerHeight()
+				}, 1000);
+			});			
 		};
 	});
 
@@ -309,11 +310,13 @@ $(document).ready(function() {
 	var firstScriptTag = document.getElementsByTagName('script')[0];
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-	$('.js-countdown').countdown({until: new Date(2015, 12-1, 1), 
-		format: 'dHM',
-		labels: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
-		padZeroes: true,
-	});
+	$('.js-countdown').countdown({until: new Date(2015, 11, 31),
+        format: 'dHM',
+        labels: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+        labels1: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+        labels2: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+        padZeroes: true
+    });
 
 	function globeMap() {
 		var globeWidth = $('#globeHolder').outerWidth(),
