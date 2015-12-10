@@ -5,49 +5,49 @@ $(document).ready(function() {
 	// });
 
 	function scrollFixedElements() {
-	    var scroll_left = $(this).scrollLeft();
-	    $(".js-fixed").css({
-	        left: -scroll_left
-	    });
+		var scroll_left = $(this).scrollLeft();
+		$(".js-fixed").css({
+			left: -scroll_left
+		});
 	}
 
 	scrollFixedElements();
 
 	$(window).scroll(function(){
-	    scrollFixedElements();
+		scrollFixedElements();
 
-	    if ($(window).scrollTop() > 0) {
-	    	$('.js-header').addClass('is-active');
-	    	$('.js-road').addClass('is-active');
-	    }
-	    else {
-	    	$('.js-header').removeClass('is-active');
-	    	$('.js-road').removeClass('is-active');
-	    };
+		if ($(window).scrollTop() > 0) {
+			$('.js-header').addClass('is-active');
+			$('.js-road').addClass('is-active');
+		}
+		else {
+			$('.js-header').removeClass('is-active');
+			$('.js-road').removeClass('is-active');
+		};
 	});
 	$(window).load(function(){
-	    scrollFixedElements();
+		scrollFixedElements();
 
-	    if ($(window).scrollTop() > 0) {
-	    	$('.js-header').addClass('is-active');
-	    	$('.js-road').addClass('is-active');
-	    }
-	    else {
-	    	$('.js-header').removeClass('is-active');
-	    	$('.js-road').removeClass('is-active');
-	    };
+		if ($(window).scrollTop() > 0) {
+			$('.js-header').addClass('is-active');
+			$('.js-road').addClass('is-active');
+		}
+		else {
+			$('.js-header').removeClass('is-active');
+			$('.js-road').removeClass('is-active');
+		};
 	});
 	$(window).scroll(function(){
-	    scrollFixedElements();
+		scrollFixedElements();
 
-	    if ($(window).scrollTop() > $('.js-header').outerHeight()) {
-	    	$('.js-header').addClass('is-fixed');
-	    	$('.js-road').addClass('is-fixed');
-	    }
-	    else {
-	    	$('.js-header').removeClass('is-fixed');
-	    	$('.js-road').removeClass('is-fixed'); 
-	    };
+		if ($(window).scrollTop() > $('.js-header').outerHeight()) {
+			$('.js-header').addClass('is-fixed');
+			$('.js-road').addClass('is-fixed');
+		}
+		else {
+			$('.js-header').removeClass('is-fixed');
+			$('.js-road').removeClass('is-fixed'); 
+		};
 	});
 
 	$(window).scroll(function() {
@@ -198,8 +198,6 @@ $(document).ready(function() {
 
 	});
 
-	$('.js-calendar-item').hoverIntent(calendarItem);
-
 	$('.js-calendar-item').click(function() {
 		var btns = $('.js-calendar-item'),
 			items = $('.js-calendar-drop');
@@ -220,15 +218,42 @@ $(document).ready(function() {
 		};
 	});
 
+	$(window).resize(function () {
+		calendarBg();
+		$('.js-calendar-item').hoverIntent(calendarItem);
+	});
+
 	$(window).load(function() {
+		calendarBg();
+		$('.js-calendar-item').hoverIntent(calendarItem);
 		$('.js-calendar-slider').find('.calendar-slide').first().addClass('is-active');
 	});
 
+	function calendarBg() {
+		$('.js-calendar-slider').each(function() {
+			var slide = $(this).find('.calendar-slide');
+			slide.each(function() {
+				var bgImg = $(this).data('img');
+				if ($(window).width() > 1024) {
+					$(this).attr('style', 'background-image: url(' + bgImg + ');');
+				}
+				else {
+					if ($(this).hasClass('is-active')) {
+						$(this).attr('style', 'background-image: url(' + bgImg + ');');
+					};
+				}
+			});
+		});
+	};
+	
+
 	function calendarItem () {
-		var index = $(this).data('index');
-		$('.js-calendar-slider').find('.calendar-slide').removeClass('is-active');
-		$('.js-calendar-slider').find('.calendar-slide').eq(index).addClass('is-active');
-	}
+		if ($(window).width() > 1024) {
+			var index = $(this).data('index');
+			$('.js-calendar-slider').find('.calendar-slide').removeClass('is-active');
+			$('.js-calendar-slider').find('.calendar-slide').eq(index).addClass('is-active');
+		};
+	};
 
 	$('.js-quote').each(function() {
 
@@ -285,13 +310,7 @@ $(document).ready(function() {
 		ellipsis: '...',
 		height: 72,
 		watch: 'window'
-	});
-
-	// $('.js-video-play').click(function(ev) {
-	// 	$('.js-video-play').addClass('is-hidden');
-	// 	$("#video")[0].src += "?rel=0&autoplay=1";
-	// 	ev.preventDefault();
-	// });
+	}); 
 
 	$(".js-video-play").click(function(){
 
@@ -300,8 +319,8 @@ $(document).ready(function() {
 		$('.js-video-play').addClass('is-hidden');
 
 		player = new YT.Player('player', {
-	    	videoId : videoSrc,
-	    	playerVars: { 'autoplay': 1 },
+			videoId : videoSrc,
+			playerVars: { 'autoplay': 1 },
 		});
 	});
 
@@ -310,31 +329,46 @@ $(document).ready(function() {
 	var firstScriptTag = document.getElementsByTagName('script')[0];
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-	$('.js-countdown').countdown({until: new Date(2015, 11, 10, 18, 0),
-        format: 'dHMS',
-        labels: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
-        labels1: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
-        labels2: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
-        padZeroes: true,
-        // onExpiry: timer
-    });
+	$('.js-countdown').each(function() {
+		
+		var x ='10-12-2015-18';
+		var a = x.split('-');
+		var date = new Date (a[2], a[1] - 1,a[0], a[3]); //using a[1]-1 since Date object has month from 0-11
+		var Today = new Date();
 
-    function timer() {
-    	// $('.js-countdown').countdown({    		
-    	// 	format: 'dHMS',
-    	// 	labels: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
-    	// 	labels1: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
-    	// 	labels2: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
-    	// 	padZeroes: true,
-    	// 	since: new Date(2015, 11, 10, 18, 0)
-    	// });
+		if (date > Today) {
+			$(this).countdown({until: date,
+				format: 'dHMS',
+				labels: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+				labels1: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+				labels2: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+				padZeroes: true
+			});
+		}		  
+		else {
+			$(this).countdown({until: date,
+				format: 'dHMS',
+				labels: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+				labels1: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+				labels2: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
+				padZeroes: true,
+				since: date
+			});
+		};
+		
+	}); 
+	
+
+	function timer() {
 		console.log('booom!');
-    };
+	};
 
 	function globeMap() {
-		var globeWidth = $('#globeHolder').outerWidth(),
-			globeHeight = $('#globeHolder').outerHeight();
-		window.setGlobeSize(globeWidth, globeHeight);
+		if ($('#globeHolder').length) {
+			var globeWidth = $('#globeHolder').outerWidth(),
+				globeHeight = $('#globeHolder').outerHeight();
+			window.setGlobeSize(globeWidth, globeHeight);
+		};
 	};
 
 	$(window).load(function() {
@@ -343,6 +377,6 @@ $(document).ready(function() {
 
 	$(window).resize(function() {
 		globeMap();
-	});
+	}); 
 
 });

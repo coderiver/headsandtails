@@ -31,10 +31,10 @@ function setupGlobe(){
 
   group.add(earthMesh);
   $.getJSON(pathToData, function(json) {
-    console.log(json); // this will show the info it in firebug console
+    // console.log(json); // this will show the info it in firebug console
     var geo_obj=json;
     // var geo_obj=JSON.parse(json);
-    console.log("geo_obj",geo_obj.length);
+    // console.log("geo_obj",geo_obj.length);
 
     for (var i=0;i<geo_obj.length;i++){
 
@@ -65,7 +65,7 @@ function setupGlobe(){
 
    
    if(visited=="true"){
-    console.log("this way",obj);
+    // console.log("this way",obj);
 
 
     visitedMap.anisotropy = 4;
@@ -77,7 +77,7 @@ function setupGlobe(){
 
   }
   else {
-    console.log("other way");
+    // console.log("other way");
     
     
     notVisitedMap.anisotropy = 4;
@@ -141,7 +141,7 @@ var multip=0.997;
   var object = new THREE.LineSegments( geometry, new THREE.LineDashedMaterial( { color: 0xffffff, dashSize: 3, gapSize: 1, linewidth: 5 } ) );
   object.isSpline=true;
 
-  console.log("point_dist",point_dist);
+  // console.log("point_dist",point_dist);
   if(point_dist<0.04)point_dist=0.04;
   var amount_of_points=Math.floor(1100*point_dist)
   var curve_points= curve.getPoints( amount_of_points );

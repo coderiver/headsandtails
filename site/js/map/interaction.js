@@ -32,8 +32,6 @@ function addInteraction(){
   mouse.x = 0;
   mouse.y = 0;  
 
-
-
   document.getElementById("globeHolder").addEventListener( 'mousedown', onDocumentMouseDown, false );
   document.getElementById("globeHolder").addEventListener( 'touchstart', onDocumentTouchStart, false );
   document.getElementById("globeHolder").addEventListener( 'touchmove', onDocumentTouchMove, false );
@@ -43,9 +41,7 @@ function addInteraction(){
   document.addEventListener("click", function(){
 
     if( onCity){
-      console.log(last_object.my_obj);
-      alert(last_object.my_obj.name);
-
+      click_on_planet(last_object.my_obj);
 
       check_the_ray();
     }

@@ -31,7 +31,9 @@ window.addEventListener("load", function () {
   setupScene();
   setupGlobe();
   addLight();
-  addInteraction();
+  if ($('#globeHolder').length) {
+    addInteraction();
+  }
 
   loop();
 
@@ -49,7 +51,10 @@ function setupScene(){
   renderer = new THREE.WebGLRenderer({ antialias: true } ); 
   renderer.setClearColor(new THREE.Color(0x76c6e0, 1.0));
   renderer.setSize( _w, _h ); 
-  document.getElementById("globeHolder").appendChild( renderer.domElement );  
+  if ($('#globeHolder').length) {
+    document.getElementById("globeHolder").appendChild( renderer.domElement );  
+  };
+  
 
   group = new THREE.Object3D(); 
   scene.add(group);
@@ -137,7 +142,9 @@ window.setGlobeSize=function(w,h){
 
 
 function hide_info(){
- document.getElementById("info").style.visibility="hidden"; 
+  if ($('#info').length) {
+    document.getElementById("info").style.visibility="hidden"; 
+  };
 }
 
 var last_object;
@@ -146,7 +153,9 @@ function update_last_info(){
 }
 function update_info(mesh){
   last_object=mesh;
-  document.getElementById("info").style.visibility="visible";
+  if ($('#info').length) {
+    document.getElementById("info").style.visibility="visible";
+  }
  //console.log();
  var pos=toScreenPosition(mesh,camera);
  document.getElementById("info_name").innerHTML =mesh.my_obj.name;
