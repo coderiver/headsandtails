@@ -198,7 +198,7 @@ $(document).ready(function() {
 			return false;
 		});
 
-	}); 
+	});
 
 	$('.js-calendar-item').click(function() {
 		var btns = $('.js-calendar-item'),

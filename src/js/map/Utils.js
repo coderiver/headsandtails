@@ -1,10 +1,10 @@
 
 function lat2vec(lat,lon) {
-  var radius=0.5;
+  var radius=0.5*_scale;
   var phi = (lat)*Math.PI/180;
   var theta = (lon-180)*Math.PI/180;
 
-  var size=0.01;
+  var size=0.01*_scale;
   var x = -(radius+size/2) * Math.cos(phi) * Math.cos(theta);
   var y = (radius+size/2) * Math.sin(phi);
   var z = (radius+size/2) * Math.cos(phi) * Math.sin(theta);

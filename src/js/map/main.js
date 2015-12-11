@@ -1,15 +1,17 @@
-window.globe_w=500;
-window.globe_h=500;
+
+  var _scale=200;
+
+window.globe_w=1000;
+window.globe_h=1000;
 
 
 var  windowHalfX = window.globe_w / 2;
 var  windowHalfY = window.globe_h / 2;
 
-// alert('x2');
 var pathToData="js/lib/data/geoData.json";
 
 window.rotating;
-var marker_size=0.02;
+var marker_size=0.02*_scale;
 var scene,camera,renderer,group,raycaster,_w,_h,mouse,stats;
 
 
@@ -31,9 +33,7 @@ window.addEventListener("load", function () {
   setupScene();
   setupGlobe();
   addLight();
-  if ($('#globeHolder').length) {
-    addInteraction();
-  }
+  addInteraction();
 
   loop();
 
@@ -47,7 +47,7 @@ function setupScene(){
   var aspect = _w/ _h;
   scene = new THREE.Scene(); 
   camera  = new THREE.PerspectiveCamera(45,_w /_h, 0.01, 1000 );
-  camera.position.z = 1.5;
+  camera.position.z = 1.5*_scale;
   renderer = new THREE.WebGLRenderer({ antialias: true } ); 
   renderer.setClearColor(new THREE.Color(0x76c6e0, 1.0));
   renderer.setSize( _w, _h ); 
@@ -124,14 +124,14 @@ window.setGlobeSize=function(w,h){
 
     group.rotation.x += finalRotationY * 0.1;
   }
-  if (group.rotation.x  > 1 ) {
+  if (group.rotation.x  > 0.5 ) {
 
-    group.rotation.x = 1
+    group.rotation.x = 0.5
   }
 
-  if (group.rotation.x  < -1 ) {
+  if (group.rotation.x  < -0.5 ) {
 
-    group.rotation.x = -1
+    group.rotation.x = -0.5
   }
 
 
@@ -153,6 +153,7 @@ function update_last_info(){
 }
 function update_info(mesh){
   last_object=mesh;
+ last_object=mesh;
   if ($('#info').length) {
     document.getElementById("info").style.visibility="visible";
   }
@@ -162,3 +163,5 @@ function update_info(mesh){
  document.getElementById("info").style.top=pos.y+offset_y-40+"px";
  document.getElementById("info").style.left=pos.x+offset_x-21+"px";
 }
+
+
