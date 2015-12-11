@@ -166,6 +166,8 @@ $(document).ready(function() {
 				popup.addClass('is-active');
 				$('body').addClass('is-hidden');
 				$('.js-overlay').addClass('is-active');
+				var imgBg = popup.find('.js-popup-bg').data('pony');
+				popup.find('.js-popup-bg').attr('style', 'background-image: url(' + imgBg + ');');
 				return false;
 			});
 			close.click(function() {
@@ -175,7 +177,7 @@ $(document).ready(function() {
 					$('body').removeClass('is-hidden');
 				}
 				return false;
-			});
+			}); 
 			$('.js-overlay').click(function() {
 				popups.removeClass('is-active');
 				$(this).find('.js-overlay').removeClass('is-active');
@@ -196,7 +198,7 @@ $(document).ready(function() {
 			return false;
 		});
 
-	});
+	}); 
 
 	$('.js-calendar-item').click(function() {
 		var btns = $('.js-calendar-item'),

@@ -167,7 +167,7 @@ gulp.task('font', function(){
 // uglify/compress
 
 gulp.task('compress', function() {
-  return gulp.src('site/js/app.js')
+  return gulp.src(['site/js/app.js', 'site/js/app-map.js'])
     .pipe(uglify())
     .pipe(gulp.dest('site/js/'));
 });
