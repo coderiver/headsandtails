@@ -55,6 +55,17 @@
 			top: 50%
 			left: 50%
 			margin: -6px 0 0 -6px 
+		&-wrap
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			z-index: 300
+			&-in
+				max-width: 970px
+				margin: 0 auto
+				position: relative 
+				width: 100%
 	&__body
 		padding: 0 100px 0
 		+r2
@@ -136,6 +147,7 @@
 			content: ""
 	&-image
 		height: 500px
+		background-position: top center 
 		&__inner
 			display: inline-block
 			vertical-align: bottom

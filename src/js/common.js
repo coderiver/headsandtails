@@ -61,12 +61,29 @@ $(document).ready(function() {
 	$('.js-popup').scroll(function() {
 
 		var popup = $(this);
+		var thisTop = popup.scrollTop(),
+			thisInnerTop = popup.find('.js-popup-inner').position().top;
 
-		if ($(this).scrollTop() + $(this).innerHeight() >= $('.js-load-comment').position().top) {
+		if (thisTop + $(this).innerHeight() >= $('.js-load-comment').position().top) {
 			popup.find('.js-load-comments').addClass('is-active');
 
 			console.log($(this).scrollTop() + $(this).innerHeight() - $('.js-load-comment'), $('.js-load-comment').position().top);
 		};
+
+		if (thisTop > thisInnerTop + 30) {
+			$(this).find('.js-popup-fixed').addClass('is-active');
+			$(this).find('.js-popup-fixed').css({
+				top: thisTop - 30
+			});;
+		}
+		else {
+			$(this).find('.js-popup-fixed').removeClass('is-active');
+			$(this).find('.js-popup-fixed').css({
+				top: '0'
+			});;
+		};
+
+		console.log(thisTop, (thisTop - thisInnerTop))
 
 	});
 
@@ -340,7 +357,7 @@ $(document).ready(function() {
 
 		if (date > Today) {
 			$(this).countdown({until: date,
-				format: 'dHMS',
+				format: 'dHM',
 				labels: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
 				labels1: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
 				labels2: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
@@ -349,7 +366,7 @@ $(document).ready(function() {
 		}		  
 		else {
 			$(this).countdown({until: date,
-				format: 'dHMS',
+				format: 'dHM',
 				labels: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
 				labels1: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
 				labels2: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
