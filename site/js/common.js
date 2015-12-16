@@ -140,13 +140,23 @@ $(document).ready(function() {
 		var _el = $(el);
 		var slickFor = _el.find('.js-slick-for'); 
 		var slickNav = _el.find('.js-slick-nav'); 
-
+		slickFor.find('.gallery-main__slide').click(function() {
+			if ($(this).index() == slickFor.find('.gallery-main__slide').length) {
+				slickFor.slick('goTo', 0);
+			}
+			else {
+				var nextItem = $(this).index() + 1;
+				slickFor.slick('goTo', nextItem);
+			}
+			// console.log(nextItem, slickFor.find('.gallery-main__slide').length);
+		});
 		slickFor.slick({
 			arrows: false,
 			dots: false,
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			fade: true,
+			adaptiveHeight: true,
 			asNavFor: slickNav
 		});
 		slickNav.slick({
