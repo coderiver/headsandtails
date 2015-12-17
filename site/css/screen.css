@@ -923,7 +923,7 @@ a { text-decoration: none; }
 .search__label { display: block; }
 .search__label span { color: #e0f2f7; font-size: 16px; line-height: 1; font-family: "ProximaNova Semibold", Arial, sans-serif; display: block; padding: 0 8px; }
 @media only screen and (max-width: 800px) { .search__label span { padding: 0 5px; font-size: 14px; } }
-.search__input { color: white; font-size: 120px; font-family: "ProximaNova Semibold", Arial, sans-serif; background: none; width: 100%; }
+.search__input { color: white; font-size: 120px; font-family: "ProximaNova Semibold", Arial, sans-serif; background: none; width: 100%; resize: none; border: none; }
 .search__input:-moz-placeholder, .search__input::-moz-placeholder { color: #fff; opacity: 1; }
 .search__input::-webkit-input-placeholder { color: #fff; }
 @media only screen and (max-width: 800px) { .search__input { font-size: 60px; } }
@@ -941,7 +941,7 @@ a { text-decoration: none; }
 .search-results__label { color: #8c8c8c; font-size: 16px; padding: 14px 0 0; }
 @media only screen and (max-width: 800px) { .search-results__label { padding: 8px 0 0; } }
 .search-results__label.is-hidden { display: none; }
-.search-results__input { color: #333; font-size: 40px; display: none; width: 171px; margin-top: -9px; font-family: "ProximaNova Semibold", Arial, sans-serif; padding: 0 10px 0 0; }
+.search-results__input { color: #333; font-size: 40px; display: none; width: 100%; margin-top: -9px; font-family: "ProximaNova Semibold", Arial, sans-serif; padding: 0 10px 0 0; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }
 @media only screen and (max-width: 800px) { .search-results__input { font-size: 30px; width: 118px; margin-top: -7px; } }
 .search-results__input.is-active { display: inline-block; vertical-align: top; }
 

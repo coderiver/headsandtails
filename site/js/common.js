@@ -169,7 +169,7 @@ $(document).ready(function() {
 			focusOnSelect: true,
 			centerPadding: '0'
 		});
-	});	
+	});
 
 	$('.js-tooltip-parent').each(function() {
 		var icon = $(this).find('.js-tooltip-icon'),
@@ -332,6 +332,23 @@ $(document).ready(function() {
 		});
 		$('.js-search-input').click(function(event) {
 			event.stopPropagation();
+		});
+	});
+
+	$('.js-search-big').each(function() {
+		var placeholder = $(this).data('placeholder');
+
+		$(this).text(placeholder);
+
+		$(this).focus(function() {
+			if ($(this).text() == placeholder) {
+				$(this).text('');
+			};
+		});
+		$(this).blur(function() {
+			if ($(this).text() == 0) {
+				$(this).text(placeholder);
+			};
 		});
 	});
 

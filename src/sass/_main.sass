@@ -2067,6 +2067,8 @@
 		background: none
 		+placeholder-color(#fff)
 		width: 100%
+		resize: none
+		border: none
 		+r3
 			font-size: 60px
 
@@ -2115,10 +2117,12 @@
 		color: #333
 		font-size: 40px
 		display: none
-		width: 171px
+		width: 100%
 		margin-top: -9px
 		+semi
 		padding: 0 10px 0 0 
+		-ms-text-overflow: ellipsis
+		text-overflow: ellipsis
 		+r3
 			font-size: 30px
 			width: 118px

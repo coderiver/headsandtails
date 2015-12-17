@@ -100,14 +100,14 @@
 	<main class="main">
 		<!-- begin inner  -->
 		<div class="inner">			
+			<div class="search-results">
+				<button class="search-results__btn"><i class="icon-search-big"></i></button>
+				<input type="text" class="search-results__input js-search-input" id="search-input">
+				<label class="search-results__title js-search-title" for="search-input">Регина</label>
+				<div class="search-results__label">78 записей</div>
+			</div>
 			<!-- begin container -->
 			<section class="container">
-				<div class="search-results">
-					<button class="search-results__btn"><i class="icon-search-big"></i></button>
-					<input type="text" class="search-results__input js-search-input" id="search-input">
-					<label class="search-results__title js-search-title" for="search-input">Регина</label>
-					<div class="search-results__label">78 записей</div>
-				</div>
 				<div class="little-post">
 					<img src="img/regina.jpg" alt="">
 					<div class="little-post__title"><a href="#">Регина Тодоренко</a></div>
@@ -483,8 +483,9 @@
 			<form action="">
 				<label class="search__label">
 					<span>Поиск по городам, странам, постам</span>
-					<input type="text" class="search__input" placeholder="Поиск">
+					<!-- <input type="text" class="search__input" placeholder="Поиск"> -->
 				</label>
+				<div class="search__input js-search-big" contenteditable="true" data-placeholder="Поиск"></div>
 			</form>
 		</div>
 	</div>
