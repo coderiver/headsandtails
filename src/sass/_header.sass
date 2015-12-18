@@ -4,6 +4,7 @@
 	left: 0
 	width: 100%
 	height: 79px
+	height: 60px 
 	padding: 0 40px 
 	min-width: 320px 
 	background: rgba(white, 0.2) 
@@ -33,6 +34,7 @@
 		transition: padding 0.25s
 		+vertical
 		text-align: left
+		position: relative
 		+r1
 			float: left
 	&__menu
@@ -111,13 +113,36 @@
 			display: block
 		small
 			font-size: 9px
-	.header-countdown
+	.header-countdown,.header-daysleft
 		display: inline-block
 		vertical-align: top
 		+clr
 		font-size: 0
 		border: none
 		background: none
+		
+		b
+			font-weight: normal
+			+semi
+			font-size: 33px
+			color: #fff 
+			display: inline-block
+			vertical-align: middle
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+		span
+			display: inline-block
+			vertical-align: middle
+			float: none
+			position: relative
+			top: 1px 
+			font-size: 10px 
+			+bold
+			line-height: 1.3 
+			color: #fff 
+			text-transform: uppercase
+			text-align: left
+			padding-left: 10px 
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
 	&.is-active, &.is-white
 		background: #fff 
 		border-bottom: 1px solid #eeeeee 
@@ -173,12 +198,29 @@
 			padding: 9px 0 
 		.logo
 			width: 166px
-				
+
+.logo__text
+	color: #fff 
+	font-size: 10px 
+	position: absolute
+	left: 145px
+	top: 11px
+	padding-left: 14px 
+	line-height: 1.2 
+	+reg 
+	strong
+		display: block
+		font-size: 11px 
+		font-weight: normal
+		+bold		
 .logo
 	width: 187px
+	width: 144px 
 	display: inline-block
 	vertical-align: middle
 	transition: width 0.2s ease
+	position: relative
+	
 	img
 		width: 100%
 

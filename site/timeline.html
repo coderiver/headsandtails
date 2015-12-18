@@ -12,7 +12,7 @@
 	<link rel="stylesheet" media="all" href="css/jquery.countdown.css" >
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
-	<script src="js/app-map.js"></script>
+	<script src="js/app.js"></script>
 	<script src="js/common.js"></script>
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
@@ -77,6 +77,11 @@
 					<div class="header__logo">
 						<a href="#" class="logo">
 							<img src="img/logo.svg" alt="">
+	
+						</a>
+						<a href='http://teenspirit.tv/' class="logo__text">
+							создано
+							<strong>TeenSpirit</strong>
 						</a>
 					</div>		
 					<div class="header__menu js-menu">
@@ -84,11 +89,12 @@
 							<ul class="nav__list">
 								<li class="nav__mobile"><a href="#">Главная</a></li>
 								<li>
-									<a href="#" class="js-menu-link">маршрут <i class="icon-arr-bot"></i></a>
+									<a href="#">маршрут <i class="icon-arr-bot"></i></a>
+									<!-- <a href="#" class="js-menu-link">маршрут <i class="icon-arr-bot"></i></a>
 									<ul class="submenu js-menu-drop">
 										<li><a href="#">Планета</a></li>
 										<li><a href="#">Календарь</a></li>
-									</ul>
+									</ul> -->
 								</li>
 								<li><a href="#" class="js-menu-link">дневник</a></li>
 								<li><a href="#">про проект</a></li>
@@ -101,7 +107,7 @@
 						<button class="btn-search js-popup-btn" data-btn="search"><i class="icon-search"></i></button>
 					</div>
 					<div class="header__date">
-						<div class="header__date-label">до старта</div>
+						<!-- <div class="header__date-label">до старта</div> -->
 						<!-- <ul class="header__date-list">
 							<li>
 								<span>28</span>
@@ -116,7 +122,10 @@
 								<small>минут</small>
 							</li>
 						</ul> -->
-						<div class="header-countdown js-countdown"></div>
+						<div class="header-daysleft">
+							<b>28</b> <span>дней<br>в пути</span>
+						</div>
+						<!-- <div class="header-countdown js-countdown"></div> -->
 					</div>
 					<button class="btn-menu js-menu-btn"><span></span></button>
 				</div>	
@@ -130,36 +139,106 @@
 		<!-- begin globe  -->
 		<div class="globe">
 			<div class="globe-map globe-map_timeline" id="globeHolder">
-				<div id="info">
-					<img src="images/ic_pin.png">
-					<div id="info_name">TRACKED</div>
+				<div class="globenew">
+					<img src="img/globe.png" alt="">
+					<a href='#' class="route">
+						<div class="route__where">Сегодня мы в Антреверпене</div>
+						<div class="route__more"><i class="icon icon-date"></i>Посмотреть маршрут</div>
+					</a>
 				</div>
 			</div>
 			<div class="globe__inner">
 				<div class="globe__text">					
 					<img src="img/krugosvetka.svg" alt="">
-					<p>В 12-м сезоне трэвел-шоу «Орел и решка» решило объять необъятное и переплюнуть непереплюемое. Впервые за историю проекта мы отправляемся в настоящее путешествие вокруг света!</p>
-					<ul class="globe__info">
+					<p>В 12-м сезоне трэвел-шоу «Орел и решка» решило объять необъятное и переплюнуть непереплюемое. Впервые за историю проекта мы отправляемся в настоящее путешествие вокруг света!<br><br>Следите за передвижением команды на нашем сайте.</p>
+					<!-- <ul class="globe__info">
 						<li><a href="#"><i class="icon-user"></i><span>8 человек и 8 чемоданов</span></a></li>
 						<li><a href="#"><i class="icon-globe"></i><span>40 стран на всех континентах</span></a></li>
 						<li><a href="#"><i class="icon-date"></i><span>270 дней в пути от Гринвича до Гринвича</span></a></li>
-					</ul>
-					<div class="globe__bottom">
+					</ul> -->
+					<!-- <div class="globe__bottom">
 						<a href="#" class="globe__next">
 							<i class="icon-arr-bot"></i>
 							<span>Старт – 20 ноября 2014 года.</span>
 							<span>В эфире – 8 февраля 2015 года.</span>
 						</a>
+					</div> -->
+				</div>
+			</div>
+		<!-- 	<a href="http://teenspirit.tv/" class="globe__creater">
+				<small>created by</small>
+				<span>TeenSpirit</span>
+			</a> -->
+
+
+
+			<!-- begin live-row  -->
+			<div class="live-row">
+				<div class="live-row__inner">
+					<div class="live-row__button">
+						<a href="#"><i class="icon icon-arr-bot"></i>Live из Антверпена</a>
+					</div>
+					<div class="live-row__news1">
+						<!-- begin news -->
+						<div class="news news_alt">
+							<div class="news__inner">
+								<a href="#" class="news__left is-white">
+									<img src="img/small3.png" alt="">
+									<span class="news__left-over">
+										<i class="icon icon-arr-bot"></i>
+									</span>
+									<!-- <div class="news__left-in">
+										<div class="news__icon">
+											<i class="icon-like"></i>
+											<span>372</span>
+										</div>
+									</div> -->
+								</a>
+								<div class="news__block">
+									<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
+									<ul class="news__info">
+										<li><a href="#">Андрей Бедняков</a></li>
+										<li><a href="#">11 Ноября 14:32</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- end news -->
+					</div>
+					<div class="live-row__news2">
+						<!-- begin news -->
+						<div class="news news_alt">
+							<div class="news__inner">
+								<a href="#" class="news__left is-white">
+									<img src="img/small3.png" alt="">
+									<span class="news__left-over">
+										<i class="icon icon-arr-bot"></i>
+									</span>
+									<!-- <div class="news__left-in">
+										<div class="news__icon">
+											<i class="icon-like"></i>
+											<span>372</span>
+										</div>
+									</div> -->
+								</a>
+								<div class="news__block">
+									<p><a href="#">Пьем вино и встречаем рассвет в Барселоне</a></p>
+									<ul class="news__info">
+										<li><a href="#">Андрей Бедняков</a></li>
+										<li><a href="#">11 Ноября 14:32</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- end news -->
 					</div>
 				</div>
 			</div>
-			<a href="http://teenspirit.tv/" class="globe__creater">
-				<small>created by</small>
-				<span>TeenSpirit</span>
-			</a>
+			<!-- end live-row -->
 		</div>
 		<!-- end globe -->
-		<div class="text-row">
+		
+		<!-- <div class="text-row">
 			<div class="text-row__inner">
 				<div class="text-col">
 					<p>Следите за передвижением команды с момента старта путешествия и до того самого дня, когда спустя девять месяцев бородатые и изможденные орлы и решки вернутся домой.</p>
@@ -168,7 +247,7 @@
 					<p>Здесь вы будете в курсе всех событий, историй, приключений, невзгод и проблем, да и вообще всего-всего, что будет происходить в жизни команды на протяжении всей кругосветки. Да, нам самим страшно. Страшно интересно.</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- end text-row -->
 		<!-- begin long  -->
 		<div class="long" style="background-image: url(img/long.jpg);">

@@ -197,10 +197,10 @@ a { text-decoration: none; }
 .slick-prev:before, .slick-next:before { height: 50px; line-height: 50px; }
 
 .slick-prev { left: 0; }
-.slick-prev:before { content: "тЖР"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
+.slick-prev:before { content: "←"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
 
 .slick-next { right: 0; }
-.slick-next:before { content: "тЖТ"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
+.slick-next:before { content: "→"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
 
 .slick-dots { text-align: center; position: absolute; margin: 0; bottom: 0; left: 0; right: 0; }
 .slick-dots li { position: relative; display: inline-block; padding: 0 3px; }
@@ -209,7 +209,7 @@ a { text-decoration: none; }
 .slick-dots button { display: block; width: 6px; height: 6px; background: #fff; cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; border-radius: 50%; }
 .slick-dots button:hover { box-shadow: none; }
 
-.header { position: fixed; top: 0; left: 0; width: 100%; height: 79px; padding: 0 40px; min-width: 320px; background: rgba(255, 255, 255, 0.2); font-size: 0; z-index: 1000; transition: background 0.25s linear, height 0.25s linear, padding 0.25s linear; *zoom: 1; }
+.header { position: fixed; top: 0; left: 0; width: 100%; height: 79px; height: 60px; padding: 0 40px; min-width: 320px; background: rgba(255, 255, 255, 0.2); font-size: 0; z-index: 1000; transition: background 0.25s linear, height 0.25s linear, padding 0.25s linear; *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 1200px) { .header { padding: 0 20px; height: 60px; } }
 .header__wrap { height: 100%; text-align: center; font-size: 0; }
@@ -217,7 +217,7 @@ a { text-decoration: none; }
 .header__center { display: inline-block; vertical-align: middle; width: 100%; }
 .header__inner { display: table; width: 100%; }
 .header__menu, .header__date, .header__logo { display: table-cell; vertical-align: top; }
-.header__logo { width: 205px; height: 48px; transition: padding 0.25s; text-align: center; font-size: 0; text-align: left; }
+.header__logo { width: 205px; height: 48px; transition: padding 0.25s; text-align: center; font-size: 0; text-align: left; position: relative; }
 .header__logo:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 @media only screen and (max-width: 1200px) { .header__logo { float: left; } }
 .header__menu { text-align: center; }
@@ -239,8 +239,10 @@ a { text-decoration: none; }
 .header__date span { margin-bottom: 1px; display: inline-block; vertical-align: top; }
 .header__date span, .header__date small { display: block; }
 .header__date small { font-size: 9px; }
-.header .header-countdown { display: inline-block; vertical-align: top; *zoom: 1; font-size: 0; border: none; background: none; }
-.header .header-countdown:after { content: " "; display: table; clear: both; }
+.header .header-countdown, .header .header-daysleft { display: inline-block; vertical-align: top; *zoom: 1; font-size: 0; border: none; background: none; }
+.header .header-countdown:after, .header .header-daysleft:after { content: " "; display: table; clear: both; }
+.header .header-countdown b, .header .header-daysleft b { font-weight: normal; font-family: "ProximaNova Semibold", Arial, sans-serif; font-size: 33px; color: #fff; display: inline-block; vertical-align: middle; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+.header .header-countdown span, .header .header-daysleft span { display: inline-block; vertical-align: middle; float: none; position: relative; top: 1px; font-size: 10px; font-family: "ProximaNova Bold", Arial, sans-serif; line-height: 1.3; color: #fff; text-transform: uppercase; text-align: left; padding-left: 10px; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
 .header.is-active, .header.is-white { background: #fff; border-bottom: 1px solid #eeeeee; }
 .header.is-active .btn-search, .header.is-white .btn-search { color: #333; text-shadow: none; }
 .header.is-active .nav li a, .header.is-white .nav li a { color: #333; text-shadow: none; }
@@ -261,7 +263,10 @@ a { text-decoration: none; }
 .header.is-fixed .header__logo { padding: 9px 0; }
 .header.is-fixed .logo { width: 166px; }
 
-.logo { width: 187px; display: inline-block; vertical-align: middle; transition: width 0.2s ease; }
+.logo__text { color: #fff; font-size: 10px; position: absolute; left: 145px; top: 11px; padding-left: 14px; line-height: 1.2; font-family: "ProximaNova Regular", Arial, sans-serif; }
+.logo__text strong { display: block; font-size: 11px; font-weight: normal; font-family: "ProximaNova Bold", Arial, sans-serif; }
+
+.logo { width: 187px; width: 144px; display: inline-block; vertical-align: middle; transition: width 0.2s ease; position: relative; }
 .logo img { width: 100%; }
 
 .btn-menu { position: absolute; top: 0; right: 0; height: 16px; width: 22px; border: none; background: none; display: none; transition: right 0.3s ease-in-out, background 0.25s ease; width: 62px; height: 60px; }
@@ -329,7 +334,7 @@ a { text-decoration: none; }
 
 .out { min-width: 320px; }
 .out_mod { padding: 0 0 46px; }
-.out_header { padding: 79px 0 0; }
+.out_header { padding: 79px 0 0; padding: 60px 0 0; }
 @media only screen and (max-width: 1200px) { .out_header { padding: 60px 0 0; } }
 .out-globe { overflow: hidden; }
 .out-globe #globeHolder { top: -40px; left: -4%; width: 1200px; height: auto; bottom: -40px; right: auto; }
@@ -458,6 +463,16 @@ a { text-decoration: none; }
 .news p { font-size: 17px; color: #333; letter-spacing: 0.02em; line-height: 1.2; }
 @media only screen and (max-width: 1200px) { .news p { font-size: 15px; } }
 .news p a { color: #333; }
+.news.news_alt { padding-top: 0; padding-bottom: 0; }
+.news.news_alt .news__left-over { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #d73872; text-align: center; color: #fff; font-size: 13px; padding-top: 28px; }
+.news.news_alt:hover .news__left-over { display: block; }
+.news.news_alt:hover .news__left-over i { -webkit-animation: move1 1.1s infinite linear; animation: move1 1.1s infinite linear; position: relative; }
+.news.news_alt p { margin-bottom: 0; }
+.news.news_alt .news__block p { font-family: "ProximaNova Semibold", Arial, sans-serif; font-size: 17px; color: #fff; }
+.news.news_alt .news__block p a { color: #fff; }
+.news.news_alt .news__info li:before { background: #c1e3ed; }
+.news.news_alt .news__info li a { color: #c1e3ed; }
+.news.news_alt .news__info li a:hover { color: #fff; }
 
 .container { width: 67%; float: left; padding: 0 15px 0 0; }
 @media only screen and (max-width: 1024px) { .container { width: 100%; float: none; padding: 0; } }
@@ -670,21 +685,44 @@ a { text-decoration: none; }
 @media only screen and (max-width: 800px) { .sticky-road__prev span, .sticky-road__next span { display: none; } }
 @media only screen and (max-width: 800px) { .sticky-road__prev i, .sticky-road__next i { margin: 0; } }
 
+@-webkit-keyframes move2 { 0% { top: -3px; }
+  50% { top: 3px; }
+  100% { top: -3px; } }
+
+@keyframes move2 { 0% { top: -3px; }
+  50% { top: 3px; }
+  100% { top: -3px; } }
+@-webkit-keyframes move1 { 0% { top: -3px; }
+  50% { top: 4px; }
+  100% { top: -3px; } }
+@keyframes move1 { 0% { top: -3px; }
+  50% { top: 4px; }
+  100% { top: -3px; } }
 @-webkit-keyframes move { 0% { top: 3px; }
   50% { top: 18px; }
   100% { top: 3px; } }
 @keyframes move { 0% { top: 3px; }
   50% { top: 18px; }
   100% { top: 3px; } }
+.route { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background: rgba(215, 56, 114, 0.9); border-radius: 6px; padding: 12px; text-decoration: none; opacity: 0; color: #fff; }
+.globenew:hover .route { opacity: 1; }
+.route a { text-decoration: none; }
+.route__where { display: block; text-align: center; border-bottom: 2px solid #ee719f; padding-bottom: 10px; font-size: 12px; font-family: "ProximaNova Regular", Arial, sans-serif; margin-bottom: 12px; }
+.route__more { font-size: 18px; font-family: "ProximaNova Bold", Arial, sans-serif; color: #fff; display: block; text-align: center; padding: 0 10px; }
+.route__more i { color: #efafc7; font-size: 24px; margin-right: 14px; display: inline-block; vertical-align: middle; position: relative; top: -4px; }
+
 .globe { *zoom: 1; position: relative; background-color: #73c5df; min-height: 100vh; }
 .globe:after { content: " "; display: table; clear: both; }
+.globe .globenew { font-size: 20px; color: #fff; min-height: 635px; float: right; padding-top: 0px; width: 100%; width: 635px; height: 635px; position: relative; }
+@media only screen and (max-width: 630px) { .globe .globenew { width: auto; height: auto; min-height: auto; } }
+.globe .globenew img, .globe .globenew video { width: 100%; max-width: 635px; }
 .globe__inner { padding: 165px 15px 150px; max-width: 1200px; margin: 0 auto; position: relative; }
 @media only screen and (max-width: 1024px) { .globe__inner { padding: 0 15px 50px; } }
 @media only screen and (max-width: 500px) { .globe__inner { padding: 0 15px 20px; } }
 .globe__inner img { width: 100%; max-width: 532px; display: block; margin-bottom: 60px; }
 @media only screen and (max-width: 1024px) { .globe__inner img { margin: 0 auto 60px; } }
 @media only screen and (max-width: 500px) { .globe__inner img { margin-bottom: 25px; } }
-.globe p { max-width: 500px; color: white; font-family: "GaramondPremr Medium", Arial, sans-serif; font-size: 18px; line-height: 24px; letter-spacing: 0.02em; margin-bottom: 50px; }
+.globe p { max-width: 500px; color: white; font-family: "GaramondPremr Medium", Arial, sans-serif; font-size: 18px; line-height: 24px; letter-spacing: 0.02em; }
 @media only screen and (max-width: 1024px) { .globe p { margin: 0 auto 50px; } }
 @media only screen and (max-width: 500px) { .globe p { font-size: 16px; line-height: 1.3; margin: 0 0 25px; max-width: 100%; } }
 .globe__text { max-width: 550px; position: relative; z-index: 15; }
@@ -710,6 +748,15 @@ a { text-decoration: none; }
 .globe__creater small, .globe__creater span { display: block; line-height: 18px; color: white; }
 .globe__creater small { font-size: 12px; font-family: "ProximaNova Semibold", Arial, sans-serif; }
 .globe__creater span { font-size: 16px; font-family: "ProximaNova Bold", Arial, sans-serif; }
+
+.live-row { padding: 32px 0 26px; background-color: rgba(98, 179, 205, 0.3); position: absolute; z-index: 15; bottom: 0; left: 0; right: 0; }
+.live-row__inner { max-width: 1200px; margin: 0 auto; *zoom: 1; position: relative; z-index: 2; }
+.live-row__inner:after { content: " "; display: table; clear: both; }
+.live-row__button { width: 33%; float: left; }
+.live-row__button a { height: 59px; background-color: #d73872; border-radius: 6px; display: inline-block; text-decoration: none; color: #f7d7e3; font-size: 18px; line-height: 59px; padding: 0 22px 0 17px; position: relative; }
+.live-row__button a i { font-size: 13px; margin-right: 13px; position: relative; -webkit-animation: move1 1.1s infinite linear; animation: move1 1.1s infinite linear; margin-top: -10px; }
+.live-row__button a:hover { color: #fff; }
+.live-row__news1, .live-row__news2 { width: 33%; float: left; }
 
 .text-row { padding: 25px 0 50px; background-color: #6dc3de; position: relative; z-index: 15; }
 .text-row__inner { max-width: 1200px; margin: 0 auto; *zoom: 1; position: relative; z-index: 2; }
@@ -1157,9 +1204,9 @@ a { text-decoration: none; }
 
 #info_name { display: inline-block; vertical-align: middle; color: white; font-size: 24px; font-family: "ProximaNova Semibold", Arial, sans-serif; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
 
-#globeHolder { position: absolute; top: -130px; right: -100px; width: 1000px; height: 1000px; z-index: 10; }
+#globeHolder { position: absolute; top: -130px; right: -100px; right: 0; width: 1000px; height: 1000px; z-index: 10; }
 #globeHolder.globe-map_timeline { height: 100vh; top: -1vh; }
-@media only screen and (max-width: 1400px) { #globeHolder.globe-map_timeline { width: 90vw; right: -15vw; } }
+@media only screen and (max-width: 1400px) { #globeHolder.globe-map_timeline { width: 90vw; right: 0; } }
 @media only screen and (max-width: 1024px) { #globeHolder.globe-map_timeline { width: 80vh; height: 80vh; right: auto; } }
 @media only screen and (max-width: 800px) { #globeHolder.globe-map_timeline { width: 70vh; height: 70vh; } }
 @media only screen and (max-width: 500px) { #globeHolder.globe-map_timeline { width: 320px; height: 320px; } }
