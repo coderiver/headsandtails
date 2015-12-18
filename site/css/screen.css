@@ -285,7 +285,7 @@ a { text-decoration: none; }
 @media only screen and (max-width: 1024px) { .nav { display: block; } }
 .nav__list li { display: inline-block; position: relative; }
 @media only screen and (max-width: 1024px) { .nav__list li { display: block; } }
-.nav__list li a { font-family: "ProximaNova Bold", Arial, sans-serif; font-size: 13px; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); text-transform: uppercase; letter-spacing: 0.04em; display: block; position: relative; transition: color 0.25s; padding: 15px 25px 15px; }
+.nav__list li a { font-family: "ProximaNova Bold", Arial, sans-serif; font-size: 13px; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); text-transform: uppercase; letter-spacing: 0.04em; display: block; position: relative; transition: color 0.25s; padding: 15px 25px 15px; cursor: pointer; }
 @media only screen and (max-width: 1500px) { .nav__list li a { padding: 15px; } }
 @media only screen and (max-width: 1200px) { .nav__list li a { padding: 15px 25px 15px; } }
 @media only screen and (max-width: 1024px) { .nav__list li a { padding: 8px 35px 8px 20px; color: #8e98a1; font-family: "ProximaNova Semibold", Arial, sans-serif; } }
@@ -920,13 +920,14 @@ a { text-decoration: none; }
 .search__close i { font-size: 31px; }
 @media only screen and (max-width: 800px) { .search__close i { font-size: 20px; } }
 .search__inner { max-width: 1030px; margin: 0 auto; min-width: 300px; }
-.search__label { display: block; }
+.search__label { display: block; margin-bottom: 50px; }
 .search__label span { color: #e0f2f7; font-size: 16px; line-height: 1; font-family: "ProximaNova Semibold", Arial, sans-serif; display: block; padding: 0 8px; }
 @media only screen and (max-width: 800px) { .search__label span { padding: 0 5px; font-size: 14px; } }
 .search__input { color: white; font-size: 120px; font-family: "ProximaNova Semibold", Arial, sans-serif; background: none; width: 100%; resize: none; border: none; }
 .search__input:-moz-placeholder, .search__input::-moz-placeholder { color: #fff; opacity: 1; }
 .search__input::-webkit-input-placeholder { color: #fff; }
 @media only screen and (max-width: 800px) { .search__input { font-size: 60px; } }
+.search .btn-white { width: 160px; text-align: center; }
 
 .search-results { padding: 40px 0 40px 55px; position: relative; font-size: 0; }
 @media only screen and (max-width: 800px) { .search-results { padding: 30px 0 40px 40px; } }
