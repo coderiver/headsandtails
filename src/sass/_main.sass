@@ -1275,6 +1275,8 @@
 	position: relative	
 	background-color: #73c5df
 	min-height: 100vh 
+	+r(800)
+		display: none
 	.globenew
 		font-size: 20px 
 		color: #fff 
@@ -1433,6 +1435,7 @@
 	bottom: 0
 	left: 0
 	right: 0   
+	overflow: hidden
 	
 	&__inner
 		max-width: 1200px
@@ -1465,6 +1468,20 @@
 	&__news1,&__news2
 		width: 33%
 		float: left
+		position: relative
+		.tohide,.toshow
+			position: absolute
+			top: 0
+			left: 0
+			transition: all 1.5s linear 1s
+		.toshow
+			top: -140px 
+			.a &
+				top: 0 
+		.tohide
+			.a &
+				top: 140px 
+
 .text-row
 	padding: 25px 0 50px
 	background-color: #6dc3de

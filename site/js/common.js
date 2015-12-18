@@ -3,6 +3,7 @@ $(document).ready(function() {
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
+	$('body').addClass('a');
 
 	function scrollFixedElements() {
 		var scroll_left = $(this).scrollLeft();

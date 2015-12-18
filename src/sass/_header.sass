@@ -35,6 +35,7 @@
 		+vertical
 		text-align: left
 		position: relative
+		top: -3px 
 		+r1
 			float: left
 	&__menu
@@ -143,9 +144,18 @@
 			text-align: left
 			padding-left: 10px 
 			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+	.header-daysleft
+		position: relative
+		top: -2px 
 	&.is-active, &.is-white
 		background: #fff 
 		border-bottom: 1px solid #eeeeee 
+		.header-daysleft
+			color: #333 
+			*
+				color: #333 
+		.logo__text
+			color: #333 
 		.btn-search
 			color: #333 
 			text-shadow: none
@@ -190,21 +200,22 @@
 		.btn-menu
 			&:before, &:after, span
 				background: #333 
-	&.is-fixed
+	&
 		height: 60px
 		padding-top: 6px 
 		padding-bottom: 6px
 		.header__logo
 			padding: 9px 0 
 		.logo
-			width: 166px
+			
+			// width: 166px
 
 .logo__text
 	color: #fff 
 	font-size: 10px 
 	position: absolute
 	left: 145px
-	top: 11px
+	top: 15px
 	padding-left: 14px 
 	line-height: 1.2 
 	+reg 
@@ -305,7 +316,7 @@
 				padding: 15px 25px 15px 
 				cursor: pointer
 				+r(1500)
-					padding: 15px
+					padding: 15px 21px
 				+r1
 					padding: 15px 25px 15px
 				+r2
