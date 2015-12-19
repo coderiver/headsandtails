@@ -4,6 +4,15 @@ $(document).ready(function() {
 	// 	$(".js-popup").hide();
 	// });
 	$('body').addClass('a');
+	$('.live-row__button').click(function(event) {
+		togo = $('#startposts');
+		$('html,body').animate(
+		{
+        	scrollTop: $("#startposts").offset().top
+        },
+        'slow');
+		return false;
+	});
 
 	function scrollFixedElements() {
 		var scroll_left = $(this).scrollLeft();
