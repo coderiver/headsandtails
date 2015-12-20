@@ -38,7 +38,7 @@ body.is-hidden { overflow: hidden; }
 
 .page-globe { background-color: #6dc3de; }
 
-.page-globe-mod { background-color: #73c5df; height: 100%; padding: 79px 0 0; }
+.page-globe-mod { background-color: #73c5df; height: 100%; padding: 79px 0 0; padding: 60px 0 0; }
 @media only screen and (max-width: 1200px) { .page-globe-mod { padding: 60px 0 0; } }
 .page-globe-mod .out { height: 100%; text-align: center; font-size: 0; position: relative; text-align: right; min-height: 400px; }
 .page-globe-mod .out:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
@@ -67,7 +67,7 @@ body.is-hidden { overflow: hidden; }
 .page-error { background: url(../img/404-bg.jpg) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; background-position: top center; background-attachment: fixed; }
 
 .page-preloader { height: 100%; }
-.page-preloader .out { height: 100%; text-align: center; font-size: 0; min-height: 300px; padding: 79px 0 0; }
+.page-preloader .out { height: 100%; text-align: center; font-size: 0; min-height: 300px; padding: 79px 0 0; padding: 60px 0 0; }
 .page-preloader .out:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 @media only screen and (max-width: 1200px) { .page-preloader .out { padding: 60px 0 0; } }
 
@@ -720,7 +720,7 @@ a { text-decoration: none; }
 .globe .globenew { font-size: 20px; color: #fff; min-height: 635px; float: right; padding-top: 0px; width: 100%; width: 635px; height: 635px; position: relative; }
 @media only screen and (max-width: 630px) { .globe .globenew { width: auto; height: auto; min-height: auto; } }
 .globe .globenew img, .globe .globenew video { width: 100%; max-width: 635px; }
-.globe__inner { padding: 165px 15px 150px; max-width: 1200px; margin: 0 auto; position: relative; }
+.globe__inner { padding: 140px 15px 150px; max-width: 1200px; margin: 0 auto; position: relative; }
 @media only screen and (max-width: 1024px) { .globe__inner { padding: 0 15px 50px; } }
 @media only screen and (max-width: 500px) { .globe__inner { padding: 0 15px 20px; } }
 .globe__inner img { width: 100%; display: block; width: 598px; margin-bottom: 60px; }
@@ -776,7 +776,7 @@ a { text-decoration: none; }
 @media only screen and (max-width: 800px) { .text-col p { max-width: 100%; } }
 @media only screen and (max-width: 500px) { .text-col p { font-size: 16px; line-height: 1.3; } }
 
-.calendar { min-height: 100%; position: relative; padding: 79px 0 0; background-color: rgba(17, 17, 18, 0.72); }
+.calendar { min-height: 100%; position: relative; padding: 79px 0 0; padding: 60px 0 0; background-color: rgba(17, 17, 18, 0.72); }
 @media only screen and (max-width: 1200px) { .calendar { padding: 60px 0 0; } }
 .calendar__items { position: relative; z-index: 5; }
 .calendar-item-wrap { border-bottom: 1px solid #535658; }
@@ -847,7 +847,7 @@ a { text-decoration: none; }
 .error__text { font-size: 42px; margin: 0 0 50px; }
 @media only screen and (max-width: 800px) { .error__text { font-size: 20px; margin: 0 0 30px; } }
 
-.about { padding: 79px 0 0; }
+.about { padding: 79px 0 0; padding: 60px 0 0; }
 @media only screen and (max-width: 1200px) { .about { padding: 60px 0 0; } }
 .about__top { font-size: 0; }
 .about__top img { width: 100%; }
@@ -1034,7 +1034,7 @@ a { text-decoration: none; }
 .full-video__preview:hover .ytp-large-play-button-bg { transition: fill 0.1s cubic-bezier(0, 0, 0.2, 1), fill-opacity 0.1s cubic-bezier(0, 0, 0.2, 1); fill: #cc181e; fill-opacity: 1; }
 .full-video__play { position: absolute; left: 50%; top: 50%; width: 68px; height: 48px; margin-left: -34px; margin-top: -24px; transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1); background: none; }
 
-.dairy { padding: 79px 0 0; }
+.dairy { padding: 79px 0 0; padding: 60px 0 0; }
 @media only screen and (max-width: 1200px) { .dairy { padding: 60px 0 0; } }
 .dairy-section { position: relative; padding: 0 0 0 36.5%; min-height: 344px; border-bottom: 1px solid #eee; }
 @media only screen and (max-width: 800px) { .dairy-section { padding: 0; } }
