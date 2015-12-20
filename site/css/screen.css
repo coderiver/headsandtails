@@ -271,6 +271,7 @@ a { text-decoration: none; }
 
 .logo { width: 187px; width: 144px; display: inline-block; vertical-align: middle; transition: width 0.2s ease; position: relative; }
 .logo img { width: 100%; }
+@media only screen and (max-width: 1024px) { .logo { position: relative; top: 3px; } }
 
 .btn-menu { position: absolute; top: 0; right: 0; height: 16px; width: 22px; border: none; background: none; display: none; transition: right 0.3s ease-in-out, background 0.25s ease; width: 62px; height: 60px; }
 @media only screen and (max-width: 1024px) { .btn-menu { display: block; } }
@@ -716,11 +717,11 @@ a { text-decoration: none; }
 
 .globe { *zoom: 1; position: relative; background-color: #73c5df; padding-bottom: 20px; }
 .globe:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 800px) { .globe { visibility: hidden; overflow: hidden; height: 60px; } }
+@media only screen and (max-width: 1024px) { .globe { visibility: hidden; overflow: hidden; height: 60px; } }
 .globe .globenew { font-size: 20px; color: #fff; min-height: 635px; float: right; padding-top: 0px; width: 100%; width: 635px; height: 635px; position: relative; }
 @media only screen and (max-width: 630px) { .globe .globenew { width: auto; height: auto; min-height: auto; } }
 .globe .globenew img, .globe .globenew video { width: 100%; max-width: 635px; }
-.globe__inner { padding: 140px 15px 150px; max-width: 1200px; margin: 0 auto; position: relative; }
+.globe__inner { padding: 140px 15px 150px; padding-left: 0; max-width: 1200px; margin: 0 auto; position: relative; }
 @media only screen and (max-width: 1024px) { .globe__inner { padding: 0 15px 50px; } }
 @media only screen and (max-width: 500px) { .globe__inner { padding: 0 15px 20px; } }
 .globe__inner img { width: 100%; display: block; width: 598px; margin-bottom: 60px; }
