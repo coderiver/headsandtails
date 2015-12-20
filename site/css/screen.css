@@ -716,7 +716,7 @@ a { text-decoration: none; }
 
 .globe { *zoom: 1; position: relative; background-color: #73c5df; padding-bottom: 20px; }
 .globe:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 800px) { .globe { display: none; } }
+@media only screen and (max-width: 800px) { .globe { display: none; visibility: hidden; overflow: hidden; height: 60px; } }
 .globe .globenew { font-size: 20px; color: #fff; min-height: 635px; float: right; padding-top: 0px; width: 100%; width: 635px; height: 635px; position: relative; }
 @media only screen and (max-width: 630px) { .globe .globenew { width: auto; height: auto; min-height: auto; } }
 .globe .globenew img, .globe .globenew video { width: 100%; max-width: 635px; }
