@@ -715,9 +715,9 @@ a { text-decoration: none; }
 .route__more { font-size: 18px; font-family: "ProximaNova Bold", Arial, sans-serif; color: #fff; display: block; text-align: center; padding: 0 10px; }
 .route__more i { color: #efafc7; font-size: 24px; margin-right: 14px; display: inline-block; vertical-align: middle; position: relative; top: -4px; }
 
-.globe { *zoom: 1; position: relative; background-color: #73c5df; padding-bottom: 20px; }
+.globe { *zoom: 1; position: relative; background-color: #73c5df; padding-bottom: 20px; min-height: 570px; }
 .globe:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 1024px) { .globe { visibility: hidden; overflow: hidden; height: 60px; } }
+@media only screen and (max-width: 1024px) { .globe { visibility: hidden; overflow: hidden; height: 60px; min-height: 0; } }
 .globe .globenew { font-size: 20px; color: #fff; min-height: 635px; float: right; padding-top: 0px; width: 100%; width: 635px; height: 635px; position: relative; }
 @media only screen and (max-width: 630px) { .globe .globenew { width: auto; height: auto; min-height: auto; } }
 .globe .globenew img, .globe .globenew video { width: 100%; max-width: 635px; }
