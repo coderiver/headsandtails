@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	
+
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
@@ -66,7 +66,7 @@ $(document).ready(function() {
 		}
 		else {
 			$('.js-header').removeClass('is-fixed');
-			$('.js-road').removeClass('is-fixed'); 
+			$('.js-road').removeClass('is-fixed');
 		};
 	});
 
@@ -126,7 +126,7 @@ $(document).ready(function() {
 		$('.js-menu').toggleClass('is-active');
 		if (!$(this).hasClass('is-active')) {
 			$('.js-menu-drop').slideUp('fast');
-			$('.js-menu-link').removeClass('is-open');	
+			$('.js-menu-link').removeClass('is-open');
 		};
 		return false;
 	});
@@ -136,30 +136,30 @@ $(document).ready(function() {
 			$('.js-menu').removeClass('is-active');
 			$('.js-menu-btn').removeClass('is-active');
 			$('.js-menu-drop').slideUp('fast');
-			$('.js-menu-link').removeClass('is-open');				
+			$('.js-menu-link').removeClass('is-open');
 		});
 		$(this).click(function(event) {
 			event.stopPropagation();
 		});
 		$('.js-menu-link').click(function() {
-			if ($(this).hasClass('is-open')) {	
+			if ($(this).hasClass('is-open')) {
 				$('.js-menu-drop').slideUp('fast');
-				$('.js-menu-link').removeClass('is-open');			
+				$('.js-menu-link').removeClass('is-open');
 			}
 			else {
 				$('.js-menu-drop').slideUp('fast');
 				$('.js-menu-link').removeClass('is-open');
 				$(this).addClass('is-open');
 				$(this).siblings('.js-menu-drop').slideDown('fast');
-			}			
+			}
 			return false;
 		});
 	});
 
 	$('.js-slick-gallery').each(function(index, el) {
 		var _el = $(el);
-		var slickFor = _el.find('.js-slick-for'); 
-		var slickNav = _el.find('.js-slick-nav'); 
+		var slickFor = _el.find('.js-slick-for');
+		var slickNav = _el.find('.js-slick-nav');
 		slickFor.find('.gallery-main__slide').click(function() {
 			if ($(this).index() == slickFor.find('.gallery-main__slide').length) {
 				slickFor.slick('goTo', 0);
@@ -209,7 +209,12 @@ $(document).ready(function() {
 				popups = $('.js-popup'),
 				close = $('.js-popup-close'),
 				popupInner = $('.js-popup-inner');
+
 			$(this).click(function() {
+				if(btn=='search'){
+					$('.search__input').focus();
+				}
+
 				popup.addClass('is-active');
 				$('body').addClass('is-hidden');
 				$('.js-overlay').addClass('is-active');
@@ -224,7 +229,7 @@ $(document).ready(function() {
 					$('body').removeClass('is-hidden');
 				}
 				return false;
-			}); 
+			});
 			$('.js-overlay').click(function() {
 				popups.removeClass('is-active');
 				$(this).find('.js-overlay').removeClass('is-active');
@@ -263,7 +268,7 @@ $(document).ready(function() {
 				$('html, body').animate({
 					scrollTop: $(this).parent().offset().top - $('.js-header').outerHeight()
 				}, 1000);
-			});			
+			});
 		};
 	});
 
@@ -294,7 +299,7 @@ $(document).ready(function() {
 			});
 		});
 	};
-	
+
 
 	function calendarItem () {
 		if ($(window).width() > 1024) {
@@ -359,7 +364,7 @@ $(document).ready(function() {
 		ellipsis: '...',
 		height: 72,
 		watch: 'window'
-	}); 
+	});
 
 	$(".js-video-play").click(function(){
 
@@ -379,7 +384,7 @@ $(document).ready(function() {
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 	$('.js-countdown').each(function() {
-		
+
 		var x ='10-12-2015-18';
 		var a = x.split('-');
 		var date = new Date (a[2], a[1] - 1,a[0], a[3]); //using a[1]-1 since Date object has month from 0-11
@@ -393,7 +398,7 @@ $(document).ready(function() {
 				labels2: ['Лет', 'Месяцев', 'Недель', 'Дней', 'Часов', 'Минут', 'Секунд'],
 				padZeroes: true
 			});
-		}		  
+		}
 		else {
 			$(this).countdown({until: date,
 				format: 'dHM',
@@ -404,13 +409,13 @@ $(document).ready(function() {
 				since: date
 			});
 		};
-		
-	}); 
-	
+
+	});
+
 
 	function timer() {
 		console.log('booom!');
-	}; 
+	};
 
 	// function globeMap() {
 	// 	if ($('#globeHolder').length) {
@@ -426,6 +431,6 @@ $(document).ready(function() {
 
 	// $(window).resize(function() {
 	// 	globeMap();
-	// }); 
+	// });
 
 });
