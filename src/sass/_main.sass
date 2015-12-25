@@ -2004,6 +2004,7 @@
 		position: absolute
 		bottom: 0
 		right: 0
+		position: static
 		+clr
 		z-index: 10
 	&__arrows
@@ -2012,22 +2013,43 @@
 	&__prev, &__next
 		width: 40px
 		height: 40px
-		background-color: white
-		float: left
+		// background-color: white
+		// float: left
 		color: #333
 		transition: color 0.25s, background 0.25s
-		+vertical
+		// +vertical
+		z-index: 200
+		font-size: 30px
+		margin-top: -10px
 		&:hover
-			background: #333
+			// background: #333
+			// color: #fff
 			color: #fff
 		i
 			font-size: 12px
 			display: inline-block
 			vertical-align: middle
+			font-size: 35px
+			&::before
+				text-indent: 0
+	&__prev
+		position: absolute
+		left: 20px
+		top: 50%
+		text-align: left
+		i
+			transform: rotate(180deg)
+	&__next
+		position: absolute
+		top: 50%
+		text-align: right
+		right: 20px
+
 	&__caption
 		color: whitesmoke
 		font-size: 15px
 		line-height: 28px
+		display: none
 		+semi
 		padding: 6px 15px
 		overflow: hidden
