@@ -433,4 +433,35 @@ $(document).ready(function() {
 	// 	globeMap();
 	// });
 
+	if ($('.js-grid').length) {
+		$('.js-grid').each(function() {
+			$(this).gridrotator({
+				rows: 2,
+				columns: 5,
+				animType: 'random',
+				interval: 2000,
+				w1024: {
+					rows: 2,
+					columns: 4
+				},
+				w768: {
+					rows: 2,
+					columns: 3
+				},
+				w480: {
+					rows: 2,
+					columns: 2
+				},
+				w320 : {
+					rows: 3,
+					columns: 2
+				},
+				w240 : {
+					rows : 3,
+					columns : 2
+				}
+			});
+		});
+	};
+
 });

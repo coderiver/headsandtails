@@ -203,10 +203,10 @@ a { text-decoration: none; }
 .slick-prev:before, .slick-next:before { height: 50px; line-height: 50px; }
 
 .slick-prev { left: 0; }
-.slick-prev:before { content: "←"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
+.slick-prev:before { content: "тЖР"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
 
 .slick-next { right: 0; }
-.slick-next:before { content: "→"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
+.slick-next:before { content: "тЖТ"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
 
 .slick-dots { text-align: center; position: absolute; margin: 0; bottom: 0; left: 0; right: 0; }
 .slick-dots li { position: relative; display: inline-block; padding: 0 3px; }
@@ -926,6 +926,8 @@ a { text-decoration: none; }
 .about-images:after { content: " "; display: table; clear: both; }
 .about-images_left .about-img { float: left; }
 .about-images_right .about-img { float: right; }
+.about-images__sliders { margin: 0; }
+.about-images__sliders ul li a { background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
 .about-img { position: relative; height: 0; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .about-img_big, .about-img_med { width: 40%; }
