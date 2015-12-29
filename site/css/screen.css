@@ -281,7 +281,7 @@ a { text-decoration: none; }
 .logo { width: 187px; width: 144px; display: inline-block; vertical-align: middle; transition: width 0.2s ease; position: relative; top: 3px; }
 .logo img { width: 100%; }
 @media only screen and (max-width: 1024px) { .logo { position: relative; top: 3px; } }
-@media only screen and (max-width: 500px) { .logo { width: 110px; } }
+@media only screen and (max-width: 500px) { .header_friday .logo { width: 110px; } }
 
 .btn-menu { position: absolute; top: 0; right: 0; height: 16px; width: 22px; border: none; background: none; display: none; transition: right 0.3s ease-in-out, background 0.25s ease; width: 62px; height: 60px; }
 @media only screen and (max-width: 1024px) { .btn-menu { display: block; } }
