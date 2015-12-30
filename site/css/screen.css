@@ -223,10 +223,11 @@ a { text-decoration: none; }
 .header__center { display: inline-block; vertical-align: middle; width: 100%; }
 .header__inner { display: table; width: 100%; }
 .header__menu, .header__date, .header__logo { display: table-cell; vertical-align: top; }
-.header__logo { width: 205px; height: 48px; transition: padding 0.25s; text-align: center; font-size: 0; text-align: left; position: relative; top: -3px; }
-.header__logo:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.header__logo { width: 205px; height: 48px; transition: padding 0.25s; text-align: left; position: relative; top: -3px; }
 @media only screen and (max-width: 1200px) { .header__logo { float: left; } }
-.header.header_friday .header__friday { display: inline-block; vertical-align: top; float: left; margin-right: 24px; width: 110px; height: 73px; position: relative; top: -6px; background: url(../img/friday.svg) no-repeat 0 0; }
+.header.header_friday .header__inner { position: relative; padding-left: 133px; }
+@media only screen and (max-width: 500px) { .header.header_friday .header__inner { padding-left: 75px; } }
+.header.header_friday .header__friday { position: absolute; left: 0; top: -6px; display: inline-block; width: 110px; height: 73px; background: url(../img/friday.svg) no-repeat 0 0; }
 @media only screen and (max-width: 500px) { .header.header_friday .header__friday { width: 60px; background-size: contain; margin-right: 10px; } }
 .header__menu { text-align: center; }
 @media only screen and (max-width: 1200px) { .header__menu { float: right; border: none; padding: 0; text-align: left; } }
@@ -274,7 +275,7 @@ a { text-decoration: none; }
 .header { height: 60px; padding-top: 6px; padding-bottom: 6px; }
 .header .header__logo { padding: 9px 0; }
 
-.logo__text { color: #fff; font-size: 10px; position: absolute; left: 145px; top: 15px; padding-left: 14px; line-height: 1.2; font-family: "ProximaNova Regular", Arial, sans-serif; }
+.logo__text { color: #fff; font-size: 10px; position: absolute; left: 145px; top: 13px; padding-left: 14px; line-height: 1.2; font-family: "ProximaNova Regular", Arial, sans-serif; }
 .logo__text strong { display: block; font-size: 11px; font-weight: normal; font-family: "ProximaNova Bold", Arial, sans-serif; }
 @media only screen and (max-width: 500px) { .logo__text { display: none; } }
 
