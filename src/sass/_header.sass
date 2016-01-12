@@ -40,9 +40,18 @@
 		+r1
 			float: left
 	&.header_friday
+		+r(1320)
+			padding: 0 10px
+		+r2
+			padding: 0 20px
 		.header__inner
 			position: relative
 			padding-left: 133px
+			+r(1280)
+				padding-left: 120px
+			+r1
+				position: static
+				padding-left: 115px
 			+r(500)
 				padding-left: 75px
 		.header__friday
@@ -60,8 +69,18 @@
 				width: 60px
 				background-size: contain
 				margin-right: 10px
-		.header__logo
-
+		.nav
+			&__list
+				li
+					a
+						+r1
+							padding: 15px
+						+r2
+							padding: 8px 35px 8px 20px
+						&:before
+							+r1
+								left: 15px
+								right: 15px
 	&__menu
 		text-align: center
 		+r1
@@ -349,7 +368,7 @@
 				padding: 15px 25px 15px
 				cursor: pointer
 				+r(1500)
-					padding: 15px 21px
+					padding: 15px 15px
 				+r1
 					padding: 15px 25px 15px
 				+r2

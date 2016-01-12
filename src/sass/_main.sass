@@ -381,22 +381,24 @@
 		vertical-align: middle
 		+semi
 		color: #8c8c8c
-		font-size: 14px
 		line-height: 22px
 		letter-spacing: 0.02em
 		transition: all 0.25s ease
+		white-space: nowrap
+		font-size: 0
 		i
 			margin: 0 4px 0 0
-			float: left
 			&.icon-like, &.icon-dislike
 				font-size: 18px
 			&.icon-comments
 				font-size: 18px
 			&.icon-share
 				font-size: 15px
+		span, i
+			vertical-align: top
+			display: inline-block
 		span
-			display: block
-			overflow: hidden
+			font-size: 14px
 	&__block
 		overflow: hidden
 	&__info
@@ -722,7 +724,7 @@
 .user
 	font-size: 0
 	&__inner
-		display: inline-block
+		display: block
 		color: #8c8c8c
 		font-size: 13px
 		line-height: 18px
@@ -1191,6 +1193,7 @@
 			text-overflow: ellipsis
 			white-space: nowrap
 			line-height: 30px
+			float: left
 	&__prev, &__next
 		width: 33.33%
 		+r3
