@@ -381,24 +381,22 @@
 		vertical-align: middle
 		+semi
 		color: #8c8c8c
+		font-size: 14px
 		line-height: 22px
 		letter-spacing: 0.02em
 		transition: all 0.25s ease
-		white-space: nowrap
-		font-size: 0
 		i
 			margin: 0 4px 0 0
+			float: left
 			&.icon-like, &.icon-dislike
 				font-size: 18px
 			&.icon-comments
 				font-size: 18px
 			&.icon-share
 				font-size: 15px
-		span, i
-			vertical-align: top
-			display: inline-block
 		span
-			font-size: 14px
+			display: block
+			overflow: hidden
 	&__block
 		overflow: hidden
 	&__info
@@ -724,7 +722,7 @@
 .user
 	font-size: 0
 	&__inner
-		display: block
+		display: inline-block
 		color: #8c8c8c
 		font-size: 13px
 		line-height: 18px
@@ -770,16 +768,17 @@
 	background-position: center center
 	background-repeat: no-repeat
 	position: relative
-	height: 768px
-	+vertical
+	// height: 768px
+	padding: 43px 0 30px
+	// +vertical
 	+r3
-		height: auto
+		// height: auto
 		padding: 30px 0
 	&:after
 		position: absolute
 		top: 0
 		left: 0
-		bottom: 0
+		bottom: 0 
 		right: 0
 		background: rgba(#000, 0.4)
 		content: ""
@@ -787,11 +786,12 @@
 		position: relative
 		z-index: 2
 		max-width: 1200px
+		margin: 0 auto 
 		width: 100%
 		+clr
 		padding: 0 15px
-		display: inline-block
-		vertical-align: middle
+		// display: inline-block
+		// vertical-align: middle
 		text-align: left
 		+r2
 			max-width: 800px
@@ -1193,7 +1193,6 @@
 			text-overflow: ellipsis
 			white-space: nowrap
 			line-height: 30px
-			float: left
 	&__prev, &__next
 		width: 33.33%
 		+r3
@@ -1280,6 +1279,7 @@
 	// min-height: 100vh
 	padding-bottom: 20px
 	min-height: 570px
+	overflow: hidden
 	+r2
 		visibility: hidden
 		overflow: hidden

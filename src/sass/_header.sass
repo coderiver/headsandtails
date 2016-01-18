@@ -33,54 +33,13 @@
 		width: 205px
 		height: 48px
 		transition: padding 0.25s
-		// +vertical
+		+vertical
 		text-align: left
 		position: relative
 		top: -3px
 		+r1
 			float: left
-	&.header_friday
-		+r(1320)
-			padding: 0 10px
-		+r2
-			padding: 0 20px
-		.header__inner
-			position: relative
-			padding-left: 133px
-			+r(1280)
-				padding-left: 120px
-			+r1
-				position: static
-				padding-left: 115px
-			+r(500)
-				padding-left: 75px
-		.header__friday
-			position: absolute
-			left: 0
-			top: -6px
-			display: inline-block
-			// vertical-align: top
-			// float: left
-			// margin-right: 24px
-			width: 110px
-			height: 73px
-			background: url(../img/friday.svg) no-repeat 0 0
-			+r(500)
-				width: 60px
-				background-size: contain
-				margin-right: 10px
-		.nav
-			&__list
-				li
-					a
-						+r1
-							padding: 15px
-						+r2
-							padding: 8px 35px 8px 20px
-						&:before
-							+r1
-								left: 15px
-								right: 15px
+
 	&__menu
 		text-align: center
 		+r1
@@ -259,7 +218,7 @@
 	font-size: 10px
 	position: absolute
 	left: 145px
-	top: 13px
+	top: 15px
 	padding-left: 14px
 	line-height: 1.2
 	+reg
@@ -268,8 +227,6 @@
 		font-size: 11px
 		font-weight: normal
 		+bold
-	+r(500)
-		display: none
 .logo
 	width: 187px
 	width: 144px
@@ -277,15 +234,12 @@
 	vertical-align: middle
 	transition: width 0.2s ease
 	position: relative
-	top: 3px
+
 	img
 		width: 100%
 	+r2
 		position: relative
 		top: 3px
-	.header_friday &
-		+r(500)
-			width: 110px
 
 .btn-menu
 	position: absolute
@@ -368,7 +322,7 @@
 				padding: 15px 25px 15px
 				cursor: pointer
 				+r(1500)
-					padding: 15px 15px
+					padding: 15px 21px
 				+r1
 					padding: 15px 25px 15px
 				+r2
