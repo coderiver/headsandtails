@@ -43,6 +43,13 @@
 			<div class="globe-map globe-map_timeline" id="globeHolder">
 				<div class="globenew">
 					<img src="img/globe.png" alt="">
+					<div class="video">
+						<video autoplay muted class="js-video-main">
+							<source src="video/Globe_Hard_03.webm"></source>
+							<source src="video/Globe_Hard_03.mp4"></source>
+							<source src="video/Globe_Hard_03.ogg"></source>
+						</video>
+					</div>
 					<a href='#' class="route">
 						<div class="route__where">Сегодня мы в Антреверпене</div>
 						<div class="route__more"><i class="icon icon-date"></i>Посмотреть маршрут</div>
@@ -590,8 +597,12 @@
 			<!-- begin sidebar -->
 			<aside class="sidebar">
 				<div class="sidebar__box">				
-					<div class="sidebar__title"><span>Топ поездки</span></div>
-					//= partials/news-icon.html
+					<div class="sidebar__title"><span>популярные рубрики</span></div>
+					//= partials/popular-categories.html
+				</div>
+				<div class="sidebar__box">				
+					<div class="sidebar__title"><span>Самые популярные темы</span></div>
+					//= partials/popular-themes.html
 				</div>
 				<div class="sidebar__box">				
 					<div class="sidebar__title"><span>Топ Города</span></div>

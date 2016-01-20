@@ -1303,6 +1303,19 @@
 		img,video
 			width: 100%
 			max-width: 635px
+		img
+			display: none
+			+r2
+				display: block
+		video
+			visibility: hidden
+			opacity: 0
+			transition: opacity 0.3s, visibility 0.3s
+			&.is-visible
+				visibility: visible
+				opacity: 1
+			+r2
+				display: none
 
 	&__inner
 		padding: 140px 15px 150px
@@ -2522,3 +2535,58 @@
 	right: 0
 	height: 0
 
+.popular-categories
+	+clr
+	margin: 0 -15px 
+	&__item
+		width: 50%
+		float: left
+		padding: 15px 
+		+r2
+			width: 212px
+		+r3
+			width: 100%
+			max-width: 280px
+
+.category
+	display: block
+	border-radius: 6px
+	position: relative
+	+cover
+	overflow: hidden
+	&:before
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		z-index: 1
+		content: ""
+		border-radius: 6px
+	&.is-yellow
+		&:before
+			background-color: rgba(247, 206, 69, 0.8)
+	&.is-green
+		&:before
+			background-color: rgba(48, 189, 120, 0.8)
+	&.is-red
+		&:before
+			background-color: rgba(243, 39, 87, 0.8)
+	&.is-purple
+		&:before
+			background-color: rgba(128, 101, 186, 0.8)
+	span
+		text-shadow: 0 1px 2px rgba(0, 0, 1, 0.2)
+		color: #fff
+		font-size: 18px
+		+bold
+		position: relative
+		z-index: 2
+		display: block
+		text-align: center
+		line-height: 1
+		padding: 21px 0 20px
+		letter-spacing: 0.02em 
+
+.popular-themes
+	padding: 15px 0 5px 

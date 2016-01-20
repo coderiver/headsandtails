@@ -464,4 +464,11 @@ $(document).ready(function() {
 		});
 	};
 
+	$('.js-video-main').each(function() {
+		var video = $(this);
+		setTimeout(function() {
+			video.addClass('is-visible');
+		}, 300);
+	});
+
 });

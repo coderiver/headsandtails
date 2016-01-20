@@ -719,6 +719,11 @@ a { text-decoration: none; }
 .globe .globenew { font-size: 20px; color: #fff; min-height: 635px; float: right; padding-top: 0px; width: 100%; width: 635px; height: 635px; position: relative; }
 @media only screen and (max-width: 630px) { .globe .globenew { width: auto; height: auto; min-height: auto; } }
 .globe .globenew img, .globe .globenew video { width: 100%; max-width: 635px; }
+.globe .globenew img { display: none; }
+@media only screen and (max-width: 1024px) { .globe .globenew img { display: block; } }
+.globe .globenew video { visibility: hidden; opacity: 0; transition: opacity 0.3s, visibility 0.3s; }
+.globe .globenew video.is-visible { visibility: visible; opacity: 1; }
+@media only screen and (max-width: 1024px) { .globe .globenew video { display: none; } }
 .globe__inner { padding: 140px 15px 150px; padding-left: 0; max-width: 1200px; margin: 0 auto; position: relative; }
 @media only screen and (max-width: 1024px) { .globe__inner { padding: 0 15px 50px; } }
 @media only screen and (max-width: 500px) { .globe__inner { padding: 0 15px 20px; } }
@@ -1058,6 +1063,22 @@ a { text-decoration: none; }
 .load-block.is-active { display: block; }
 
 .load-top { position: fixed; top: 0; left: 0; right: 0; height: 0; }
+
+.popular-categories { margin: 0 -15px; }
+.popular-categories:after { content: " "; display: table; clear: both; }
+.popular-categories__item { width: 50%; float: left; padding: 15px; }
+@media only screen and (max-width: 1024px) { .popular-categories__item { width: 212px; } }
+@media only screen and (max-width: 800px) { .popular-categories__item { width: 100%; max-width: 280px; } }
+
+.category { display: block; border-radius: 6px; position: relative; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; overflow: hidden; }
+.category:before { position: absolute; top: 0; bottom: 0; right: 0; left: 0; z-index: 1; content: ""; border-radius: 6px; }
+.category.is-yellow:before { background-color: rgba(247, 206, 69, 0.8); }
+.category.is-green:before { background-color: rgba(48, 189, 120, 0.8); }
+.category.is-red:before { background-color: rgba(243, 39, 87, 0.8); }
+.category.is-purple:before { background-color: rgba(128, 101, 186, 0.8); }
+.category span { text-shadow: 0 1px 2px rgba(0, 0, 1, 0.2); color: #fff; font-size: 18px; font-family: "ProximaNova Bold", Arial, sans-serif; position: relative; z-index: 2; display: block; text-align: center; line-height: 1; padding: 21px 0 20px; letter-spacing: 0.02em; }
+
+.popular-themes { padding: 15px 0 5px; }
 
 .overlay { position: fixed; top: 0; right: 17px; bottom: 0; left: 0; z-index: 100; visibility: hidden; opacity: 0; }
 .overlay.is-active { visibility: visible; opacity: 1; }
