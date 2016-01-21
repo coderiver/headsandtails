@@ -1337,6 +1337,28 @@
 				margin: 0 auto 60px
 			+r4
 				margin-bottom: 25px
+		.tags-full
+			max-width: 450px
+			padding-top: 18px 
+		.tag-full
+			color: #0d4678
+			background: rgba(#fff, 0.4)
+			background: #fff 
+			&:hover
+				background: rgba(#fff, 0.8)
+				color: #0d4678
+			&_eighty
+				background: rgba(#fff, 0.8)
+				&:hover
+					background: rgba(#fff, 0.6) 
+			&_sixty
+				background: rgba(#fff, 0.6)
+				&:hover
+					background: rgba(#fff, 0.4) 
+			&_forty
+				background: rgba(#fff, 0.4)
+				&:hover
+					background: rgba(#fff, 0.2) 
 	p
 		max-width: 500px
 		color: white
@@ -2563,16 +2585,29 @@
 		z-index: 1
 		content: ""
 		border-radius: 6px
+		transition: background 0.3s
 	&.is-yellow
+		&:hover
+			&:before
+				background-color: rgba(247, 206, 69, 0.9) 
 		&:before
 			background-color: rgba(247, 206, 69, 0.8)
 	&.is-green
+		&:hover
+			&:before
+				background-color: rgba(48, 189, 120, 0.9) 
 		&:before
 			background-color: rgba(48, 189, 120, 0.8)
 	&.is-red
+		&:hover
+			&:before
+				background-color: rgba(243, 39, 87, 0.9) 
 		&:before
 			background-color: rgba(243, 39, 87, 0.8)
 	&.is-purple
+		&:hover
+			&:before
+				background-color: rgba(128, 101, 186, 0.9) 
 		&:before
 			background-color: rgba(128, 101, 186, 0.8)
 	span
