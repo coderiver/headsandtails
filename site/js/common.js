@@ -465,10 +465,13 @@ $(document).ready(function() {
 	};
 
 	$('.js-video-main').each(function() {
-		var video = $(this);
+		var video = $(this),
+			videoDelay = $(this).data('delay');
+		var videoMain = document.getElementById("video");
 		setTimeout(function() {
 			video.addClass('is-visible');
-		}, 300);
+			videoMain.play();
+		}, videoDelay);
 	});
 
 });

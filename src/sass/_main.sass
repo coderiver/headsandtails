@@ -1300,20 +1300,22 @@
 			width: auto
 			height: auto
 			min-height: auto
+		&.is-visible
+			video
+				visibility: visible
+				opacity: 1
+			img
+				display: none
 		img,video
 			width: 100%
 			max-width: 635px
 		img
-			display: none
 			+r2
 				display: block
 		video
 			visibility: hidden
 			opacity: 0
-			transition: opacity 0.3s, visibility 0.3s
-			&.is-visible
-				visibility: visible
-				opacity: 1
+			// transition: opacity 0.3s, visibility 0.3s
 			+r2
 				display: none
 
