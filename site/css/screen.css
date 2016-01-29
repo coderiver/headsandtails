@@ -732,7 +732,7 @@ a { text-decoration: none; }
 .globe__inner img { width: 100%; max-width: 500px; display: block; margin-bottom: 40px; }
 @media only screen and (max-width: 1024px) { .globe__inner img { margin: 0 auto 60px; } }
 @media only screen and (max-width: 500px) { .globe__inner img { margin-bottom: 25px; } }
-.globe__inner .tags-full { max-width: 450px; padding-top: 18px; }
+.globe__inner .tags-full { padding-top: 18px; }
 .globe__inner .tag-full { color: #0d4678; background: rgba(255, 255, 255, 0.4); background: #fff; }
 .globe__inner .tag-full:hover { background: rgba(255, 255, 255, 0.8); color: #0d4678; }
 .globe__inner .tag-full_eighty { background: rgba(255, 255, 255, 0.8); }
