@@ -1236,13 +1236,16 @@
 	position: absolute
 	top: 50%
 	left: 50%
-	transform: translate(-50%,-50%)
+	margin: -55px 0 0 -135px
 	background: rgba(#d73872, .9)
 	border-radius: 6px
 	padding: 14px 12px 19px 12px
 	text-decoration: none
 	opacity: 0
 	color: #fff
+	z-index: 10 
+	width: 270px
+	height: 112px
 	.globenew:hover &
 		opacity: 1
 	a
@@ -1276,8 +1279,6 @@
 	+clr
 	position: relative
 	background-color: #73c5df
-	// min-height: 100vh
-	padding-bottom: 20px
 	min-height: 570px
 	overflow: hidden
 	+r2
@@ -1288,13 +1289,11 @@
 	.globenew
 		font-size: 20px
 		color: #fff
-		// border: 2px solid #f00
-		min-height: 635px
 		float: right
 		padding-top: 0px
 		width: 100%
-		width: 635px
-		height: 635px
+		width: 580px
+		height: 580px
 		position: relative
 		+r(630)
 			width: auto
@@ -1331,10 +1330,9 @@
 			padding: 0 15px 20px
 		img
 			width: 100%
-			// max-width: 532px
+			max-width: 500px
 			display: block
-			width: 598px
-			margin-bottom: 60px
+			margin-bottom: 40px
 			+r2
 				margin: 0 auto 60px
 			+r4
@@ -1475,7 +1473,7 @@
 
 
 .live-row
-	padding: 32px 0 26px
+	padding: 26px 0 25px
 	background-color: rgba(#62b3cd,.3)
 	position: absolute
 	z-index: 15
@@ -1491,8 +1489,9 @@
 		position: relative
 		z-index: 2
 	&__button
-		width: 33%
-		float: left
+		width: 30%
+		float: right
+		text-align: center
 		a
 			height: 59px
 			white-space: nowrap
@@ -1520,7 +1519,7 @@
 				color: #fff
 				background: #ca2a64
 	&__news1,&__news2
-		width: 33%
+		width: 35%
 		float: left
 		position: relative
 		min-height: 70px
@@ -2061,6 +2060,7 @@
 		z-index: 200
 		font-size: 30px
 		margin-top: -10px
+		text-align: center
 		&:hover
 			// background: #333
 			// color: #fff
@@ -2076,14 +2076,16 @@
 		position: absolute
 		left: 20px
 		top: 50%
-		text-align: left
+		+r2
+			text-align: left
 		i
 			transform: rotate(180deg)
 	&__next
 		position: absolute
 		top: 50%
-		text-align: right
 		right: 20px
+		+r2
+			text-align: right
 
 	&__caption
 		color: whitesmoke
