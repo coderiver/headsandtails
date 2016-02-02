@@ -1129,7 +1129,9 @@ a { text-decoration: none; }
 
 .tags-full { font-size: 0; }
 .tags-full li { display: inline-block; vertical-align: top; padding: 0 10px 10px 0; }
-.tags-full_mod .tag-full:hover { color: #8c8c8c; background-color: #c7e8f2; }
+.tags-full_mod .tag-full.is-active { background-color: #c7e8f2; }
+.tags-full_mod .tag-full.is-active:hover { background: rgba(199, 232, 242, 0.8); }
+.tags-full_mod .tag-full:hover { color: #8c8c8c; background: rgba(245, 245, 245, 0.8); }
 
 .tag-full { color: #8c8c8c; font-size: 16px; line-height: 1; height: 31px; background-color: whitesmoke; font-family: "GaramondPremr Regular", Arial, sans-serif; padding: 8px 9px 7px; display: inline-block; vertical-align: top; transition: background 0.2s; }
 .tag-full:hover { color: #333; }
