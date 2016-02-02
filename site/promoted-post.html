@@ -35,37 +35,8 @@
 	<meta name="msapplication-square150x150logo" content="img/mstile-150x150.png" />
 	<meta name="msapplication-wide310x150logo" content="img/mstile-310x150.png" />
 	<meta name="msapplication-square310x310logo" content="img/mstile-310x310.png" />
-
+	<script type="text/javascript" src="http://ru.or.vgnc.co/adfox.asyn.code.ver3.js"> </script>
 </head>
-	 <script>
-		function initMap() {
-
-			var mapMarker = 'img/marker.png';
-
-			var map = new google.maps.Map(document.getElementById('map'), {
-				scrollwheel: false,
-				zoom: 17,
-				center: {lat: 51.2218618, lng: 4.4002441}
-			});
-
-			var marker = new google.maps.Marker({
-				map: map,
-				icon: mapMarker,
-				position: {lat: 51.2218618, lng: 4.4002441},
-			});
-
-			var map = new google.maps.Map(document.getElementById('map2'), {
-				zoom: 17,
-				center: {lat: 51.2218618, lng: 4.4002441}
-			});
-
-			var marker = new google.maps.Marker({
-				map: map,
-				icon: mapMarker,
-				position: {lat: 51.2218618, lng: 4.4002441},
-			});
-		}
-    </script>
 <body>
 <!-- BEGIN  out-->
 <div class="out">
@@ -130,7 +101,10 @@
 						<img src="img/ks-logo.png" alt="">
 					</a>
 					<div class="topper__title">Ділись найцікавішим!</div>
-					<div class="topper__text">Вільний роумінг від Київстар</div>
+					<div class="topper__text">
+						<p>Вільний роумінг від Київстар</p>
+						<a href="#" class="topper__btn">Дізнайся більше</a>
+					</div>
 					<ul class="topper__tags">
 						<li>#HelloUkraine</li>
 					</ul>
@@ -139,8 +113,12 @@
 			<div class="topper__circles">
 				<div class="topper__circle">
 					<div class="topper__slider js-topper">
-						<div class="topper__slide" style="background-image: url(img/topper-slide.jpg);"></div>
-						<div class="topper__slide" style="background-image: url(https://placecage.com/500/500);"></div>
+						<div class="topper__slide">
+							<img src="img/topper-slide1.png" alt="">
+						</div>
+						<div class="topper__slide">
+							<img src="img/topper-slide2.png" alt="">
+						</div>
 					</div>
 				</div>
 				<div class="topper__circle is-yellow"></div>
@@ -165,7 +143,7 @@
 						</a>
 					</div>
 					<div class="post__container">
-						<div class="js-popup-btn" data-btn="popup-category">
+						<div class="js-popup-btn" data-btn="popup-partner">
 							<h3 class="title-h3">
 								Сюр. Город рыбаков
 								<span class="is-circles"><i></i><i></i></span>
@@ -235,6 +213,3112 @@
 </div>
 <!-- END out-->
 
+
+<div class="popup-wrapper js-popup" data-block="popup-gallery-text">
+	<div class="overlay js-overlay"></div>
+	<div class="popup js-popup-inner">
+		<div class="js-popup-fixed popup__close-wrap">
+			<div class="popup__close-wrap-in">
+				<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
+			</div>
+		</div>
+		<div class="popup__body">
+			<div class="popup-post">
+				<div class="user">
+					<a href="#" class="user__inner">
+						<img src="img/ava1.png" alt="" class="user__img">
+						<div class="user__block">
+							<span class="user__name">Регина Тодоренко</span>
+							<ul class="user__info">
+								<li>09 Ноября 14:32</li>
+								<li>Киев</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<h2 class="title-h2"><a href="#">Cделали для вас подборку лучших фотографий с Гоа</a></h2>
+				<div class="gallery js-slick-gallery">
+					<div class="gallery-main">
+						<a href="#" class="gallery-prev js-gallery-prev">
+							<i class="icon-ic-prev"></i>
+						</a>
+						<a href="#" class="gallery-next js-gallery-next">
+							<i class="icon-ic-next"></i>
+						</a>
+						<div class="js-slick-for">
+							<div class="gallery-main__slide">
+								<img src="https://placecage.com/1000/1000" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="gallery-thumbs">
+						<div class="gallery-thumbs__inner js-slick-nav">
+							<div class="gallery-thumbs__slide">
+								<img src="https://placecage.com/1000/1000" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="popup__text">
+					<p>Гоа имеет типичный субэкваториальный климат с резко выраженным сухим и влажным сезоном. На протяжении половины года в регионе (с мая по октябрь) господствует жаркая и влажная погода. Наиболее высокая температура наблюдается в мае, средний максимум составляет 33 °C, и даже в это время сохраняется высокая влажность воздуха (в марте — 73 %). Период муссонов начинается в июне и заканчивается в сентябре. В это время становится прохладнее, температура около 25—30 °C.</p>
+				</div>
+				<ul class="tags-full">
+					<li><a href="#" class="tag-full">Регина</a></li>
+					<li><a href="#" class="tag-full">Фотографии</a></li>
+					<li><a href="#" class="tag-full">Гоа</a></li>
+				</ul>
+				<ul class="lil-info">
+					<li>
+						<a href="#" class="is-like">
+							<i class="icon-like"></i>
+							<span>Нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-dislike">
+							<i class="icon-dislike"></i>
+							<span>Не нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-comments">
+							<i class="icon-comments"></i>
+							<span>10 Комментариев</span>
+						</a>
+					</li>
+					<li class="js-tooltip-parent">
+						<a href="#" class="is-share js-tooltip-icon">
+							<i class="icon-share"></i>
+							<span>Поделиться</span>
+						</a>
+						<div class="tooltip js-tooltip">
+							<div class="tooltip__inner">
+								<ul class="tooltip__list">
+									<li>
+										<a href="#">
+											<i class="icon-fb"></i>
+											<span>8</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-vk"></i>
+											<span>2</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="comments">
+				<div class="comment-form">
+					<div class="comment-form__img">
+						<i class="icon-user"></i>
+					</div>
+					<div class="comment-form__info">
+						<div class="comment-form__text">
+							<textarea cols="30" rows="10" placeholder="Написать комментарий" class="js-popup-btn" data-btn="popup-login"></textarea>
+						</div>
+						<button class="btn-blue">Отправить</button>
+					</div>
+				</div>
+				<div class="all-comments">
+					<div class="all-comments__title">3 Комментария</div>
+					<div class="all-comments__inner">
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Лиза Леоненко</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Ольга Кузнецова</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Даша Шупик</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+							</div>
+						</div>
+						<div class="js-load-comments load-block">
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Лиза Леоненко</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Ольга Кузнецова</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Даша Шупик</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="load js-load-comment">
+					<i class="icon-preloader"></i>
+				</div>
+				<div class="js-load-top load-top"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row__inner">
+				<h3 class="title-h3"><a href="#">Смотреть еще</a></h3>
+				<div class="cols">
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup-wrapper js-popup" data-block="popup-gallery">
+	<div class="overlay js-overlay"></div>
+	<div class="popup js-popup-inner">
+		<div class="js-popup-fixed popup__close-wrap">
+			<div class="popup__close-wrap-in">
+				<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
+			</div>
+		</div>
+		<div class="popup__body">
+			<div class="popup-post">
+				<div class="user">
+					<a href="#" class="user__inner">
+						<img src="img/ava1.png" alt="" class="user__img">
+						<div class="user__block">
+							<span class="user__name">Регина Тодоренко</span>
+							<ul class="user__info">
+								<li>09 Ноября 14:32</li>
+								<li>Киев</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<h2 class="title-h2"><a href="#">Cделали для вас подборку лучших фотографий с Гоа</a></h2>
+				<div class="gallery js-slick-gallery">
+					<div class="gallery-main">
+						<a href="#" class="gallery-prev js-gallery-prev">
+							<i class="icon-ic-prev"></i>
+						</a>
+						<a href="#" class="gallery-next js-gallery-next">
+							<i class="icon-ic-next"></i>
+						</a>
+						<div class="js-slick-for">
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="gallery-thumbs">
+						<div class="gallery-thumbs__inner js-slick-nav">
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="tags-full">
+					<li><a href="#" class="tag-full">Регина</a></li>
+					<li><a href="#" class="tag-full">Фотографии</a></li>
+					<li><a href="#" class="tag-full">Гоа</a></li>
+				</ul>
+				<ul class="lil-info">
+					<li>
+						<a href="#" class="is-like">
+							<i class="icon-like"></i>
+							<span>Нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-dislike">
+							<i class="icon-dislike"></i>
+							<span>Не нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-comments">
+							<i class="icon-comments"></i>
+							<span>10 Комментариев</span>
+						</a>
+					</li>
+					<li class="js-tooltip-parent">
+						<a href="#" class="is-share js-tooltip-icon">
+							<i class="icon-share"></i>
+							<span>Поделиться</span>
+						</a>
+						<div class="tooltip js-tooltip">
+							<div class="tooltip__inner">
+								<ul class="tooltip__list">
+									<li>
+										<a href="#">
+											<i class="icon-fb"></i>
+											<span>8</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-vk"></i>
+											<span>2</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="comments">
+				<div class="comment-form">
+					<div class="comment-form__img">
+						<i class="icon-user"></i>
+					</div>
+					<div class="comment-form__info">
+						<div class="comment-form__text">
+							<textarea cols="30" rows="10" placeholder="Написать комментарий" class="js-popup-btn" data-btn="popup-login"></textarea>
+						</div>
+						<button class="btn-blue">Отправить</button>
+					</div>
+				</div>
+				<div class="all-comments">
+					<div class="all-comments__title">3 Комментария</div>
+					<div class="all-comments__inner">
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Лиза Леоненко</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Ольга Кузнецова</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Даша Шупик</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+							</div>
+						</div>
+						<div class="js-load-comments load-block">
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Лиза Леоненко</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Ольга Кузнецова</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Даша Шупик</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="load js-load-comment">
+					<i class="icon-preloader"></i>
+				</div>
+				<div class="js-load-top load-top"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row__inner">
+				<h3 class="title-h3"><a href="#">Смотреть еще</a></h3>
+				<div class="cols">
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup-wrapper js-popup" data-block="popup-city">
+	<div class="overlay js-overlay"></div>
+	<div class="popup js-popup-inner">
+		<div class="js-popup-fixed popup__close-wrap">
+			<div class="popup__close-wrap-in">
+				<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
+			</div>
+		</div>
+		<div class="popup-long js-popup-bg" data-pony="img/long.jpg">
+			<div class="popup-long__inner">
+				<a href="#" class="popup-long__date">
+					<i class="icon-plane-small"></i>
+					<time>Прилетим 10 Ноября</time>
+				</a>
+				<div class="popup-long__text">
+					<h2 class="popup-long__title">Гринвич</h2>
+					<p>Морские ворота Лондона, историческое предместье, а теперь — один из 32 лондонских боро, находится во внутреннем Лондоне, на юго-востоке британской столицы, на правом берегу Темзы.</p>
+				</div>
+			</div>
+		</div>
+		<div class="popup__body">
+			<div class="comments">
+				<div class="comment-form">
+					<div class="comment-form__img">
+						<i class="icon-user"></i>
+					</div>
+					<div class="comment-form__info">
+						<div class="comment-form__text">
+							<textarea cols="30" rows="10" placeholder="Написать комментарий" class="js-popup-btn" data-btn="popup-login"></textarea>
+						</div>
+						<button class="btn-blue">Отправить</button>
+					</div>
+				</div>
+				<div class="all-comments">
+					<div class="all-comments__title">3 Комментария</div>
+					<div class="all-comments__inner">
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Лиза Леоненко</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Ольга Кузнецова</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Даша Шупик</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+							</div>
+						</div>
+						<div class="js-load-comments load-block">
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Лиза Леоненко</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Ольга Кузнецова</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Даша Шупик</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="load js-load-comment">
+					<i class="icon-preloader"></i>
+				</div>
+				<div class="js-load-top load-top"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row__inner">
+				<h3 class="title-h3"><a href="#">Смотреть еще</a></h3>
+				<div class="cols">
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup-wrapper js-popup" data-block="popup-map">
+	<div class="overlay js-overlay"></div>
+	<div class="popup js-popup-inner">
+		<div class="js-popup-fixed popup__close-wrap">
+			<div class="popup__close-wrap-in">
+				<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
+			</div>
+		</div>
+		<div class="popup__body">
+			<div class="popup-post">
+				<div class="user">
+					<a href="#" class="user__inner">
+						<img src="img/ava1.png" alt="" class="user__img">
+						<div class="user__block">
+							<span class="user__name">Регина Тодоренко</span>
+							<ul class="user__info">
+								<li>09 Ноября 14:32</li>
+								<li>Киев</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<h2 class="title-h2"><a href="#">Самые вкусные бургеры в городе</a></h2>
+				<div class="map">
+					<div id="map2" class="map__inner"></div>
+				</div>
+				<ul class="tags-full">
+					<li><a href="#" class="tag-full">Регина</a></li>
+					<li><a href="#" class="tag-full">Фотографии</a></li>
+					<li><a href="#" class="tag-full">Гоа</a></li>
+				</ul>
+				<ul class="lil-info">
+					<li>
+						<a href="#" class="is-like">
+							<i class="icon-like"></i>
+							<span>Нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-dislike">
+							<i class="icon-dislike"></i>
+							<span>Не нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-comments">
+							<i class="icon-comments"></i>
+							<span>10 Комментариев</span>
+						</a>
+					</li>
+					<li class="js-tooltip-parent">
+						<a href="#" class="is-share js-tooltip-icon">
+							<i class="icon-share"></i>
+							<span>Поделиться</span>
+						</a>
+						<div class="tooltip js-tooltip">
+							<div class="tooltip__inner">
+								<ul class="tooltip__list">
+									<li>
+										<a href="#">
+											<i class="icon-fb"></i>
+											<span>8</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-vk"></i>
+											<span>2</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="comments">
+				<div class="comment-form">
+					<div class="comment-form__img">
+						<i class="icon-user"></i>
+					</div>
+					<div class="comment-form__info">
+						<div class="comment-form__text">
+							<textarea cols="30" rows="10" placeholder="Написать комментарий" class="js-popup-btn" data-btn="popup-login"></textarea>
+						</div>
+						<button class="btn-blue">Отправить</button>
+					</div>
+				</div>
+				<div class="all-comments">
+					<div class="all-comments__title">3 Комментария</div>
+					<div class="all-comments__inner">
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Лиза Леоненко</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Ольга Кузнецова</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Даша Шупик</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+							</div>
+						</div>
+						<div class="js-load-comments load-block">
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Лиза Леоненко</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Ольга Кузнецова</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Даша Шупик</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="load js-load-comment">
+					<i class="icon-preloader"></i>
+				</div>
+				<div class="js-load-top load-top"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row__inner">
+				<h3 class="title-h3"><a href="#">Смотреть еще</a></h3>
+				<div class="cols">
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup-wrapper js-popup" data-block="popup-image">
+	<div class="overlay js-overlay"></div>
+	<div class="popup js-popup-inner">
+		<div class="js-popup-fixed popup__close-wrap">
+			<div class="popup__close-wrap-in">
+				<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
+			</div>
+		</div>
+		<div class="popup__body">
+			<div class="popup-post">
+				<div class="user">
+					<a href="#" class="user__inner">
+						<img src="img/ava1.png" alt="" class="user__img">
+						<div class="user__block">
+							<span class="user__name">Регина Тодоренко</span>
+							<ul class="user__info">
+								<li>09 Ноября 14:32</li>
+								<li>Киев</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<h2 class="title-h2"><a href="#">Cделали для вас подборку лучших фотографий с Гоа</a></h2>
+				<div class="post__img">					
+					<img src="img/post1.png" alt="">
+				</div>
+				<ul class="tags-full">
+					<li><a href="#" class="tag-full">Регина</a></li>
+					<li><a href="#" class="tag-full">Фотографии</a></li>
+					<li><a href="#" class="tag-full">Гоа</a></li>
+				</ul>
+				<ul class="lil-info">
+					<li>
+						<a href="#" class="is-like">
+							<i class="icon-like"></i>
+							<span>Нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-dislike">
+							<i class="icon-dislike"></i>
+							<span>Не нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-comments">
+							<i class="icon-comments"></i>
+							<span>10 Комментариев</span>
+						</a>
+					</li>
+					<li class="js-tooltip-parent">
+						<a href="#" class="is-share js-tooltip-icon">
+							<i class="icon-share"></i>
+							<span>Поделиться</span>
+						</a>
+						<div class="tooltip js-tooltip">
+							<div class="tooltip__inner">
+								<ul class="tooltip__list">
+									<li>
+										<a href="#">
+											<i class="icon-fb"></i>
+											<span>8</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-vk"></i>
+											<span>2</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="comments">
+				<div class="comment-form">
+					<div class="comment-form__img">
+						<i class="icon-user"></i>
+					</div>
+					<div class="comment-form__info">
+						<div class="comment-form__text">
+							<textarea cols="30" rows="10" placeholder="Написать комментарий" class="js-popup-btn" data-btn="popup-login"></textarea>
+						</div>
+						<button class="btn-blue">Отправить</button>
+					</div>
+				</div>
+				<div class="all-comments">
+					<div class="all-comments__title">3 Комментария</div>
+					<div class="all-comments__inner">
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Лиза Леоненко</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Ольга Кузнецова</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Даша Шупик</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+							</div>
+						</div>
+						<div class="js-load-comments load-block">
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Лиза Леоненко</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Ольга Кузнецова</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Даша Шупик</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="load js-load-comment">
+					<i class="icon-preloader"></i>
+				</div>
+				<div class="js-load-top load-top"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row__inner">
+				<h3 class="title-h3"><a href="#">Смотреть еще</a></h3>
+				<div class="cols">
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup-wrapper js-popup" data-block="popup-image-text">
+	<div class="overlay js-overlay"></div>
+	<div class="popup js-popup-inner">
+		<div class="js-popup-fixed popup__close-wrap">
+			<div class="popup__close-wrap-in">
+				<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
+			</div>
+		</div>
+		<div class="popup__body">
+			<div class="popup-post">
+				<div class="user">
+					<a href="#" class="user__inner">
+						<img src="img/ava1.png" alt="" class="user__img">
+						<div class="user__block">
+							<span class="user__name">Регина Тодоренко</span>
+							<ul class="user__info">
+								<li>09 Ноября 14:32</li>
+								<li>Киев</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<h2 class="title-h2"><a href="#">Cделали для вас подборку лучших фотографий с Гоа</a></h2>
+				<div class="post__img">					
+					<img src="img/post1.png" alt="">
+				</div>
+				<div class="popup__text">
+					<p>Гоа имеет типичный субэкваториальный климат с резко выраженным сухим и влажным сезоном. На протяжении половины года в регионе (с мая по октябрь) господствует жаркая и влажная погода. Наиболее высокая температура наблюдается в мае, средний максимум составляет 33 °C, и даже в это время сохраняется высокая влажность воздуха (в марте — 73 %). Период муссонов начинается в июне и заканчивается в сентябре. В это время становится прохладнее, температура около 25—30 °C.</p>
+				</div>
+				<ul class="tags-full">
+					<li><a href="#" class="tag-full">Регина</a></li>
+					<li><a href="#" class="tag-full">Фотографии</a></li>
+					<li><a href="#" class="tag-full">Гоа</a></li>
+				</ul>
+				<ul class="lil-info">
+					<li>
+						<a href="#" class="is-like">
+							<i class="icon-like"></i>
+							<span>Нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-dislike">
+							<i class="icon-dislike"></i>
+							<span>Не нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-comments">
+							<i class="icon-comments"></i>
+							<span>10 Комментариев</span>
+						</a>
+					</li>
+					<li class="js-tooltip-parent">
+						<a href="#" class="is-share js-tooltip-icon">
+							<i class="icon-share"></i>
+							<span>Поделиться</span>
+						</a>
+						<div class="tooltip js-tooltip">
+							<div class="tooltip__inner">
+								<ul class="tooltip__list">
+									<li>
+										<a href="#">
+											<i class="icon-fb"></i>
+											<span>8</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-vk"></i>
+											<span>2</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="comments">
+				<div class="comment-form">
+					<div class="comment-form__img">
+						<i class="icon-user"></i>
+					</div>
+					<div class="comment-form__info">
+						<div class="comment-form__text">
+							<textarea cols="30" rows="10" placeholder="Написать комментарий" class="js-popup-btn" data-btn="popup-login"></textarea>
+						</div>
+						<button class="btn-blue">Отправить</button>
+					</div>
+				</div>
+				<div class="all-comments">
+					<div class="all-comments__title">3 Комментария</div>
+					<div class="all-comments__inner">
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Лиза Леоненко</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Ольга Кузнецова</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Даша Шупик</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+							</div>
+						</div>
+						<div class="js-load-comments load-block">
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Лиза Леоненко</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Ольга Кузнецова</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Даша Шупик</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="load js-load-comment">
+					<i class="icon-preloader"></i>
+				</div>
+				<div class="js-load-top load-top"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row__inner">
+				<h3 class="title-h3"><a href="#">Смотреть еще</a></h3>
+				<div class="cols">
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup-wrapper js-popup" data-block="popup-text">
+	<div class="overlay js-overlay"></div>
+	<div class="popup js-popup-inner">
+		<div class="js-popup-fixed popup__close-wrap">
+			<div class="popup__close-wrap-in">
+				<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
+			</div>
+		</div>
+		<div class="popup-image" style="background-image: url(img/popup-image.jpg);">
+			<div class="popup-image__inner">
+				<div class="user">
+					<a href="#" class="user__inner">
+						<img src="img/ava1.png" alt="" class="user__img">
+						<div class="user__block">
+							<span class="user__name">Регина Тодоренко</span>
+							<ul class="user__info">
+								<li>09 Ноября 14:32</li>
+								<li>Киев</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<h2 class="title-h2">Cделали для вас подборку лучших фотографий с Гоа</h2>
+			</div>
+		</div>
+		<div class="popup__body">
+			<div class="popup-post">
+				<div class="popup__text">
+					<p>Площадь Гоа составляет всего 3702 км², протяженность с севера на юг 105 км, с запада на восток максимально 65 км. Таким образом, Гоа является самым маленьким из двадцати восьми штатов Индии. Гоа расположен в средней части западного побережья Индии. На севере он граничит со штатом Махараштра, на юге и востоке — с Карнатакой, на западе омывается Аравийским морем. Длина береговой линии составляет 101 км.</p>
+					<p>Узкая полоса побережья отделяет море от горного плато, на востоке переходящего в отроги Западных Гат. Горная цепь Западные Гаты (Сахьядри) представляет собой западную возвышенную окраину Деканского плоскогорья длиной около 1800 км. Западные Гаты занимают около 15 % площади штата, их средняя высота 1200 м. Самая высокая точка Гоа достигает 1167 м над уровнем моря. Береговая линия Гоа изрезана устьями рек, большинство которых берет своё начало в Западных Гатах. Крупнейшими реками являются Мандови, Зуари и Чапора.</p>
+					<p>Гоа имеет типичный субэкваториальный климат с резко выраженным сухим и влажным сезоном. На протяжении половины года в регионе (с мая по октябрь) господствует жаркая и влажная погода. Наиболее высокая температура наблюдается в мае, средний максимум составляет 33 °C, и даже в это время сохраняется высокая влажность воздуха (в марте — 73 %). Период муссонов начинается в июне и заканчивается в сентябре. В это время становится прохладнее, температура около 25—30 °C.</p>
+				</div>
+				<ul class="tags-full">
+					<li><a href="#" class="tag-full">Регина</a></li>
+					<li><a href="#" class="tag-full">Фотографии</a></li>
+					<li><a href="#" class="tag-full">Гоа</a></li>
+				</ul>
+				<ul class="lil-info">
+					<li>
+						<a href="#" class="is-like">
+							<i class="icon-like"></i>
+							<span>Нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-dislike">
+							<i class="icon-dislike"></i>
+							<span>Не нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-comments">
+							<i class="icon-comments"></i>
+							<span>10 Комментариев</span>
+						</a>
+					</li>
+					<li class="js-tooltip-parent">
+						<a href="#" class="is-share js-tooltip-icon">
+							<i class="icon-share"></i>
+							<span>Поделиться</span>
+						</a>
+						<div class="tooltip js-tooltip">
+							<div class="tooltip__inner">
+								<ul class="tooltip__list">
+									<li>
+										<a href="#">
+											<i class="icon-fb"></i>
+											<span>8</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-vk"></i>
+											<span>2</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="comments">
+				<div class="comment-form">
+					<div class="comment-form__img">
+						<i class="icon-user"></i>
+					</div>
+					<div class="comment-form__info">
+						<div class="comment-form__text">
+							<textarea cols="30" rows="10" placeholder="Написать комментарий" class="js-popup-btn" data-btn="popup-login"></textarea>
+						</div>
+						<button class="btn-blue">Отправить</button>
+					</div>
+				</div>
+				<div class="all-comments">
+					<div class="all-comments__title">3 Комментария</div>
+					<div class="all-comments__inner">
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Лиза Леоненко</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Ольга Кузнецова</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Даша Шупик</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+							</div>
+						</div>
+						<div class="js-load-comments load-block">
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Лиза Леоненко</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Ольга Кузнецова</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Даша Шупик</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="load js-load-comment">
+					<i class="icon-preloader"></i>
+				</div>
+				<div class="js-load-top load-top"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row__inner">
+				<h3 class="title-h3"><a href="#">Смотреть еще</a></h3>
+				<div class="cols">
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup-wrapper js-popup" data-block="popup-video">
+	<div class="overlay js-overlay"></div>
+	<div class="popup js-popup-inner">
+		<div class="js-popup-fixed popup__close-wrap">
+			<div class="popup__close-wrap-in">
+				<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
+			</div>
+		</div>
+		<div class="popup__body">
+			<div class="popup-post">
+				<div class="user">
+					<a href="#" class="user__inner">
+						<img src="img/ava1.png" alt="" class="user__img">
+						<div class="user__block">
+							<span class="user__name">Регина Тодоренко</span>
+							<ul class="user__info">
+								<li>09 Ноября 14:32</li>
+								<li>Киев</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<h2 class="title-h2"><a href="#">Cделали для вас подборку лучших фотографий с Гоа</a></h2>
+				<div class="video">
+					<iframe src="https://www.youtube.com/embed/FA_8TY9Z5Zg" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<ul class="tags-full">
+					<li><a href="#" class="tag-full">Регина</a></li>
+					<li><a href="#" class="tag-full">Фотографии</a></li>
+					<li><a href="#" class="tag-full">Гоа</a></li>
+				</ul>
+				<ul class="lil-info">
+					<li>
+						<a href="#" class="is-like">
+							<i class="icon-like"></i>
+							<span>Нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-dislike">
+							<i class="icon-dislike"></i>
+							<span>Не нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-comments">
+							<i class="icon-comments"></i>
+							<span>10 Комментариев</span>
+						</a>
+					</li>
+					<li class="js-tooltip-parent">
+						<a href="#" class="is-share js-tooltip-icon">
+							<i class="icon-share"></i>
+							<span>Поделиться</span>
+						</a>
+						<div class="tooltip js-tooltip">
+							<div class="tooltip__inner">
+								<ul class="tooltip__list">
+									<li>
+										<a href="#">
+											<i class="icon-fb"></i>
+											<span>8</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-vk"></i>
+											<span>2</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="comments">
+				<div class="comment-form">
+					<div class="comment-form__img">
+						<i class="icon-user"></i>
+					</div>
+					<div class="comment-form__info">
+						<div class="comment-form__text">
+							<textarea cols="30" rows="10" placeholder="Написать комментарий" class="js-popup-btn" data-btn="popup-login"></textarea>
+						</div>
+						<button class="btn-blue">Отправить</button>
+					</div>
+				</div>
+				<div class="all-comments">
+					<div class="all-comments__title">3 Комментария</div>
+					<div class="all-comments__inner">
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Лиза Леоненко</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Ольга Кузнецова</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Даша Шупик</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+							</div>
+						</div>
+						<div class="js-load-comments load-block">
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Лиза Леоненко</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Ольга Кузнецова</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Даша Шупик</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="load js-load-comment">
+					<i class="icon-preloader"></i>
+				</div>
+				<div class="js-load-top load-top"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row__inner">
+				<h3 class="title-h3"><a href="#">Смотреть еще</a></h3>
+				<div class="cols">
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup-wrapper js-popup" data-block="popup-category">
+	<div class="overlay js-overlay"></div>
+	<div class="popup js-popup-inner">
+		<div class="js-popup-fixed popup__close-wrap">
+			<div class="popup__close-wrap-in">
+				<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
+			</div>
+		</div>
+		<div class="popup-image" style="background-image: url(img/popup-image.jpg);">
+			<div class="popup-image__inner">
+				<span class="sticker is-blue">спецпроект от kyivstar</span>
+				<div class="user">
+					<a href="#" class="user__inner">
+						<img src="img/ava1.png" alt="" class="user__img">
+						<div class="user__block">
+							<span class="user__name">Регина Тодоренко</span>
+							<ul class="user__info">
+								<li>09 Ноября 14:32</li>
+								<li>Киев</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<h2 class="title-h2">Cделали для вас подборку лучших фотографий с Гоа</h2>
+			</div>
+		</div>
+		<div class="popup__body">
+			<div class="popup-post">
+				<div class="popup__text">
+					<p>Площадь Гоа составляет всего 3702 км², протяженность с севера на юг 105 км, с запада на восток максимально 65 км. Таким образом, Гоа является самым маленьким из двадцати восьми штатов Индии. Гоа расположен в средней части западного побережья Индии. На севере он граничит со штатом Махараштра, на юге и востоке — с Карнатакой, на западе омывается Аравийским морем. Длина береговой линии составляет 101 км.</p>
+					<p>Узкая полоса побережья отделяет море от горного плато, на востоке переходящего в отроги Западных Гат. Горная цепь Западные Гаты (Сахьядри) представляет собой западную возвышенную окраину Деканского плоскогорья длиной около 1800 км. Западные Гаты занимают около 15 % площади штата, их средняя высота 1200 м. Самая высокая точка Гоа достигает 1167 м над уровнем моря. Береговая линия Гоа изрезана устьями рек, большинство которых берет своё начало в Западных Гатах. Крупнейшими реками являются Мандови, Зуари и Чапора.</p>
+					<figure>
+						<img src="img/popup-category.jpg" alt="">
+						<figcaption>Ароссим, лучший пляж на Гоа</figcaption>
+					</figure>
+					<p>Гоа имеет типичный субэкваториальный климат с резко выраженным сухим и влажным сезоном. На протяжении половины года в регионе (с мая по октябрь) господствует жаркая и влажная погода. Наиболее высокая температура наблюдается в мае, средний максимум составляет 33 °C, и даже в это время сохраняется высокая влажность воздуха (в марте — 73 %). Период муссонов начинается в июне и заканчивается в сентябре. В это время становится прохладнее, температура около 25—30 °C.</p>
+				</div>
+				<ul class="tags-full">
+					<li><a href="#" class="tag-full">Регина</a></li>
+					<li><a href="#" class="tag-full">Фотографии</a></li>
+					<li><a href="#" class="tag-full">Гоа</a></li>
+				</ul>
+				<ul class="lil-info">
+					<li>
+						<a href="#" class="is-like">
+							<i class="icon-like"></i>
+							<span>Нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-dislike">
+							<i class="icon-dislike"></i>
+							<span>Не нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-comments">
+							<i class="icon-comments"></i>
+							<span>10 Комментариев</span>
+						</a>
+					</li>
+					<li class="js-tooltip-parent">
+						<a href="#" class="is-share js-tooltip-icon">
+							<i class="icon-share"></i>
+							<span>Поделиться</span>
+						</a>
+						<div class="tooltip js-tooltip">
+							<div class="tooltip__inner">
+								<ul class="tooltip__list">
+									<li>
+										<a href="#">
+											<i class="icon-fb"></i>
+											<span>8</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-vk"></i>
+											<span>2</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="comments">
+				<div class="comment-form">
+					<div class="comment-form__img">
+						<i class="icon-user"></i>
+					</div>
+					<div class="comment-form__info">
+						<div class="comment-form__text">
+							<textarea cols="30" rows="10" placeholder="Написать комментарий" class="js-popup-btn" data-btn="popup-login"></textarea>
+						</div>
+						<button class="btn-blue">Отправить</button>
+					</div>
+				</div>
+				<div class="all-comments">
+					<div class="all-comments__title">3 Комментария</div>
+					<div class="all-comments__inner">
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Лиза Леоненко</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Ольга Кузнецова</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Даша Шупик</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+							</div>
+						</div>
+						<div class="js-load-comments load-block">
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Лиза Леоненко</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Ольга Кузнецова</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Даша Шупик</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="load js-load-comment">
+					<i class="icon-preloader"></i>
+				</div>
+				<div class="js-load-top load-top"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row__inner">
+				<h3 class="title-h3"><a href="#">Смотреть еще</a></h3>
+				<div class="cols">
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup-wrapper js-popup" data-block="popup-quote">
+	<div class="overlay js-overlay"></div>
+	<div class="popup js-popup-inner">
+		<div class="js-popup-fixed popup__close-wrap">
+			<div class="popup__close-wrap-in">
+				<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
+			</div>
+		</div>
+		<div class="popup-quote">
+			<div class="popup-quote__info">
+				<div class="popup-quote__title">цитата дня</div>
+				<blockquote class="popup-quote__blockquote">Человека делают счастливым три вещи: любовь, интересная работа и возможность путешествовать</blockquote>
+				<div class="popup-quote__name">Регина Тодоренко</div>
+			</div>
+			<div class="popup-quote__img">
+				<img src="img/quote-img.png" alt="">
+			</div>
+		</div>
+		<div class="popup__body">
+			<div class="popup-post">
+				<ul class="tags-full">
+					<li><a href="#" class="tag-full">Регина</a></li>
+					<li><a href="#" class="tag-full">Фотографии</a></li>
+					<li><a href="#" class="tag-full">Гоа</a></li>
+				</ul>
+				<ul class="lil-info">
+					<li>
+						<a href="#" class="is-like">
+							<i class="icon-like"></i>
+							<span>Нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-dislike">
+							<i class="icon-dislike"></i>
+							<span>Не нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-comments">
+							<i class="icon-comments"></i>
+							<span>10 Комментариев</span>
+						</a>
+					</li>
+					<li class="js-tooltip-parent">
+						<a href="#" class="is-share js-tooltip-icon">
+							<i class="icon-share"></i>
+							<span>Поделиться</span>
+						</a>
+						<div class="tooltip js-tooltip">
+							<div class="tooltip__inner">
+								<ul class="tooltip__list">
+									<li>
+										<a href="#">
+											<i class="icon-fb"></i>
+											<span>8</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-vk"></i>
+											<span>2</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="comments">
+				<div class="comment-form">
+					<div class="comment-form__img">
+						<i class="icon-user"></i>
+					</div>
+					<div class="comment-form__info">
+						<div class="comment-form__text">
+							<textarea cols="30" rows="10" placeholder="Написать комментарий" class="js-popup-btn" data-btn="popup-login"></textarea>
+						</div>
+						<button class="btn-blue">Отправить</button>
+					</div>
+				</div>
+				<div class="all-comments">
+					<div class="all-comments__title">3 Комментария</div>
+					<div class="all-comments__inner">
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Лиза Леоненко</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Ольга Кузнецова</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Даша Шупик</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+							</div>
+						</div>
+						<div class="js-load-comments load-block">
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Лиза Леоненко</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Ольга Кузнецова</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Даша Шупик</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="load js-load-comment">
+					<i class="icon-preloader"></i>
+				</div>
+				<div class="js-load-top load-top"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup-wrapper js-popup" data-block="popup-partner">
+	<div class="overlay js-overlay"></div>
+	<div class="popup js-popup-inner">
+		<div class="js-popup-fixed popup__close-wrap">
+			<div class="popup__close-wrap-in">
+				<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
+			</div>
+		</div>
+		<div class="popup__body">
+			<div class="popup-post">
+				<div class="user">
+					<a href="#" class="user__inner">
+						<img src="img/ava1.png" alt="" class="user__img">
+						<div class="user__block">
+							<span class="user__name">Регина Тодоренко</span>
+							<ul class="user__info">
+								<li>09 Ноября 14:32</li>
+								<li>Киев</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<h2 class="title-h2 is-active">
+					Сюр. Город рыбаков
+					<span class="is-circles"><i></i><i></i></span>
+				</h2>
+				<div class="post-partner">
+					<img src="img/post-partner.jpg" alt="" class="post-partner__img">
+				</div>
+				<div class="popup__text">
+					<p>Морские ворота Лондона, историческое предместье, а теперь — один из 32 лондонских боро, находится во внутреннем Лондоне, на юго-востоке британской столицы, на правом берегу Темзы.</p>
+				</div>
+				<ul class="tags-full tags-full_mod">
+					<li><a href="#" class="tag-full is-active">#HelloUkraine</a></li>
+					<li><a href="#" class="tag-full">#Фотографии</a></li>
+					<li><a href="#" class="tag-full">#Гоа</a></li>
+				</ul>
+				<ul class="lil-info">
+					<li>
+						<a href="#" class="is-like">
+							<i class="icon-like"></i>
+							<span>Нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-dislike">
+							<i class="icon-dislike"></i>
+							<span>Не нравится</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-comments">
+							<i class="icon-comments"></i>
+							<span>10 Комментариев</span>
+						</a>
+					</li>
+					<li class="js-tooltip-parent">
+						<a href="#" class="is-share js-tooltip-icon">
+							<i class="icon-share"></i>
+							<span>Поделиться</span>
+						</a>
+						<div class="tooltip js-tooltip">
+							<div class="tooltip__inner">
+								<ul class="tooltip__list">
+									<li>
+										<a href="#">
+											<i class="icon-fb"></i>
+											<span>8</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon-vk"></i>
+											<span>2</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="comments">
+				<div class="comment-form">
+					<div class="comment-form__img">
+						<i class="icon-user"></i>
+					</div>
+					<div class="comment-form__info">
+						<div class="comment-form__text">
+							<textarea cols="30" rows="10" placeholder="Написать комментарий" class="js-popup-btn" data-btn="popup-login"></textarea>
+						</div>
+						<button class="btn-blue">Отправить</button>
+					</div>
+				</div>
+				<div class="all-comments">
+					<div class="all-comments__title">3 Комментария</div>
+					<div class="all-comments__inner">
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Лиза Леоненко</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Ольга Кузнецова</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="user">
+								<a href="#" class="user__inner">
+									<img src="img/ava1.png" alt="" class="user__img">
+									<div class="user__block">
+										<span class="user__name">Даша Шупик</span>
+										<ul class="user__info">
+											<li>09 Ноября 14:32</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+							<div class="comment__text">
+								<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+							</div>
+						</div>
+						<div class="js-load-comments load-block">
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Лиза Леоненко</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Я по началу его вообще не представлял в этой роли, думал, что ему больше подходят комедийные роли, я никогда так не ошибался.</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Ольга Кузнецова</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Эх, жаль на Родос не заедут, там тоже есть на что посмотреть!</p>
+								</div>
+							</div>
+							<div class="comment">
+								<div class="user">
+									<a href="#" class="user__inner">
+										<img src="img/ava1.png" alt="" class="user__img">
+										<div class="user__block">
+											<span class="user__name">Даша Шупик</span>
+											<ul class="user__info">
+												<li>09 Ноября 14:32</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+								<div class="comment__text">
+									<p>Как же тут прекрасно! Очень хочу побывать на Гоа.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="load js-load-comment">
+					<i class="icon-preloader"></i>
+				</div>
+				<div class="js-load-top load-top"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row__inner">
+				<h3 class="title-h3"><a href="#">Смотреть еще</a></h3>
+				<div class="cols">
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col col_mod">
+						<div class="col__img">
+							<img src="img/col.png" alt="">
+						</div>
+						<p>Паста с креветками в соусе чили и лимонадом</p>				
+						<ul class="lil-info">
+							<li>
+								<a href="#" class="is-like">
+									<i class="icon-like"></i>
+									<span>173</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-dislike">
+									<i class="icon-dislike"></i>
+									<span>12</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="is-comments">
+									<i class="icon-comments"></i>
+									<span>10</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
 
 <div class="js-popup popup-wrapper popup-login" data-block="popup-login">
 	<div class="login">

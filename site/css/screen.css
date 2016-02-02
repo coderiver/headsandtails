@@ -298,7 +298,7 @@ a { text-decoration: none; }
 .nav__list li { display: inline-block; position: relative; }
 @media only screen and (max-width: 1024px) { .nav__list li { display: block; } }
 .nav__list li a { font-family: "ProximaNova Bold", Arial, sans-serif; font-size: 13px; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); text-transform: uppercase; letter-spacing: 0.04em; display: block; position: relative; transition: color 0.25s; padding: 15px 25px 15px; cursor: pointer; }
-@media only screen and (max-width: 1500px) { .nav__list li a { padding: 15px 21px; } }
+@media only screen and (max-width: 1500px) { .nav__list li a { padding: 15px 20px; } }
 @media only screen and (max-width: 1200px) { .nav__list li a { padding: 15px 25px 15px; } }
 @media only screen and (max-width: 1024px) { .nav__list li a { padding: 8px 35px 8px 20px; color: #8e98a1; font-family: "ProximaNova Semibold", Arial, sans-serif; } }
 @media only screen and (max-width: 1024px) { .nav__list li a:hover { color: #fff; } }
@@ -1122,17 +1122,22 @@ a { text-decoration: none; }
 .topper__title { font-size: 52px; line-height: 1; font-family: "ProximaNova Semibold", Arial, sans-serif; margin-bottom: 23px; }
 @media only screen and (max-width: 1024px) { .topper__title { font-size: 36px; } }
 @media only screen and (max-width: 500px) { .topper__title { font-size: 24px; } }
-.topper__text { font-size: 23px; line-height: 26px; margin-bottom: 50px; }
-@media only screen and (max-width: 1024px) { .topper__text { font-size: 18px; } }
+.topper__text { margin-bottom: 30px; }
+.topper__text p { font-size: 23px; line-height: 26px; display: inline-block; vertical-align: middle; margin: 0 30px 20px 0; }
+@media only screen and (max-width: 1024px) { .topper__text p { font-size: 18px; } }
+.topper__btn { display: inline-block; vertical-align: middle; opacity: 0.9; color: #fff; font-family: "ProximaNova Bold", Arial, sans-serif; font-size: 11px; letter-spacing: 0.02em; line-height: 1; padding: 13px 17px; border: 1px solid #fff; border-radius: 4px; margin-bottom: 20px; transition: color 0.2s, background 0.2s; }
+.topper__btn:hover { color: #229fff; background: #fff; }
 .topper__tags { color: #fcd924; font-size: 32px; line-height: 1; font-family: "ProximaNova Bold", Arial, sans-serif; }
 @media only screen and (max-width: 1024px) { .topper__tags { font-size: 22px; } }
-.topper__circles { position: absolute; top: 0; right: -131px; padding-top: 100px; width: 608px; }
+.topper__circles { position: absolute; top: 0; right: -131px; padding-top: 60px; width: 608px; }
 @media only screen and (max-width: 800px) { .topper__circles { visibility: hidden; opacity: 0; z-index: -1; } }
-.topper__circle { width: 261px; height: 261px; border-radius: 50%; overflow: hidden; z-index: 1; position: relative; float: left; margin-right: 86px; }
+.topper__circle { width: 261px; height: 300px; z-index: 1; position: relative; float: left; margin-right: 86px; }
 .topper__circle.is-yellow { margin: 0; }
-.topper__circle.is-yellow:before { position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #fcd924; content: ""; }
+.topper__circle.is-yellow:before { position: absolute; bottom: 0; left: 0; width: 261px; height: 261px; background-color: #fcd924; content: ""; border-radius: 50%; }
 .topper__slider { width: 100%; height: 100%; }
-.topper__slide { width: 261px; height: 261px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.topper__slide { width: 261px; height: 300px; text-align: center; font-size: 0; }
+.topper__slide:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.topper__slide img { display: inline-block; vertical-align: bottom; width: 100%; }
 
 .tags-full { font-size: 0; }
 .tags-full li { display: inline-block; vertical-align: top; padding: 0 10px 10px 0; }
@@ -1141,6 +1146,10 @@ a { text-decoration: none; }
 
 .tag-full { color: #8c8c8c; font-size: 16px; line-height: 1; height: 31px; background-color: whitesmoke; font-family: "GaramondPremr Regular", Arial, sans-serif; padding: 8px 9px 7px; display: inline-block; vertical-align: top; transition: background 0.2s; }
 .tag-full:hover { color: #333; }
+
+.top-banner { width: 100%; background: yellow; }
+
+.timeline-banner, .team-banner { padding-top: 60px; }
 
 .overlay { position: fixed; top: 0; right: 17px; bottom: 0; left: 0; z-index: 100; visibility: hidden; opacity: 0; }
 .overlay.is-active { visibility: visible; opacity: 1; }
@@ -1175,6 +1184,11 @@ a { text-decoration: none; }
 @media only screen and (max-width: 500px) { .popup .row__inner { padding: 30px 15px; } }
 .popup .title-h2 { margin-bottom: 37px; }
 @media only screen and (max-width: 500px) { .popup .title-h2 { margin-bottom: 25px; } }
+.popup .title-h2.is-active { color: #229fff; }
+.popup .title-h2.is-active:hover { opacity: 0.8; }
+.popup .title-h2.is-active .is-circles { display: inline-block; vertical-align: bottom; font-size: 0; white-space: nowrap; }
+.popup .title-h2.is-active i { width: 16px; height: 16px; background-color: #fcd924; border-radius: 50%; margin: 0 5px 5px 0; display: inline-block; vertical-align: bottom; }
+@media only screen and (max-width: 500px) { .popup .title-h2.is-active i { width: 10px; height: 10px; margin: 0 3px 3px 0; } }
 .popup .user { margin-bottom: 20px; }
 .popup .sticker { margin-bottom: 40px; }
 @media only screen and (max-width: 500px) { .popup .sticker { margin-bottom: 25px; } }

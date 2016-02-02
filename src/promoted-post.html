@@ -1,35 +1,6 @@
 <!doctype html>
 <html>
 //= partials/headtag.html
-	 <script>
-		function initMap() {
-
-			var mapMarker = 'img/marker.png';
-
-			var map = new google.maps.Map(document.getElementById('map'), {
-				scrollwheel: false,
-				zoom: 17,
-				center: {lat: 51.2218618, lng: 4.4002441}
-			});
-
-			var marker = new google.maps.Marker({
-				map: map,
-				icon: mapMarker,
-				position: {lat: 51.2218618, lng: 4.4002441},
-			});
-
-			var map = new google.maps.Map(document.getElementById('map2'), {
-				zoom: 17,
-				center: {lat: 51.2218618, lng: 4.4002441}
-			});
-
-			var marker = new google.maps.Marker({
-				map: map,
-				icon: mapMarker,
-				position: {lat: 51.2218618, lng: 4.4002441},
-			});
-		}
-    </script>
 <body>
 <!-- BEGIN  out-->
 <div class="out">
@@ -46,7 +17,10 @@
 						<img src="img/ks-logo.png" alt="">
 					</a>
 					<div class="topper__title">Ділись найцікавішим!</div>
-					<div class="topper__text">Вільний роумінг від Київстар</div>
+					<div class="topper__text">
+						<p>Вільний роумінг від Київстар</p>
+						<a href="#" class="topper__btn">Дізнайся більше</a>
+					</div>
 					<ul class="topper__tags">
 						<li>#HelloUkraine</li>
 					</ul>
@@ -55,8 +29,12 @@
 			<div class="topper__circles">
 				<div class="topper__circle">
 					<div class="topper__slider js-topper">
-						<div class="topper__slide" style="background-image: url(img/topper-slide.jpg);"></div>
-						<div class="topper__slide" style="background-image: url(https://placecage.com/500/500);"></div>
+						<div class="topper__slide">
+							<img src="img/topper-slide1.png" alt="">
+						</div>
+						<div class="topper__slide">
+							<img src="img/topper-slide2.png" alt="">
+						</div>
 					</div>
 				</div>
 				<div class="topper__circle is-yellow"></div>
@@ -81,7 +59,7 @@
 						</a>
 					</div>
 					<div class="post__container">
-						<div class="js-popup-btn" data-btn="popup-category">
+						<div class="js-popup-btn" data-btn="popup-partner">
 							<h3 class="title-h3">
 								Сюр. Город рыбаков
 								<span class="is-circles"><i></i><i></i></span>
@@ -108,6 +86,8 @@
 </div>
 <!-- END out-->
 
+
+//= partials/popups.html
 
 //= partials/login.html
 
