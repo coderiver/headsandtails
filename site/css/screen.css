@@ -1103,6 +1103,8 @@ a { text-decoration: none; }
 .category.is-red:before { background-color: rgba(243, 39, 87, 0.8); }
 .category.is-purple:hover:before { background-color: rgba(128, 101, 186, 0.9); }
 .category.is-purple:before { background-color: rgba(128, 101, 186, 0.8); }
+.category.is-blue:hover:before { background-color: rgba(34, 159, 255, 0.9); }
+.category.is-blue:before { background-color: rgba(34, 159, 255, 0.8); }
 .category span { text-shadow: 0 1px 2px rgba(0, 0, 1, 0.2); color: #fff; font-size: 18px; font-family: "ProximaNova Bold", Arial, sans-serif; position: relative; z-index: 2; display: block; text-align: center; line-height: 1; padding: 21px 0 20px; letter-spacing: 0.02em; }
 
 .popular-themes { padding: 15px 0 5px; }
@@ -1129,7 +1131,7 @@ a { text-decoration: none; }
 
 .tags-full { font-size: 0; }
 .tags-full li { display: inline-block; vertical-align: top; padding: 0 10px 10px 0; }
-.tags-full_mod .tag-full.is-active { color: #8c8c8c; background-color: #c7e8f2; }
+.tags-full_mod .tag-full.is-active { background-color: #c7e8f2; }
 .tags-full_mod .tag-full.is-active:hover { background: rgba(199, 232, 242, 0.8); }
 
 .tag-full { color: #8c8c8c; font-size: 16px; line-height: 1; height: 31px; background-color: whitesmoke; font-family: "GaramondPremr Regular", Arial, sans-serif; padding: 8px 9px 7px; display: inline-block; vertical-align: top; transition: background 0.2s; }
