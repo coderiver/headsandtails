@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+//= partials/headtag.html
+	 <script>
+		function initMap() {
+
+			var mapMarker = 'img/marker.png';
+
+			var map = new google.maps.Map(document.getElementById('map'), {
+				scrollwheel: false,
+				zoom: 17,
+				center: {lat: 51.2218618, lng: 4.4002441}
+			});
+
+			var marker = new google.maps.Marker({
+				map: map,
+				icon: mapMarker,
+				position: {lat: 51.2218618, lng: 4.4002441},
+			});
+
+			var map = new google.maps.Map(document.getElementById('map2'), {
+				zoom: 17,
+				center: {lat: 51.2218618, lng: 4.4002441}
+			});
+
+			var marker = new google.maps.Marker({
+				map: map,
+				icon: mapMarker,
+				position: {lat: 51.2218618, lng: 4.4002441},
+			});
+		}
+    </script>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+
+	//= partials/header-v2.html
+
+	<!-- begin main -->
+	<main class="main">
+		<!-- begin topper  -->
+		<div class="topper">
+			<div class="inner">
+				<div class="topper__info">
+					<a href="http://www.kyivstar.ua/kr-139/mm/roaming/" class="topper__logo">
+						<img src="img/ks-logo.png" alt="">
+					</a>
+					<div class="topper__title">Ділись найцікавішим!</div>
+					<div class="topper__text">Вільний роумінг від Київстар</div>
+					<ul class="topper__tags">
+						<li>#HelloUkraine</li>
+					</ul>
+				</div>
+			</div>
+			<div class="topper__circles">
+				<div class="topper__circle">
+					<div class="topper__slider js-topper">
+						<div class="topper__slide" style="background-image: url(img/topper-slide.jpg);"></div>
+						<div class="topper__slide" style="background-image: url(https://placecage.com/500/500);"></div>
+					</div>
+				</div>
+				<div class="topper__circle is-yellow"></div>
+			</div>
+		</div>
+		<!-- end topper -->
+		<!-- begin inner  -->
+		<div class="inner">			
+			<!-- begin container -->
+			<section class="container">
+				<div class="post">
+					<div class="user">
+						<a href="#" class="user__inner">
+							<img src="img/avaks.png" alt="" class="user__img">
+							<div class="user__block">
+								<span class="user__name">Kyivstar</span>
+								<ul class="user__info">
+									<li>09 Ноября 14:32</li>
+									<li>Киев</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div class="post__container">
+						<div class="js-popup-btn" data-btn="popup-category">
+							<h3 class="title-h3"><a href="#">Самые интересные места Антверпена</a></h3>
+							<div class="post-partner">		
+								<div class="post-partner__inner">
+									<div class="post-partner__top">
+										<div class="post-partner__logo">
+											<img src="img/post-partner-logo.png" alt="">
+										</div>
+										<div class="post-partner__info">
+											<div class="post-partner__title">Ділись найцікавішим!</div>
+											<div class="post-partner__text">Вільний роумінг від Київстар</div>
+										</div>
+									</div>									
+								</div>
+								<img src="img/post-partner.jpg" alt="" class="post-partner__img">
+							</div>
+							<p>Морские ворота Лондона, историческое предместье, а теперь — один из 32 лондонских боро, находится во внутреннем Лондоне, на юго-востоке британской столицы, на правом берегу Темзы.</p>
+						</div>
+						//= partials/lil-info.html
+						<ul class="tags-full tags-full_mod">
+							<li><a href="#" class="tag-full">#HelloUkraine</a></li>
+							<li><a href="#" class="tag-full">#Фотографии</a></li>
+							<li><a href="#" class="tag-full">#Гоа</a></li>
+						</ul>
+					</div>				
+				</div>
+			</section>
+			<!-- end container -->
+		</div>
+		<!-- end inner  -->
+	</main>
+
+</div>
+<!-- END out-->
+
+
+//= partials/login.html
+
+//= partials/search.html
+
+</body>
+</html>

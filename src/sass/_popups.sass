@@ -26,10 +26,20 @@
 		visibility: visible
 		opacity: 1
 		z-index: 3000
+		.video
+			iframe
+				visibility: visible
+				opacity: 1
+				
 	&.popup-login
 		background: url(../img/login-bg.jpg) no-repeat 
 		+cover
 		z-index: 4000 
+	.video
+		iframe
+			visibility: hidden
+			opacity: 0
+			
 
 .popup
 	max-width: 970px
@@ -412,26 +422,6 @@
 			right: 0
 		&:after
 			right: 0
-
-.tags-full
-	font-size: 0
-	li
-		display: inline-block
-		vertical-align: top
-		padding: 0 10px 10px 0
-
-.tag-full
-	color: #8c8c8c
-	font-size: 16px
-	line-height: 1
-	height: 31px
-	background-color: whitesmoke
-	+gp
-	padding: 8px 9px 7px 
-	display: inline-block
-	vertical-align: top
-	&:hover
-		color: #333
 
 .comments
 	padding: 0 0 35px 

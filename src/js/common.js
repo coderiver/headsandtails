@@ -473,4 +473,13 @@ $(document).ready(function() {
 		}, videoDelay);
 	});
 
+	$('.js-topper').slick({
+		arrows: false,
+		dots: false,
+		fade: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		swipe: false
+	});
+
 });
