@@ -1301,24 +1301,25 @@
 			height: auto
 			min-height: auto
 		&.is-visible
-			video
-				visibility: visible
-				opacity: 1
-			img
-				display: none
+			// video
+			// 	visibility: visible
+			// 	opacity: 1
+			// img
+			// 	display: none
 		img,video
 			width: 100%
 			max-width: 635px
-		img
-			+r2
-				display: block
+		// img
+		// 	+r2
+		// 		display: block
 		video
-			visibility: hidden
-			opacity: 0
-			// transition: opacity 0.3s, visibility 0.3s
+			// visibility: hidden
+			// opacity: 0
+			// // transition: opacity 0.3s, visibility 0.3s
 			+r2
 				display: none
-
+		img
+			display: none
 	&__inner
 		padding: 140px 15px 150px
 		padding-left: 0

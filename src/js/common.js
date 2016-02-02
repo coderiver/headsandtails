@@ -469,7 +469,6 @@ $(document).ready(function() {
 			videoDelay = $(this).data('delay');
 		var videoMain = document.getElementById("video");
 		setTimeout(function() {
-			video.addClass('is-visible');
 			videoMain.play();
 		}, videoDelay);
 	});

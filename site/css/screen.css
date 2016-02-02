@@ -720,12 +720,9 @@ a { text-decoration: none; }
 @media only screen and (max-width: 1024px) { .globe { visibility: hidden; overflow: hidden; height: 60px; min-height: 0; } }
 .globe .globenew { font-size: 20px; color: #fff; position: absolute; top: 0; right: 0; padding-top: 0px; width: 580px; height: 580px; }
 @media only screen and (max-width: 630px) { .globe .globenew { width: auto; height: auto; min-height: auto; } }
-.globe .globenew.is-visible video { visibility: visible; opacity: 1; }
-.globe .globenew.is-visible img { display: none; }
 .globe .globenew img, .globe .globenew video { width: 100%; max-width: 635px; }
-@media only screen and (max-width: 1024px) { .globe .globenew img { display: block; } }
-.globe .globenew video { visibility: hidden; opacity: 0; }
 @media only screen and (max-width: 1024px) { .globe .globenew video { display: none; } }
+.globe .globenew img { display: none; }
 .globe__inner { padding: 140px 15px 150px; padding-left: 0; max-width: 1200px; margin: 0 auto; position: relative; }
 @media only screen and (max-width: 1024px) { .globe__inner { padding: 0 15px 50px; } }
 @media only screen and (max-width: 500px) { .globe__inner { padding: 0 15px 20px; } }
