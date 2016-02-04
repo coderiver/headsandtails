@@ -137,37 +137,12 @@
 
 	<!-- begin main -->
 	<main class="main main-globe">
-		<div class="timeline-banner">
-			<div class="top-banner">
-				<!-- AdFox Asynchronous code START__ -->
-			    <!--Тип баннера: 100%x120 js-->
-			    <script type="text/javascript">
-			        <!--
-			        if (typeof(pr) == 'undefined') { var pr = Math.floor(Math.random() * 4294967295) + 1; }
-			        if (typeof(document.referrer) != 'undefined') {
-			            if (typeof(afReferrer) == 'undefined') {
-			                afReferrer = encodeURIComponent(document.referrer);
-			            }
-			        } else {
-			            afReferrer = '';
-			        }
-			        var addate = new Date();
-			        var dl = encodeURIComponent(document.location);
-			        var pr1 = Math.floor(Math.random() * 4294967295) + 1;
-			        document.write('<div id="AdFox_banner_'+pr1+'"><\/div>');
-			        document.write('<div style="visibility:hidden; position:absolute;"><iframe id="AdFox_iframe_'+pr1+'" width=1 height=1 marginwidth=0 marginheight=0 scrolling=no frameborder=0><\/iframe><\/div>');
-			        AdFox_getCodeScript(1,pr1,'http://ads.adfox.ru/240113/prepareCode?p1=bueoo&amp;p2=fhsb&amp;pct=a&amp;pfc=besrl&amp;pfb=a&amp;pr=' + pr +'&amp;pt=b&amp;pd=' + addate.getDate() + '&amp;pw=' + addate.getDay() + '&amp;pv=' + addate.getHours() + '&amp;prr=' + afReferrer + '&amp;dl='+dl+'&amp;pr1='+pr1);
-			        // -->
-			    </script>
-			    <!-- AdFox Asynchronous code END__ -->
-			</div>
-		</div>
 		<!-- begin globe  -->
 		<div class="globe">
 			<div class="globe__inner">
 				<div class="globe-map globe-map_timeline">
 					<div class="js-video-main globenew" data-delay="5000">
-						<video autoplay="autoplay" muted="muted" id="video" poster="img/or-planet.jpg">
+						<video muted="muted" id="video" poster="img/or-planet.jpg">
 							<source src="video/or-planet.webm"></source>
 							<source src="video/or-planet.mp4"></source>
 							<source src="video/or-planet.ogg"></source>
@@ -195,24 +170,8 @@
 						<li><a href="#" class="tag-full tag-full_forty">#Выходной</a></li>
 						<li><a href="#" class="tag-full tag-full_eighty">#Гоа</a></li>
 					</ul>
-					<!-- <ul class="globe__info">
-						<li><a href="#"><i class="icon-user"></i><span>8 человек и 8 чемоданов</span></a></li>
-						<li><a href="#"><i class="icon-globe"></i><span>40 стран на всех континентах</span></a></li>
-						<li><a href="#"><i class="icon-date"></i><span>270 дней в пути от Гринвича до Гринвича</span></a></li>
-					</ul> -->
-					<!-- <div class="globe__bottom">
-						<a href="#" class="globe__next">
-							<i class="icon-arr-bot"></i>
-							<span>Старт – 20 ноября 2014 года.</span>
-							<span>В эфире – 8 февраля 2015 года.</span>
-						</a>
-					</div> -->
 				</div>
 			</div>
-		<!-- 	<a href="http://teenspirit.tv/" class="globe__creater">
-				<small>created by</small>
-				<span>TeenSpirit</span>
-			</a> -->
 
 
 
@@ -331,18 +290,6 @@
 			<!-- end live-row -->
 		</div>
 		<!-- end globe -->
-		
-		<!-- <div class="text-row">
-			<div class="text-row__inner">
-				<div class="text-col">
-					<p>Следите за передвижением команды с момента старта путешествия и до того самого дня, когда спустя девять месяцев бородатые и изможденные орлы и решки вернутся домой.</p>
-				</div>
-				<div class="text-col">
-					<p>Здесь вы будете в курсе всех событий, историй, приключений, невзгод и проблем, да и вообще всего-всего, что будет происходить в жизни команды на протяжении всей кругосветки. Да, нам самим страшно. Страшно интересно.</p>
-				</div>
-			</div>
-		</div> -->
-		<!-- end text-row -->
 		<!-- begin long  -->
 		<div class="long" style="background-image: url(img/long.jpg);">
 			<div class="long__inner">
@@ -393,6 +340,88 @@
 			</div>
 		</div>
 		<!-- end long -->
+		<!-- begin choice  -->
+		<div class="choice">
+			<div class="choice__inner">
+				<a href="#" class="choice__logo">
+					<img src="img/ks-logo.png" alt="">
+				</a>
+				<div class="choice__title">Что съесть Регине на Гоа?</div>
+				<p>Голосуй и заставь ее съест самое мерзкое блюдо</p>
+				<div class="choice__container">
+					<div class="choice-item js-choice-item">
+						<div class="choice-item__img">
+							<div class="choice-item__img-in" style="background-image: url(img/choice-cock.png);"></div>
+						</div>
+						<div class="choice-item__circle">
+							<div class="js-choice-circle" data-percent="96">
+								<span class="js-choice-value"></span>
+							</div>
+						</div>
+						<div class="choice-item__info">
+							<label class="radio">
+								<input type="radio" name="eat">
+								<span></span>
+							</label>
+							<div class="choice-item__text">Суп из <br>тараканов</div>
+						</div>
+					</div>
+					<div class="choice-item js-choice-item">
+						<div class="choice-item__img">
+							<div class="choice-item__img-in" style="background-image: url(img/choice-spider.png);"></div>
+						</div>
+						<div class="choice-item__circle">
+							<div class="js-choice-circle" data-percent="10">
+								<span class="js-choice-value"></span>
+							</div>
+						</div>
+						<div class="choice-item__info">
+							<label class="radio">
+								<input type="radio" name="eat">
+								<span></span>
+							</label>
+							<div class="choice-item__text">Жареные <br>пауки</div>
+						</div>
+					</div>
+					<div class="choice-item js-choice-item">
+						<div class="choice-item__img">
+							<div class="choice-item__img-in" style="background-image: url(img/choice-scolo.png);"></div>
+						</div>
+						<div class="choice-item__circle">
+							<div class="js-choice-circle" data-percent="50">
+								<span class="js-choice-value"></span>
+							</div>
+						</div>
+						<div class="choice-item__info">
+							<label class="radio">
+								<input type="radio" name="eat">
+								<span></span>
+							</label>
+							<div class="choice-item__text">Маринованая сколопендра</div>
+						</div>
+					</div>
+					<div class="choice-item js-choice-item">
+						<div class="choice-item__img">
+							<div class="choice-item__img-in" style="background-image: url(img/choice-scorpio.png);"></div>
+						</div>
+						<div class="choice-item__circle">
+							<div class="js-choice-circle" data-percent="70">
+								<span class="js-choice-value"></span>
+							</div>
+						</div>
+						<div class="choice-item__info">
+							<label class="radio">
+								<input type="radio" name="eat">
+								<span></span>
+							</label>
+							<div class="choice-item__text">Скорпион в горчичном соусе</div>
+						</div>
+					</div>
+				</div>
+				<button class="btn-white btn-white_small js-choice-btn">Голосовать</button>
+			</div>
+		</div>
+		<!-- end choice -->
 		<!-- begin date  -->
 		<section class="date" id="startposts">
 			<div class="date__day">01</div>

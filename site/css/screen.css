@@ -1125,7 +1125,7 @@ a { text-decoration: none; }
 .topper__text { margin-bottom: 30px; }
 .topper__text p { font-size: 23px; line-height: 26px; display: inline-block; vertical-align: middle; margin: 0 30px 20px 0; }
 @media only screen and (max-width: 1024px) { .topper__text p { font-size: 18px; } }
-.topper__btn { display: inline-block; vertical-align: middle; opacity: 0.9; color: #fff; font-family: "ProximaNova Bold", Arial, sans-serif; font-size: 11px; letter-spacing: 0.02em; line-height: 1; padding: 13px 17px; border: 1px solid #fff; border-radius: 4px; margin-bottom: 20px; transition: color 0.2s, background 0.2s; }
+.topper__btn { display: inline-block; vertical-align: middle; opacity: 0.9; color: #fff; font-family: "ProximaNova Bold", Arial, sans-serif; font-size: 11px; letter-spacing: 0.02em; line-height: 1; padding: 13px 17px; border: 1px solid #fff; border-radius: 20px; margin-bottom: 20px; transition: color 0.2s, background 0.2s; }
 .topper__btn:hover { color: #229fff; background: #fff; }
 .topper__tags { color: #fcd924; font-size: 32px; line-height: 1; font-family: "ProximaNova Bold", Arial, sans-serif; }
 @media only screen and (max-width: 1024px) { .topper__tags { font-size: 22px; } }
@@ -1150,6 +1150,44 @@ a { text-decoration: none; }
 .top-banner { width: 100%; background: yellow; }
 
 .timeline-banner, .team-banner { padding-top: 60px; }
+
+.choice { background-color: #229fff; padding: 50px 15px 39px; color: #fff; }
+.choice__inner { position: relative; max-width: 1250px; margin: 0 auto; text-align: center; padding: 10px 0 0; }
+.choice__logo { position: absolute; top: 0; left: 0; }
+@media only screen and (max-width: 800px) { .choice__logo { position: relative; display: inline-block; margin-bottom: 10px; } }
+.choice__title { font-size: 32px; font-family: "ProximaNova Bold", Arial, sans-serif; line-height: 1; margin-bottom: 10px; }
+@media only screen and (max-width: 800px) { .choice__title { font-size: 24px; } }
+.choice p { font-size: 14px; line-height: 1; }
+.choice__container { max-width: 900px; margin: 0 auto; padding: 33px 0 32px; font-size: 0; }
+@media only screen and (max-width: 800px) { .choice__container { max-width: 450px; } }
+@media only screen and (max-width: 500px) { .choice__container { max-width: 300px; } }
+.choice .btn-white { border-width: 1px; }
+
+.choice-item { display: inline-block; vertical-align: top; width: 25%; padding: 15px 25px; cursor: pointer; position: relative; }
+@media only screen and (max-width: 800px) { .choice-item { width: 50%; } }
+@media only screen and (max-width: 500px) { .choice-item { width: 100%; } }
+.choice-item:hover .choice-item__img:before { -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
+.choice-item.is-active .choice-item__img { display: none; }
+.choice-item.is-active .choice-item__text { padding-left: 26px; }
+.choice-item.is-active .radio { display: none; }
+.choice-item__img { height: 114px; position: relative; margin-bottom: 20px; }
+.choice-item__img:before { content: ""; position: absolute; bottom: 0; left: 50%; margin-left: -57px; width: 114px; height: 114px; border-radius: 50%; background: #fdda24; transition: -webkit-transform 0.3s; transition: transform 0.3s; }
+.choice-item__img-in { position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-position: center center; background-repeat: no-repeat; }
+.choice-item__info { width: 125px; margin: 0 auto; }
+.choice-item__text { font-size: 12px; line-height: 1; overflow: hidden; text-align: left; }
+.choice-item .radio { float: left; margin: 4px 10px 4px 0; }
+.choice-item__circle { margin-bottom: 20px; position: relative; }
+.choice-item__circle canvas { -webkit-transform: scaleX(-1); -ms-transform: scaleX(-1); transform: scaleX(-1); }
+.choice-item__circle span { font-size: 32px; line-height: 114px; text-align: center; position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
+
+.radio { display: inline-block; vertical-align: top; cursor: pointer; }
+.radio:before { position: absolute; top: 0; bottom: 0; left: 0; right: 0; content: ""; }
+.radio input { opacity: 0; visibility: hidden; position: absolute; top: 0; left: 0; }
+.radio input:checked + span:after { opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+.radio span { position: relative; width: 16px; height: 16px; display: block; }
+.radio span:before, .radio span:after { content: ""; position: absolute; border-radius: 50%; }
+.radio span:before { width: 16px; height: 16px; border: 1px solid #fff; top: 0; left: 0; }
+.radio span:after { width: 6px; height: 6px; background-color: #fff; top: 5px; left: 5px; opacity: 0; -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0); transition: 0.3s; }
 
 .overlay { position: fixed; top: 0; right: 17px; bottom: 0; left: 0; z-index: 100; visibility: hidden; opacity: 0; }
 .overlay.is-active { visibility: visible; opacity: 1; }

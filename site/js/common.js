@@ -482,4 +482,22 @@ $(document).ready(function() {
 		swipe: false
 	});
 
+	//choice circles
+	$('.js-choice-btn').click(function() {
+		$('.js-choice-item').addClass('is-active');
+		$('.js-choice-circle').each(function() {
+			$(this).pieChart({
+				barColor: '#fdda24',
+				trackColor: 'rgba(255, 255, 255, 0.3)',
+				size: 114,
+				lineCap: 'round',
+				lineWidth: 4,
+				rotate: 0,
+				onStep: function (from, to, percent) {
+					$(this.element).find('.js-choice-value').text(Math.round(percent) + '%');
+				}
+			})
+		});	
+		return false;
+	});
 });
