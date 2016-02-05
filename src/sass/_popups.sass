@@ -104,6 +104,10 @@
 			padding: 30px 0 20px
 		+r4
 			padding: 30px 0 20px
+		&__more
+			display: inline-block
+			vertical-align: top
+			margin: -5px 0 0
 	.row__inner
 		padding: 60px 100px 60px 
 		max-width: 100%
@@ -158,6 +162,8 @@
 			+r4
 				padding: 10px 0 
 	.lil-info
+		display: inline-block
+		vertical-align: top
 		li
 			margin-bottom: 10px
 	&-image, &-long
@@ -366,6 +372,79 @@
 				+r4
 					margin: 0
 					bottom: -10px
+	&-topper
+		color: #fff
+		background-color: #229fff
+		padding: 30px 340px 30px 40px 
+		position: relative 
+		overflow: hidden
+		+r3
+			padding: 20px
+		&__logo
+			display: inline-block
+			vertical-align: top
+			width: 98px
+			height: 31px
+			margin-bottom: 27px
+			img
+				width: 100%
+		&__title
+			font-size: 38px
+			+semi
+			line-height: 1
+			margin-bottom: 15px
+			+r3
+				font-size: 24px
+		&__text
+			font-size: 17px 
+			p
+				margin: 0 40px 15px 0
+		&__text p, &__tag
+			display: inline-block
+			vertical-align: top
+		&__tag
+			+bold
+			color: #fcd924
+			margin-bottom: 15px
+		&__circles
+			position: absolute
+			top: 0
+			right: -90px
+			width: 417px
+			+r3
+				visibility: hidden
+				opacity: 0
+				z-index: -1
+		&__circle
+			width: 179px
+			height: 193px
+			z-index: 1
+			position: relative 
+			float: left
+			margin-right: 59px
+			&.is-yellow
+				margin: 0
+				&:before
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 179px
+					height: 179px
+					background-color: #fcd924
+					content: "" 
+					border-radius: 50%
+		&__slider
+			width: 100%
+			height: 100%
+		&__slide
+			width: 179px
+			height: 193px
+			+vertical
+			img
+				display: inline-block
+				vertical-align: bottom
+				width: 100%
+
 .gallery
 	&-main
 		margin: 0 0 20px 
