@@ -1165,7 +1165,6 @@ a { text-decoration: none; }
 
 .choice-item { display: inline-block; vertical-align: top; width: 25%; padding: 15px 25px; cursor: pointer; position: relative; }
 @media only screen and (max-width: 800px) { .choice-item { width: 50%; } }
-@media only screen and (max-width: 500px) { .choice-item { width: 100%; } }
 .choice-item:hover .choice-item__img:before { -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
 .choice-item.is-active .choice-item__img { display: none; }
 .choice-item.is-active .choice-item__text { padding-left: 26px; }
