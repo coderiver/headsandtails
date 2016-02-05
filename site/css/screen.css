@@ -104,6 +104,22 @@ a { text-decoration: none; }
 .more-pink { color: #d93472; font-size: 13px; }
 .more-pink i { margin-top: -6px; font-size: 9px; }
 
+.checked { color: #fff; position: relative; padding-left: 38px; }
+.checked i { width: 38px; height: 38px; background-color: #db3071; border-radius: 50%; line-height: 38px; text-align: center; font-size: 11px; position: absolute; top: 0; left: 0; }
+.checked span { opacity: 0.8; color: #fff; font-size: 20px; line-height: 1; font-family: "ProximaNova Bold", Arial, sans-serif; padding: 10px 9px 8px; display: block; }
+
+.video-small { max-width: 150px; }
+.video-small__text { color: #fff; line-height: 1; font-size: 16px; }
+.video-small .btn-video { margin-bottom: 20px; }
+
+.btn-video { width: 129px; height: 86px; position: relative; display: block; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: #fff; background-color: #dcdcdc; }
+.btn-video span { width: 48px; height: 48px; opacity: 0.9; background-color: #277dcc; border: 3px solid rgba(255, 255, 255, 0.6); border-radius: 50%; position: absolute; top: 50%; left: 50%; margin: -24px 0 0 -24px; text-align: center; line-height: 42px; }
+.btn-video i { font-size: 13px; vertical-align: middle; margin-left: 3px; }
+
+.btn-pink { color: #fff; font-size: 16px; line-height: 1; font-family: "ProximaNova Semibold", Arial, sans-serif; background-color: #db3071; border-radius: 22px; padding: 14px 42px 14px 27px; display: inline-block; vertical-align: top; position: relative; transition: background 0.25s, color 0.25s; }
+.btn-pink:hover { color: #333; background: #fff; }
+.btn-pink i { position: absolute; top: 50%; right: 24px; font-size: 11px; margin-top: -5px; }
+
 .icon-codedby { width: 47px; height: 5px; background-image: url("../img/icons.png"); background-position: -218px -24px; }
 
 .icon-coderiver { width: 49px; height: 5px; background-image: url("../img/icons.png"); background-position: -218px -15px; }
@@ -123,53 +139,57 @@ a { text-decoration: none; }
 
 .icon-arr-bot:before { content: ""; }
 
-.icon-close:before { content: ""; }
+.icon-checkbox:before { content: ""; }
 
-.icon-comments:before { content: ""; }
+.icon-close:before { content: ""; }
 
-.icon-date:before { content: ""; }
+.icon-comments:before { content: ""; }
 
-.icon-dislike:before { content: ""; }
+.icon-date:before { content: ""; }
 
-.icon-earth:before { content: ""; }
+.icon-dislike:before { content: ""; }
 
-.icon-fb:before { content: ""; }
+.icon-earth:before { content: ""; }
 
-.icon-globe:before { content: ""; }
+.icon-fb:before { content: ""; }
 
-.icon-ic-next:before { content: ""; }
+.icon-globe:before { content: ""; }
 
-.icon-ic-prev:before { content: ""; }
+.icon-ic-next:before { content: ""; }
 
-.icon-instagram:before { content: ""; }
+.icon-ic-prev:before { content: ""; }
 
-.icon-krugosvetka:before { content: ""; }
+.icon-instagram:before { content: ""; }
 
-.icon-like:before { content: ""; }
+.icon-krugosvetka:before { content: ""; }
 
-.icon-marker:before { content: ""; }
+.icon-like:before { content: ""; }
 
-.icon-next:before { content: ""; }
+.icon-marker:before { content: ""; }
 
-.icon-plane-small:before { content: ""; }
+.icon-next:before { content: ""; }
 
-.icon-plane:before { content: ""; }
+.icon-plane-small:before { content: ""; }
 
-.icon-preloader:before { content: ""; }
+.icon-plane:before { content: ""; }
 
-.icon-prev:before { content: ""; }
+.icon-play:before { content: ""; }
 
-.icon-search-big:before { content: ""; }
+.icon-preloader:before { content: ""; }
 
-.icon-search:before { content: ""; }
+.icon-prev:before { content: ""; }
 
-.icon-share:before { content: ""; }
+.icon-search-big:before { content: ""; }
 
-.icon-slide-next:before { content: ""; }
+.icon-search:before { content: ""; }
 
-.icon-user:before { content: ""; }
+.icon-share:before { content: ""; }
 
-.icon-vk:before { content: ""; }
+.icon-slide-next:before { content: ""; }
+
+.icon-user:before { content: ""; }
+
+.icon-vk:before { content: ""; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
@@ -268,6 +288,8 @@ a { text-decoration: none; }
 .header.is-active .btn-menu:before, .header.is-active .btn-menu:after, .header.is-active .btn-menu span, .header.is-white .btn-menu:before, .header.is-white .btn-menu:after, .header.is-white .btn-menu span { background: #333; }
 .header { height: 60px; padding-top: 6px; padding-bottom: 6px; }
 .header .header__logo { padding: 9px 0; }
+.header.header_friday .header__inner { position: relative; padding-left: 133px; }
+.header__friday { position: absolute; left: 0; top: -6px; display: inline-block; width: 110px; height: 73px; background: url(../img/friday.svg) no-repeat 0 0; }
 
 .logo__text { color: #fff; font-size: 10px; position: absolute; left: 145px; top: 15px; padding-left: 14px; line-height: 1.2; font-family: "ProximaNova Regular", Arial, sans-serif; }
 .logo__text strong { display: block; font-size: 11px; font-weight: normal; font-family: "ProximaNova Bold", Arial, sans-serif; }
@@ -845,6 +867,9 @@ a { text-decoration: none; }
 .calendar-item__country { font-size: 22px; padding: 6px 0; overflow: hidden; }
 @media only screen and (max-width: 1200px) { .calendar-item__country { font-size: 18px; padding: 3px 0; } }
 @media only screen and (max-width: 800px) { .calendar-item__country { overflow: visible; display: block; } }
+.calendar-item__right { position: absolute; right: 0; top: 0; bottom: 0; width: 280px; text-align: center; font-size: 0; text-align: left; }
+.calendar-item__right:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.calendar-item__center { display: inline-block; vertical-align: middle; width: 100%; }
 .calendar .long { height: auto; padding: 0 0 30px; display: none; background: rgba(17, 17, 18, 0.5); }
 .calendar .long:before, .calendar .long:after { display: none; }
 .calendar .long__inner { display: block; margin: 0 auto; }

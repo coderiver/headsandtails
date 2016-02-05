@@ -312,3 +312,85 @@ a
 	i
 		margin-top: -6px
 		font-size: 9px
+
+
+.checked
+	color: #fff
+	position: relative
+	padding-left: 38px
+	i
+		width: 38px
+		height: 38px
+		background-color: #db3071
+		border-radius: 50%
+		line-height: 38px
+		text-align: center
+		font-size: 11px
+		position: absolute
+		top: 0
+		left: 0
+	span
+		opacity: 0.8
+		color: #fff
+		font-size: 20px
+		line-height: 1
+		+bold
+		padding: 10px 9px 8px
+		display: block
+
+.video-small
+	max-width: 150px 
+	&__text
+		color: #fff
+		line-height: 1
+		font-size: 16px
+	.btn-video
+		margin-bottom: 20px
+
+.btn-video
+	width: 129px
+	height: 86px
+	position: relative
+	display: block
+	+cover
+	color: #fff
+	background-color: #dcdcdc
+	span
+		width: 48px
+		height: 48px
+		opacity: 0.9
+		background-color: #277dcc
+		border: 3px solid rgba(255, 255, 255, 0.6)
+		border-radius: 50%
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -24px 0 0 -24px 
+		text-align: center
+		line-height: 42px
+	i
+		font-size: 13px
+		vertical-align: middle
+		margin-left: 3px
+
+.btn-pink
+	color: #fff
+	font-size: 16px
+	line-height: 1
+	+semi
+	background-color: #db3071
+	border-radius: 22px
+	padding: 14px 42px 14px 27px
+	display: inline-block
+	vertical-align: top
+	position: relative
+	transition: background 0.25s, color 0.25s
+	&:hover
+		color: #333
+		background: #fff 
+	i
+		position: absolute
+		top: 50%
+		right: 24px
+		font-size: 11px
+		margin-top: -5px
