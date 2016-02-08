@@ -109,8 +109,9 @@ a { text-decoration: none; }
 .checked span { opacity: 0.8; color: #fff; font-size: 20px; line-height: 1; font-family: "ProximaNova Bold", Arial, sans-serif; padding: 10px 9px 8px; display: block; }
 
 .video-small { max-width: 150px; }
-.video-small__text { color: #fff; line-height: 1; font-size: 16px; }
-.video-small .btn-video { margin-bottom: 20px; }
+.video-small__text { color: #fff; line-height: 1.2; font-size: 16px; }
+.video-small__text span { display: block; }
+.video-small .btn-video { margin-bottom: 18px; }
 
 .btn-video { width: 129px; height: 86px; position: relative; display: block; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; color: #fff; background-color: #dcdcdc; }
 .btn-video span { width: 48px; height: 48px; opacity: 0.9; background-color: #277dcc; border: 3px solid rgba(255, 255, 255, 0.6); border-radius: 50%; position: absolute; top: 50%; left: 50%; margin: -24px 0 0 -24px; text-align: center; line-height: 42px; }
@@ -834,7 +835,7 @@ a { text-decoration: none; }
 @media only screen and (max-width: 1200px) { .calendar { padding: 60px 0 0; } }
 .calendar__items { position: relative; z-index: 5; }
 .calendar-item-wrap { border-bottom: 1px solid #535658; }
-.calendar-item { transition: background 0.25s; color: #fff; display: block; line-height: 1; padding: 43px 0 40px; position: relative; cursor: pointer; }
+.calendar-item { transition: background 0.25s; color: #fff; display: block; line-height: 1; padding: 43px 280px 40px 0; position: relative; cursor: pointer; min-height: 160px; }
 .calendar-item:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 800px) { .calendar-item { padding: 20px 0; } }
 .calendar-item:hover { background: rgba(17, 17, 18, 0.5); }
@@ -869,6 +870,7 @@ a { text-decoration: none; }
 @media only screen and (max-width: 800px) { .calendar-item__country { overflow: visible; display: block; } }
 .calendar-item__right { position: absolute; right: 0; top: 0; bottom: 0; width: 280px; text-align: center; font-size: 0; text-align: left; }
 .calendar-item__right:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+@media only screen and (max-width: 800px) { .calendar-item__right { position: relative; padding: 0 15px; } }
 .calendar-item__center { display: inline-block; vertical-align: middle; width: 100%; }
 .calendar .long { height: auto; padding: 0 0 30px; display: none; background: rgba(17, 17, 18, 0.5); }
 .calendar .long:before, .calendar .long:after { display: none; }
