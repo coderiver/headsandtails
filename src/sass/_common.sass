@@ -344,10 +344,21 @@ a
 		color: #fff
 		line-height: 1.2
 		font-size: 16px
+		letter-spacing: 0.02em 
+		+r(600)
+			font-size: 14px
 		span
 			display: block
 	.btn-video
 		margin-bottom: 18px
+	&_item
+		max-width: 100%
+		.video-small__text
+			color: #333 
+		.btn-video
+			width: 100%
+			height: 114px
+			margin-bottom: 13px
 
 .btn-video
 	width: 129px
@@ -357,6 +368,7 @@ a
 	+cover
 	color: #fff
 	background-color: #dcdcdc
+	font-size: 0
 	span
 		width: 48px
 		height: 48px

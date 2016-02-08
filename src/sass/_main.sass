@@ -1770,7 +1770,7 @@
 			+r3
 				position: relative
 				padding: 0 15px 
-		&__center
+		&__center 
 			display: inline-block
 			vertical-align: middle
 			width: 100%			
@@ -3047,3 +3047,155 @@
 		left: 22px
 		font-size: 16px
 		color: #fff 
+
+.block-links
+	+clr
+	padding: 25px 0 22px 
+	.info-links
+		float: left
+	.lil-info
+		float: right
+		li
+			&:last-child
+				padding-right: 0 
+.info-links
+	font-size: 0
+	li
+		display: inline-block
+		vertical-align: top
+		padding-right: 20px
+	a
+		color: #db3071
+		font-size: 14px
+		line-height: 1
+		+semi
+		position: relative
+		display: inline-block
+		&.is-camera
+			padding-left: 30px
+		&.is-doc
+			padding-left: 25px
+	span, small
+		display: block
+	small
+		+reg
+		opacity: 0.8
+		font-size: 12px
+	i
+		position: absolute
+		top: 0
+		left: 0
+		&.icon-camera
+			font-size: 14px
+		&.icon-doc
+			font-size: 17px
+
+.library-header
+	+clr
+	padding: 70px 0 60px
+	.library-title
+		float: left
+		width: 67%
+		+r2
+			width: 100%
+	.view
+		float: right
+		width: 33%
+		text-align: right
+		padding: 17px 0 
+		+r2
+			width: 100%
+			text-align: left
+			padding: 15px 0 0 
+
+.container
+	.library-header
+		padding: 0 0 55px 
+		.library-title
+			width: 100%
+
+.library-title
+	color: #333
+	font-size: 60px
+	+bold
+	line-height: 1
+	+r3
+		font-size: 40px
+	+r4
+		font-size: 30px
+	
+.view
+	font-size: 0
+	li
+		display: inline-block
+		vertical-align: top
+		padding-left: 40px
+		position: relative
+		&:first-child
+			padding-left: 0
+			&:before
+				display: none
+		&:before
+			content: "" 
+			position: absolute
+			top: 0
+			bottom: 0
+			border-left: 1px solid rgba(#000, 0.1)
+			left: 20px 
+	a
+		color: #8c8c8c
+		font-size: 18px
+		+semi
+		line-height: 1
+		+clr
+		display: block
+		transition: color 0.25s
+		padding: 4px 0 
+		&.is-active
+			color: #333 
+		i
+			float: left
+			margin-right: 9px
+			&.icon-marker
+				font-size: 16px
+			&.icon-list
+				font-size: 12px
+				margin-top: 3px
+		span
+			overflow: hidden
+			display: block
+
+.side-banner
+	margin-bottom: 70px
+	&__link
+		display: block
+		font-size: 0
+	img
+		max-width: 100%
+
+.side-box
+	&__title
+		color: #333
+		+semi
+		font-size: 18px
+		letter-spacing: 0.02em 
+		line-height: 1
+		margin-bottom: 30px
+
+.side-videos
+	margin: 0 -15px 
+	font-size: 0
+	+r(600)
+		margin: 0 -10px 
+	&__item
+		width: 50%
+		padding: 15px 15px 25px
+		display: inline-block
+		vertical-align: top
+		+r2
+			width: 25%
+		+r3
+			width: 33.33%
+		+r(600)
+			width: 50%
+			padding: 10px 10px 20px
