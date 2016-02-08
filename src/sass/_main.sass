@@ -968,6 +968,15 @@
 			max-width: 800px
 	.title-h3
 		margin: 0 0 10px
+	&__top
+		+clr
+		.title-h3
+			float: left
+		.link-video
+			float: right
+			+r4
+				float: left
+				clear: both
 .cols
 	margin: 0 -15px
 	+clr
@@ -3080,6 +3089,9 @@
 		+semi
 		position: relative
 		display: inline-block
+		transition: opacity 0.2s
+		&:hover
+			opacity: 0.8
 		&.is-camera
 			padding-left: 30px
 		&.is-doc
@@ -3163,6 +3175,8 @@
 		padding: 4px 0 
 		&.is-active
 			color: #333 
+		&:hover
+			color: #db3071
 		i
 			float: left
 			margin-right: 9px
@@ -3230,6 +3244,11 @@
 		height: 100%
 	&__link
 		+cover
+	.play-icon
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -24px 0 0 -24px 
 
 .library-info
 	color: #333
@@ -3335,11 +3354,15 @@
 		padding-right: 15px
 		position: relative
 		+semi
+		&:hover
+			i
+				right: -5px
 		i
 			font-size: 9px
 			position: absolute
 			top: 4px
 			right: 0
+			transition: right 0.2s
 
 .date-video
 	+clr
@@ -3373,11 +3396,15 @@
 		+semi
 		padding-right: 15px
 		position: relative
+		&:hover
+			i
+				right: -5px
 		i
 			font-size: 9px
 			position: absolute
 			top: 4px
 			right: 0
+			transition: right 0.2s
 
 .play-btn
 	position: relative
@@ -3399,9 +3426,32 @@
 	border-radius: 50%
 	display: block
 	+vertical
+	transition: background 0.2s, border-color 0.2s
+	&:hover
+		background: #277dcc
+		border-color: #fff
 	i
 		display: inline-block
 		vertical-align: middle
 		font-size: 13px
 		color: #fff 
-		margin-left: 3px
+		margin-left: 2px
+
+.p-video
+	width: 33.33%
+	float: left
+	padding: 15px
+	+r3
+		width: 50%
+	+r4
+		width: 100%
+	.play-btn
+		height: 0
+		padding: 0 0 63%
+		margin-bottom: 15px
+	&__text
+		color: #333
+		font-size: 18px
+		line-height: 1.2
+		+r3
+			font-size: 14px
