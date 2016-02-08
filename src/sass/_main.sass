@@ -3088,12 +3088,16 @@
 		font-size: 12px
 	i
 		position: absolute
-		top: 0
 		left: 0
 		&.icon-camera
 			font-size: 14px
-		&.icon-doc
-			font-size: 17px
+			top: -2px
+		&.is-doc
+			top: -5px
+			width: 22px
+			height: 22px
+			background: url(../img/doc.svg) no-repeat center center
+			background-size: contain  
 
 .library-header
 	+clr
@@ -3204,3 +3208,98 @@
 		+r(600)
 			width: 50%
 			padding: 10px 10px 20px
+ 
+.library-video
+	width: 100%
+	height: 0
+	padding-bottom: 56%
+	position: relative
+	margin-bottom: 40px
+	+r3
+		margin-bottom: 30px
+	iframe
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		width: 100%
+		height: 100%
+
+.library-info
+	color: #333
+	letter-spacing: 0.02em 
+	margin-bottom: 40px
+	+r3
+		margin-bottom: 30px
+	&__title
+		font-size: 34px
+		+semi
+		line-height: 1.2
+		margin-bottom: 33px
+		+r3
+			font-size: 26px
+			margin-bottom: 20px
+		span
+			display: block
+	&__text
+		font-size: 18px
+		line-height: 28px
+		+gpmed
+
+.library-section
+	padding: 0 0 10px
+	+clr 
+
+.library-items
+	margin: 0 -15px 
+	font-size: 0
+	+r3
+		margin: 0 -10px 
+	li
+		display: inline-block
+		vertical-align: top
+		width: 33.33%
+		padding: 0 15px 40px 
+		+r3
+			padding: 0 10px 30px 
+		+r4
+			width: 50%
+		
+.video-item
+	font-size: 0
+	&__img
+		+cover
+		position: relative
+		display: block
+		height: 0
+		padding-bottom: 62%
+		background-color: #dcdcdc
+		margin-bottom: 12px
+		span
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -20px 0 0 -20px
+			width: 40px
+			height: 40px
+			opacity: 0.9
+			background-color: rgba(#277dcc, 0.9)
+			border: 3px solid rgba(255, 255, 255, 0.6) 
+			border-radius: 50%
+			line-height: 34px
+			text-align: center
+			i
+				font-size: 11px
+				color: #fff 
+				vertical-align: middle
+				margin-left: 3px
+	&__text
+		color: #333
+		font-size: 18px
+		line-height: 23px
+		+r3
+			font-size: 16px
+			line-height: 1.2
+		+r4
+			font-size: 14px
