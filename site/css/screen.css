@@ -1240,11 +1240,13 @@ a { text-decoration: none; }
 .block-links { padding: 25px 0 22px; }
 .block-links:after { content: " "; display: table; clear: both; }
 .block-links .info-links { float: left; }
+@media only screen and (max-width: 800px) { .block-links .info-links { float: none; } }
 .block-links .lil-info { float: right; }
+@media only screen and (max-width: 800px) { .block-links .lil-info { float: none; } }
 .block-links .lil-info li:last-child { padding-right: 0; }
 
 .info-links { font-size: 0; }
-.info-links li { display: inline-block; vertical-align: top; padding-right: 20px; }
+.info-links li { display: inline-block; vertical-align: top; padding-right: 20px; margin-bottom: 10px; }
 .info-links a { color: #db3071; font-size: 14px; line-height: 1; font-family: "ProximaNova Semibold", Arial, sans-serif; position: relative; display: inline-block; }
 .info-links a.is-camera { padding-left: 30px; }
 .info-links a.is-doc { padding-left: 25px; }
