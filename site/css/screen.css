@@ -240,24 +240,19 @@ a { text-decoration: none; }
 .slick-dots button { display: block; width: 6px; height: 6px; background: #fff; cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; border-radius: 50%; }
 .slick-dots button:hover { box-shadow: none; }
 
-.header { position: fixed; top: 0; left: 0; width: 100%; height: 79px; height: 60px; padding: 0 40px; min-width: 320px; background: rgba(98, 179, 205, 0.6); font-size: 0; z-index: 1000; transition: background 0.25s linear, height 0.25s linear, padding 0.25s linear; }
+.header { position: fixed; top: 0; left: 0; width: 100%; height: 60px; padding: 0 40px; min-width: 320px; background: rgba(98, 179, 205, 0.6); font-size: 0; z-index: 1000; transition: background 0.25s linear, height 0.25s linear, padding 0.25s linear; }
 .header:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 1200px) { .header { padding: 0 20px; height: 60px; } }
+@media only screen and (max-width: 1200px) { .header { padding: 0 20px; } }
 .header_mod { background: none; box-shadow: 0 2px 0 rgba(255, 255, 255, 0.2); }
-.header__wrap { height: 100%; text-align: center; font-size: 0; }
-.header__wrap:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
-.header__center { display: inline-block; vertical-align: middle; width: 100%; }
-.header__inner { display: table; width: 100%; }
-.header__menu, .header__date, .header__logo { display: table-cell; vertical-align: top; }
-.header__logo { width: 205px; height: 48px; transition: padding 0.25s; text-align: center; font-size: 0; text-align: left; position: relative; top: -3px; }
-.header__logo:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
-@media only screen and (max-width: 1200px) { .header__logo { float: left; } }
-.header__menu { text-align: center; }
-@media only screen and (max-width: 1200px) { .header__menu { float: right; border: none; padding: 0; text-align: left; } }
+.header__inner { width: 100%; }
+.header__inner:after { content: " "; display: table; clear: both; }
+.header__menu, .header__logo { float: left; }
+.header__logo { width: 220px; text-align: left; position: relative; padding: 17px 0; }
+.header__menu { text-align: center; padding: 6px 0; }
+@media only screen and (max-width: 1200px) { .header__menu { border: none; padding: 0; text-align: left; } }
 @media only screen and (max-width: 1024px) { .header__menu { position: fixed; top: 0; bottom: 0; right: -258px; z-index: 2000; background-color: #2f373e; width: 258px; padding: 13px 0; overflow: auto; transition: -webkit-transform 0.3s ease-in-out; transition: transform 0.3s ease-in-out; } }
 @media only screen and (max-width: 1024px) { .header__menu.is-active { -webkit-transform: translateX(-100%); -ms-transform: translateX(-100%); transform: translateX(-100%); } }
-.header__date { font-size: 0; text-align: right; width: 225px; transition: padding 0.25s; }
-@media only screen and (max-width: 1500px) { .header__date { width: 200px; padding: 5px 0 0; } }
+.header__date { float: right; font-size: 0; text-align: right; padding: 7px 0; }
 @media only screen and (max-width: 1200px) { .header__date { display: none; } }
 .header__date-label { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); color: white; transition: color 0.25s ease; letter-spacing: 0.02em; text-transform: uppercase; text-align: left; display: inline-block; vertical-align: top; }
 .header__date-label { width: 55px; padding: 6px 15px 0 0; font-size: 10px; font-family: "ProximaNova Bold", Arial, sans-serif; }
@@ -295,17 +290,13 @@ a { text-decoration: none; }
 .header.is-active .header__date-label, .header.is-white .header__date-label { color: #333; text-shadow: none; }
 .header.is-active .header-countdown .countdown-amount, .header.is-active .header-countdown .countdown-period, .header.is-white .header-countdown .countdown-amount, .header.is-white .header-countdown .countdown-period { color: #333; text-shadow: none; }
 .header.is-active .btn-menu:before, .header.is-active .btn-menu:after, .header.is-active .btn-menu span, .header.is-white .btn-menu:before, .header.is-white .btn-menu:after, .header.is-white .btn-menu span { background: #333; }
-.header { height: 60px; padding-top: 6px; padding-bottom: 6px; }
-.header .header__logo { padding: 9px 0; }
 .header.header_friday .header__inner { position: relative; padding-left: 133px; }
 .header__friday { position: absolute; left: 0; top: -6px; display: inline-block; width: 110px; height: 73px; background: url(../img/friday.svg) no-repeat 0 0; }
 
-.logo__text { color: #fff; font-size: 10px; position: absolute; left: 145px; top: 15px; padding-left: 14px; line-height: 1.2; font-family: "ProximaNova Regular", Arial, sans-serif; }
-.logo__text strong { display: block; font-size: 11px; font-weight: normal; font-family: "ProximaNova Bold", Arial, sans-serif; }
-
-.logo { width: 187px; width: 144px; display: inline-block; vertical-align: middle; transition: width 0.2s ease; position: relative; }
+.logo { width: 144px; display: block; position: relative; }
 .logo img { width: 100%; }
-@media only screen and (max-width: 1024px) { .logo { position: relative; top: 3px; } }
+.logo__text { color: #fff; font-size: 10px; position: absolute; left: 145px; top: 17px; padding-left: 14px; line-height: 1.2; font-family: "ProximaNova Regular", Arial, sans-serif; }
+.logo__text strong { display: block; font-size: 11px; font-weight: normal; font-family: "ProximaNova Bold", Arial, sans-serif; }
 
 .btn-menu { position: absolute; top: 0; right: 0; height: 16px; width: 22px; border: none; background: none; display: none; transition: right 0.3s ease-in-out, background 0.25s ease; width: 62px; height: 60px; }
 @media only screen and (max-width: 1024px) { .btn-menu { display: block; } }
@@ -1253,7 +1244,7 @@ a { text-decoration: none; }
 .info-links small { font-family: "ProximaNova Regular", Arial, sans-serif; opacity: 0.8; font-size: 12px; }
 .info-links i { position: absolute; left: 0; }
 .info-links i.icon-camera { font-size: 14px; top: -2px; }
-.info-links i.is-doc { top: -5px; width: 22px; height: 22px; background: url(../img/doc.svg) no-repeat center center; background-size: contain; }
+.info-links i.icon-doc { top: -3px; font-size: 17px; }
 
 .library-header { padding: 70px 0 60px; }
 .library-header:after { content: " "; display: table; clear: both; }

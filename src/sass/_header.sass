@@ -3,50 +3,33 @@
 	top: 0
 	left: 0
 	width: 100%
-	height: 79px
 	height: 60px
 	padding: 0 40px
 	min-width: 320px
-	// background: rgba(white, 0.2)
-	background: rgba(#62b3cd,.6)
+	background: rgba(#62b3cd, .6)
 	font-size: 0
 	z-index: 1000
 	transition: background 0.25s linear, height 0.25s linear, padding 0.25s linear
 	+clr
 	+r1
 		padding: 0 20px
-		height: 60px
 	&_mod
 		background: none
 		box-shadow: 0 2px 0 rgba(255, 255, 255, 0.2)
-	&__wrap
-		height: 100%
-		+vertical
-	&__center
-		display: inline-block
-		vertical-align: middle
-		width: 100%
 	&__inner
-		display: table
 		width: 100%
-	&__menu, &__date, &__logo
-		display: table-cell
-		vertical-align: top
+		+clr
+	&__menu, &__logo
+		float: left 
 	&__logo
-		width: 205px
-		height: 48px
-		transition: padding 0.25s
-		+vertical
+		width: 220px
 		text-align: left
 		position: relative
-		top: -3px
-		+r1
-			float: left
-
+		padding: 17px 0 
 	&__menu
 		text-align: center
+		padding: 6px 0 
 		+r1
-			float: right
 			border: none
 			padding: 0
 			text-align: left
@@ -65,13 +48,10 @@
 			+r2
 				transform: translateX(-100%)
 	&__date
+		float: right
 		font-size: 0
 		text-align: right
-		width: 225px
-		transition: padding 0.25s
-		+r(1500)
-			width: 200px
-			padding: 5px 0 0
+		padding: 7px 0 
 		+r1
 			display: none
 		&-label
@@ -206,15 +186,6 @@
 		.btn-menu
 			&:before, &:after, span
 				background: #333
-	&
-		height: 60px
-		padding-top: 6px
-		padding-bottom: 6px
-		.header__logo
-			padding: 9px 0
-		.logo
-
-			// width: 166px
 	&.header_friday
 		.header__inner
 			position: relative
@@ -227,33 +198,27 @@
 		width: 110px
 		height: 73px
 		background: url(../img/friday.svg) no-repeat 0 0
-.logo__text
-	color: #fff
-	font-size: 10px
-	position: absolute
-	left: 145px
-	top: 15px
-	padding-left: 14px
-	line-height: 1.2
-	+reg
-	strong
-		display: block
-		font-size: 11px
-		font-weight: normal
-		+bold
+		
 .logo
-	width: 187px
 	width: 144px
-	display: inline-block
-	vertical-align: middle
-	transition: width 0.2s ease
+	display: block
 	position: relative
-
 	img
 		width: 100%
-	+r2
-		position: relative
-		top: 3px
+	&__text
+		color: #fff
+		font-size: 10px
+		position: absolute
+		left: 145px
+		top: 17px
+		padding-left: 14px
+		line-height: 1.2
+		+reg
+		strong
+			display: block
+			font-size: 11px
+			font-weight: normal
+			+bold
 
 .btn-menu
 	position: absolute

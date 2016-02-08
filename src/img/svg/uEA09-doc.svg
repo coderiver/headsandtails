@@ -1,11 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 3 22 22">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #d93472;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path class="cls-1" d="M5,6H17a2,2,0,0,1,2,2V21a2,2,0,0,1-2,2H5a2,2,0,0,1-2-2V8A2,2,0,0,1,5,6ZM5,8H17V21H5V8Zm10.054,2.864H6.945a0.954,0.954,0,0,0,0,1.908h8.109A0.954,0.954,0,0,0,15.054,10.864Zm-4.014,4.028h-4.1a0.956,0.956,0,0,0,0,1.911h4.1A0.956,0.956,0,0,0,11.041,14.891Z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>vectorize</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="vectorize" sketch:type="MSArtboardGroup" fill="#D93472">
+            <path d="M2,2.00748397 C2,2.00279379 2.00279042,2 2.00684547,2 L13.9931545,2 C13.9978644,2 14,2.00213377 14,2.00748397 L14,14.992516 C14,14.9972062 13.9972096,15 13.9931545,15 L2.00684547,15 C2.00213556,15 2,14.9978662 2,14.992516 L2,2.00748397 L2,2.00748397 Z M0,2.00748397 L0,14.992516 C0,16.1028112 0.897941192,17 2.00684547,17 L13.9931545,17 C15.1023187,17 16,16.1012368 16,14.992516 L16,2.00748397 C16,0.897188792 15.1020588,0 13.9931545,0 L2.00684547,0 C0.897681318,0 0,0.898763175 0,2.00748397 L0,2.00748397 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <rect id="Rectangle-4" sketch:type="MSShapeGroup" x="3" y="5" width="10" height="2"></rect>
+            <rect id="Rectangle-4-Copy" sketch:type="MSShapeGroup" x="3" y="9" width="5" height="2"></rect>
+        </g>
+    </g>
 </svg>
