@@ -84,11 +84,15 @@ $(document).ready(function() {
 		var thisTop = popup.scrollTop(),
 			thisInnerTop = popup.find('.js-popup-inner').position().top;
 
-		if (thisTop + $(this).innerHeight() >= $('.js-load-comment').position().top) {
-			popup.find('.js-load-comments').addClass('is-active');
+		if ($('.js-load-comments').length) {
+			if (thisTop + $(this).innerHeight() >= $('.js-load-comment').position().top) {
+				popup.find('.js-load-comments').addClass('is-active');
 
-			// console.log($(this).scrollTop() + $(this).innerHeight() - $('.js-load-comment'), $('.js-load-comment').position().top);
+				// console.log($(this).scrollTop() + $(this).innerHeight() - $('.js-load-comment'), $('.js-load-comment').position().top);
+			};
+			
 		};
+
 
 		if (thisTop > thisInnerTop + 30) {
 			$(this).find('.js-popup-fixed').addClass('is-active');

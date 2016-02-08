@@ -29,7 +29,7 @@
 							<div class="block-links">
 								<ul class="info-links">
 									<li>
-										<a href="#" class="is-camera">
+										<a href="#" class="is-camera js-goto" data-go="camera">
 											<i class="icon-camera"></i>
 											<span>Как это снимали</span>
 											<small>Эксклюзив</small>
@@ -44,7 +44,7 @@
 								</ul>
 								<ul class="lil-info">
 									<li>
-										<a href="#" class="is-comments">
+										<a href="#" class="is-comments js-goto" data-go="comments">
 											<i class="icon-comments"></i>
 											<span>10 Комментариев</span>
 										</a>
@@ -75,24 +75,22 @@
 									</li>
 								</ul>
 							</div>
-							<div class="js-popup-btn" data-btn="popup-translation">
-								<p>Площадь Гоа составляет всего 3702 км², протяженность с севера на юг 105 км, с запада на восток максимально 65 км. Таким образом, Гоа является самым маленьким из двадцати восьми штатов Индии. Гоа расположен в средней части западного побережья Индии. На севере он граничит со штатом Махараштра, на юге и востоке — с Карнатакой, на западе омывается Аравийским морем. Длина береговой линии составляет 101 км.</p>
-								<p>Узкая полоса побережья отделяет море от горного плато, на востоке переходящего в отроги Западных Гат. Горная цепь Западные Гаты (Сахьядри) представляет собой западную возвышенную окраину Деканского плоскогорья длиной около 1800 км. Западные Гаты занимают около 15 % площади штата, их средняя высота 1200 м. Самая высокая точка Гоа достигает 1167 м над уровнем моря. Береговая линия Гоа изрезана устьями рек, большинство которых берет своё начало в Западных Гатах. Крупнейшими реками являются Мандови, Зуари и Чапора.</p>
-							</div>
+							<p>Площадь Гоа составляет всего 3702 км², протяженность с севера на юг 105 км, с запада на восток максимально 65 км. Таким образом, Гоа является самым маленьким из двадцати восьми штатов Индии. Гоа расположен в средней части западного побережья Индии. На севере он граничит со штатом Махараштра, на юге и востоке — с Карнатакой, на западе омывается Аравийским морем. Длина береговой линии составляет 101 км.</p>
+							<p>Узкая полоса побережья отделяет море от горного плато, на востоке переходящего в отроги Западных Гат. Горная цепь Западные Гаты (Сахьядри) представляет собой западную возвышенную окраину Деканского плоскогорья длиной около 1800 км. Западные Гаты занимают около 15 % площади штата, их средняя высота 1200 м. Самая высокая точка Гоа достигает 1167 м над уровнем моря. Береговая линия Гоа изрезана устьями рек, большинство которых берет своё начало в Западных Гатах. Крупнейшими реками являются Мандови, Зуари и Чапора.</p>
 						</div>
-						<ul class="tags">
-							<li><a href="#">#антверпен</a></li>
-							<li><a href="#">#команда</a></li>
-							<li><a href="#">#приключения</a></li>
+						<ul class="tags-full tags-full_mod">
+							<li><a href="#" class="tag-full is-active">#HelloUkraine</a></li>
+							<li><a href="#" class="tag-full">#Фотографии</a></li>
+							<li><a href="#" class="tag-full">#Гоа</a></li>
 						</ul>
 					</div>				
 				</div>				
-				<div class="library-header">
+				<div class="library-header" id="camera">
 					<div class="library-title">Как это снимали</div>
 				</div>
 				<div class="post post_partner">
 					<div class="post__container">
-						<div class="js-popup-btn" data-btn="popup-translation">
+						<div>
 							<h3 class="title-h3"><a href="#">Сюр. Город рыбаков</a></h3>
 							<div class="video">
 								<iframe src="https://www.youtube.com/embed/FA_8TY9Z5Zg" frameborder="0" allowfullscreen></iframe>
@@ -102,7 +100,7 @@
 				</div>
 				<div class="post">
 					<div class="post__container">
-						<div class="js-popup-btn" data-btn="popup-image-text">
+						<div>
 							<h3 class="title-h3"><a href="#">Обедаем нашей большой командой</a></h3>
 							<div class="post__img">					
 								<img src="img/post1.png" alt="">
@@ -113,7 +111,7 @@
 				</div>
 				<div class="post">
 					<div class="post__container">
-						<div class="js-popup-btn" data-btn="popup-category">
+						<div>
 							<h3 class="title-h3"><a href="#">Самые интересные места Антверпена</a></h3>
 							<div class="post__img">			
 								<span class="sticker is-blue">спецпроект от kyivstar</span>
@@ -152,7 +150,7 @@
 						</div>
 					</div>				
 				</div>
-				<div class="comments">
+				<div class="comments" id="comments">
 					<div class="comment-form">
 						<div class="comment-form__img">
 							<i class="icon-user"></i>
@@ -232,8 +230,8 @@
 					<ul class="side-videos">
 						<li class="side-videos__item">
 							<div class="video-small video-small_item">
-								<a href="#" class="btn-video" style="background-image: url(https://placecage.com/100/100);">
-									<span><i class="icon-play"></i></span>
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+									<span class="play-icon"><i class="icon-play"></i></span>
 								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
@@ -243,8 +241,8 @@
 						</li>
 						<li class="side-videos__item">
 							<div class="video-small video-small_item">
-								<a href="#" class="btn-video" style="background-image: url(https://placecage.com/100/100);">
-									<span><i class="icon-play"></i></span>
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+									<span class="play-icon"><i class="icon-play"></i></span>
 								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
@@ -254,8 +252,8 @@
 						</li>
 						<li class="side-videos__item">
 							<div class="video-small video-small_item">
-								<a href="#" class="btn-video" style="background-image: url(https://placecage.com/100/100);">
-									<span><i class="icon-play"></i></span>
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+									<span class="play-icon"><i class="icon-play"></i></span>
 								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
@@ -265,8 +263,8 @@
 						</li>
 						<li class="side-videos__item">
 							<div class="video-small video-small_item">
-								<a href="#" class="btn-video" style="background-image: url(https://placecage.com/100/100);">
-									<span><i class="icon-play"></i></span>
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+									<span class="play-icon"><i class="icon-play"></i></span>
 								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
@@ -276,8 +274,8 @@
 						</li>
 						<li class="side-videos__item">
 							<div class="video-small video-small_item">
-								<a href="#" class="btn-video" style="background-image: url(https://placecage.com/100/100);">
-									<span><i class="icon-play"></i></span>
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+									<span class="play-icon"><i class="icon-play"></i></span>
 								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
@@ -287,8 +285,8 @@
 						</li>
 						<li class="side-videos__item">
 							<div class="video-small video-small_item">
-								<a href="#" class="btn-video" style="background-image: url(https://placecage.com/100/100);">
-									<span><i class="icon-play"></i></span>
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+									<span class="play-icon"><i class="icon-play"></i></span>
 								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
@@ -298,8 +296,8 @@
 						</li>
 						<li class="side-videos__item">
 							<div class="video-small video-small_item">
-								<a href="#" class="btn-video" style="background-image: url(https://placecage.com/100/100);">
-									<span><i class="icon-play"></i></span>
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+									<span class="play-icon"><i class="icon-play"></i></span>
 								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
@@ -309,8 +307,8 @@
 						</li>
 						<li class="side-videos__item">
 							<div class="video-small video-small_item">
-								<a href="#" class="btn-video" style="background-image: url(https://placecage.com/100/100);">
-									<span><i class="icon-play"></i></span>
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+									<span class="play-icon"><i class="icon-play"></i></span>
 								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
@@ -320,8 +318,8 @@
 						</li>
 						<li class="side-videos__item">
 							<div class="video-small video-small_item">
-								<a href="#" class="btn-video" style="background-image: url(https://placecage.com/100/100);">
-									<span><i class="icon-play"></i></span>
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+									<span class="play-icon"><i class="icon-play"></i></span>
 								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
@@ -342,7 +340,88 @@
 
 //= partials/login.html
 
-//= partials/popups.html
+<div class="popup-wrapper js-popup" data-block="popup-gallery-text">
+	<div class="overlay js-overlay is-active"></div>
+	<div class="popup js-popup-inner">
+		<div class="js-popup-fixed popup__close-wrap">
+			<div class="popup__close-wrap-in">
+				<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
+			</div>
+		</div>
+		<div class="popup__body">
+			<div class="popup-post">
+				<div class="user">
+					<a href="#" class="user__inner">
+						<img src="img/ava1.png" alt="" class="user__img">
+						<div class="user__block">
+							<span class="user__name">Регина Тодоренко</span>
+							<ul class="user__info">
+								<li>09 Ноября 14:32</li>
+								<li>Киев</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<h2 class="title-h2"><a href="#">Cделали для вас подборку лучших фотографий с Гоа</a></h2>
+				<div class="gallery js-slick-gallery">
+					<div class="gallery-main">
+						<a href="#" class="gallery-prev js-gallery-prev">
+							<i class="icon-ic-prev"></i>
+						</a>
+						<a href="#" class="gallery-next js-gallery-next">
+							<i class="icon-ic-next"></i>
+						</a>
+						<div class="js-slick-for">
+							<div class="gallery-main__slide">
+								<img src="https://placecage.com/1000/1000" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+							<div class="gallery-main__slide">
+								<img src="img/gallery-main.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="gallery-thumbs">
+						<div class="gallery-thumbs__inner js-slick-nav">
+							<div class="gallery-thumbs__slide">
+								<img src="https://placecage.com/1000/1000" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+							<div class="gallery-thumbs__slide">
+								<img src="img/gallery-thumbs.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="popup__text">
+					<p>Гоа имеет типичный субэкваториальный климат с резко выраженным сухим и влажным сезоном. На протяжении половины года в регионе (с мая по октябрь) господствует жаркая и влажная погода. Наиболее высокая температура наблюдается в мае, средний максимум составляет 33 °C, и даже в это время сохраняется высокая влажность воздуха (в марте — 73 %). Период муссонов начинается в июне и заканчивается в сентябре. В это время становится прохладнее, температура около 25—30 °C.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 //= partials/search.html
 
