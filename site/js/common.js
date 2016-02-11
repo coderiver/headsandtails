@@ -14,6 +14,26 @@ $(document).ready(function() {
 		return false;
 	});
 
+	if ($('.js-btn-up').length) {
+		if ($(window).scrollTop() > $('#startposts').offset().top + $('#startposts').outerHeight()) {
+			$('.js-btn-up').addClass('is-active');
+		};
+		$(window).scroll(function() {
+			if ($(window).scrollTop() <= $('#startposts').offset().top + $('#startposts').outerHeight()) {
+				$('.js-btn-up').removeClass('is-active');
+			};
+		});
+
+		$('.js-btn-up').click(function() {
+			$('html,body').animate(
+			{
+	        	scrollTop: $("#startposts").offset().top
+	        },
+	        'slow');
+			return false;
+		});
+	};
+
 	$('.js-goto').click(function(event) {
 		togo = $('#'+$(this).data('go'));
 		$('html,body').animate(

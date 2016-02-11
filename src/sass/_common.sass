@@ -340,7 +340,8 @@ a
 		display: block
 
 .video-small
-	max-width: 150px 
+	max-width: 150px
+	display: block 
 	&__text
 		color: #fff
 		line-height: 1.2
@@ -384,3 +385,36 @@ a
 		right: 24px
 		font-size: 11px
 		margin-top: -5px
+
+.btn-up
+	position: fixed
+	top: 50%
+	left: 50%
+	color: #fff
+	font-size: 16px
+	line-height: 1
+	padding: 14px 20px 14px 40px 
+	+semi
+	background-color: #db3071
+	border-radius: 22px
+	box-shadow: 0 0 6px rgba(0, 0, 1, 0.3)
+	margin: -22px 0 0 -90px
+	z-index: 100
+	display: none
+	transition: background 0.2s
+	letter-spacing: 0.02em 
+	+r3
+		display: none
+	&:hover
+		background-color: #e92a73
+	&.is-active
+		display: block
+		+r3
+			display: none
+	i
+		font-size: 7px
+		position: absolute
+		top: 50%
+		left: 17px
+		transform: rotate(-180deg)
+		margin-top: -4px
