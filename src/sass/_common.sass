@@ -418,3 +418,34 @@ a
 		left: 17px
 		transform: rotate(-180deg)
 		margin-top: -4px
+
+.btn-dts
+	font-size: 14px
+	line-height: 1
+	+reg	
+	border: 1px solid #229fff 
+	display: inline-block
+	vertical-align: top
+	padding: 9px 30px 7px 10px
+	border-radius: 16px
+	transition: color 0.25s, background 0.25s
+	position: relative
+	color: #fff 
+	background: #229fff  
+	&:hover
+		color: #229fff
+		background: #fff 
+	i
+		position: absolute
+		bottom: 7px
+		right: 10px
+		font-size: 0
+		&:before, &:after
+			content: ""
+			display: inline-block
+			vertical-align: top
+			width: 7px
+			height: 7px
+			background: #fcd924
+			border-radius: 50%
+			margin-right: 2px 
