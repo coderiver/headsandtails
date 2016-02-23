@@ -128,7 +128,7 @@ a { text-decoration: none; color: #229fff; cursor: pointer; }
 @media only screen and (max-width: 800px) { .btn-up.is-active { display: none; } }
 .btn-up i { font-size: 7px; position: absolute; top: 50%; left: 17px; -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg); margin-top: -4px; }
 
-.btn-dts { font-size: 14px; line-height: 1; font-family: "ProximaNova Regular", Arial, sans-serif; border: 1px solid #229fff; display: inline-block; vertical-align: top; padding: 9px 30px 7px 10px; border-radius: 16px; transition: color 0.25s, background 0.25s; position: relative; color: #fff; background: #229fff; }
+.btn-dts { font-size: 13px; line-height: 1; font-family: "ProximaNova Regular", Arial, sans-serif; border: 1px solid #229fff; display: inline-block; vertical-align: top; padding: 9px 30px 8px 10px; border-radius: 16px; transition: color 0.25s, background 0.25s; position: relative; color: #fff; background: #229fff; }
 .btn-dts:hover { color: #229fff; background: #fff; }
 .btn-dts i { position: absolute; bottom: 7px; right: 10px; font-size: 0; }
 .btn-dts i:before, .btn-dts i:after { content: ""; display: inline-block; vertical-align: top; width: 7px; height: 7px; background: #fcd924; border-radius: 50%; margin-right: 2px; }
