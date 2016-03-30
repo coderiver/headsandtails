@@ -524,4 +524,14 @@ $(document).ready(function() {
 		});	
 		return false;
 	});
+	//goto
+	$(window).load(function() {
+		if ($('.js-scrollto').length && window.location.href.indexOf('#backstage') > -1) {
+			setTimeout(function() {
+				$('html, body').animate({
+					scrollTop: $('.js-scrollto').offset().top
+				}, 1000);				
+			}, 300);
+		}
+	});
 });

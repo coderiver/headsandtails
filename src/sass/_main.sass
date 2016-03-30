@@ -3036,6 +3036,18 @@
 	&:hover
 		color: #333
 		background: none
+	&_delikat
+		background-color: #de0f20
+		border-color: #de0f20
+		position: relative
+		padding-right: 40px
+		padding-left: 18px
+		color: #fff
+		i
+			position: absolute
+			top: 11px
+			right: 11px
+			font-size: 8px
 .lil-info
 	&_mod
 		margin-bottom: 10px
@@ -3236,9 +3248,59 @@
 		margin-bottom: 40px
 		span
 			display: block
+			position: relative
+			z-index: 1
+		strong
+			position: relative
+			display: block
+			&:before
+				content: ''
+				position: absolute
+				top: -5px
+				left: -23px
+				+s(episod-bg)
+		em
+			color: #fff
+			font-style: normal
+			position: relative
+		i
+			font-size: 24px
+			color: #de0f20
+			position: absolute
+			left: 50%
+			bottom: 100%
+			margin-left: -29px
+			margin-bottom: 8px
 	.play-btn
 		height: 0
 		padding: 0 0 67% 
+	.play-icon
+		width: 63px
+		height: 63px
+		margin: -31px 0 0 -31px
+		.icon-play
+			font-size: 18px
+			margin-left: 4px
+	&__more
+		padding: 25px 0 0
+
+.link-more
+	color: #de0f20
+	+reg
+	font-size: 16px
+	display: inline-block
+	vertical-align: top
+	padding-right: 20px
+	position: relative
+	&:hover
+		i
+			right: 0
+	i
+		font-size: 11px
+		position: absolute
+		top: 6px
+		right: 5px
+		transition: right 0.2s
 
 .library-video
 	width: 100%
@@ -3367,19 +3429,35 @@
 	position: relative
 	z-index: 2
 	padding-right: 20px
+	padding-left: 159px
 	margin-bottom: 15px
+	&_red
+		.globe-video
+			&__text
+				strong
+					position: relative
+					&:before
+						content: ''
+						position: absolute
+						top: -10px
+						left: -35px
+						+s(gl-red)
+				span
+					position: relative
+					z-index: 1
 	.play-btn
-		float: left
+		position: absolute
+		top: 0
+		left: 0
 		width: 141px
 		height: 89px
-		margin-right: 18px
+		z-index: 1
 		.play-icon
 			position: absolute
 			top: 50%
 			left: 50%
 			margin: -24px 0 0 -24px 
 	&__info
-		overflow: hidden
 		padding: 4px 0 3px 
 	&__text
 		color: #fff
@@ -3387,6 +3465,8 @@
 		line-height: 1.2
 		margin-bottom: 12px
 		display: block
+		strong
+			display: block
 	&__link
 		color: #fff
 		font-size: 13px
@@ -3468,10 +3548,19 @@
 	border-radius: 50%
 	display: block
 	+vertical
-	transition: background 0.2s, border-color 0.2s
+	transition: background 0.2s, border-color 0.2s, box-shadow 0.2s
 	&:hover
 		background: #277dcc
 		border-color: #fff
+	&_red
+		background-color: rgba(#de0f20, 0.9)
+		border: none
+		box-shadow: 0 0 0 3px rgba(#fff, 0.6)
+		width: 45px
+		height: 45px
+		&:hover
+			background-color: #de0f20
+			box-shadow: 0 0 0 3px rgba(#fff, 1)
 	i
 		display: inline-block
 		vertical-align: middle
@@ -3497,3 +3586,56 @@
 		line-height: 1.2
 		+r3
 			font-size: 14px
+
+.nemiroff
+	position: relative
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: top center
+	background-image: url(../img/nemiroff.jpg)
+	padding: 125px 0
+	+r3
+		padding: 120px 0 68px
+	+r4
+		background-image: url(../img/nemiroff-sm.png)
+		background-position: center
+	&__inner
+		max-width: 1200px
+		padding: 0 15px
+		+clr
+	&__logo
+		float: left
+		width: 217px
+		margin-bottom: 20px
+		+r3
+			width: 151px
+			float: none
+			margin-bottom: 55px
+	&__text
+		color: #fff
+		font-size: 36px
+		+reg
+		float: left
+		margin-bottom: 20px
+		line-height: 1.2
+		padding: 60px 0 0 170px
+		+r2
+			padding: 55px 0 0 70px
+		+r3
+			padding: 0
+			float: none
+			font-size: 24px
+		strong
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: -20px
+				+s(pn-bg)
+				+r3
+					+s(pn-bgs)
+					
+		span
+			position: relative
+			z-index: 1
