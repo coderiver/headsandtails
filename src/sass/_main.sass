@@ -2519,6 +2519,8 @@
 	-webkit-background-size: contain
 	-o-background-size: contain
 	background-size: contain
+	background-repeat: no-repeat
+	
 .preloader
 	display: inline-block
 	vertical-align: middle
@@ -2852,6 +2854,8 @@
 	transition: background 0.2s
 	&:hover
 		color: #333
+	&.btn-delikat
+		padding-left: 40px
 
 .top-banner
 	width: 100%
@@ -3603,6 +3607,9 @@
 		max-width: 1200px
 		padding: 0 15px
 		+clr
+		margin: 0 auto
+		+r2
+			padding: 0 20px
 	&__logo
 		float: left
 		width: 217px
