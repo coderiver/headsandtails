@@ -138,25 +138,27 @@ a { text-decoration: none; color: #229fff; cursor: pointer; }
 .btn-delikat:hover { color: #333; }
 .btn-delikat i { color: #de0f20; font-size: 12px; position: absolute; top: 10px; left: 9px; }
 
-.icon-codedby { width: 47px; height: 5px; background-image: url("../img/icons.png"); background-position: -355px -143px; }
+.icon-codedby { width: 47px; height: 5px; background-image: url("../img/icons.png"); background-position: -342px -154px; }
 
-.icon-coderiver { width: 49px; height: 5px; background-image: url("../img/icons.png"); background-position: -355px -134px; }
+.icon-coderiver { width: 49px; height: 5px; background-image: url("../img/icons.png"); background-position: -289px -154px; }
 
 .icon-episod-bg { width: 224px; height: 49px; background-image: url("../img/icons.png"); background-position: -174px -59px; }
 
-.icon-gl-red { width: 177px; height: 39px; background-image: url("../img/icons.png"); background-position: -174px -112px; }
+.icon-gl-red { width: 177px; height: 39px; background-image: url("../img/icons.png"); background-position: 0px -174px; }
 
-.icon-icon-search-white { width: 18px; height: 18px; background-image: url("../img/icons.png"); background-position: -355px -112px; }
+.icon-icon-search-white { width: 18px; height: 18px; background-image: url("../img/icons.png"); background-position: -366px -174px; }
 
-.icon-icon-search { width: 18px; height: 18px; background-image: url("../img/icons.png"); background-position: -377px -112px; }
+.icon-icon-search { width: 18px; height: 18px; background-image: url("../img/icons.png"); background-position: -344px -174px; }
 
-.icon-logo-text { width: 111px; height: 11px; background-image: url("../img/icons.png"); background-position: -174px -155px; }
+.icon-logo-text { width: 111px; height: 11px; background-image: url("../img/icons.png"); background-position: -174px -154px; }
 
 .icon-no-result { width: 170px; height: 170px; background-image: url("../img/icons.png"); background-position: 0px 0px; }
 
 .icon-pn-bg { width: 240px; height: 55px; background-image: url("../img/icons.png"); background-position: -174px 0px; }
 
-.icon-pn-bgs { width: 159px; height: 36px; background-image: url("../img/icons.png"); background-position: 0px -174px; }
+.icon-pn-bgs { width: 159px; height: 36px; background-image: url("../img/icons.png"); background-position: -181px -174px; }
+
+.icon-timeline-redbg { width: 230px; height: 38px; background-image: url("../img/icons.png"); background-position: -174px -112px; }
 
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 .icon, [class^="icon-"], [class*=" icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -1329,8 +1331,10 @@ a { text-decoration: none; color: #229fff; cursor: pointer; }
 .side-video .title-h3 span { display: block; position: relative; z-index: 1; }
 .side-video .title-h3 strong { position: relative; display: block; }
 .side-video .title-h3 strong:before { content: ""; position: absolute; top: -5px; left: -23px; background-image: url("../img/icons.png"); width: 224px; height: 49px; background-position: -174px -59px; }
+@media only screen and (max-width: 500px) { .side-video .title-h3 strong:before { top: -5px; bottom: -5px; width: 175px; background: url(../img/episod-bg.png) no-repeat center; background-size: contain; height: auto; } }
 .side-video .title-h3 em { color: #fff; font-style: normal; position: relative; }
 .side-video .title-h3 i { font-size: 24px; color: #de0f20; position: absolute; left: 50%; bottom: 100%; margin-left: -29px; margin-bottom: 8px; }
+@media only screen and (max-width: 500px) { .side-video .title-h3 i { margin-left: -24px; margin-bottom: 4px; font-size: 20px; } }
 .side-video .play-btn { height: 0; padding: 0 0 67%; }
 .side-video .play-icon { width: 63px; height: 63px; margin: -31px 0 0 -31px; }
 .side-video .play-icon .icon-play { font-size: 18px; margin-left: 4px; }
@@ -1384,7 +1388,7 @@ a { text-decoration: none; color: #229fff; cursor: pointer; }
 .globe-video { display: inline-block; vertical-align: top; max-width: 390px; width: 100%; position: relative; z-index: 2; padding-right: 20px; padding-left: 159px; margin-bottom: 15px; }
 .globe-video:after { content: " "; display: table; clear: both; }
 .globe-video_red .globe-video__text strong { position: relative; }
-.globe-video_red .globe-video__text strong:before { content: ""; position: absolute; top: -10px; left: -35px; background-image: url("../img/icons.png"); width: 177px; height: 39px; background-position: -174px -112px; }
+.globe-video_red .globe-video__text strong:before { content: ""; position: absolute; top: -5px; left: -45px; background-image: url("../img/icons.png"); width: 230px; height: 38px; background-position: -174px -112px; }
 .globe-video_red .globe-video__text span { position: relative; z-index: 1; }
 .globe-video .play-btn { position: absolute; top: 0; left: 0; width: 141px; height: 89px; z-index: 1; }
 .globe-video .play-btn .play-icon { position: absolute; top: 50%; left: 50%; margin: -24px 0 0 -24px; }
@@ -1428,7 +1432,7 @@ a { text-decoration: none; color: #229fff; cursor: pointer; }
 
 .nemiroff { position: relative; background-size: cover; background-repeat: no-repeat; background-position: top center; background-image: url(../img/nemiroff.jpg); padding: 125px 0; }
 @media only screen and (max-width: 800px) { .nemiroff { padding: 120px 0 68px; } }
-@media only screen and (max-width: 500px) { .nemiroff { background-image: url(../img/nemiroff-sm.png); background-position: center; } }
+@media only screen and (max-width: 500px) { .nemiroff { background-position: center; } }
 .nemiroff__inner { max-width: 1200px; padding: 0 15px; margin: 0 auto; }
 .nemiroff__inner:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 1024px) { .nemiroff__inner { padding: 0 20px; } }
@@ -1439,8 +1443,9 @@ a { text-decoration: none; color: #229fff; cursor: pointer; }
 @media only screen and (max-width: 800px) { .nemiroff__text { padding: 0; float: none; font-size: 24px; } }
 .nemiroff__text strong { position: relative; }
 .nemiroff__text strong:before { content: ""; position: absolute; top: 0; left: -20px; background-image: url("../img/icons.png"); width: 240px; height: 55px; background-position: -174px 0px; }
-@media only screen and (max-width: 800px) { .nemiroff__text strong:before { background-image: url("../img/icons.png"); width: 159px; height: 36px; background-position: 0px -174px; } }
+@media only screen and (max-width: 800px) { .nemiroff__text strong:before { background-image: url("../img/icons.png"); width: 159px; height: 36px; background-position: -181px -174px; } }
 .nemiroff__text span { position: relative; z-index: 1; }
+.nemiroff__text img { max-width: 100%; }
 
 .overlay { position: fixed; top: 0; right: 17px; bottom: 0; left: 0; z-index: 100; visibility: hidden; opacity: 0; }
 .overlay.is-active { visibility: visible; opacity: 1; }
@@ -1629,8 +1634,9 @@ a { text-decoration: none; color: #229fff; cursor: pointer; }
 @media only screen and (max-width: 800px) { .popup-nemiroff__text { padding: 0; float: none; font-size: 24px; } }
 .popup-nemiroff__text strong { position: relative; }
 .popup-nemiroff__text strong:before { content: ""; position: absolute; top: 0; left: -20px; background-image: url("../img/icons.png"); width: 240px; height: 55px; background-position: -174px 0px; }
-@media only screen and (max-width: 800px) { .popup-nemiroff__text strong:before { background-image: url("../img/icons.png"); width: 159px; height: 36px; background-position: 0px -174px; } }
+@media only screen and (max-width: 800px) { .popup-nemiroff__text strong:before { background-image: url("../img/icons.png"); width: 159px; height: 36px; background-position: -181px -174px; } }
 .popup-nemiroff__text span { position: relative; z-index: 1; }
+.popup-nemiroff__text img { max-width: 100%; }
 
 .popup-post__video { display: inline-block; vertical-align: top; padding: 3px 0; }
 .popup-post__video .link-video { display: inline-block; vertical-align: top; margin: 0; }

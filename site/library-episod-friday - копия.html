@@ -1,18 +1,103 @@
 <!doctype html>
 <html>
-//= partials/headtag.html
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff"> 
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/jquery.countdown.css" >
+	<link rel="stylesheet" media="all" href="css/style.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/app.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="img/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="img/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="Orel & Reshka"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="img/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="img/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="img/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="img/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="img/mstile-310x310.png" />
+	<script type="text/javascript" src="http://ru.or.vgnc.co/adfox.asyn.code.ver3.js"> </script>
+</head>
 <body>
 <!-- BEGIN  out-->
 <div class="out out_mod">
 
-	//= partials/header-white.html
+	<!-- begin header  -->
+	<header class="header is-white js-fixed js-header">
+		<div class="header__wrap">
+			<div class="header__center">
+				<div class="header__inner">
+					<div class="header__logo">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="">
+						</a>
+						<a href='http://teenspirit.tv/' class="logo__text" target="_blank">
+							создано
+							<strong>TeenSpirit</strong>
+						</a>
+					</div>		
+					<div class="header__menu js-menu">
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__mobile"><a href="#">Главная</a></li>
+								<li>
+									<a href="#" class="js-menu-link">маршрут <i class="icon-arr-bot"></i></a>
+									<ul class="submenu js-menu-drop">
+										<li><a href="#">Планета</a></li>
+										<li><a href="#">Календарь</a></li>
+									</ul>
+								</li>
+								<li><a href="#" class="js-menu-link">дневник</a></li>
+								<li><a href="#">про проект</a></li>
+								<li><a href="#">команда</a></li>
+								<li><a href="#">библиотека</a></li>
+								<li><a href="#">Топ</a></li>
+								<li class="nav__mobile"><a href="#" class=" js-popup-btn" data-btn="search">Поиск</a></li>
+							</ul>
+						</nav>
+						<button class="btn-search js-popup-btn" data-btn="search"><i class="icon-search"></i></button>
+					</div>
+					<div class="header__date">
+						<div class="header-daysleft">
+							<b>28</b> <span>дней<br>в пути</span>
+						</div>
+					</div>
+					<button class="btn-menu js-menu-btn"><span></span></button>
+				</div>	
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
 
 	<!-- begin main -->
 	<main class="main">
 		<!-- begin inner  -->
-		<div class="inner">
+		<div class="inner">			
 			<div class="library-header">
 				<div class="library-title">Эпизод 10: Антверпен</div>
+				<ul class="view">
+					<li><a href="#"><i class="icon-marker"></i><span>Карта эпизодов</span></a></li>
+					<li><a href="#" class="is-active"><i class="icon-list"></i><span>Список</span></a></li>
+				</ul>
 			</div>
 			<!-- begin container -->
 			<section class="container">
@@ -79,92 +164,44 @@
 							<li><a href="#" class="tag-full">#Фотографии</a></li>
 							<li><a href="#" class="tag-full">#Гоа</a></li>
 						</ul>
-					</div>
-				</div>
+					</div>				
+				</div>				
 				<div class="library-header" id="camera">
 					<div class="library-title">Как это снимали</div>
 				</div>
-				<div class="post post_partner js-scrollto" id="backstage">
+				<div class="post post_partner">
 					<div class="post__container">
 						<div>
-							<h3 class="title-h3 js-popup-btn" data-btn="backstage"><a href="#">Йоханнесбург. Как это снимали</a></h3>
+							<h3 class="title-h3"><a href="#">Сюр. Город рыбаков</a></h3>
 							<div class="video">
 								<iframe src="https://www.youtube.com/embed/FA_8TY9Z5Zg" frameborder="0" allowfullscreen></iframe>
 							</div>
-							<p class="js-popup-btn" data-btn="backstage">Флоренция итальянский город на реке Арно, в прошлом центр Флорентийской республики, столица герцогов Медичи и Итальянского королевства.</p>
-							<ul class="lil-info">
-								<li>
-									<a href="#" class="is-like">
-										<i class="icon-like"></i>
-										<span>Нравится</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="is-dislike">
-										<i class="icon-dislike"></i>
-										<span>Не нравится</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="is-comments js-popup-btn" data-btn="backstage">
-										<i class="icon-comments"></i>
-										<span>10 Комментариев</span>
-									</a>
-								</li>
-								<li class="js-tooltip-parent">
-									<a href="#" class="is-share js-tooltip-icon">
-										<i class="icon-share"></i>
-										<span>Поделиться</span>
-									</a>
-									<div class="tooltip js-tooltip">
-										<div class="tooltip__inner">
-											<ul class="tooltip__list">
-												<li>
-													<a href="#">
-														<i class="icon-fb"></i>
-														<span>8</span>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<i class="icon-vk"></i>
-														<span>2</span>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<div class="post__more">
-								<a href="#" class="btn-more btn-more_delikat"><i class="icon-delikat"></i>Все деликатные ситуации</a>
-							</div>
 						</div>
-					</div>
+					</div>				
 				</div>
 				<div class="post">
 					<div class="post__container">
 						<div>
 							<h3 class="title-h3"><a href="#">Обедаем нашей большой командой</a></h3>
-							<div class="post__img">
+							<div class="post__img">					
 								<img src="img/post1.png" alt="">
 							</div>
 							<p>Флоренция итальянский город на реке Арно, в прошлом центр Флорентийской республики, столица герцогов Медичи и Итальянского королевства.</p>
 						</div>
-					</div>
+					</div>				
 				</div>
 				<div class="post">
 					<div class="post__container">
 						<div>
 							<h3 class="title-h3"><a href="#">Самые интересные места Антверпена</a></h3>
-							<div class="post__img">
+							<div class="post__img">			
 								<span class="sticker is-blue">спецпроект от kyivstar</span>
 								<a href="#" class="post__partner"><img src="img/ks-logo.png" alt=""></a>
 								<img src="img/postks.png" alt="">
 							</div>
 							<p>Морские ворота Лондона, историческое предместье, а теперь — один из 32 лондонских боро, находится во внутреннем Лондоне, на юго-востоке британской столицы, на правом берегу Темзы.</p>
 						</div>
-					</div>
+					</div>				
 				</div>
 				<div class="post">
 					<div class="post__container">
@@ -174,7 +211,7 @@
 								<div class="photos__medium js-photo">
 									<div class="photos__inner" style="background-image: url(img/post-medium1.png);"></div>
 								</div>
-								<div class="photos__medium js-photo">
+								<div class="photos__medium js-photo">	
 									<div class="photos__inner" style="background-image: url(img/post-medium2.png);"></div>
 								</div>
 								<div class="photos__small js-photo">
@@ -192,7 +229,7 @@
 							</div>
 							<p>Флоренция итальянский город на реке Арно, в прошлом центр Флорентийской республики, столица герцогов Медичи и Итальянского королевства.</p>
 						</div>
-					</div>
+					</div>				
 				</div>
 				<div class="comments" id="comments">
 					<div class="comment-form">
@@ -264,123 +301,112 @@
 			<!-- end container -->
 			<!-- begin sidebar -->
 			<aside class="sidebar">
-				<div class="side-video">
-					<div class="js-goto" data-go="camera">
-						<h3 class="title-h3 title-nohover">
-							<a href="#">
-								<strong><span><em><i class="icon-delikat"></i>Деликатные</em> ситуации.</span></strong>
-								<span>Видео бэкстейдж</span>
-							</a>
-						</h3>
-						<div class="play-btn" style="background-image: url(https://placecage.com/600/500);">
-							<span class="play-icon play-icon_red"><i class="icon-play"></i></span>
-						</div>
-					</div>
-					<div class="side-video__more">
-						<a href="#" class="link-more">Все видео бэкстейдж<i class="icon-arr-next"></i></a>
-					</div>
+				<div class="side-banner">
+					<a href="#" class="side-banner__link">
+						<img src="img/sidebanner.jpg" alt="">
+					</a>
 				</div>
 				<div class="side-box">
 					<div class="side-box__title">Кругосветка. Все серии:</div>
 					<ul class="side-videos">
 						<li class="side-videos__item">
-							<a href="#" class="video-small video-small_item">
-								<div class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+							<div class="video-small video-small_item">
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
 									<span class="play-icon"><i class="icon-play"></i></span>
-								</div>
+								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
 									<span>Антверпен</span>
 								</div>
-							</a>
+							</div>
 						</li>
 						<li class="side-videos__item">
-							<a href="#" class="video-small video-small_item">
-								<div class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+							<div class="video-small video-small_item">
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
 									<span class="play-icon"><i class="icon-play"></i></span>
-								</div>
+								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
 									<span>Антверпен</span>
 								</div>
-							</a>
+							</div>
 						</li>
 						<li class="side-videos__item">
-							<a href="#" class="video-small video-small_item">
-								<div class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+							<div class="video-small video-small_item">
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
 									<span class="play-icon"><i class="icon-play"></i></span>
-								</div>
+								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
 									<span>Антверпен</span>
 								</div>
-							</a>
+							</div>
 						</li>
 						<li class="side-videos__item">
-							<a href="#" class="video-small video-small_item">
-								<div class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+							<div class="video-small video-small_item">
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
 									<span class="play-icon"><i class="icon-play"></i></span>
-								</div>
+								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
 									<span>Антверпен</span>
 								</div>
-							</a>
+							</div>
 						</li>
 						<li class="side-videos__item">
-							<a href="#" class="video-small video-small_item">
-								<div class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+							<div class="video-small video-small_item">
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
 									<span class="play-icon"><i class="icon-play"></i></span>
-								</div>
+								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
 									<span>Антверпен</span>
 								</div>
-							</a>
+							</div>
 						</li>
 						<li class="side-videos__item">
-							<a href="#" class="video-small video-small_item">
-								<div class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+							<div class="video-small video-small_item">
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
 									<span class="play-icon"><i class="icon-play"></i></span>
-								</div>
+								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
 									<span>Антверпен</span>
 								</div>
-							</a>
+							</div>
 						</li>
 						<li class="side-videos__item">
-							<a href="#" class="video-small video-small_item">
-								<div class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+							<div class="video-small video-small_item">
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
 									<span class="play-icon"><i class="icon-play"></i></span>
-								</div>
+								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
 									<span>Антверпен</span>
 								</div>
-							</a>
+							</div>
 						</li>
 						<li class="side-videos__item">
-							<a href="#" class="video-small video-small_item">
-								<div class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+							<div class="video-small video-small_item">
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
 									<span class="play-icon"><i class="icon-play"></i></span>
-								</div>
+								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
 									<span>Антверпен</span>
 								</div>
-							</a>
+							</div>
 						</li>
 						<li class="side-videos__item">
-							<a href="#" class="video-small video-small_item">
-								<div class="play-btn" style="background-image: url(https://placecage.com/100/100);">
+							<div class="video-small video-small_item">
+								<a href="#" class="play-btn" style="background-image: url(https://placecage.com/100/100);">
 									<span class="play-icon"><i class="icon-play"></i></span>
-								</div>
+								</a>
 								<div class="video-small__text">
 									<span>Смотреть Эпизод 1:</span>
 									<span>Антверпен</span>
 								</div>
-							</a>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -393,7 +419,28 @@
 </div>
 <!-- END out-->
 
-//= partials/login.html
+<div class="js-popup popup-wrapper popup-login" data-block="popup-login">
+	<div class="login">
+		<a href="#" class="login__close icon-close js-popup-close"></a>
+		<div class="login__inner">
+			<a href="#" class="login__logo">
+				<img src="img/logo.svg" alt="">
+			</a>
+			<div class="login__title">Авторизация</div>
+			<a href="#" class="btn-login btn-login_fb">
+				<i class="icon-fb"></i>
+				<span>Войти через Facebook</span>
+			</a>
+			<div class="login__label">
+				<span>или</span>
+			</div>
+			<a href="#" class="btn-login btn-login_vk">
+				<i class="icon-vk"></i>
+				<span>Войти через Вконтакте</span>
+			</a>
+		</div>
+	</div>
+</div>
 
 <div class="popup-wrapper js-popup" data-block="popup-gallery-text">
 	<div class="overlay js-overlay is-active"></div>
@@ -478,55 +525,20 @@
 	</div>
 </div>
 
-//= partials/search.html
-<div class="popup-wrapper js-popup" data-block="backstage">
-	<div class="overlay js-overlay"></div>
-	<div class="popup js-popup-inner">
-		<div class="js-popup-fixed popup__close-wrap">
-			<div class="popup__close-wrap-in">
-				<button class="popup__close js-popup-close"><i class="icon-close"></i></button>
-			</div>
-		</div>
-		<div class="popup-nemiroff" style="background-image: url(img/popup-nemiroff.png);">
-			<div class="popup-nemiroff__inner">
-				<div class="popup-nemiroff__logo">
-					<img src="img/nemiroff-logo.svg" alt="">
-				</div>
-				<div class="popup-nemiroff__text"><img src="img/nemiroff-text.png" alt=""></div>
-			</div>
-		</div>
-		<div class="popup__body">
-			<div class="popup-post">
-				<div class="user">
-					<a href="#" class="user__inner">
-						<img src="img/ava1.png" alt="" class="user__img">
-						<div class="user__block">
-							<span class="user__name">Регина Тодоренко</span>
-							<ul class="user__info">
-								<li>09 Ноября 14:32</li>
-								<li>Киев</li>
-							</ul>
-						</div>
-					</a>
-				</div>
-				<h2 class="title-h2">Сюр. Город рыбаков</h2>
-				<div class="video">
-					<iframe src="https://www.youtube.com/embed/FA_8TY9Z5Zg" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="popup__text">
-					<p>Морские ворота Лондона, историческое предместье, а теперь — один из 32 лондонских боро, находится во внутреннем Лондоне, на юго-востоке британской столицы, на правом берегу Темзы.</p>
-				</div>
-				//= partials/lil-info.html
-				<div class="popup-post__video">
-					<a href="#" class="link-video">
-						<i class="icon-camera"></i>
-						<span>Смотреть эпизод</span>
-					</a>
-				</div>
-			</div>
-			//= partials/comments.html
+<div class="search js-popup" data-block="search">
+	<div class="search__inner js-popup-inner">
+		<button class="search__close js-popup-close"><i class="icon-close"></i></button>
+		<div class="search__form">
+			<form action="">
+				<label class="search__label">
+					<span>Поиск по городам, странам, постам</span>
+					<input type="text" class="search__input" placeholder="Поиск">
+				</label>
+				<button class="btn-white btn-white_small">Найти</button>
+			</form>
 		</div>
 	</div>
 </div>
+
 </body>
 </html>
